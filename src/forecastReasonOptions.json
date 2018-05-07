@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Trend not captured",
+    "value": "trend"
+  },
+  {
+    "label": "Event of public interest",
+    "value": "event"
+  },
+  {
+    "label": "Special Day",
+    "value": "special_day"
+  },
+  {
+    "label": "Marketing Activity",
+    "value": "marketing"
+  },
+  {
+    "label": "Other",
+    "value": "other"
+  }
+]

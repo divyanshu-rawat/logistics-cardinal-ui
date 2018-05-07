@@ -1,0 +1,504 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Forecast /> should render the component 1`] = `
+<Styled(Uncontrolled(Tabs))
+  defaultActiveKey={1}
+  id="tabs"
+>
+  <Tab
+    eventKey={1}
+    title="Forecast"
+  >
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          xs={12}
+        >
+          <ForecastFilters
+            chartsOpened={true}
+            initialValues={
+              Object {
+                "endDate": "2018-11-25",
+                "endFullDate": "2018-11-25T23:59:59.999Z",
+                "endTime": "22:30:00",
+                "endWeek": 47,
+                "startDate": "2018-10-08",
+                "startFullDate": "2018-10-08T00:00:00.000Z",
+                "startTime": "09:00:00",
+                "startWeek": 41,
+                "zoneIds": Array [
+                  "bergen$center",
+                ],
+              }
+            }
+            onChartsToggle={[Function]}
+            onFilterChange={[Function]}
+            zoneOptions={
+              Array [
+                Object {
+                  "label": "bergen$center",
+                  "value": "bergen$center",
+                },
+              ]
+            }
+          />
+        </Col>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          xs={12}
+        >
+          <ForecastChartsTable
+            chartData={
+              Object {
+                "1": Object {
+                  "colors": Object {
+                    "2018-01-01": Object {
+                      "formattedDate": "2018-01-01",
+                      "lineColor": "#5981AC",
+                    },
+                    "2018-01-08": Object {
+                      "formattedDate": "2018-01-08",
+                      "lineColor": "#265C96",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2018-01-01": 11,
+                      "2018-01-08": 25,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2018-01-01": 50,
+                      "2018-01-08": 26,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2018-01-01",
+                    "2018-01-08",
+                  ],
+                },
+                "2": Object {
+                  "colors": Object {
+                    "2018-01-02": Object {
+                      "formattedDate": "2018-01-02",
+                      "lineColor": "#5981AC",
+                    },
+                    "2018-01-09": Object {
+                      "formattedDate": "2018-01-09",
+                      "lineColor": "#265C96",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2018-01-02": 0,
+                      "2018-01-09": 27,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2018-01-02": 0,
+                      "2018-01-09": 28,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2018-01-02",
+                    "2018-01-09",
+                  ],
+                },
+                "3": Object {
+                  "colors": Object {
+                    "2018-01-03": Object {
+                      "formattedDate": "2018-01-03",
+                      "lineColor": "#5981AC",
+                    },
+                    "2018-01-10": Object {
+                      "formattedDate": "2018-01-10",
+                      "lineColor": "#265C96",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2018-01-03": 1,
+                      "2018-01-10": 29,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2018-01-03": 12,
+                      "2018-01-10": 30,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2018-01-03",
+                    "2018-01-10",
+                  ],
+                },
+                "4": Object {
+                  "colors": Object {
+                    "2018-01-04": Object {
+                      "formattedDate": "2018-01-04",
+                      "lineColor": "#5981AC",
+                    },
+                    "2018-01-11": Object {
+                      "formattedDate": "2018-01-11",
+                      "lineColor": "#265C96",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2018-01-04": 0,
+                      "2018-01-11": 31,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2018-01-04": 20,
+                      "2018-01-11": 32,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2018-01-04",
+                    "2018-01-11",
+                  ],
+                },
+                "5": Object {
+                  "colors": Object {
+                    "2018-01-05": Object {
+                      "formattedDate": "2018-01-05",
+                      "lineColor": "#5981AC",
+                    },
+                    "2018-01-12": Object {
+                      "formattedDate": "2018-01-12",
+                      "lineColor": "#265C96",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2018-01-05": 0,
+                      "2018-01-12": 33,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2018-01-05": 7,
+                      "2018-01-12": 34,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2018-01-05",
+                    "2018-01-12",
+                  ],
+                },
+                "6": Object {
+                  "colors": Object {
+                    "2017-12-30": Object {
+                      "formattedDate": "2017-12-30",
+                      "lineColor": "#3F9BFC",
+                    },
+                    "2018-01-06": Object {
+                      "formattedDate": "2018-01-06",
+                      "lineColor": "#5981AC",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2017-12-30": 0,
+                      "2018-01-06": 21,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2017-12-30": 1,
+                      "2018-01-06": 22,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2017-12-30",
+                    "2018-01-06",
+                  ],
+                },
+                "7": Object {
+                  "colors": Object {
+                    "2017-12-31": Object {
+                      "formattedDate": "2017-12-31",
+                      "lineColor": "#3F9BFC",
+                    },
+                    "2018-01-07": Object {
+                      "formattedDate": "2018-01-07",
+                      "lineColor": "#5981AC",
+                    },
+                  },
+                  "data": Array [
+                    Object {
+                      "2017-12-31": 0,
+                      "2018-01-07": 23,
+                      "formattedTime": "10:00:00",
+                    },
+                    Object {
+                      "2017-12-31": 5,
+                      "2018-01-07": 24,
+                      "formattedTime": "11:00:00",
+                    },
+                  ],
+                  "sortedDates": Array [
+                    "2017-12-31",
+                    "2018-01-07",
+                  ],
+                },
+                "week": "",
+              }
+            }
+            sortedDays={
+              Array [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+              ]
+            }
+          />
+        </Col>
+      </Row>
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          xs={12}
+        >
+          <ForecastDataTable
+            biggestOrdersNumber={67}
+            biggestTotalValue={295}
+            colors={Object {}}
+            onClickHandler={[Function]}
+            selectRowProp={
+              Object {
+                "onSelect": [Function],
+                "onSelectAll": [Function],
+                "selected": Array [
+                  "W2-18",
+                  "W1-18",
+                  "W52-17",
+                ],
+              }
+            }
+            selectedDays={Array []}
+            sortedDays={
+              Array [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+              ]
+            }
+            tableValues={
+              Array [
+                Object {
+                  "1": Object {
+                    "change": -16,
+                    "value": 51,
+                  },
+                  "2": Object {
+                    "change": 100,
+                    "value": 55,
+                  },
+                  "3": Object {
+                    "change": 354,
+                    "value": 59,
+                  },
+                  "4": Object {
+                    "change": 215,
+                    "value": 63,
+                  },
+                  "5": Object {
+                    "change": 857,
+                    "value": 67,
+                  },
+                  "6": Object {
+                    "value": undefined,
+                  },
+                  "7": Object {
+                    "value": undefined,
+                  },
+                  "total": Object {
+                    "change": 54,
+                    "value": 295,
+                  },
+                  "week": "W2-18",
+                },
+                Object {
+                  "1": Object {
+                    "value": 61,
+                  },
+                  "2": Object {
+                    "value": 0,
+                  },
+                  "3": Object {
+                    "value": 13,
+                  },
+                  "4": Object {
+                    "value": 20,
+                  },
+                  "5": Object {
+                    "value": 7,
+                  },
+                  "6": Object {
+                    "change": 4200,
+                    "value": 43,
+                  },
+                  "7": Object {
+                    "change": 840,
+                    "value": 47,
+                  },
+                  "total": Object {
+                    "change": 3083,
+                    "value": 191,
+                  },
+                  "week": "W1-18",
+                },
+                Object {
+                  "1": Object {
+                    "value": undefined,
+                  },
+                  "2": Object {
+                    "value": undefined,
+                  },
+                  "3": Object {
+                    "value": undefined,
+                  },
+                  "4": Object {
+                    "value": undefined,
+                  },
+                  "5": Object {
+                    "value": undefined,
+                  },
+                  "6": Object {
+                    "value": 1,
+                  },
+                  "7": Object {
+                    "value": 5,
+                  },
+                  "total": Object {
+                    "value": 6,
+                  },
+                  "week": "W52-17",
+                },
+              ]
+            }
+          />
+        </Col>
+      </Row>
+      <Row
+        bsClass="row"
+        className="horizontal-top-line"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          xs={12}
+        >
+          <ForecastAdjustmentForm
+            adjustment={
+              Object {
+                "adjustment": "",
+                "appliesTo": Array [
+                  "base",
+                ],
+                "error": null,
+                "fixAdjustment": false,
+                "loading": false,
+                "reason": "",
+                "reasonDetail": "",
+                "selectedDays": Array [],
+              }
+            }
+            filters={
+              Object {
+                "endDate": "2018-11-25",
+                "endFullDate": "2018-11-25T23:59:59.999Z",
+                "endTime": "22:30:00",
+                "endWeek": 47,
+                "startDate": "2018-10-08",
+                "startFullDate": "2018-10-08T00:00:00.000Z",
+                "startTime": "09:00:00",
+                "startWeek": 41,
+                "zoneIds": Array [
+                  "bergen$center",
+                ],
+              }
+            }
+            onCancel={[Function]}
+            onSave={[Function]}
+            updateAdjustment={[Function]}
+          />
+        </Col>
+      </Row>
+    </Grid>
+  </Tab>
+  <Tab
+    eventKey={2}
+    title="History"
+  >
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          xs={12}
+        >
+          <ForecastAdjustmentsHistoryFilters
+            endTime="23:59:59"
+            onFilterChange={[Function]}
+            startTime="00:00:00"
+            zoneIds={Array []}
+            zoneOptions={
+              Array [
+                Object {
+                  "label": "bergen$center",
+                  "value": "bergen$center",
+                },
+              ]
+            }
+          />
+          <ForecastAdjustmentsHistoryDataTable
+            data={Array []}
+            onStatusToggle={[Function]}
+          />
+        </Col>
+      </Row>
+    </Grid>
+  </Tab>
+</Styled(Uncontrolled(Tabs))>
+`;

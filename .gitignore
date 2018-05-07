@@ -1,6 +1,14 @@
 
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+package-lock.json
+app/translations/*
+
 # dependencies
 node_modules
 
@@ -15,6 +23,7 @@ dist
 .env.development.local
 .env.test.local
 .env.production.local
+.idea
 
 npm-debug.log*
 yarn-debug.log*

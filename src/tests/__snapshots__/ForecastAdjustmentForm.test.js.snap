@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ForecastAdjustmentForm /> should render the component 1`] = `
+<styled.div>
+  <div
+    className="form-section"
+  >
+    <div
+      className="forecast-form"
+    >
+      <div>
+        <div
+          className="dates"
+        >
+          <span />
+          <span
+            className="time"
+          >
+            <span>
+              09:00:00
+               - 
+              22:30:00
+            </span>
+          </span>
+        </div>
+        <div
+          className="forecast-form-reasons form-group"
+        >
+          <Styled(StyledSelect)
+            clearable={false}
+            name="reason"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "label": "Trend not captured",
+                  "value": "trend",
+                },
+                Object {
+                  "label": "Event of public interest",
+                  "value": "event",
+                },
+                Object {
+                  "label": "Special Day",
+                  "value": "special_day",
+                },
+                Object {
+                  "label": "Marketing Activity",
+                  "value": "marketing",
+                },
+                Object {
+                  "label": "Other",
+                  "value": "other",
+                },
+              ]
+            }
+            placeholder="Reason"
+            searchable={false}
+            title="Reason"
+            value=""
+          />
+        </div>
+        <FormGroup
+          bsClass="form-group"
+          controlId="reasonDetail"
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="textarea"
+            name="reasonDetail"
+            onChange={[Function]}
+            placeholder="Reason Detail"
+            title="Reason Detail"
+            value=""
+          />
+        </FormGroup>
+        <div
+          className="forecast-form-adjustments"
+        >
+          <FormGroup
+            bsClass="form-group"
+            controlId="adjustment"
+          >
+            <FormControl
+              bsClass="form-control"
+              componentClass="input"
+              name="adjustment"
+              onChange={[Function]}
+              placeholder="Adjustment %"
+              title="Adjustment %"
+              type="number"
+              value=""
+            />
+          </FormGroup>
+          <Styled(StyledSelect)
+            clearable={false}
+            multi={true}
+            name="appliesTo"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "label": "base",
+                  "value": "base",
+                },
+                Object {
+                  "label": "d2",
+                  "value": "d2",
+                },
+              ]
+            }
+            placeholder="Applies to..."
+            searchable={false}
+            title="Applies to..."
+            value={
+              Array [
+                "base",
+              ]
+            }
+          />
+        </div>
+      </div>
+      <div>
+        <ForecastAdjustmentPreviewTable
+          adjustment={0}
+          filters={
+            Object {
+              "endDate": "2018-11-25",
+              "endFullDate": "2018-11-25T23:59:59.999Z",
+              "endTime": "22:30:00",
+              "endWeek": 47,
+              "startDate": "2018-10-08",
+              "startFullDate": "2018-10-08T00:00:00.000Z",
+              "startTime": "09:00:00",
+              "startWeek": 41,
+              "zoneIds": Array [],
+            }
+          }
+          selectedDays={Array []}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="form-section"
+  >
+    <div
+      className="forecast-form-buttons"
+    >
+      <div>
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsSize="small"
+          bsStyle="default"
+          className="right-side"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Cancel
+        </Button>
+      </div>
+      <div>
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsSize="small"
+          bsStyle="primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Save
+        </Button>
+      </div>
+    </div>
+  </div>
+</styled.div>
+`;
