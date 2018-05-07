@@ -19,6 +19,9 @@ export default {
       format: 'es',
     },
   ],
+  sourcemap: true,
+  globals: { 'styled-components': 'styled' },
+  external: ['styled-components'],
   plugins: [
     external(),
     postcss({

@@ -41,6 +41,7 @@ class Timepicker extends PureComponent {
     return (
       <TimepickerWrapper theme={colors} size={size}>
         <Select
+          joinValues
           clearable={false}
           searchable={isSearchable}
           name={name}
