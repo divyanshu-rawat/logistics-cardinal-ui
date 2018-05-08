@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Time /> should render the component with seconds 1`] = `
+<React.Fragment>
+  11:00:00
+</React.Fragment>
+`;
+
+exports[`<Time /> should render the component without seconds 1`] = `
+<React.Fragment>
+  11:00
+</React.Fragment>
+`;

@@ -21,20 +21,20 @@
     "prebuild:storybook": "yarn run test:generate-output"
   },
   "dependencies": {
+    "react": "16.2.0",
     "react-bootstrap": "^0.32.1",
+    "react-dom": "16.2.0",
     "react-select": "1.2.0",
     "react-select-plus": "1.1.0",
     "sanitize.css": "^5.0.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
     "styled-components": "2.2.3"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "styled-components": "2.2.3",
-    "react-select-plus": "1.1.0"
+    "react-select-plus": "1.1.0",
+    "styled-components": "2.2.3"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -177,6 +177,8 @@
     "eslint-plugin-redux-saga": "0.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.16",
     "react-scripts": "^1.1.1",
     "rollup": "^0.54.0",
     "rollup-plugin-babel": "^3.0.3",

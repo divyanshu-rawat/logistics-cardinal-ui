@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
+<React.Fragment>
+  <TimeSpanDisplay
+    date="2017-12-01T10:00:00Z"
+    withSeconds={true}
+  />
+  —
+  <TimeSpanDisplay
+    date="2017-12-01T12:00:00Z"
+    withSeconds={true}
+  />
+</React.Fragment>
+`;
+
+exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
+<React.Fragment>
+  <TimeSpanDisplay
+    date="2017-12-01T10:00:00Z"
+    withSeconds={false}
+  />
+  —
+  <TimeSpanDisplay
+    date="2017-12-01T12:00:00Z"
+    withSeconds={false}
+  />
+</React.Fragment>
+`;
