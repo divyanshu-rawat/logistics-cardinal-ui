@@ -11,6 +11,7 @@ class Timepicker extends PureComponent {
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
     isSearchable: PropTypes.bool,
+    isFirst: PropTypes.bool,
     size: PropTypes.string,
     initialValue: PropTypes.string,
   };
@@ -33,12 +34,13 @@ class Timepicker extends PureComponent {
       name,
       placeholder,
       isSearchable = false,
+      isFirst,
     } = this.props;
 
     const { selectedValue } = this.state;
 
     return (
-      <Select size={size}>
+      <Select size={size} isFirst={isFirst}>
         <SelectPlus
           joinValues
           clearable={false}

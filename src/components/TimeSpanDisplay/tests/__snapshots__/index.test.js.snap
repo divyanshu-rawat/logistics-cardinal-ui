@@ -6,7 +6,8 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
     date="2017-12-01T10:00:00Z"
     withSeconds={true}
   />
-  —
+   —
+   
   <TimeSpanDisplay
     date="2017-12-01T12:00:00Z"
     withSeconds={true}
@@ -20,7 +21,8 @@ exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
     date="2017-12-01T10:00:00Z"
     withSeconds={false}
   />
-  —
+   —
+   
   <TimeSpanDisplay
     date="2017-12-01T12:00:00Z"
     withSeconds={false}

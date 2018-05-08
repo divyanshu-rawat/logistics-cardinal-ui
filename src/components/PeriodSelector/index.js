@@ -33,6 +33,7 @@ class PeriodSelector extends PureComponent {
           options={options}
           onChange={this.onChangeTime}
           initialValue={startAtDefault}
+          isFirst
         />
         <Timepicker
           name={endAtName}

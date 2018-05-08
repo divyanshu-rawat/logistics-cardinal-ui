@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from './constants';
+import colors from '../constants';
 
 export default styled('div')`
   display: inline-block;
@@ -7,18 +7,24 @@ export default styled('div')`
   .Select {
     display: inline-block;
     width: ${(props) => (props.size === 'small' ? `100px;` : '300px')};
-    vertical-align: top;
     &-control {
-      height: 30px;
+      min-height: 40px;
       background-color: ${colors.greyDeep};
       border: 1px solid #40464f;
-      box-shadow: none;
-      .Select-input {
-        height: 30px;
-        &:focus {
-          background-color: ${colors.greyDeep};
-        }
+      display: flex;
+      align-items: center;
+      height: auto;
+    }
+    &-multi {
+      &-value-wrapper {
+        flex: 1;
       }
+    }
+    &-placeholder {
+      position: relative;
+    }
+    &-value {
+      margin: 5px 0 5px 5px;
     }
     &.is-focused,
     &.is-open {
@@ -27,6 +33,12 @@ export default styled('div')`
         border: 1px solid #40464f;
         box-shadow: none;
       }
+    }
+    &-input {
+      position: absolute;
+      top: 0;
+      opacity: 1;
+      z-index: -1;
     }
     &-menu-outer {
       box-shadow: 0;
@@ -60,46 +72,30 @@ export default styled('div')`
         }
       }
     }
-    &-placeholder,
-    & span {
-      line-height: 30px;
-    }
-    &-arrow-zone,
-    &--single > .Select-control .Select-value {
-      line-height: 30px;
-      height: 30px;
+    &--single {
+      > .Select-control .Select-value {
+        position: relative;
+        margin: 0;
+      }
     }
     &--multi {
-      .Select-control {
-        background-color: transparent;
-        border: 0;
-      }
-      &.is-focused,
-      &.is-open {
-        .Select-control {
-          background-color: transparent;
-          border: 0;
+      .Select-value {
+        display: inline-flex;
+        background-color: ${colors.brandPrimary};
+        color: #fff;
+        flex-flow: row-reverse;
+        align-items: center;
+        &-label {
+          flex: 1;
         }
       }
-      .Select-value {
-        margin: 0 5px 0 0;
-        border-radius: 6px;
-        line-height: 22px;
-      }
-      .Select-value-icon,
-      .Select-value-label {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      span {
-        line-height: 24px;
-      }
     }
-    &.has-value.Select--single
-      > .Select-control
-      .Select-value
-      .Select-value-label {
-      color: #b2b8c0;
+    &.has-value {
+      &.Select--single {
+        > .Select-control .Select-value .Select-value-label {
+          color: #b2b8c0;
+        }
+      }
     }
   }
 `;

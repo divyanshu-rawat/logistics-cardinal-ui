@@ -5,8 +5,7 @@ import Time from './Time';
 
 const TimeSpanDisplay = ({ startAt, endAt, withSeconds = false }) => (
   <Fragment>
-    <Time date={startAt} withSeconds={withSeconds} />
-    —
+    <Time date={startAt} withSeconds={withSeconds} /> —{' '}
     <Time date={endAt} withSeconds={withSeconds} />
   </Fragment>
 );

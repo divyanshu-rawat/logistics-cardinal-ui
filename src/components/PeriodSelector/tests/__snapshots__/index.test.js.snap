@@ -4,6 +4,7 @@ exports[`<PeriodSelector /> should init component with given \`value\` prop 1`] 
 <React.Fragment>
   <Timepicker
     initialValue="09:00:00"
+    isFirst={true}
     name="start_at"
     onChange={[Function]}
     options={
@@ -420,6 +421,7 @@ exports[`<PeriodSelector /> should init component with given \`value\` prop 1`] 
 exports[`<PeriodSelector /> should render the component 1`] = `
 <React.Fragment>
   <Timepicker
+    isFirst={true}
     name="start_at"
     onChange={[Function]}
     options={
