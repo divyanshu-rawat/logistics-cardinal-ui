@@ -3,16 +3,6 @@
 exports[`<Timepicker /> should init component with given \`value\` prop 1`] = `
 <styled.div
   size="small"
-  theme={
-    Object {
-      "brandPrimary": "#3f9bfd",
-      "brandPrimaryLight": "#375f8a",
-      "greyDeep": "#292d33",
-      "greyLight": "#3f454d",
-      "greyMedium": "#343a42",
-      "inactive": "#96a2b0",
-    }
-  }
 >
   <Select
     arrowRenderer={[Function]}
@@ -34,7 +24,7 @@ exports[`<Timepicker /> should init component with given \`value\` prop 1`] = `
     ignoreCase={true}
     inputProps={Object {}}
     isLoading={false}
-    joinValues={false}
+    joinValues={true}
     labelKey="label"
     matchPos="any"
     matchProp="any"
@@ -269,16 +259,6 @@ exports[`<Timepicker /> should init component with given \`value\` prop 1`] = `
 exports[`<Timepicker /> should render the component 1`] = `
 <styled.div
   size="small"
-  theme={
-    Object {
-      "brandPrimary": "#3f9bfd",
-      "brandPrimaryLight": "#375f8a",
-      "greyDeep": "#292d33",
-      "greyLight": "#3f454d",
-      "greyMedium": "#343a42",
-      "inactive": "#96a2b0",
-    }
-  }
 >
   <Select
     arrowRenderer={[Function]}
@@ -300,7 +280,7 @@ exports[`<Timepicker /> should render the component 1`] = `
     ignoreCase={true}
     inputProps={Object {}}
     isLoading={false}
-    joinValues={false}
+    joinValues={true}
     labelKey="label"
     matchPos="any"
     matchProp="any"

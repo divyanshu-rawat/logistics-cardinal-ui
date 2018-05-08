@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Select from 'react-select-plus';
+import SelectPlus from 'react-select-plus';
 
-import TimepickerWrapper from './TimepickerWrapper';
-import colors from './constants';
+import Select from '../../Select';
 
 class Timepicker extends PureComponent {
   static propTypes = {
@@ -39,8 +38,8 @@ class Timepicker extends PureComponent {
     const { selectedValue } = this.state;
 
     return (
-      <TimepickerWrapper theme={colors} size={size}>
-        <Select
+      <Select size={size}>
+        <SelectPlus
           joinValues
           clearable={false}
           searchable={isSearchable}
@@ -50,7 +49,7 @@ class Timepicker extends PureComponent {
           options={options}
           onChange={this.onChangeTime}
         />
-      </TimepickerWrapper>
+      </Select>
     );
   }
 }

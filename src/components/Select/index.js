@@ -1,59 +1,61 @@
 import styled from 'styled-components';
+import colors from './constants';
 
 export default styled('div')`
   display: inline-block;
   margin-right: 5px;
   .Select {
     display: inline-block;
+    width: ${(props) => (props.size === 'small' ? `100px;` : '300px')};
     vertical-align: top;
-    width: ${(props) => (props.size === 'small' ? `100px;` : '100%')} &-control {
+    &-control {
       height: 30px;
-      background-color: ${(props) => props.theme.greyDeep};
+      background-color: ${colors.greyDeep};
       border: 1px solid #40464f;
       box-shadow: none;
       .Select-input {
         height: 30px;
         &:focus {
-          background-color: ${(props) => props.theme.greyDeep};
+          background-color: ${colors.greyDeep};
         }
       }
     }
     &.is-focused,
     &.is-open {
       .Select-control {
-        background-color: ${(props) => props.theme.greyDeep};
+        background-color: ${colors.greyDeep};
         border: 1px solid #40464f;
         box-shadow: none;
       }
     }
     &-menu-outer {
       box-shadow: 0;
-      background-color: ${(props) => props.theme.greyDeep};
+      background-color: ${colors.greyDeep};
       border: 1px solid #40464f;
       .Select-menu .Select-option {
-        background-color: ${(props) => props.theme.greyDeep};
+        background-color: ${colors.greyDeep};
         color: #ffffff;
         &.is-selected {
-          background-color: ${(props) => props.theme.greyDeep};
+          background-color: ${colors.greyDeep};
           border-bottom: 1px solid #40464f;
         }
         &.is-focused {
-          background-color: ${(props) => props.theme.greyDeep};
+          background-color: ${colors.greyDeep};
           border: 0;
         }
         &:hover {
-          background-color: ${(props) => props.theme.greyMedium};
+          background-color: ${colors.greyMedium};
           border: 0;
         }
         &.is-selected:hover {
-          background-color: ${(props) => props.theme.greyMedium};
+          background-color: ${colors.greyMedium};
           border-bottom: 1px solid #40464f;
         }
         &.is-disabled {
-          color: ${(props) => props.theme.inactive};
+          color: ${colors.inactive};
           &:hover {
-            background-color: ${(props) => props.theme.greyDeep};
-            color: ${(props) => props.theme.inactive};
+            background-color: ${colors.greyDeep};
+            color: ${colors.inactive};
           }
         }
       }

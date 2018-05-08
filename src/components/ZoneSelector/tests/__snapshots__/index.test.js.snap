@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ZoneSelector /> should init component with given \`initialValue\` prop 1`] = `
+<styled.div>
+  <Select
+    arrowRenderer={[Function]}
+    autosize={true}
+    backspaceRemoves={true}
+    backspaceToRemoveMessage="Press backspace to remove {label}"
+    clearAllText="Clear all"
+    clearRenderer={[Function]}
+    clearValueText="Clear value"
+    clearable={false}
+    closeOnSelect={true}
+    deleteRemoves={true}
+    delimiter=","
+    disabled={false}
+    dropdownComponent={[Function]}
+    escapeClearsValue={true}
+    filterOptions={[Function]}
+    ignoreAccents={true}
+    ignoreCase={true}
+    inputProps={Object {}}
+    isLoading={false}
+    joinValues={false}
+    labelKey="label"
+    matchPos="any"
+    matchProp="any"
+    menuBuffer={0}
+    menuRenderer={[Function]}
+    multi={true}
+    name="zones"
+    noResultsText="No results found"
+    onBlurResetsInput={true}
+    onChange={[Function]}
+    onCloseResetsInput={true}
+    onSelectResetsInput={true}
+    openOnClick={true}
+    optionComponent={[Function]}
+    optionGroupComponent={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Stockholm",
+          "value": "stockholm$stockholm",
+        },
+        Object {
+          "label": "Solna",
+          "value": "stockholm$solna",
+        },
+        Object {
+          "label": "Validation_zone",
+          "value": "stockholm$validation_zone",
+        },
+      ]
+    }
+    pageSize={5}
+    placeholder="Select..."
+    removeSelected={true}
+    required={false}
+    rtl={false}
+    scrollMenuIntoView={true}
+    searchable={false}
+    simpleValue={false}
+    tabSelectsValue={true}
+    trimFilter={true}
+    value={
+      Array [
+        Object {
+          "label": "Stockholm",
+          "value": "stockholm$stockholm",
+        },
+      ]
+    }
+    valueComponent={[Function]}
+    valueKey="value"
+  />
+</styled.div>
+`;
+
+exports[`<ZoneSelector /> should render the component 1`] = `
+<styled.div>
+  <Select
+    arrowRenderer={[Function]}
+    autosize={true}
+    backspaceRemoves={true}
+    backspaceToRemoveMessage="Press backspace to remove {label}"
+    clearAllText="Clear all"
+    clearRenderer={[Function]}
+    clearValueText="Clear value"
+    clearable={false}
+    closeOnSelect={true}
+    deleteRemoves={true}
+    delimiter=","
+    disabled={false}
+    dropdownComponent={[Function]}
+    escapeClearsValue={true}
+    filterOptions={[Function]}
+    ignoreAccents={true}
+    ignoreCase={true}
+    inputProps={Object {}}
+    isLoading={false}
+    joinValues={false}
+    labelKey="label"
+    matchPos="any"
+    matchProp="any"
+    menuBuffer={0}
+    menuRenderer={[Function]}
+    multi={true}
+    name="zones"
+    noResultsText="No results found"
+    onBlurResetsInput={true}
+    onChange={[Function]}
+    onCloseResetsInput={true}
+    onSelectResetsInput={true}
+    openOnClick={true}
+    optionComponent={[Function]}
+    optionGroupComponent={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Stockholm",
+          "value": "stockholm$stockholm",
+        },
+        Object {
+          "label": "Solna",
+          "value": "stockholm$solna",
+        },
+        Object {
+          "label": "Validation_zone",
+          "value": "stockholm$validation_zone",
+        },
+      ]
+    }
+    pageSize={5}
+    placeholder="Select..."
+    removeSelected={true}
+    required={false}
+    rtl={false}
+    scrollMenuIntoView={true}
+    searchable={false}
+    simpleValue={false}
+    tabSelectsValue={true}
+    trimFilter={true}
+    valueComponent={[Function]}
+    valueKey="value"
+  />
+</styled.div>
+`;
