@@ -67,7 +67,6 @@
       "es6": true
     },
     "plugins": [
-      "redux-saga",
       "react",
       "jsx-a11y"
     ],
@@ -134,8 +133,6 @@
       "react/require-extension": 0,
       "react/self-closing-comp": 0,
       "react/no-typos": 0,
-      "redux-saga/no-yield-in-race": 2,
-      "redux-saga/yield-effects": 0,
       "react/require-default-props": 0,
       "react/default-props-match-prop-types": 0,
       "require-yield": 0,
