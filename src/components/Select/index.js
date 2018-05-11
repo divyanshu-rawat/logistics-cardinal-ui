@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import colors from '../constants';
 
 export default styled('div')`
   display: inline-block;
@@ -9,7 +8,7 @@ export default styled('div')`
     width: ${(props) => (props.size === 'small' ? `100px;` : '300px')};
     &-control {
       min-height: 40px;
-      background-color: ${colors.greyDeep};
+      background-color: ${(props) => props.theme.colors.grey400};
       border: 1px solid #40464f;
       display: flex;
       align-items: center;
@@ -29,7 +28,7 @@ export default styled('div')`
     &.is-focused,
     &.is-open {
       .Select-control {
-        background-color: ${colors.greyDeep};
+        background-color: ${(props) => props.theme.colors.grey400};
         border: 1px solid #40464f;
         box-shadow: none;
       }
@@ -42,32 +41,32 @@ export default styled('div')`
     }
     &-menu-outer {
       box-shadow: 0;
-      background-color: ${colors.greyDeep};
+      background-color: ${(props) => props.theme.colors.grey400};
       border: 1px solid #40464f;
       .Select-menu .Select-option {
-        background-color: ${colors.greyDeep};
+        background-color: ${(props) => props.theme.colors.grey400};
         color: #ffffff;
         &.is-selected {
-          background-color: ${colors.greyDeep};
+          background-color: ${(props) => props.theme.colors.grey400};
           border-bottom: 1px solid #40464f;
         }
         &.is-focused {
-          background-color: ${colors.greyDeep};
+          background-color: ${(props) => props.theme.colors.grey400};
           border: 0;
         }
         &:hover {
-          background-color: ${colors.greyMedium};
+          background-color: ${(props) => props.theme.colors.grey300};
           border: 0;
         }
         &.is-selected:hover {
-          background-color: ${colors.greyMedium};
+          background-color: ${(props) => props.theme.colors.grey300};
           border-bottom: 1px solid #40464f;
         }
         &.is-disabled {
-          color: ${colors.inactive};
+          color: ${(props) => props.theme.colors.grey100};
           &:hover {
-            background-color: ${colors.greyDeep};
-            color: ${colors.inactive};
+            background-color: ${(props) => props.theme.colors.grey400};
+            color: ${(props) => props.theme.colors.grey100};
           }
         }
       }
@@ -81,7 +80,7 @@ export default styled('div')`
     &--multi {
       .Select-value {
         display: inline-flex;
-        background-color: ${colors.brandPrimary};
+        background-color: ${(props) => props.theme.colors.primary100};
         color: #fff;
         flex-flow: row-reverse;
         align-items: center;

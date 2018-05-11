@@ -1,8 +1,4 @@
-import 'sanitize.css/sanitize.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'react-select-plus/dist/react-select-plus.css';
-
-import './styles.css';
+import '../theme/global';
 
 import TimepickerStories from './Timepicker.stories';
 import PeriodSelectorStories from './PeriodSelector.stories';

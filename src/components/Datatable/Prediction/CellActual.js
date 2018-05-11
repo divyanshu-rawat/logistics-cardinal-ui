@@ -1,6 +1,5 @@
 import Cell from './Cell';
-import colors from '../../constants';
 
 export default Cell.extend`
-  background-color: ${colors.greyDeep};
+  background-color: ${(props) => props.theme.colors.grey400};
 `;

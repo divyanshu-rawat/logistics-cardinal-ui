@@ -12,13 +12,34 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
+    "predeploy": "yarn install && yarn run build",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "test:generate-output:watch": "jest --watch --json --outputFile=.jest-test-results.json",
     "prebuild:storybook": "yarn run test:generate-output"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-object-rest-spread",
+      "transform-class-properties"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ],
+      "react",
+      "stage-1"
+    ],
+    "env": {
+      "test": {
+        "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+      }
+    }
   },
   "dependencies": {
     "react": "16.2.0",
@@ -148,14 +169,15 @@
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
-    "bootstrap": "3.3.7",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "bootstrap": "3.3.7",
     "cross-env": "^5.1.4",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
