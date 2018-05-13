@@ -1,9 +1,4 @@
 {
-  "plugins": [
-    "transform-es2015-modules-commonjs",
-    "transform-object-rest-spread",
-    "transform-class-properties"
-  ],
   "presets": [
     [
       "env",
@@ -16,10 +11,7 @@
   ],
   "env": {
     "test": {
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        "dynamic-import-node"
-      ]
+      "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
     }
   }
 }
