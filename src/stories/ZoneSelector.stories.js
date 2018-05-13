@@ -10,7 +10,7 @@ import withTests from './withTests';
 import { ZoneOptionsMock } from './utils';
 import ZoneSelector from '../components/ZoneSelector';
 
-storiesOf('ZoneSelector', module)
+storiesOf('Select', module)
   .addDecorator(withTests('index'))
   .addDecorator(centered)
   .add(

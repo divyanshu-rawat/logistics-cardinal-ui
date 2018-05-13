@@ -1,6 +1,6 @@
 {
   "name": "rooster-forecast",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "rooster dashboard forecast",
   "author": "logistics",
   "license": "MIT",
@@ -15,34 +15,9 @@
     "predeploy": "yarn install && yarn run build",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
-    "test:generate-output:watch": "jest --watch --json --outputFile=.jest-test-results.json",
-    "prebuild:storybook": "yarn run test:generate-output"
-  },
-  "babel": {
-    "plugins": [
-      "transform-es2015-modules-commonjs",
-      "transform-object-rest-spread",
-      "transform-class-properties"
-    ],
-    "presets": [
-      [
-        "env",
-        {
-          "modules": false
-        }
-      ],
-      "react",
-      "stage-1"
-    ],
-    "env": {
-      "test": {
-        "plugins": [
-          "transform-es2015-modules-commonjs",
-          "dynamic-import-node"
-        ]
-      }
-    }
+    "test": "jest --json --outputFile=.jest-test-results.json || true",
+    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json",
+    "prebuild:storybook": "yarn run test"
   },
   "dependencies": {
     "react": "16.2.0",
@@ -198,7 +173,6 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
-    "eslint-plugin-redux-saga": "0.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
     "moment": "^2.22.1",

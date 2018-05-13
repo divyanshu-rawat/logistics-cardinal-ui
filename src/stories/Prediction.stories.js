@@ -10,7 +10,7 @@ import centered from '@storybook/addon-centered';
 
 import Prediction from '../components/Datatable/Prediction';
 
-storiesOf('Prediction', module)
+storiesOf('Forecast', module)
   // .addDecorator(withTests('index'))
   .addDecorator(centered)
   .add('With forecast', withInfo()(() => <Prediction />))
