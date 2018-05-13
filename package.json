@@ -11,13 +11,11 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
     "predeploy": "yarn install && yarn run build",
     "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "test": "jest --json --outputFile=.jest-test-results.json || true",
-    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json",
-    "prebuild:storybook": "yarn run test"
+    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json"
   },
   "dependencies": {
     "react": "16.2.0",
