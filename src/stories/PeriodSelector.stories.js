@@ -7,13 +7,11 @@ import centered from '@storybook/addon-centered';
 
 import { TimeOptionsMock } from './utils';
 import withTests from './withTests';
-import withBackground from './withBackground';
 
 import PeriodSelector from '../components/PeriodSelector';
 
 storiesOf('PeriodSelector', module)
   .addDecorator(withTests('index'))
-  .addDecorator(withBackground)
   .addDecorator(centered)
   .add(
     'StartAt and EndAt',

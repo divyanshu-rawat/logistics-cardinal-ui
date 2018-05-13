@@ -5,13 +5,11 @@ import { withInfo } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
 
 import withTests from './withTests';
-import withBackground from './withBackground';
 
 import TimeSpanDisplay from '../components/TimeSpanDisplay';
 
 storiesOf('TimeSpanDisplay', module)
   .addDecorator(withTests('index'))
-  .addDecorator(withBackground)
   .addDecorator(centered)
   .add(
     'Normal',

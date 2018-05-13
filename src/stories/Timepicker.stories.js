@@ -7,13 +7,11 @@ import centered from '@storybook/addon-centered';
 
 import { TimeOptionsMock } from './utils';
 import withTests from './withTests';
-import withBackground from './withBackground';
 
 import Timepicker from '../components/PeriodSelector/Timepicker';
 
 storiesOf('Timepicker', module)
   .addDecorator(withTests('index'))
-  .addDecorator(withBackground)
   .addDecorator(centered)
   .add(
     'Single',

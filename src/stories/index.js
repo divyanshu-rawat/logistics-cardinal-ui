@@ -1,4 +1,4 @@
-import '../theme/global';
+import '../themes/global';
 
 import TimepickerStories from './Timepicker.stories';
 import PeriodSelectorStories from './PeriodSelector.stories';

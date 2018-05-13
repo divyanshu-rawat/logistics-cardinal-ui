@@ -37,7 +37,10 @@
     ],
     "env": {
       "test": {
-        "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "dynamic-import-node"
+        ]
       }
     }
   },
@@ -166,6 +169,7 @@
     "@storybook/addon-centered": "^3.4.3",
     "@storybook/addon-info": "^3.4.3",
     "@storybook/addon-jest": "^3.4.3",
+    "@storybook/addon-knobs": "^3.4.4",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
