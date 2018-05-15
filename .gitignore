@@ -7,7 +7,6 @@ build
 node_modules
 stats.json
 package-lock.json
-app/translations/*
 jest-test-results.json
 
 # dependencies
@@ -15,7 +14,6 @@ node_modules
 
 # builds
 build
-dist
 
 # misc
 .DS_Store

@@ -11,11 +11,30 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "predeploy": "yarn install && yarn run build",
+    "predeploy": "cross-env NODE_ENV=production && yarn install && yarn run build",
+    "deploy:storybook": "yarn run build-storybook && node ./internals/scripts/deployDocs.js",
+    "deploy:lib": "node ./internals/scripts/deployLib.js",
+    "deploy": "yarn run predeploy && yarn run deploy:lib && yarn run deploy:storybook",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "test": "jest --json --outputFile=.jest-test-results.json || true",
     "test:watch": "jest --watch --json --outputFile=.jest-test-results.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": [
+      "node ./internals/scripts/checkFiles.js"
+    ],
+    "*.js": [
+      "prettier --write --single-quote --trailing-comma all --arrow-parens always",
+      "eslint src/ --fix",
+      "git add",
+      "jest --bail --findRelatedTests"
+    ]
   },
   "dependencies": {
     "react": "16.2.0",
@@ -155,6 +174,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "bootstrap": "3.3.7",
+    "chalk": "^2.4.1",
     "cross-env": "^5.1.4",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -173,6 +193,9 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
+    "husky": "^1.0.0-rc.6",
+    "intl": "^1.2.5",
+    "lint-staged": "^7.1.0",
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.16",
     "react-bootstrap-table": "^4.3.1",
