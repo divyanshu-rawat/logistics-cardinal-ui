@@ -18,7 +18,8 @@
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "test": "jest --json --outputFile=.jest-test-results.json || true",
-    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json"
+    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json",
+    "lint:revertBinaryFiles": "node ./internals/scripts/checkFiles.js"
   },
   "husky": {
     "hooks": {
@@ -26,8 +27,8 @@
     }
   },
   "lint-staged": {
+    "*": ["yarn run lint:revertBinaryFiles"],
     "*.js": [
-      "node ./internals/scripts/checkFiles.js",
       "prettier --write --single-quote --trailing-comma all --arrow-parens always",
       "lint:eslint --fix",
       "git add",
