@@ -1,10 +1,13 @@
 {
-  "name": "rooster-forecast",
-  "version": "0.0.0",
-  "description": "rooster dashboard forecast",
+  "name": "logistics-cardinal-ui",
+  "version": "0.0.1",
+  "description": "Logistics Cardinal UI",
   "author": "logistics",
   "license": "MIT",
-  "repository": "logistics/rooster-forecast",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foodora/logistics-cardinal-ui.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
