@@ -2,16 +2,23 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import SelectPlus from 'react-select-plus';
 
-import Select from '../Select';
+import Select from '../../Select';
 
-class ZoneSelector extends PureComponent {
+class MultipleSelect extends PureComponent {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    options: PropTypes.array.isRequired,
+    onChange: PropTypes.func.isRequired,
+    initialValue: PropTypes.array,
+  };
+
   state = {
     selectedValue: this.props.initialValue,
   };
 
   onChange = (option) => {
     this.setState({ selectedValue: option }, () =>
-      this.props.onChangeZone({ option })
+      this.props.onChange({ option }),
     );
   };
 
@@ -35,11 +42,4 @@ class ZoneSelector extends PureComponent {
   }
 }
 
-ZoneSelector.propTypes = {
-  name: PropTypes.string.isRequired,
-  options: PropTypes.array.isRequired,
-  onChangeZone: PropTypes.func.isRequired,
-  initialValue: PropTypes.array,
-};
-
-export default ZoneSelector;
+export default MultipleSelect;

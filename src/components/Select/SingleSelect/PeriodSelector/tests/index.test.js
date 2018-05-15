@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import { TimeOptionsMock } from '../../../stories/utils';
+import { SingleSelectMock } from '../../../../../utils/mocks';
 import PeriodSelector from '..';
 
 const onChangeFn = jest.fn();
@@ -10,12 +10,12 @@ const onChangeFn = jest.fn();
 const renderedComponent = (values = []) =>
   shallow(
     <PeriodSelector
-      options={TimeOptionsMock}
+      options={SingleSelectMock}
       names={['start_at', 'end_at']}
       placeholders={['Start At', 'End At']}
       onChange={onChangeFn}
       initialValues={values}
-    />
+    />,
   );
 
 describe('<PeriodSelector />', () => {

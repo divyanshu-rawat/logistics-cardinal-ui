@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Timepicker /> should init component with given \`value\` prop 1`] = `
+exports[`<SingleSelect /> should init component with given \`value\` prop 1`] = `
 <styled.div
   size="small"
 >
@@ -256,7 +256,7 @@ exports[`<Timepicker /> should init component with given \`value\` prop 1`] = `
 </styled.div>
 `;
 
-exports[`<Timepicker /> should render the component 1`] = `
+exports[`<SingleSelect /> should render the component 1`] = `
 <styled.div
   size="small"
 >

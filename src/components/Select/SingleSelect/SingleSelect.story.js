@@ -5,34 +5,34 @@ import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
 
-import { TimeOptionsMock } from './utils';
-import withTests from './withTests';
+import { SingleSelectMock } from '../../../utils/mocks';
+import withTests from '../../../utils/withTests';
 
-import Timepicker from '../components/PeriodSelector/Timepicker';
+import SingleSelect from '.';
 
-storiesOf('Timepicker', module)
+storiesOf('Select/SingleSelect', module)
   .addDecorator(withTests('index'))
   .addDecorator(centered)
   .add(
     'Single',
     withInfo()(() => (
-      <Timepicker
-        options={TimeOptionsMock}
+      <SingleSelect
+        options={SingleSelectMock}
         onChange={action((item) => console.log(item))}
         name="start_at"
         placeholder="Start At"
       />
-    ))
+    )),
   )
   .add(
     'With initial Value',
     withInfo()(() => (
-      <Timepicker
-        options={TimeOptionsMock}
+      <SingleSelect
+        options={SingleSelectMock}
         onChange={action((item) => console.log(item))}
-        value={{ label: '09:00', value: '09:00:00' }}
+        initialValue={{ label: '09:00', value: '09:00:00' }}
         name="start_at"
         placeholder="Start At"
       />
-    ))
+    )),
   );

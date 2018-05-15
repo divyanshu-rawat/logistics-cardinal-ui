@@ -1,4 +1,4 @@
-export const TimeOptionsMock = [
+export const SingleSelectMock = [
   { label: '00:00', value: '00:00:00' },
   { label: '00:30', value: '00:30:00' },
   { label: '01:00', value: '01:00:00' },
@@ -50,7 +50,7 @@ export const TimeOptionsMock = [
   { label: '23:59', value: '23:59:59' },
 ];
 
-export const ZoneOptionsMock = [
+export const MultipleSelectMock = [
   { value: 'stockholm$stockholm', label: 'Stockholm' },
   { value: 'stockholm$solna', label: 'Solna' },
   { value: 'stockholm$validation_zone', label: 'Validation_zone' },

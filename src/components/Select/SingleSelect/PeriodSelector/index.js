@@ -1,7 +1,7 @@
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Timepicker from './Timepicker';
+import Timepicker from '..';
 
 class PeriodSelector extends PureComponent {
   static propTypes = {

@@ -4,7 +4,7 @@ import SelectPlus from 'react-select-plus';
 
 import Select from '../../Select';
 
-class Timepicker extends PureComponent {
+class SingleSelect extends PureComponent {
   static propTypes = {
     options: PropTypes.array.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -23,7 +23,7 @@ class Timepicker extends PureComponent {
   onChangeTime = (option) => {
     const { name } = this.props;
     this.setState({ selectedValue: option }, () =>
-      this.props.onChange({ name, option })
+      this.props.onChange({ name, option }),
     );
   };
 
@@ -56,4 +56,4 @@ class Timepicker extends PureComponent {
   }
 }
 
-export default Timepicker;
+export default SingleSelect;

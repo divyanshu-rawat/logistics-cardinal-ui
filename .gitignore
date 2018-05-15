@@ -7,7 +7,7 @@ build
 node_modules
 stats.json
 package-lock.json
-jest-test-results.json
+.jest-test-results.json
 
 # dependencies
 node_modules

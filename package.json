@@ -34,7 +34,7 @@
     ],
     "*.js": [
       "prettier --write --single-quote --trailing-comma all --arrow-parens always",
-      "eslint src/ --fix",
+      "eslint src --fix",
       "git add",
       "jest --bail --findRelatedTests"
     ]

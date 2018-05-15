@@ -5,32 +5,32 @@ import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
 
-import withTests from './withTests';
+import withTests from '../../../utils/withTests';
 
-import { ZoneOptionsMock } from './utils';
-import ZoneSelector from '../components/ZoneSelector';
+import { MultipleSelectMock } from '../../../utils/mocks';
+import MultipleSelect from '.';
 
-storiesOf('Select', module)
+storiesOf('Select/MultipleSelect', module)
   .addDecorator(withTests('index'))
   .addDecorator(centered)
   .add(
     'Normal',
     withInfo()(() => (
-      <ZoneSelector
+      <MultipleSelect
         name="zones"
-        onChangeZone={action((item) => console.log(item))}
-        options={ZoneOptionsMock}
+        onChange={action((item) => console.log(item))}
+        options={MultipleSelectMock}
       />
-    ))
+    )),
   )
   .add(
     'With initial Values',
     withInfo()(() => (
-      <ZoneSelector
+      <MultipleSelect
         name="zones"
         initialValue={[{ value: 'stockholm$stockholm', label: 'Stockholm' }]}
-        onChangeZone={action((item) => console.log(item))}
-        options={ZoneOptionsMock}
+        onChange={action((item) => console.log(item))}
+        options={MultipleSelectMock}
       />
-    ))
+    )),
   );

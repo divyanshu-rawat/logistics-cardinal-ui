@@ -2,23 +2,23 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import { TimeOptionsMock } from '../../../../stories/utils';
-import Timepicker from '..';
+import { SingleSelectMock } from '../../../../utils/mocks';
+import SingleSelect from '..';
 
 const onChangeFn = jest.fn();
 
 const renderedComponent = (value) =>
   shallow(
-    <Timepicker
-      options={TimeOptionsMock}
+    <SingleSelect
+      options={SingleSelectMock}
       name="start_at"
       placeholder="Start At"
       onChange={onChangeFn}
       value={value}
-    />
+    />,
   );
 
-describe('<Timepicker />', () => {
+describe('<SingleSelect />', () => {
   it('should render the component', () => {
     const tree = toJson(renderedComponent());
     expect(tree).toMatchSnapshot();

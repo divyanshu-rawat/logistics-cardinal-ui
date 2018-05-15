@@ -2,7 +2,7 @@
 
 exports[`<PeriodSelector /> should init component with given \`value\` prop 1`] = `
 <React.Fragment>
-  <Timepicker
+  <SingleSelect
     initialValue="09:00:00"
     isFirst={true}
     name="start_at"
@@ -209,7 +209,7 @@ exports[`<PeriodSelector /> should init component with given \`value\` prop 1`] 
     }
     placeholder="Start At"
   />
-  <Timepicker
+  <SingleSelect
     initialValue="18:00:00"
     name="end_at"
     onChange={[Function]}
@@ -420,7 +420,7 @@ exports[`<PeriodSelector /> should init component with given \`value\` prop 1`] 
 
 exports[`<PeriodSelector /> should render the component 1`] = `
 <React.Fragment>
-  <Timepicker
+  <SingleSelect
     isFirst={true}
     name="start_at"
     onChange={[Function]}
@@ -626,7 +626,7 @@ exports[`<PeriodSelector /> should render the component 1`] = `
     }
     placeholder="Start At"
   />
-  <Timepicker
+  <SingleSelect
     name="end_at"
     onChange={[Function]}
     options={

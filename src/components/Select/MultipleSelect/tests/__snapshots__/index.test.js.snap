@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ZoneSelector /> should init component with given \`initialValue\` prop 1`] = `
+exports[`<MultipleSelect /> should init component with given \`initialValue\` prop 1`] = `
 <styled.div>
   <Select
     arrowRenderer={[Function]}
@@ -78,7 +78,7 @@ exports[`<ZoneSelector /> should init component with given \`initialValue\` prop
 </styled.div>
 `;
 
-exports[`<ZoneSelector /> should render the component 1`] = `
+exports[`<MultipleSelect /> should render the component 1`] = `
 <styled.div>
   <Select
     arrowRenderer={[Function]}
