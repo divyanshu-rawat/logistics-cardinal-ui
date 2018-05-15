@@ -1,30 +1,16 @@
-# rooster-forecast
+# Logistics Cardinal
 
-> rooster dashboard forecast
-
-[![NPM](https://img.shields.io/npm/v/rooster-forecast.svg)](https://www.npmjs.com/package/rooster-forecast) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Travis](https://travis-ci.com/foodora/logistics-cardinal-ui.svg?token=8QZsVnV979uxzcVevAHc&branch=master)](https://travis-ci.com/foodora/logistics-cardinal-ui)
 
 ## Install
 
 ```bash
-npm install --save rooster-forecast
+yarn install logistics-cardinal-ui
 ```
 
-## Usage
+## Storybook
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'rooster-forecast'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
-```
+You can access the storybook via [this link](http://files.foodora.com/logistics-cardinal-ui/index.html)
 
 ## License
 
