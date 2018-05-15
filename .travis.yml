@@ -8,3 +8,5 @@ branches:
   - master
 script:
   - yarn deploy
+
+cache: yarn
