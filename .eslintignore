@@ -2,5 +2,5 @@ dist/**
 docs/**
 node_modules/**
 internals/**
-src/stories/
+src/utils/
 *.story.js

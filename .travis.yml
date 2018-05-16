@@ -3,10 +3,15 @@ node_js:
   - "lts/*"
 install:
   - yarn
-branches:
-  only:
-  - master
-script:
-  - yarn deploy
+before_deploy:
+  - yarn predeploy
+  - yarn test
+deploy:
+  - provider: script
+    script: "./internals/scripts/deploy.sh"
+    skip_cleanup: true
+    on:
+      branch: master
+      tags: true
 
 cache: yarn
