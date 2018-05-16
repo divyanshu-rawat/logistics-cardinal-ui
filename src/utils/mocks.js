@@ -55,3 +55,18 @@ export const MultipleSelectMock = [
   { value: 'stockholm$solna', label: 'Solna' },
   { value: 'stockholm$validation_zone', label: 'Validation_zone' },
 ];
+
+export const PredictionMock = [
+  {
+    totalOfTheWeek: 2130,
+    total: 1500,
+    type: 'forecast',
+    date: '2018-03-28',
+  },
+  {
+    totalOfTheWeek: 2130,
+    total: 300,
+    type: 'actual',
+    date: '2018-03-28',
+  },
+];

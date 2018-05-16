@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TotalBar /> should render the component as \`actual type\` 1`] = `
+<styled.span
+  type="actual"
+  width={100}
+/>
+`;
+
+exports[`<TotalBar /> should render the component as \`forecast type\` 1`] = `
+<styled.span
+  type="forecast"
+  width={100}
+/>
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TotalNumber /> should render the component with the correct number 1`] = `
+<styled.span>
+  100
+</styled.span>
+`;
