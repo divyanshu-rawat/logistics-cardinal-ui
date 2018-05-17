@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should render the component with \`default size\` 1`] = `
+<div
+  className="sc-bdVaJa cNvbSM"
+  size=""
+/>
+`;
+
+exports[`<Select /> should render the component with \`small size\` 1`] = `
+<div
+  className="sc-bdVaJa fsbVgZ"
+  size="small"
+/>
+`;

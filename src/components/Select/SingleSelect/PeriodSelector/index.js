@@ -1,7 +1,7 @@
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Timepicker from '..';
+import SingleSelect from '..';
 
 class PeriodSelector extends PureComponent {
   static propTypes = {
@@ -27,7 +27,7 @@ class PeriodSelector extends PureComponent {
 
     return (
       <Fragment>
-        <Timepicker
+        <SingleSelect
           name={startAtName}
           placeholder={startAtPlaceholder}
           options={options}
@@ -35,7 +35,7 @@ class PeriodSelector extends PureComponent {
           initialValue={startAtDefault}
           isFirst
         />
-        <Timepicker
+        <SingleSelect
           name={endAtName}
           placeholder={endAtPlaceholder}
           options={options}

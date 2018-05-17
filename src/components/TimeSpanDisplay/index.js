@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Time from './Time';
 
-const TimeSpanDisplay = ({ startAt, endAt, withSeconds = false }) => (
+const TimeSpanDisplay = ({ startAt, endAt, withSeconds }) => (
   <Fragment>
     <Time date={startAt} withSeconds={withSeconds} /> —{' '}
     <Time date={endAt} withSeconds={withSeconds} />
@@ -11,8 +11,8 @@ const TimeSpanDisplay = ({ startAt, endAt, withSeconds = false }) => (
 );
 
 TimeSpanDisplay.propTypes = {
-  startAt: PropTypes.string,
-  endAt: PropTypes.string,
+  startAt: PropTypes.string.isRequired,
+  endAt: PropTypes.string.isRequired,
   withSeconds: PropTypes.bool,
 };
 

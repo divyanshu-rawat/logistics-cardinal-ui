@@ -28,4 +28,13 @@ describe('<PeriodSelector />', () => {
     const tree = toJson(renderedComponent(['09:00:00', '18:00:00']));
     expect(tree).toMatchSnapshot();
   });
+
+  it('should call `onChangeFn` when value is changed', () => {
+    renderedComponent()
+      .find('SingleSelect')
+      .first()
+      .simulate('change', { target: { value: '10:30:00' } });
+
+    expect(onChangeFn.mock.calls.length).toBe(1);
+  });
 });
