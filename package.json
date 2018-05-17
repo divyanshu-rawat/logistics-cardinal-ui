@@ -20,9 +20,9 @@
     "deploy": "yarn run deploy:lib && yarn run deploy:storybook",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "test": "cross-env NODE_ENV=test jest --json --outputFile=.jest-test-results.json --coverage",
+    "test": "cross-env NODE_ENV=test jest --coverage --json --outputFile=.jest-test-results.json",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll --json --outputFile=.jest-test-results.json",
-    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
+    "codacy": "cat ./coverage/lcov.info | codacy-coverage"
   },
   "husky": {
     "hooks": {

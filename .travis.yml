@@ -6,7 +6,7 @@ install:
 before_deploy:
   - yarn predeploy
   - yarn test
-  - yarn test:coverage
+  - yarn codacy
 deploy:
   - provider: script
     script: "./internals/scripts/deploy.sh"
