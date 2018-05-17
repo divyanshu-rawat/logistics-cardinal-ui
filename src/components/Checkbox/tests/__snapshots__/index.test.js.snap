@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should render the component 1`] = `
+<React.Fragment>
+  <input
+    checked={false}
+    id="myId"
+    name="myName"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="myId"
+  >
+    My Checkbox
+  </label>
+</React.Fragment>
+`;
+
+exports[`<Checkbox /> should render the component with \`initial value\` 1`] = `
+<React.Fragment>
+  <input
+    checked={true}
+    id="myId"
+    name="myName"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="myId"
+  >
+    My Checkbox
+  </label>
+</React.Fragment>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IndicatorStyled /> should render the component with default color 1`] = `
+<div
+  className="sc-bdVaJa hizetq"
+/>
+`;
+
+exports[`<IndicatorStyled /> should render the component with passed color 1`] = `
+<div
+  className="sc-bdVaJa ivGrgB"
+  color="#f00"
+/>
+`;
