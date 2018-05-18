@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Indicator /> should render the component 1`] = `
+<styled.div
+  color="#F00"
+>
+  <Checkbox
+    color="#F00"
+    id="checkboxId"
+    initialValue={true}
+    label="My super checkbox"
+    name="checkboxName"
+    onChange={[Function]}
+  />
+</styled.div>
+`;
