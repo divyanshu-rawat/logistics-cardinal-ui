@@ -6095,8 +6095,7 @@ moment.tz.load(require$$1);
 
 var TimeSpanDisplay = function TimeSpanDisplay(_ref) {
   var date = _ref.date,
-      _ref$withSeconds = _ref.withSeconds,
-      withSeconds = _ref$withSeconds === undefined ? false : _ref$withSeconds;
+      withSeconds = _ref.withSeconds;
   return React__default.createElement(
     React.Fragment,
     null,
@@ -6105,15 +6104,14 @@ var TimeSpanDisplay = function TimeSpanDisplay(_ref) {
 };
 
 TimeSpanDisplay.propTypes = {
-  date: PropTypes.string,
-  withSeconds: PropTypes.bool
+  date: PropTypes.string.isRequired,
+  withSeconds: PropTypes.bool.isRequired
 };
 
 var TimeSpanDisplay$1 = function TimeSpanDisplay$$1(_ref) {
   var startAt = _ref.startAt,
       endAt = _ref.endAt,
-      _ref$withSeconds = _ref.withSeconds,
-      withSeconds = _ref$withSeconds === undefined ? false : _ref$withSeconds;
+      withSeconds = _ref.withSeconds;
   return React__default.createElement(
     React.Fragment,
     null,
@@ -6125,8 +6123,8 @@ var TimeSpanDisplay$1 = function TimeSpanDisplay$$1(_ref) {
 };
 
 TimeSpanDisplay$1.propTypes = {
-  startAt: PropTypes.string,
-  endAt: PropTypes.string,
+  startAt: PropTypes.string.isRequired,
+  endAt: PropTypes.string.isRequired,
   withSeconds: PropTypes.bool
 };
 
