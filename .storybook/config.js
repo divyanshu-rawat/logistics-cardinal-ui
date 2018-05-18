@@ -14,6 +14,9 @@ function loadStories() {
   addDecorator((story) => {
     const content = story();
     const selectedTheme = select('Theme', ['rooster', 'hurrier'], 'rooster');
+
+    require(`../src/themes/${selectedTheme}/bootstrap/css/bootstrap.css`);
+
     return (
       <ThemeProvider theme={themes[selectedTheme || 'rooster']}>
         <Global>{story()}</Global>

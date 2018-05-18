@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Danger button should render a danger button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Danger button should render a danger button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Default Button should render a default button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Default Button should render a default button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Info button should render a info button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Info button should render a info button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Link button should render a link button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Link button should render a link button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Primary button should render a primary button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Primary button should render a primary button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Success button should render a success button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Success button should render a success button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Warning button should render a warning button 1`] = `
+<Button
+  active={false}
+  block={false}
+  bsClass="btn"
+  bsSize={null}
+  bsStyle="default"
+  disabled={false}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
+
+exports[`<Button /> Warning button should render a warning button with different attributes from previous time 1`] = `
+<Button
+  active={true}
+  block={true}
+  bsClass="btn"
+  bsSize="large"
+  bsStyle="default"
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  type="button"
+>
+  Some Awesome Text
+</Button>
+`;
