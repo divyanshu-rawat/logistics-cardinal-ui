@@ -8,7 +8,7 @@ import { withKnobs, boolean, select } from '@storybook/addon-knobs';
 
 import { Glyphicon } from 'react-bootstrap';
 
-// import withTests from '../../../utils/withTests';
+import withTests from '../../utils/withTests';
 
 import Button from '.';
 
@@ -34,7 +34,7 @@ const generateButtonWithKnobs = (actionType, icon) => {
 };
 
 storiesOf('Button', module)
-  // .addDecorator(withTests('index'))
+  .addDecorator(withTests('index'))
   .addDecorator(withKnobs)
   .addDecorator(centered)
   .add('Default', withInfo()(() => generateButtonWithKnobs()))
@@ -46,7 +46,7 @@ storiesOf('Button', module)
   .add('Link', withInfo()(() => generateButtonWithKnobs('link')));
 
 storiesOf('Button/With Icon', module)
-  // .addDecorator(withTests('index'))
+  .addDecorator(withTests('index'))
   .addDecorator(withKnobs)
   .addDecorator(centered)
   .add('Default', withInfo()(() => generateButtonWithKnobs('default', true)))
