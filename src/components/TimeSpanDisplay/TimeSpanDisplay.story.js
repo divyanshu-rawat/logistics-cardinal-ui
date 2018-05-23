@@ -9,7 +9,7 @@ import withTests from '../../utils/withTests';
 import TimeSpanDisplay from '.';
 
 storiesOf('TimeSpanDisplay', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(withTests('TimeSpanDisplay/tests/index', 'Time'))
   .addDecorator(centered)
   .add(
     'Normal',

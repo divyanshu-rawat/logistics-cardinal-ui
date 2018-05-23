@@ -34,7 +34,7 @@ const generateButtonWithKnobs = (actionType, icon) => {
 };
 
 storiesOf('Button', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(withTests('Button/tests/index'))
   .addDecorator(withKnobs)
   .addDecorator(centered)
   .add('Default', withInfo()(() => generateButtonWithKnobs()))

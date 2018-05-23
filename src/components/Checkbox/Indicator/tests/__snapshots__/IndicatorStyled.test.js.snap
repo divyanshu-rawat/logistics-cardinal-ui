@@ -2,13 +2,13 @@
 
 exports[`<IndicatorStyled /> should render the component with default color 1`] = `
 <div
-  className="sc-bdVaJa hizetq"
+  className="sc-bdVaJa hFSVxp"
 />
 `;
 
 exports[`<IndicatorStyled /> should render the component with passed color 1`] = `
 <div
-  className="sc-bdVaJa ivGrgB"
+  className="sc-bdVaJa iRCTCw"
   color="#f00"
 />
 `;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OuterGutter /> should render the component with the default props 1`] = `
+<section
+  className="sc-bdVaJa cHxkvh"
+/>
+`;

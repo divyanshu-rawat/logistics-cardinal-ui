@@ -2,14 +2,14 @@
 
 exports[`<Select /> should render the component with \`default size\` 1`] = `
 <div
-  className="sc-bdVaJa cNvbSM"
+  className="sc-bdVaJa fokyiD"
   size=""
 />
 `;
 
 exports[`<Select /> should render the component with \`small size\` 1`] = `
 <div
-  className="sc-bdVaJa fsbVgZ"
+  className="sc-bdVaJa fLzRAk"
   size="small"
 />
 `;

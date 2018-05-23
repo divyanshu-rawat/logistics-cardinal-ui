@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
+const sizes = {
+  small: '100px',
+  regular: '300px',
+  block: '100%',
+};
+
 export default styled('div')`
   display: inline-block;
   margin-right: 5px;
+  width: 100%;
   .Select {
-    display: inline-block;
-    width: ${(props) => (props.size === 'small' ? `100px;` : '300px')};
+    width: ${(props) => sizes[props.size]};
     &-control {
       min-height: 40px;
       background-color: ${(props) => props.theme.colors.grey400};

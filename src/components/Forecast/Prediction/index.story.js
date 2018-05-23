@@ -13,7 +13,14 @@ import { PredictionMock } from '../../../utils/mocks';
 import Prediction from './index';
 
 storiesOf('Forecast/Prediction', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(
+    withTests(
+      'Prediction/tests/index',
+      'Percentage/tests/index',
+      'Cell/tests/index',
+      'Cell/tests/CellStyled',
+    ),
+  )
   .addDecorator(centered)
   .addDecorator(withKnobs)
   .add(

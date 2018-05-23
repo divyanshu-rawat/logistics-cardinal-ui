@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabContainer /> should render the component with the default props 1`] = `
+<div
+  className="sc-bdVaJa jprScw"
+/>
+`;

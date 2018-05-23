@@ -11,7 +11,13 @@ import withTests from '../../../utils/withTests';
 import Indicator from '.';
 
 storiesOf('Checkbox/Indicator', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(
+    withTests(
+      'Checkbox/tests/index',
+      'Indicator/tests/index',
+      'Indicator/tests/IndicatorStyled',
+    ),
+  )
   .addDecorator(withKnobs)
   .addDecorator(centered)
   .add(

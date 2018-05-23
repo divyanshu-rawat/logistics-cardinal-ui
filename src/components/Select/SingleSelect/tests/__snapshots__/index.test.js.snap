@@ -2,7 +2,7 @@
 
 exports[`<SingleSelect /> should init component with given \`value\` prop 1`] = `
 <styled.div
-  size="small"
+  size="block"
 >
   <Select
     arrowRenderer={[Function]}
@@ -258,7 +258,7 @@ exports[`<SingleSelect /> should init component with given \`value\` prop 1`] = 
 
 exports[`<SingleSelect /> should render the component 1`] = `
 <styled.div
-  size="small"
+  size="block"
 >
   <Select
     arrowRenderer={[Function]}

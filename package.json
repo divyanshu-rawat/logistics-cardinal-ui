@@ -49,7 +49,9 @@
     "react-select": "1.2.0",
     "react-select-plus": "1.1.0",
     "sanitize.css": "^5.0.0",
-    "styled-components": "2.2.3"
+    "shortid": "^2.2.8",
+    "styled-components": "2.2.3",
+    "styled-css-grid": "^0.9.0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -76,6 +78,7 @@
     "setupFiles": [
       "<rootDir>/src/tests/requestAnimationFrame.js",
       "<rootDir>/src/tests/moment.js",
+      "<rootDir>/src/tests/shortid.js",
       "<rootDir>/src/tests/enzymeAdapter.js"
     ],
     "testRegex": "tests/.*\\.test\\.js$"

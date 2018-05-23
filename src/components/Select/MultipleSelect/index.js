@@ -8,6 +8,7 @@ class MultipleSelect extends PureComponent {
   static propTypes = {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
+    placeholder: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     initialValue: PropTypes.array,
   };
@@ -23,7 +24,7 @@ class MultipleSelect extends PureComponent {
   };
 
   render() {
-    const { options, name } = this.props;
+    const { options, name, placeholder } = this.props;
     const { selectedValue } = this.state;
 
     return (
@@ -31,9 +32,11 @@ class MultipleSelect extends PureComponent {
         <SelectPlus
           clearable={false}
           searchable={false}
+          joinValues
           name={name}
           multi
           value={selectedValue}
+          placeholder={placeholder}
           options={options}
           onChange={this.onChange}
         />

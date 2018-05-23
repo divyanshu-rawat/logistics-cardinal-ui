@@ -22,7 +22,7 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
     ignoreCase={true}
     inputProps={Object {}}
     isLoading={false}
-    joinValues={false}
+    joinValues={true}
     labelKey="label"
     matchPos="any"
     matchProp="any"
@@ -55,7 +55,7 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
       ]
     }
     pageSize={5}
-    placeholder="Select..."
+    placeholder="Select Zone..."
     removeSelected={true}
     required={false}
     rtl={false}
@@ -100,7 +100,7 @@ exports[`<MultipleSelect /> should render the component 1`] = `
     ignoreCase={true}
     inputProps={Object {}}
     isLoading={false}
-    joinValues={false}
+    joinValues={true}
     labelKey="label"
     matchPos="any"
     matchProp="any"
@@ -133,7 +133,7 @@ exports[`<MultipleSelect /> should render the component 1`] = `
       ]
     }
     pageSize={5}
-    placeholder="Select..."
+    placeholder="Select Zone..."
     removeSelected={true}
     required={false}
     rtl={false}

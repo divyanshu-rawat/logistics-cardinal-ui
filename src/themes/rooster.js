@@ -38,7 +38,7 @@ const yellows = {
 };
 
 const misc = {
-  bodyBackground: '#343a42',
+  bodyBackground: greys.grey400,
   mainBackground: '343941',
   textColor: white,
   danger: reds.red500,
@@ -58,15 +58,19 @@ const colors = {
 };
 
 const spacings = {
-  bit: '4px',
-  byte: '8px',
-  kilo: '12px',
-  mega: '16px',
-  giga: '24px',
-  tera: '32px',
-  peta: '40px',
-  exa: '48px',
-  zetta: '56px',
+  bit: '1px',
+  byte: '5px',
+  kilo: '10px',
+  mega: '15px',
+  giga: '20px',
+};
+
+const composedSpacings = {
+  byte: `${spacings.kilo} ${spacings.mega}`,
+};
+
+const grid = {
+  outerGutter: '8px',
 };
 
 const borderRadius = {
@@ -82,6 +86,7 @@ const borderWidth = {
 
 const fontFamily = {
   default: '"Open Sans", sans-serif',
+  color: colors.white,
 };
 
 const fontWeight = {
@@ -91,7 +96,9 @@ const fontWeight = {
 
 export default {
   colors,
+  grid,
   spacings,
+  composedSpacings,
   borderRadius,
   borderWidth,
   fontFamily,

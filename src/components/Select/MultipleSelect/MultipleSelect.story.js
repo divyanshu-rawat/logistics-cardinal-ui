@@ -11,7 +11,9 @@ import { MultipleSelectMock } from '../../../utils/mocks';
 import MultipleSelect from '.';
 
 storiesOf('Select/MultipleSelect', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(
+    withTests('Select/MultipleSelect/tests/index', 'Select/tests/index'),
+  )
   .addDecorator(centered)
   .add(
     'Normal',

@@ -12,6 +12,7 @@ const renderedComponent = (value) =>
     <MultipleSelect
       options={MultipleSelectMock}
       name="zones"
+      placeholder="Select Zone..."
       onChange={onChangeFn}
       initialValue={value}
     />,

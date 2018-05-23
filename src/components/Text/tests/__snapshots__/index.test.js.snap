@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> should render the component with different props 1`] = `
+<styled.strong
+  align="right"
+  as="strong"
+  color="#000"
+  fontFamily="Times New Roman"
+  margin="20px"
+  theme={
+    Object {
+      "borderRadius": Object {
+        "giga": "5px",
+        "kilo": "1px",
+        "mega": "4px",
+      },
+      "borderWidth": Object {
+        "kilo": "1px",
+        "mega": "2px",
+      },
+      "colors": Object {
+        "black": "#000",
+        "bodyBackground": "#292d33",
+        "danger": "#ff7559",
+        "green100": "#c6e5cb",
+        "green300": "#97e2a3",
+        "green500": "#62de76",
+        "green700": "#49b85b",
+        "green900": "#2f903e",
+        "grey100": "#96a2b0",
+        "grey200": "#3f454d",
+        "grey300": "#343a42",
+        "grey400": "#292d33",
+        "mainBackground": "343941",
+        "primary100": "#3f9bfd",
+        "primary200": "#375f8a",
+        "red100": "#ffe6e1",
+        "red300": "#ffaf9f",
+        "red500": "#ff7559",
+        "red700": "#d55a41",
+        "red900": "#a73d28",
+        "success": "#49b85b",
+        "textColor": "#fff",
+        "warning": "#d4a546",
+        "white": "#fff",
+        "yellow100": "#f2e5cb",
+        "yellow300": "#f7da9f",
+        "yellow500": "#ffc859",
+        "yellow700": "#d4a546",
+        "yellow900": "#ab8433",
+      },
+      "composedSpacings": Object {
+        "byte": "10px 15px",
+      },
+      "fontFamily": Object {
+        "color": "#fff",
+        "default": "\\"Open Sans\\", sans-serif",
+      },
+      "fontWeight": Object {
+        "bold": "700",
+        "regular": "400",
+      },
+      "grid": Object {
+        "outerGutter": "8px",
+      },
+      "spacings": Object {
+        "bit": "1px",
+        "byte": "5px",
+        "giga": "20px",
+        "kilo": "10px",
+        "mega": "15px",
+      },
+    }
+  }
+  truncate={true}
+  uppercase={true}
+  weight={500}
+>
+  Corinthians!
+</styled.strong>
+`;
+
+exports[`<Text /> should render the component with the default props 1`] = `
+<styled.p
+  align="center"
+  as="p"
+  color="#f00"
+  fontFamily="Helvetica"
+  margin="10px"
+  theme={
+    Object {
+      "borderRadius": Object {
+        "giga": "5px",
+        "kilo": "1px",
+        "mega": "4px",
+      },
+      "borderWidth": Object {
+        "kilo": "1px",
+        "mega": "2px",
+      },
+      "colors": Object {
+        "black": "#000",
+        "bodyBackground": "#292d33",
+        "danger": "#ff7559",
+        "green100": "#c6e5cb",
+        "green300": "#97e2a3",
+        "green500": "#62de76",
+        "green700": "#49b85b",
+        "green900": "#2f903e",
+        "grey100": "#96a2b0",
+        "grey200": "#3f454d",
+        "grey300": "#343a42",
+        "grey400": "#292d33",
+        "mainBackground": "343941",
+        "primary100": "#3f9bfd",
+        "primary200": "#375f8a",
+        "red100": "#ffe6e1",
+        "red300": "#ffaf9f",
+        "red500": "#ff7559",
+        "red700": "#d55a41",
+        "red900": "#a73d28",
+        "success": "#49b85b",
+        "textColor": "#fff",
+        "warning": "#d4a546",
+        "white": "#fff",
+        "yellow100": "#f2e5cb",
+        "yellow300": "#f7da9f",
+        "yellow500": "#ffc859",
+        "yellow700": "#d4a546",
+        "yellow900": "#ab8433",
+      },
+      "composedSpacings": Object {
+        "byte": "10px 15px",
+      },
+      "fontFamily": Object {
+        "color": "#fff",
+        "default": "\\"Open Sans\\", sans-serif",
+      },
+      "fontWeight": Object {
+        "bold": "700",
+        "regular": "400",
+      },
+      "grid": Object {
+        "outerGutter": "8px",
+      },
+      "spacings": Object {
+        "bit": "1px",
+        "byte": "5px",
+        "giga": "20px",
+        "kilo": "10px",
+        "mega": "15px",
+      },
+    }
+  }
+  truncate={false}
+  uppercase={false}
+  weight={300}
+>
+  Corinthians!
+</styled.p>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabButton /> should render the component with isActive set as true 1`] = `
+<a
+  className="sc-bdVaJa kLFLrF"
+/>
+`;
+
+exports[`<TabButton /> should render the component with the default props 1`] = `
+<a
+  className="sc-bdVaJa bJwoOE"
+/>
+`;

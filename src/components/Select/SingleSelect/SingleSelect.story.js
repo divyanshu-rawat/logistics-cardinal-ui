@@ -11,7 +11,9 @@ import withTests from '../../../utils/withTests';
 import SingleSelect from '.';
 
 storiesOf('Select/SingleSelect', module)
-  .addDecorator(withTests('index'))
+  .addDecorator(
+    withTests('Select/SingleSelect/tests/index', 'Select/tests/index'),
+  )
   .addDecorator(centered)
   .add(
     'Single',

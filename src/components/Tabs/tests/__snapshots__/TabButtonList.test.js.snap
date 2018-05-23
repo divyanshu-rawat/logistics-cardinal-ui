@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabButtonList /> should render the component with activeTab set as 1 1`] = `
+<React.Fragment>
+  <styled.a
+    isActive={false}
+    key="ComposedTabButton-3"
+    onClick={[Function]}
+  >
+    forecast
+  </styled.a>
+  <styled.a
+    isActive={true}
+    key="ComposedTabButton-4"
+    onClick={[Function]}
+  >
+    history
+  </styled.a>
+</React.Fragment>
+`;
+
+exports[`<TabButtonList /> should render the component with the default props 1`] = `
+<React.Fragment>
+  <styled.a
+    isActive={true}
+    key="ComposedTabButton-1"
+    onClick={[Function]}
+  >
+    forecast
+  </styled.a>
+  <styled.a
+    isActive={false}
+    key="ComposedTabButton-2"
+    onClick={[Function]}
+  >
+    history
+  </styled.a>
+</React.Fragment>
+`;

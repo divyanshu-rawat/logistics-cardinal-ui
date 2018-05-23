@@ -29,7 +29,7 @@ class SingleSelect extends PureComponent {
 
   render() {
     const {
-      size = 'small',
+      size = 'block',
       options,
       name,
       placeholder,

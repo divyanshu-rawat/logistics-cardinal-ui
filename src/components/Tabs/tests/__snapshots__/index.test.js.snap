@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComposedTabs /> should render the component 1`] = `
+<div>
+  <TabButtonList
+    activeTab={0}
+    onClick={[Function]}
+    options={
+      Array [
+        "forecast",
+        "history",
+      ]
+    }
+  />
+  <TabContainerList
+    activeTab={0}
+    options={
+      Array [
+        <Text
+          as="p"
+      >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </Text>,
+        <Text
+          as="p"
+      >
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </Text>,
+      ]
+    }
+  />
+</div>
+`;
