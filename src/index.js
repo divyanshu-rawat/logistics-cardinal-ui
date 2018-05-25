@@ -5,6 +5,7 @@ import TimeSpanDisplay from './components/TimeSpanDisplay';
 import Button from './components/Button';
 import Grid from './components/Grid';
 import ComposedTabs from './components/Tabs';
+import Text from './components/Text';
 import Themes from './themes';
 
 export default {
@@ -15,5 +16,6 @@ export default {
   Button,
   Global,
   Themes,
+  Text,
   ...Grid,
 };
