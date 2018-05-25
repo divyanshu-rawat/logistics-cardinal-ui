@@ -38,20 +38,25 @@
     ]
   },
   "dependencies": {
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.16",
     "polished": "^1.9.2",
     "react": "16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "16.2.0",
+    "react-key-index": "^0.1.1",
     "react-select": "1.2.0",
     "react-select-plus": "1.1.0",
     "sanitize.css": "^5.0.0",
-    "shortid": "^2.2.8",
     "styled-components": "2.2.3",
     "styled-css-grid": "^0.9.0"
   },
   "peerDependencies": {
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.16",
     "prop-types": "^15.5.4",
     "react": "16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "16.2.0",
     "react-select-plus": "1.1.0",
     "styled-components": "2.2.3"
@@ -74,7 +79,6 @@
     "setupFiles": [
       "<rootDir>/src/tests/requestAnimationFrame.js",
       "<rootDir>/src/tests/moment.js",
-      "<rootDir>/src/tests/shortid.js",
       "<rootDir>/src/tests/enzymeAdapter.js"
     ],
     "testRegex": "tests/.*\\.test\\.js$"
@@ -121,8 +125,6 @@
     "husky": "^1.0.0-rc.6",
     "intl": "^1.2.5",
     "lint-staged": "^7.1.0",
-    "moment": "^2.22.1",
-    "moment-timezone": "^0.5.16",
     "react-bootstrap-table": "^4.3.1",
     "react-scripts": "^1.1.1",
     "rollup": "^0.54.0",

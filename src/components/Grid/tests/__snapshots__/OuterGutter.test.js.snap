@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OuterGutter /> should render the component with the default props 1`] = `
+exports[`<OuterGutter /> should render component with \`withPad\` prop as true 1`] = `
 <section
   className="sc-bdVaJa cHxkvh"
+/>
+`;
+
+exports[`<OuterGutter /> should render the component with the default props 1`] = `
+<section
+  className="sc-bdVaJa cZXGFx"
 />
 `;

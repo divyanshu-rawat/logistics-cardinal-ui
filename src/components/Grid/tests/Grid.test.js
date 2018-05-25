@@ -6,9 +6,9 @@ import { Cell } from 'styled-css-grid';
 import ComposedGrid from '../Grid';
 import theme from '../../../themes/rooster';
 
-const renderedComponent = () =>
+const renderedComponent = (withPad) =>
   shallow(
-    <ComposedGrid theme={theme} columns={12}>
+    <ComposedGrid theme={theme} withPad={withPad} columns={12}>
       <Cell width={12}>Corinthians!</Cell>
     </ComposedGrid>,
   );
@@ -16,6 +16,11 @@ const renderedComponent = () =>
 describe('<Grid />', () => {
   it('should render the component with the default props', () => {
     const tree = toJson(renderedComponent());
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component with `withPad` prop as true', () => {
+    const tree = toJson(renderedComponent(true));
     expect(tree).toMatchSnapshot();
   });
 });
