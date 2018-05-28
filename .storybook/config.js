@@ -15,10 +15,13 @@ function loadStories() {
     const content = story();
     const selectedTheme = select('Theme', ['rooster', 'hurrier'], 'rooster');
 
-    require(`../src/themes/${selectedTheme}/bootstrap/css/bootstrap.css`);
+    // TODO Remove the following condition when we added a bootstrap for hurrier
+    if (selectedTheme === 'rooster') {
+      require(`../src/themes/${selectedTheme}/bootstrap/css/bootstrap.css`);
+    }
 
     return (
-      <ThemeProvider theme={themes[selectedTheme || 'rooster']}>
+      <ThemeProvider theme={themes[selectedTheme]}>
         <Global>{story()}</Global>
       </ThemeProvider>
     );
