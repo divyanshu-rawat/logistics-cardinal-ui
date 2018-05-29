@@ -6,9 +6,10 @@ const TotalNumberStyled = styled.span`
   color: white;
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 5px;
   transform: translateY(-50%);
   z-index: 2;
+  font-size: 11px;
 `;
 
 const TotalNumber = ({ total }) => (

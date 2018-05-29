@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const TotalBarStyled = styled.span`
   color: white;
   position: absolute;
-  height: 80%;
+  height: 25px;
   top: 50%;
-  left: 5px;
+  left: 0;
   transform: translateY(-50%);
   background-color: ${({ type, theme }) =>
-    type === 'forecast' ? theme.colors.primary100 : theme.colors.grey200};
+    type === 'forecast' ? theme.colors.primary300 : theme.colors.primary500};
   width: ${({ width }) => (width > 0 ? `${width}%` : 'auto')};
 `;
 

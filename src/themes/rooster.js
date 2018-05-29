@@ -4,6 +4,9 @@ const black = '#000';
 const primary = {
   primary100: '#3f9bfd',
   primary200: '#375f8a',
+  primary300: '#324e70',
+  primary400: '#96a2b0',
+  primary500: '#484e58',
 };
 
 const greys = {

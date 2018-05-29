@@ -11,6 +11,8 @@ const PercentageStyled = styled.span`
   right: 15px;
   transform: translateY(-50%);
   z-index: 2;
+  font-size: 11px;
+  color: ${({ theme }) => theme.colors.primary400};
 `;
 
 const Percentage = ({ total, totalOfTheWeek }) => (
