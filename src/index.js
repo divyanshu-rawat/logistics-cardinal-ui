@@ -6,6 +6,7 @@ import Button from './components/Button';
 import Grid from './components/Grid';
 import ComposedTabs from './components/Tabs';
 import Text from './components/Text';
+import Indicator from './components/Checkbox/Indicator';
 import Themes from './themes';
 
 export default {
@@ -16,6 +17,7 @@ export default {
   Button,
   Global,
   Themes,
+  Indicator,
   Text,
   ...Grid,
 };

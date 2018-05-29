@@ -7,9 +7,10 @@ import 'react-select-plus/dist/react-select-plus.css';
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-  table[class^="css-glamorous-table"] {
+  // used to overwrite bootstrap's background-color
+  table[class^="css-"] {
     background: white;
-    td[class^="css-glamorous-td"] {
+    td[class^="css-"] {
       white-space: initial;
     }
   }
