@@ -3903,11 +3903,11 @@ Indicator.propTypes = {
 
 var _templateObject$8 = taggedTemplateLiteral(
   [
-    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 50px;\n  position: relative;\n  background-color: ',
+    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 40px;\n  position: relative;\n  background-color: ',
     ';\n',
   ],
   [
-    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 50px;\n  position: relative;\n  background-color: ',
+    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 40px;\n  position: relative;\n  background-color: ',
     ';\n',
   ],
 );
@@ -3924,12 +3924,12 @@ var calculatePercentage = function calculatePercentage(context, target) {
 
 var _templateObject$9 = taggedTemplateLiteral(
   [
-    '\n  color: white;\n  position: absolute;\n  height: 80%;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  background-color: ',
+    '\n  color: white;\n  position: absolute;\n  height: 25px;\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n  background-color: ',
     ';\n  width: ',
     ';\n',
   ],
   [
-    '\n  color: white;\n  position: absolute;\n  height: 80%;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  background-color: ',
+    '\n  color: white;\n  position: absolute;\n  height: 25px;\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n  background-color: ',
     ';\n  width: ',
     ';\n',
   ],
@@ -3940,7 +3940,9 @@ var TotalBarStyled = styled.span(
   function(_ref) {
     var type = _ref.type,
       theme = _ref.theme;
-    return type === 'forecast' ? theme.colors.primary100 : theme.colors.grey200;
+    return type === 'forecast'
+      ? theme.colors.primary300
+      : theme.colors.primary500;
   },
   function(_ref2) {
     var width = _ref2.width;
@@ -3964,10 +3966,10 @@ TotalNumber.propTypes = {
 
 var _templateObject$10 = taggedTemplateLiteral(
   [
-    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  z-index: 2;\n  font-size: 11px;\n',
   ],
   [
-    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  z-index: 2;\n  font-size: 11px;\n',
   ],
 );
 
@@ -4005,18 +4007,23 @@ Total.propTypes = {
 
 var _templateObject$11 = taggedTemplateLiteral(
   [
-    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n  font-size: 11px;\n  color: ',
+    ';\n',
   ],
   [
-    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n  font-size: 11px;\n  color: ',
+    ';\n',
   ],
 );
 
-var PercentageStyled = styled.span(_templateObject$11);
+var PercentageStyled = styled.span(_templateObject$11, function(_ref) {
+  var theme = _ref.theme;
+  return theme.colors.primary400;
+});
 
-var Percentage = function Percentage(_ref) {
-  var total = _ref.total,
-    totalOfTheWeek = _ref.totalOfTheWeek;
+var Percentage = function Percentage(_ref2) {
+  var total = _ref2.total,
+    totalOfTheWeek = _ref2.totalOfTheWeek;
   return React__default.createElement(
     PercentageStyled,
     null,
@@ -4072,6 +4079,9 @@ var black = '#000';
 var primary = {
   primary100: '#3f9bfd',
   primary200: '#375f8a',
+  primary300: '#324e70',
+  primary400: '#96a2b0',
+  primary500: '#484e58',
 };
 
 var greys = {

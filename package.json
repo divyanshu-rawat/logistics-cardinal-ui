@@ -14,7 +14,7 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "predeploy": "cross-env NODE_ENV=production && yarn install && yarn run build",
+    "predeploy": "cross-env NODE_ENV=production && yarn run build",
     "deploy:storybook": "yarn run build-storybook && node ./internals/scripts/deployDocs.js",
     "deploy:lib": "node ./internals/scripts/deployLib.js",
     "deploy": "yarn run deploy:lib && yarn run deploy:storybook",
