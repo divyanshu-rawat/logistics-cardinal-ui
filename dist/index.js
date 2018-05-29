@@ -366,6 +366,16 @@ var MultipleSelect = (function(_PureComponent) {
 
   createClass(MultipleSelect, [
     {
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        var initialValue = this.props.initialValue;
+
+        if (initialValue) {
+          this.onChange(initialValue);
+        }
+      },
+    },
+    {
       key: 'render',
       value: function render() {
         var _props = this.props,
@@ -3747,6 +3757,315 @@ Text.defaultProps = {
   as: 'span',
 };
 
+var _templateObject$7 = taggedTemplateLiteral(
+  [
+    "\n  display: inline-block;\n  position: relative;\n  [type='checkbox'],\n  [type='checkbox'] {\n    position: absolute;\n    visibility: hidden;\n    + label {\n      cursor: pointer;\n      flex-direction: row;\n      align-items: center;\n      display: flex;\n      &:before {\n        border: 1px solid ",
+    ';\n        background: ',
+    ';\n        margin-right: ',
+    ";\n        width: 8px;\n        height: 8px;\n        border-radius: 100%;\n        content: ' ';\n      }\n    }\n    &:checked {\n      + label {\n        &:before {\n          border: 1px solid\n            ",
+    ';\n          background: ',
+    ';\n        }\n      }\n    }\n  }\n',
+  ],
+  [
+    "\n  display: inline-block;\n  position: relative;\n  [type='checkbox'],\n  [type='checkbox'] {\n    position: absolute;\n    visibility: hidden;\n    + label {\n      cursor: pointer;\n      flex-direction: row;\n      align-items: center;\n      display: flex;\n      &:before {\n        border: 1px solid ",
+    ';\n        background: ',
+    ';\n        margin-right: ',
+    ";\n        width: 8px;\n        height: 8px;\n        border-radius: 100%;\n        content: ' ';\n      }\n    }\n    &:checked {\n      + label {\n        &:before {\n          border: 1px solid\n            ",
+    ';\n          background: ',
+    ';\n        }\n      }\n    }\n  }\n',
+  ],
+);
+
+var IndicatorStyled = styled.div(
+  _templateObject$7,
+  function(_ref) {
+    var theme = _ref.theme;
+    return curriedLighten(0.2, theme.colors.grey200);
+  },
+  function(_ref2) {
+    var theme = _ref2.theme;
+    return theme.colors.grey200;
+  },
+  function(_ref3) {
+    var theme = _ref3.theme;
+    return theme.spacings.byte;
+  },
+  function(_ref4) {
+    var theme = _ref4.theme,
+      color = _ref4.color;
+    return color || theme.colors.grey100;
+  },
+  function(_ref5) {
+    var theme = _ref5.theme,
+      color = _ref5.color;
+    return color || theme.colors.grey100;
+  },
+);
+
+var Checkbox = (function(_PureComponent) {
+  inherits(Checkbox, _PureComponent);
+
+  function Checkbox() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    classCallCheck(this, Checkbox);
+
+    for (
+      var _len = arguments.length, args = Array(_len), _key = 0;
+      _key < _len;
+      _key++
+    ) {
+      args[_key] = arguments[_key];
+    }
+
+    return (
+      (_ret = ((_temp = ((_this = possibleConstructorReturn(
+        this,
+        (_ref =
+          Checkbox.__proto__ || Object.getPrototypeOf(Checkbox)).call.apply(
+          _ref,
+          [this].concat(args),
+        ),
+      )),
+      _this)),
+      (_this.state = {
+        selectedValue: _this.props.initialValue || false,
+      }),
+      (_this.handleChange = function(event) {
+        event.persist();
+
+        _this.setState(
+          { selectedValue: !_this.state.selectedValue },
+          function() {
+            return _this.props.onChange(event.target.checked);
+          },
+        );
+      }),
+      _temp)),
+      possibleConstructorReturn(_this, _ret)
+    );
+  }
+
+  createClass(Checkbox, [
+    {
+      key: 'render',
+      value: function render() {
+        var selectedValue = this.state.selectedValue;
+        var _props = this.props,
+          id = _props.id,
+          label = _props.label,
+          name = _props.name;
+
+        return React__default.createElement(
+          React.Fragment,
+          null,
+          React__default.createElement('input', {
+            id: id,
+            name: name,
+            type: 'checkbox',
+            onChange: this.handleChange,
+            checked: selectedValue,
+          }),
+          React__default.createElement('label', { htmlFor: id }, label),
+        );
+      },
+    },
+  ]);
+  return Checkbox;
+})(React.PureComponent);
+
+Checkbox.propTypes = {
+  label: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  initialValue: PropTypes.bool,
+};
+
+var Indicator = function Indicator(props) {
+  return React__default.createElement(
+    IndicatorStyled,
+    { color: props.color },
+    React__default.createElement(Checkbox, props),
+  );
+};
+
+Indicator.propTypes = {
+  label: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  initialValue: PropTypes.bool,
+  color: PropTypes.string,
+};
+
+var _templateObject$8 = taggedTemplateLiteral(
+  [
+    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 50px;\n  position: relative;\n  background-color: ',
+    ';\n',
+  ],
+  [
+    '\n  overflow: hidden;\n  width: 100%;\n  min-height: 50px;\n  position: relative;\n  background-color: ',
+    ';\n',
+  ],
+);
+
+var CellStyled = styled.div(_templateObject$8, function(_ref) {
+  var type = _ref.type,
+    theme = _ref.theme;
+  return type === 'forecast' ? theme.colors.grey400 : theme.colors.grey300;
+});
+
+var calculatePercentage = function calculatePercentage(context, target) {
+  return target / context * 100;
+};
+
+var _templateObject$9 = taggedTemplateLiteral(
+  [
+    '\n  color: white;\n  position: absolute;\n  height: 80%;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  background-color: ',
+    ';\n  width: ',
+    ';\n',
+  ],
+  [
+    '\n  color: white;\n  position: absolute;\n  height: 80%;\n  top: 50%;\n  left: 5px;\n  transform: translateY(-50%);\n  background-color: ',
+    ';\n  width: ',
+    ';\n',
+  ],
+);
+
+var TotalBarStyled = styled.span(
+  _templateObject$9,
+  function(_ref) {
+    var type = _ref.type,
+      theme = _ref.theme;
+    return type === 'forecast' ? theme.colors.primary100 : theme.colors.grey200;
+  },
+  function(_ref2) {
+    var width = _ref2.width;
+    return width > 0 ? width + '%' : 'auto';
+  },
+);
+
+var TotalNumber = function TotalNumber(_ref) {
+  var width = _ref.width,
+    type = _ref.type;
+  return React__default.createElement(TotalBarStyled, {
+    width: width,
+    type: type,
+  });
+};
+
+TotalNumber.propTypes = {
+  type: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+};
+
+var _templateObject$10 = taggedTemplateLiteral(
+  [
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+  ],
+  [
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  left: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+  ],
+);
+
+var TotalNumberStyled = styled.span(_templateObject$10);
+
+var TotalNumber$1 = function TotalNumber(_ref) {
+  var total = _ref.total;
+  return React__default.createElement(TotalNumberStyled, null, total);
+};
+
+TotalNumber$1.propTypes = {
+  total: PropTypes.number.isRequired,
+};
+
+var Total = function Total(_ref) {
+  var type = _ref.type,
+    total = _ref.total,
+    totalOfTheWeek = _ref.totalOfTheWeek;
+  return React__default.createElement(
+    React.Fragment,
+    null,
+    React__default.createElement(TotalNumber, {
+      type: type,
+      width: Math.round(calculatePercentage(totalOfTheWeek, total)),
+    }),
+    React__default.createElement(TotalNumber$1, { total: total }),
+  );
+};
+
+Total.propTypes = {
+  total: PropTypes.number.isRequired,
+  totalOfTheWeek: PropTypes.number.isRequired,
+  type: PropTypes.oneOf(['forecast', 'actual']).isRequired,
+};
+
+var _templateObject$11 = taggedTemplateLiteral(
+  [
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+  ],
+  [
+    '\n  color: white;\n  position: absolute;\n  top: 50%;\n  right: 15px;\n  transform: translateY(-50%);\n  z-index: 2;\n',
+  ],
+);
+
+var PercentageStyled = styled.span(_templateObject$11);
+
+var Percentage = function Percentage(_ref) {
+  var total = _ref.total,
+    totalOfTheWeek = _ref.totalOfTheWeek;
+  return React__default.createElement(
+    PercentageStyled,
+    null,
+    Math.round(calculatePercentage(totalOfTheWeek, total)),
+    '%',
+  );
+};
+
+Percentage.propTypes = {
+  total: PropTypes.number.isRequired,
+  totalOfTheWeek: PropTypes.number.isRequired,
+};
+
+var Cell$1 = function Cell(_ref) {
+  var total = _ref.total,
+    totalOfTheWeek = _ref.totalOfTheWeek,
+    type = _ref.type;
+  return React__default.createElement(
+    CellStyled,
+    { type: type },
+    React__default.createElement(Total, {
+      type: type,
+      totalOfTheWeek: totalOfTheWeek,
+      total: total,
+    }),
+    React__default.createElement(Percentage, {
+      totalOfTheWeek: totalOfTheWeek,
+      total: total,
+    }),
+  );
+};
+
+Cell$1.propTypes = {
+  total: PropTypes.number.isRequired,
+  totalOfTheWeek: PropTypes.number.isRequired,
+  type: PropTypes.oneOf(['forecast', 'actual']).isRequired,
+};
+
+var Prediction = function Prediction(props) {
+  return React__default.createElement(Cell$1, props);
+};
+
+Prediction.propTypes = {
+  /** Total of the day */
+  total: PropTypes.number.isRequired,
+  totalOfTheWeek: PropTypes.number.isRequired,
+  type: PropTypes.oneOf(['forecast', 'actual']).isRequired,
+};
+
 var white = '#fff';
 var black = '#000';
 
@@ -3966,9 +4285,11 @@ var index$1$1 = _extends(
     MultipleSelect: MultipleSelect,
     ComposedTabs: ComposedTabs,
     TimeSpanDisplay: TimeSpanDisplay$1,
+    Prediction: Prediction,
     Button: Button$1,
     Global: Global,
     Themes: Themes,
+    Indicator: Indicator,
     Text: Text,
   },
   Grid$2,
