@@ -17,6 +17,14 @@ class MultipleSelect extends PureComponent {
     selectedValue: this.props.initialValue,
   };
 
+  componentDidMount() {
+    const { initialValue } = this.props;
+
+    if (initialValue) {
+      this.onChange(initialValue);
+    }
+  }
+
   onChange = (option) => {
     this.setState({ selectedValue: option }, () =>
       this.props.onChange({ option }),

@@ -27,9 +27,11 @@ describe('<MultipleSelect />', () => {
   it('should init component with given `initialValue` prop', () => {
     const tree = toJson(renderedComponent([MultipleSelectMock[0]]));
     expect(tree).toMatchSnapshot();
+    expect(onChangeFn.mock.calls.length).toBe(1);
   });
 
   it('should call `onChangeFn` when value is changed', () => {
+    onChangeFn.mockClear();
     renderedComponent()
       .find('Select')
       .simulate('change', { target: { value: [MultipleSelectMock[1]] } });
