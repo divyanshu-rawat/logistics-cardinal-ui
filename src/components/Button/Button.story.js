@@ -3,8 +3,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import centered from '@storybook/addon-centered';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import { Glyphicon } from 'react-bootstrap';
 
@@ -37,8 +36,6 @@ const generateButtonWithKnobs = (actionType, icon) => {
 
 storiesOf(`${COMPONENTS}Button`, module)
   .addDecorator(withTests('Button/tests/index'))
-  .addDecorator(withKnobs)
-  .addDecorator(centered)
   .add('Default', withInfo()(() => generateButtonWithKnobs()))
   .add('Primary', withInfo()(() => generateButtonWithKnobs('primary')))
   .add('Success', withInfo()(() => generateButtonWithKnobs('success')))
@@ -49,8 +46,6 @@ storiesOf(`${COMPONENTS}Button`, module)
 
 storiesOf(`${COMPONENTS}Button/With Icon`, module)
   .addDecorator(withTests('index'))
-  .addDecorator(withKnobs)
-  .addDecorator(centered)
   .add('Default', withInfo()(() => generateButtonWithKnobs('default', true)))
   .add('Primary', withInfo()(() => generateButtonWithKnobs('primary', true)))
   .add('Success', withInfo()(() => generateButtonWithKnobs('success', true)))

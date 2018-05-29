@@ -3,11 +3,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import { withKnobs, number } from '@storybook/addon-knobs';
-import centered from '@storybook/addon-centered';
+import { number } from '@storybook/addon-knobs';
 
 import withTests from '../../../utils/withTests';
-
 import { PredictionMock } from '../../../utils/mocks';
 
 import { COMPONENTS } from '../../../../.storybook/sections';
@@ -23,8 +21,6 @@ storiesOf(`${COMPONENTS}Forecast/Prediction`, module)
       'Cell/tests/CellStyled',
     ),
   )
-  .addDecorator(centered)
-  .addDecorator(withKnobs)
   .add(
     'with Forecast',
     withInfo()(() => (

@@ -3,7 +3,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import centered from '@storybook/addon-centered';
 
 import withTests from '../../../utils/withTests';
 import { FORM } from '../../../../.storybook/sections';
@@ -15,7 +14,6 @@ storiesOf(`${FORM}Select/MultipleSelect`, module)
   .addDecorator(
     withTests('Select/MultipleSelect/tests/index', 'Select/tests/index'),
   )
-  .addDecorator(centered)
   .add(
     'Normal',
     withInfo()(() => (

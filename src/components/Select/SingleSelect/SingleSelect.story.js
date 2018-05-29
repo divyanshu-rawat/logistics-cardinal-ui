@@ -3,7 +3,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import centered from '@storybook/addon-centered';
 
 import { SingleSelectMock } from '../../../utils/mocks';
 import withTests from '../../../utils/withTests';
@@ -16,7 +15,6 @@ storiesOf(`${FORM}Select/SingleSelect`, module)
   .addDecorator(
     withTests('Select/SingleSelect/tests/index', 'Select/tests/index'),
   )
-  .addDecorator(centered)
   .add(
     'Single',
     withInfo()(() => (

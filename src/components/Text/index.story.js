@@ -3,14 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import centered from '@storybook/addon-centered';
-import {
-  withKnobs,
-  color,
-  boolean,
-  select,
-  number,
-} from '@storybook/addon-knobs';
+import { color, boolean, select, number } from '@storybook/addon-knobs';
 
 import { TYPOGRAPHY } from '../../../.storybook/sections';
 
@@ -21,8 +14,6 @@ import Text from '.';
 
 storiesOf(`${TYPOGRAPHY}Text`, module)
   .addDecorator(withTests('Text/tests/index', 'TextStyled'))
-  .addDecorator(withKnobs)
-  .addDecorator(centered)
   .add(
     'Simple',
     withInfo()(() => (
