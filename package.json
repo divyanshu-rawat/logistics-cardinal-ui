@@ -91,6 +91,7 @@
     "@storybook/addon-jest": "^3.4.3",
     "@storybook/addon-knobs": "^3.4.4",
     "@storybook/addon-links": "^3.4.3",
+    "@storybook/addon-options": "^3.4.6",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
     "babel-core": "^6.26.0",
