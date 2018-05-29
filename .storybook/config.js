@@ -3,6 +3,12 @@ import { configure, addDecorator } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
 import { ThemeProvider } from 'styled-components';
+import { setDefaults } from '@storybook/addon-info';
+
+// Storybook options...
+import storybookOptions from './options';
+// Addon-Info options...
+import infoOptions from './info';
 
 import '../src/themes/global';
 
@@ -36,23 +42,6 @@ function loadStories() {
   req.keys().forEach((filename) => req(filename));
 }
 
-/**
- * Configure the Storybook UI
- */
-function configureStorybook() {
-  setOptions({
-    /**
-     * name to display in the top left corner
-     * @type {String}
-     */
-    name: 'Logistics Cardinal UI',
-    /**
-     * URL for name in top left corner to link to
-     * @type {String}
-     */
-    url: 'https://github.com/foodora/logistics-cardinal-ui',
-  });
-}
-
-configureStorybook();
+setDefaults(infoOptions);
+setOptions(storybookOptions);
 configure(loadStories, module);

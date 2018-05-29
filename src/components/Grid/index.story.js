@@ -9,11 +9,13 @@ import { Cell } from 'styled-css-grid';
 
 import withTests from '../../utils/withTests';
 
+import { GRID } from '../../../.storybook/sections';
+
 import Grid from './Grid';
 
 const backgroundColor = { backgroundColor: '#666' };
 
-storiesOf('Grid', module)
+storiesOf(`${GRID}Grid`, module)
   .addDecorator(withTests('Grid', 'OuterGutter'))
   .addDecorator(withKnobs)
   .addDecorator(centered)

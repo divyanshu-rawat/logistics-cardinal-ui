@@ -10,9 +10,11 @@ import withTests from '../../../utils/withTests';
 
 import { PredictionMock } from '../../../utils/mocks';
 
+import { COMPONENTS } from '../../../../.storybook/sections';
+
 import Prediction from './index';
 
-storiesOf('Forecast/Prediction', module)
+storiesOf(`${COMPONENTS}Forecast/Prediction`, module)
   .addDecorator(
     withTests(
       'Prediction/tests/index',

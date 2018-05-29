@@ -10,6 +10,8 @@ import { Glyphicon } from 'react-bootstrap';
 
 import withTests from '../../utils/withTests';
 
+import { COMPONENTS } from '../../../.storybook/sections';
+
 import Button from '.';
 
 const generateButtonWithKnobs = (actionType, icon) => {
@@ -33,7 +35,7 @@ const generateButtonWithKnobs = (actionType, icon) => {
   );
 };
 
-storiesOf('Button', module)
+storiesOf(`${COMPONENTS}Button`, module)
   .addDecorator(withTests('Button/tests/index'))
   .addDecorator(withKnobs)
   .addDecorator(centered)
@@ -45,7 +47,7 @@ storiesOf('Button', module)
   .add('Danger', withInfo()(() => generateButtonWithKnobs('danger')))
   .add('Link', withInfo()(() => generateButtonWithKnobs('link')));
 
-storiesOf('Button/With Icon', module)
+storiesOf(`${COMPONENTS}Button/With Icon`, module)
   .addDecorator(withTests('index'))
   .addDecorator(withKnobs)
   .addDecorator(centered)

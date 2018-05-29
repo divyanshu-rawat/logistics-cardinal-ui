@@ -8,9 +8,11 @@ import { withKnobs, color } from '@storybook/addon-knobs';
 
 import withTests from '../../../utils/withTests';
 
+import { FORM } from '../../../../.storybook/sections';
+
 import Indicator from '.';
 
-storiesOf('Checkbox/Indicator', module)
+storiesOf(`${FORM}Checkbox/Indicator`, module)
   .addDecorator(
     withTests(
       'Checkbox/tests/index',

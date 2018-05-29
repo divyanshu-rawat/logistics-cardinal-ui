@@ -8,9 +8,11 @@ import centered from '@storybook/addon-centered';
 import { SingleSelectMock } from '../../../utils/mocks';
 import withTests from '../../../utils/withTests';
 
+import { FORM } from '../../../../.storybook/sections';
+
 import SingleSelect from '.';
 
-storiesOf('Select/SingleSelect', module)
+storiesOf(`${FORM}Select/SingleSelect`, module)
   .addDecorator(
     withTests('Select/SingleSelect/tests/index', 'Select/tests/index'),
   )

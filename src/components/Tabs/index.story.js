@@ -8,10 +8,12 @@ import { withKnobs, color } from '@storybook/addon-knobs';
 
 import withTests from '../../utils/withTests';
 
+import { COMPONENTS } from '../../../.storybook/sections';
+
 import ComposedTabs from '.';
 import Text from '../Text';
 
-storiesOf('ComposedTabs', module)
+storiesOf(`${COMPONENTS}ComposedTabs`, module)
   .addDecorator(
     withTests(
       'Tabs/tests/index',

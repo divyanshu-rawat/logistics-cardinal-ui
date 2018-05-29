@@ -6,11 +6,12 @@ import { withInfo } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
 
 import withTests from '../../../utils/withTests';
+import { FORM } from '../../../../.storybook/sections';
 
 import { MultipleSelectMock } from '../../../utils/mocks';
 import MultipleSelect from '.';
 
-storiesOf('Select/MultipleSelect', module)
+storiesOf(`${FORM}Select/MultipleSelect`, module)
   .addDecorator(
     withTests('Select/MultipleSelect/tests/index', 'Select/tests/index'),
   )

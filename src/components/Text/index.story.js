@@ -12,12 +12,14 @@ import {
   number,
 } from '@storybook/addon-knobs';
 
+import { TYPOGRAPHY } from '../../../.storybook/sections';
+
 import withTests from '../../utils/withTests';
 import Theme from '../../themes/rooster';
 
 import Text from '.';
 
-storiesOf('Text', module)
+storiesOf(`${TYPOGRAPHY}Text`, module)
   .addDecorator(withTests('Text/tests/index', 'TextStyled'))
   .addDecorator(withKnobs)
   .addDecorator(centered)
