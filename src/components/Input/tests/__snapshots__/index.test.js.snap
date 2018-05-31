@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render the component 1`] = `
+<Input
+  inputRef={Object {}}
+>
+  <input
+    className="form-control"
+  />
+</Input>
+`;
+
+exports[`<Input /> should render the component with extra props... 1`] = `
+<Input
+  inputRef={Object {}}
+  placeholder="awesome placeholder"
+  x={1}
+  y={2}
+>
+  <input
+    className="form-control"
+    placeholder="awesome placeholder"
+    x={1}
+    y={2}
+  />
+</Input>
+`;
+
+exports[`<Input /> should render the component with given props... 1`] = `
+<Input
+  inputRef={Object {}}
+  placeholder="awesome placeholder"
+>
+  <input
+    className="form-control"
+    placeholder="awesome placeholder"
+  />
+</Input>
+`;
+
+exports[`<Input /> should render the component with ref as function... 1`] = `
+<Input
+  inputRef={[Function]}
+  placeholder="Input with ref..."
+>
+  <input
+    className="form-control"
+    placeholder="Input with ref..."
+  />
+</Input>
+`;

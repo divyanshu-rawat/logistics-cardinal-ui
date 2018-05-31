@@ -61,8 +61,8 @@ exports[`<Text /> should render the component with different props 1`] = `
         "default": "\\"Open Sans\\", sans-serif",
       },
       "fontWeight": Object {
-        "bold": "700",
-        "regular": "400",
+        "bold": 700,
+        "regular": 400,
       },
       "grid": Object {
         "outerGutter": "8px",
@@ -145,8 +145,8 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "default": "\\"Open Sans\\", sans-serif",
       },
       "fontWeight": Object {
-        "bold": "700",
-        "regular": "400",
+        "bold": 700,
+        "regular": 400,
       },
       "grid": Object {
         "outerGutter": "8px",

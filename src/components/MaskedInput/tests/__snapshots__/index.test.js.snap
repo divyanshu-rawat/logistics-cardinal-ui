@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] = `
+<InputMask
+  guide={true}
+  id="birthday"
+  mask={
+    Array [
+      /\\\\d/,
+      /\\\\d/,
+      ".",
+      /\\\\d/,
+      /\\\\d/,
+      ".",
+      /\\\\d/,
+      /\\\\d/,
+      /\\\\d/,
+      /\\\\d/,
+    ]
+  }
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholder="DD.MM.YYYY"
+>
+  <t
+    guide={true}
+    id="birthday"
+    mask={
+      Array [
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        ".",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+      ]
+    }
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="DD.MM.YYYY"
+    render={[Function]}
+  >
+    <Input
+      id="birthday"
+      inputRef={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="DD.MM.YYYY"
+    >
+      <input
+        className="form-control"
+        id="birthday"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="DD.MM.YYYY"
+      />
+    </Input>
+  </t>
+</InputMask>
+`;
+
+exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] = `
+<InputMask
+  guide={false}
+  id="currency"
+  mask={[Function]}
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholder="$"
+>
+  <t
+    guide={false}
+    id="currency"
+    mask={[Function]}
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="$"
+    render={[Function]}
+  >
+    <Input
+      id="currency"
+      inputRef={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="$"
+    >
+      <input
+        className="form-control"
+        id="currency"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="$"
+      />
+    </Input>
+  </t>
+</InputMask>
+`;
+
+exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
+<InputMask
+  guide={false}
+  id="currency"
+  mask={[Function]}
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholder="$"
+>
+  <t
+    guide={false}
+    id="currency"
+    mask={[Function]}
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="$"
+    render={[Function]}
+  >
+    <Input
+      id="currency"
+      inputRef={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="$"
+    >
+      <input
+        className="form-control"
+        id="currency"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="$"
+      />
+    </Input>
+  </t>
+</InputMask>
+`;
+
+exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`] = `
+<InputMask
+  guide={false}
+  id="percentage"
+  mask={[Function]}
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholder="%"
+>
+  <t
+    guide={false}
+    id="percentage"
+    mask={[Function]}
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="%"
+    render={[Function]}
+  >
+    <Input
+      id="percentage"
+      inputRef={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="%"
+    >
+      <input
+        className="form-control"
+        id="percentage"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="%"
+      />
+    </Input>
+  </t>
+</InputMask>
+`;

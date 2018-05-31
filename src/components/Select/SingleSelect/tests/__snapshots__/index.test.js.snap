@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SingleSelect /> should init component with given \`value\` prop 1`] = `
+exports[`<SingleSelect /> SingleSelect: should init component with given \`value\` prop 1`] = `
 <styled.div
   size="block"
 >

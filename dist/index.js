@@ -150,35 +150,49 @@ var Global = styled.main(
 var _templateObject$1 = taggedTemplateLiteral(
   [
     '\n  display: inline-block;\n  margin-right: 5px;\n  width: 100%;\n  .Select {\n    width: ',
-    ';\n    &-control {\n      min-height: 40px;\n      background-color: ',
-    ';\n      border: 1px solid #40464f;\n      display: flex;\n      align-items: center;\n      height: auto;\n    }\n    &-multi {\n      &-value-wrapper {\n        flex: 1;\n      }\n    }\n    &-placeholder {\n      position: relative;\n    }\n    &-value {\n      margin: 5px 0 5px 5px;\n    }\n    &.is-focused,\n    &.is-open {\n      .Select-control {\n        background-color: ',
-    ';\n        border: 1px solid #40464f;\n        box-shadow: none;\n      }\n    }\n    &-input {\n      position: absolute;\n      top: 0;\n      opacity: 1;\n      z-index: -1;\n    }\n    &-menu-outer {\n      box-shadow: 0;\n      background-color: ',
-    ';\n      border: 1px solid #40464f;\n      .Select-menu .Select-option {\n        background-color: ',
-    ';\n        color: #ffffff;\n        &.is-selected {\n          background-color: ',
-    ';\n          border-bottom: 1px solid #40464f;\n        }\n        &.is-focused {\n          background-color: ',
+    ';\n    &-control {\n      background-color: ',
+    ';\n      border: 1px solid\n        ',
+    ';\n      display: flex;\n      min-height: 40px;\n      align-items: center;\n      height: auto;\n    }\n    &-multi {\n      &-value-wrapper {\n        flex: 1;\n      }\n    }\n    &-placeholder {\n      position: relative;\n    }\n    &-value {\n      margin: 5px 0 5px 5px;\n    }\n    &.is-focused,\n    &.is-open {\n      .Select-control {\n        background-color: ',
+    ';\n        border: 1px solid\n          ',
+    ';\n        box-shadow: none;\n      }\n    }\n    &-input {\n      position: absolute;\n      top: 0;\n      opacity: 1;\n      z-index: -1;\n    }\n    &-menu-outer {\n      box-shadow: 0;\n      background-color: ',
+    ';\n      border: 1px solid ',
+    ';\n      .Select-menu .Select-option {\n        background-color: ',
+    ';\n        color: ',
+    ';\n        &.is-selected {\n          background-color: ',
+    ';\n          border-bottom: 1px solid ',
+    ';\n        }\n        &.is-focused {\n          background-color: ',
     ';\n          border: 0;\n        }\n        &:hover {\n          background-color: ',
     ';\n          border: 0;\n        }\n        &.is-selected:hover {\n          background-color: ',
-    ';\n          border-bottom: 1px solid #40464f;\n        }\n        &.is-disabled {\n          color: ',
+    ';\n          border-bottom: 1px solid ',
+    ';\n        }\n        &.is-disabled {\n          color: ',
     ';\n          &:hover {\n            background-color: ',
     ';\n            color: ',
     ';\n          }\n        }\n      }\n    }\n    &--single {\n      > .Select-control .Select-value {\n        position: relative;\n        margin: 0;\n      }\n    }\n    &--multi {\n      .Select-value {\n        display: inline-flex;\n        background-color: ',
-    ';\n        color: #fff;\n        flex-flow: row-reverse;\n        align-items: center;\n        &-label {\n          flex: 1;\n        }\n      }\n    }\n    &.has-value {\n      &.Select--single {\n        > .Select-control .Select-value .Select-value-label {\n          color: #b2b8c0;\n        }\n      }\n    }\n  }\n',
+    ';\n        color: ',
+    ';\n        flex-flow: row-reverse;\n        align-items: center;\n        &-label {\n          flex: 1;\n        }\n      }\n    }\n    &.has-value {\n      &.Select--single {\n        > .Select-control .Select-value .Select-value-label {\n          color: #b2b8c0;\n        }\n      }\n    }\n  }\n',
   ],
   [
     '\n  display: inline-block;\n  margin-right: 5px;\n  width: 100%;\n  .Select {\n    width: ',
-    ';\n    &-control {\n      min-height: 40px;\n      background-color: ',
-    ';\n      border: 1px solid #40464f;\n      display: flex;\n      align-items: center;\n      height: auto;\n    }\n    &-multi {\n      &-value-wrapper {\n        flex: 1;\n      }\n    }\n    &-placeholder {\n      position: relative;\n    }\n    &-value {\n      margin: 5px 0 5px 5px;\n    }\n    &.is-focused,\n    &.is-open {\n      .Select-control {\n        background-color: ',
-    ';\n        border: 1px solid #40464f;\n        box-shadow: none;\n      }\n    }\n    &-input {\n      position: absolute;\n      top: 0;\n      opacity: 1;\n      z-index: -1;\n    }\n    &-menu-outer {\n      box-shadow: 0;\n      background-color: ',
-    ';\n      border: 1px solid #40464f;\n      .Select-menu .Select-option {\n        background-color: ',
-    ';\n        color: #ffffff;\n        &.is-selected {\n          background-color: ',
-    ';\n          border-bottom: 1px solid #40464f;\n        }\n        &.is-focused {\n          background-color: ',
+    ';\n    &-control {\n      background-color: ',
+    ';\n      border: 1px solid\n        ',
+    ';\n      display: flex;\n      min-height: 40px;\n      align-items: center;\n      height: auto;\n    }\n    &-multi {\n      &-value-wrapper {\n        flex: 1;\n      }\n    }\n    &-placeholder {\n      position: relative;\n    }\n    &-value {\n      margin: 5px 0 5px 5px;\n    }\n    &.is-focused,\n    &.is-open {\n      .Select-control {\n        background-color: ',
+    ';\n        border: 1px solid\n          ',
+    ';\n        box-shadow: none;\n      }\n    }\n    &-input {\n      position: absolute;\n      top: 0;\n      opacity: 1;\n      z-index: -1;\n    }\n    &-menu-outer {\n      box-shadow: 0;\n      background-color: ',
+    ';\n      border: 1px solid ',
+    ';\n      .Select-menu .Select-option {\n        background-color: ',
+    ';\n        color: ',
+    ';\n        &.is-selected {\n          background-color: ',
+    ';\n          border-bottom: 1px solid ',
+    ';\n        }\n        &.is-focused {\n          background-color: ',
     ';\n          border: 0;\n        }\n        &:hover {\n          background-color: ',
     ';\n          border: 0;\n        }\n        &.is-selected:hover {\n          background-color: ',
-    ';\n          border-bottom: 1px solid #40464f;\n        }\n        &.is-disabled {\n          color: ',
+    ';\n          border-bottom: 1px solid ',
+    ';\n        }\n        &.is-disabled {\n          color: ',
     ';\n          &:hover {\n            background-color: ',
     ';\n            color: ',
     ';\n          }\n        }\n      }\n    }\n    &--single {\n      > .Select-control .Select-value {\n        position: relative;\n        margin: 0;\n      }\n    }\n    &--multi {\n      .Select-value {\n        display: inline-flex;\n        background-color: ',
-    ';\n        color: #fff;\n        flex-flow: row-reverse;\n        align-items: center;\n        &-label {\n          flex: 1;\n        }\n      }\n    }\n    &.has-value {\n      &.Select--single {\n        > .Select-control .Select-value .Select-value-label {\n          color: #b2b8c0;\n        }\n      }\n    }\n  }\n',
+    ';\n        color: ',
+    ';\n        flex-flow: row-reverse;\n        align-items: center;\n        &-label {\n          flex: 1;\n        }\n      }\n    }\n    &.has-value {\n      &.Select--single {\n        > .Select-control .Select-value .Select-value-label {\n          color: #b2b8c0;\n        }\n      }\n    }\n  }\n',
   ],
 );
 
@@ -188,46 +202,98 @@ var sizes = {
   block: '100%',
 };
 
+var validationStateColor = {
+  error: 'danger',
+  success: 'success',
+  warning: 'warning',
+};
+
 var Select = styled('div')(
   _templateObject$1,
   function(props) {
     return sizes[props.size];
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref) {
+    var theme = _ref.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref2) {
+    var validationState = _ref2.validationState,
+      theme = _ref2.theme;
+    return validationState
+      ? theme.colors[validationStateColor[validationState]]
+      : theme.colors.grey500;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref3) {
+    var theme = _ref3.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref4) {
+    var validationState = _ref4.validationState,
+      theme = _ref4.theme;
+    return validationState
+      ? theme.colors[validationStateColor[validationState]]
+      : theme.colors.grey500;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref5) {
+    var theme = _ref5.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref6) {
+    var theme = _ref6.theme;
+    return theme.colors.grey500;
   },
-  function(props) {
-    return props.theme.colors.grey300;
+  function(_ref7) {
+    var theme = _ref7.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.grey300;
+  function(_ref8) {
+    var theme = _ref8.theme;
+    return theme.colors.white;
   },
-  function(props) {
-    return props.theme.colors.grey100;
+  function(_ref9) {
+    var theme = _ref9.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.grey400;
+  function(_ref10) {
+    var theme = _ref10.theme;
+    return theme.colors.grey500;
   },
-  function(props) {
-    return props.theme.colors.grey100;
+  function(_ref11) {
+    var theme = _ref11.theme;
+    return theme.colors.grey400;
   },
-  function(props) {
-    return props.theme.colors.primary100;
+  function(_ref12) {
+    var theme = _ref12.theme;
+    return theme.colors.grey300;
+  },
+  function(_ref13) {
+    var theme = _ref13.theme;
+    return theme.colors.grey300;
+  },
+  function(_ref14) {
+    var theme = _ref14.theme;
+    return theme.colors.grey500;
+  },
+  function(_ref15) {
+    var theme = _ref15.theme;
+    return theme.colors.grey100;
+  },
+  function(_ref16) {
+    var theme = _ref16.theme;
+    return theme.colors.grey400;
+  },
+  function(_ref17) {
+    var theme = _ref17.theme;
+    return theme.colors.grey100;
+  },
+  function(_ref18) {
+    var theme = _ref18.theme;
+    return theme.colors.primary100;
+  },
+  function(_ref19) {
+    var theme = _ref19.theme;
+    return theme.colors.white;
   },
 );
 
@@ -288,12 +354,13 @@ var SingleSelect = (function(_PureComponent) {
           _props$isSearchable = _props.isSearchable,
           isSearchable =
             _props$isSearchable === undefined ? false : _props$isSearchable,
-          isFirst = _props.isFirst;
+          isFirst = _props.isFirst,
+          validationState = _props.validationState;
         var selectedValue = this.state.selectedValue;
 
         return React__default.createElement(
           Select,
-          { size: size, isFirst: isFirst },
+          { size: size, validationState: validationState, isFirst: isFirst },
           React__default.createElement(SelectPlus, {
             joinValues: true,
             clearable: false,
@@ -316,6 +383,7 @@ SingleSelect.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
+  validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
   isSearchable: PropTypes.bool,
   isFirst: PropTypes.bool,
   size: PropTypes.string,
@@ -381,12 +449,13 @@ var MultipleSelect = (function(_PureComponent) {
         var _props = this.props,
           options = _props.options,
           name = _props.name,
-          placeholder = _props.placeholder;
+          placeholder = _props.placeholder,
+          validationState = _props.validationState;
         var selectedValue = this.state.selectedValue;
 
         return React__default.createElement(
           Select,
-          null,
+          { validationState: validationState },
           React__default.createElement(SelectPlus, {
             clearable: false,
             searchable: false,
@@ -408,6 +477,7 @@ var MultipleSelect = (function(_PureComponent) {
 MultipleSelect.propTypes = {
   name: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
+  validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
   placeholder: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   initialValue: PropTypes.array,
@@ -4021,9 +4091,9 @@ var PercentageStyled = styled.span(_templateObject$11, function(_ref) {
   return theme.colors.primary400;
 });
 
-var Percentage = function Percentage(_ref2) {
-  var total = _ref2.total,
-    totalOfTheWeek = _ref2.totalOfTheWeek;
+var Percentage = function Percentage(_ref) {
+  var total = _ref.total,
+    totalOfTheWeek = _ref.totalOfTheWeek;
   return React__default.createElement(
     PercentageStyled,
     null,
@@ -4073,6 +4143,1165 @@ Prediction.propTypes = {
   type: PropTypes.oneOf(['forecast', 'actual']).isRequired,
 };
 
+// Using bootstrap .form-control for now.
+// However, the plan is to get rid of it in the future
+var Input = function Input(_ref) {
+  var inputRef = _ref.inputRef,
+    placeholder = _ref.placeholder,
+    props = objectWithoutProperties(_ref, ['inputRef', 'placeholder']);
+  return React__default.createElement(
+    'input',
+    _extends(
+      {
+        className: 'form-control',
+        // this is necessary to cover the <MaskedInput /> case
+      },
+      typeof inputRef === 'function'
+        ? {
+            ref: function ref(input) {
+              return inputRef(input);
+            },
+          }
+        : inputRef,
+      {
+        placeholder: placeholder,
+      },
+      props,
+    ),
+  );
+};
+
+Input.propTypes = {
+  /** The inputRef, it's necessary to cover <MaskedInput /> case */
+  inputRef: PropTypes.any,
+  /** For instance, DD.MM.YYYY */
+  placeholder: PropTypes.string,
+};
+
+var reactTextMask = createCommonjsModule$1(function(module, exports) {
+  !(function(e, t) {
+    module.exports = t(React__default);
+  })(commonjsGlobal, function(e) {
+    return (function(e) {
+      function t(n) {
+        if (r[n]) return r[n].exports;
+        var o = (r[n] = { exports: {}, id: n, loaded: !1 });
+        return (
+          e[n].call(o.exports, o, o.exports, t), (o.loaded = !0), o.exports
+        );
+      }
+      var r = {};
+      return (t.m = e), (t.c = r), (t.p = ''), t(0);
+    })([
+      function(e, t, r) {
+        function n(e) {
+          return e && e.__esModule ? e : { default: e };
+        }
+        function o(e, t) {
+          var r = {};
+          for (var n in e)
+            t.indexOf(n) >= 0 ||
+              (Object.prototype.hasOwnProperty.call(e, n) && (r[n] = e[n]));
+          return r;
+        }
+        function i(e, t) {
+          if (!(e instanceof t))
+            throw new TypeError('Cannot call a class as a function');
+        }
+        function a(e, t) {
+          if (!e)
+            throw new ReferenceError(
+              "this hasn't been initialised - super() hasn't been called",
+            );
+          return !t || ('object' != typeof t && 'function' != typeof t) ? e : t;
+        }
+        function u(e, t) {
+          if ('function' != typeof t && null !== t)
+            throw new TypeError(
+              'Super expression must either be null or a function, not ' +
+                typeof t,
+            );
+          (e.prototype = Object.create(t && t.prototype, {
+            constructor: {
+              value: e,
+              enumerable: !1,
+              writable: !0,
+              configurable: !0,
+            },
+          })),
+            t &&
+              (Object.setPrototypeOf
+                ? Object.setPrototypeOf(e, t)
+                : (e.__proto__ = t));
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 }),
+          (t.conformToMask = void 0);
+        var l =
+            Object.assign ||
+            function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var r = arguments[t];
+                for (var n in r)
+                  Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n]);
+              }
+              return e;
+            },
+          s = (function() {
+            function e(e, t) {
+              for (var r = 0; r < t.length; r++) {
+                var n = t[r];
+                (n.enumerable = n.enumerable || !1),
+                  (n.configurable = !0),
+                  'value' in n && (n.writable = !0),
+                  Object.defineProperty(e, n.key, n);
+              }
+            }
+            return function(t, r, n) {
+              return r && e(t.prototype, r), n && e(t, n), t;
+            };
+          })(),
+          f = r(2);
+        Object.defineProperty(t, 'conformToMask', {
+          enumerable: !0,
+          get: function() {
+            return n(f).default;
+          },
+        });
+        var c = r(11),
+          p = n(c),
+          d = r(9),
+          h = n(d),
+          v = r(5),
+          y = n(v),
+          m = (function(e) {
+            function t() {
+              var e;
+              i(this, t);
+              for (var r = arguments.length, n = Array(r), o = 0; o < r; o++)
+                n[o] = arguments[o];
+              var u = a(
+                this,
+                (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
+                  e,
+                  [this].concat(n),
+                ),
+              );
+              return (
+                (u.onBlur = u.onBlur.bind(u)),
+                (u.onChange = u.onChange.bind(u)),
+                u
+              );
+            }
+            return (
+              u(t, e),
+              s(t, [
+                {
+                  key: 'initTextMask',
+                  value: function() {
+                    var e = this.props,
+                      t = this.props.value;
+                    (this.textMaskInputElement = (0, y.default)(
+                      l({ inputElement: this.inputElement }, e),
+                    )),
+                      this.textMaskInputElement.update(t);
+                  },
+                },
+                {
+                  key: 'componentDidMount',
+                  value: function() {
+                    this.initTextMask();
+                  },
+                },
+                {
+                  key: 'componentDidUpdate',
+                  value: function() {
+                    this.initTextMask();
+                  },
+                },
+                {
+                  key: 'render',
+                  value: function e() {
+                    var t = this,
+                      r = this.props,
+                      e = r.render,
+                      n = o(r, ['render']);
+                    delete n.mask,
+                      delete n.guide,
+                      delete n.pipe,
+                      delete n.placeholderChar,
+                      delete n.keepCharPositions,
+                      delete n.value,
+                      delete n.onBlur,
+                      delete n.onChange,
+                      delete n.showMask;
+                    var i = function(e) {
+                      return (t.inputElement = e);
+                    };
+                    return e(
+                      i,
+                      l(
+                        {
+                          onBlur: this.onBlur,
+                          onChange: this.onChange,
+                          defaultValue: this.props.value,
+                        },
+                        n,
+                      ),
+                    );
+                  },
+                },
+                {
+                  key: 'onChange',
+                  value: function(e) {
+                    this.textMaskInputElement.update(),
+                      'function' == typeof this.props.onChange &&
+                        this.props.onChange(e);
+                  },
+                },
+                {
+                  key: 'onBlur',
+                  value: function(e) {
+                    'function' == typeof this.props.onBlur &&
+                      this.props.onBlur(e);
+                  },
+                },
+              ]),
+              t
+            );
+          })(p.default.Component);
+        (t.default = m),
+          (m.propTypes = {
+            mask: h.default.oneOfType([
+              h.default.array,
+              h.default.func,
+              h.default.bool,
+              h.default.shape({
+                mask: h.default.oneOfType([h.default.array, h.default.func]),
+                pipe: h.default.func,
+              }),
+            ]).isRequired,
+            guide: h.default.bool,
+            value: h.default.oneOfType([h.default.string, h.default.number]),
+            pipe: h.default.func,
+            placeholderChar: h.default.string,
+            keepCharPositions: h.default.bool,
+            showMask: h.default.bool,
+          }),
+          (m.defaultProps = {
+            render: function(e, t) {
+              return p.default.createElement('input', l({ ref: e }, t));
+            },
+          });
+      },
+      function(e, t) {
+        Object.defineProperty(t, '__esModule', { value: !0 }),
+          (t.placeholderChar = '_'),
+          (t.strFunction = 'function');
+      },
+      function(e, t, r) {
+        function n() {
+          var e =
+              arguments.length > 0 && void 0 !== arguments[0]
+                ? arguments[0]
+                : l,
+            t =
+              arguments.length > 1 && void 0 !== arguments[1]
+                ? arguments[1]
+                : u,
+            r =
+              arguments.length > 2 && void 0 !== arguments[2]
+                ? arguments[2]
+                : {};
+          if (!(0, i.isArray)(t)) {
+            if (
+              ('undefined' == typeof t ? 'undefined' : o(t)) !== a.strFunction
+            )
+              throw new Error(
+                'Text-mask:conformToMask; The mask property must be an array.',
+              );
+            (t = t(e, r)),
+              (t = (0, i.processCaretTraps)(t).maskWithoutCaretTraps);
+          }
+          var n = r.guide,
+            s = void 0 === n || n,
+            f = r.previousConformedValue,
+            c = void 0 === f ? l : f,
+            p = r.placeholderChar,
+            d = void 0 === p ? a.placeholderChar : p,
+            h = r.placeholder,
+            v = void 0 === h ? (0, i.convertMaskToPlaceholder)(t, d) : h,
+            y = r.currentCaretPosition,
+            m = r.keepCharPositions,
+            b = s === !1 && void 0 !== c,
+            g = e.length,
+            k = c.length,
+            C = v.length,
+            O = t.length,
+            T = g - k,
+            P = T > 0,
+            x = y + (P ? -T : 0),
+            w = x + Math.abs(T);
+          if (m === !0 && !P) {
+            for (var _ = l, M = x; M < w; M++) v[M] === d && (_ += d);
+            e = e.slice(0, x) + _ + e.slice(x, g);
+          }
+          for (
+            var S = e.split(l).map(function(e, t) {
+                return { char: e, isNew: t >= x && t < w };
+              }),
+              j = g - 1;
+            j >= 0;
+            j--
+          ) {
+            var E = S[j].char;
+            if (E !== d) {
+              var R = j >= x && k === O;
+              E === v[R ? j - T : j] && S.splice(j, 1);
+            }
+          }
+          var V = l,
+            A = !1;
+          e: for (var N = 0; N < C; N++) {
+            var B = v[N];
+            if (B === d) {
+              if (S.length > 0)
+                for (; S.length > 0; ) {
+                  var I = S.shift(),
+                    F = I.char,
+                    q = I.isNew;
+                  if (F === d && b !== !0) {
+                    V += d;
+                    continue e;
+                  }
+                  if (t[N].test(F)) {
+                    if (m === !0 && q !== !1 && c !== l && s !== !1 && P) {
+                      for (var D = S.length, L = null, W = 0; W < D; W++) {
+                        var J = S[W];
+                        if (J.char !== d && J.isNew === !1) break;
+                        if (J.char === d) {
+                          L = W;
+                          break;
+                        }
+                      }
+                      null !== L ? ((V += F), S.splice(L, 1)) : N--;
+                    } else V += F;
+                    continue e;
+                  }
+                  A = !0;
+                }
+              b === !1 && (V += v.substr(N, C));
+              break;
+            }
+            V += B;
+          }
+          if (b && P === !1) {
+            for (var U = null, H = 0; H < V.length; H++) v[H] === d && (U = H);
+            V = null !== U ? V.substr(0, U + 1) : l;
+          }
+          return { conformedValue: V, meta: { someCharsRejected: A } };
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 });
+        var o =
+          'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+            ? function(e) {
+                return typeof e;
+              }
+            : function(e) {
+                return e &&
+                  'function' == typeof Symbol &&
+                  e.constructor === Symbol &&
+                  e !== Symbol.prototype
+                  ? 'symbol'
+                  : typeof e;
+              };
+        t.default = n;
+        var i = r(3),
+          a = r(1),
+          u = [],
+          l = '';
+      },
+      function(e, t, r) {
+        function n() {
+          var e =
+              arguments.length > 0 && void 0 !== arguments[0]
+                ? arguments[0]
+                : s,
+            t =
+              arguments.length > 1 && void 0 !== arguments[1]
+                ? arguments[1]
+                : l.placeholderChar;
+          if (!o(e))
+            throw new Error(
+              'Text-mask:convertMaskToPlaceholder; The mask property must be an array.',
+            );
+          if (e.indexOf(t) !== -1)
+            throw new Error(
+              'Placeholder character must not be used as part of the mask. Please specify a character that is not present in your mask as your placeholder character.\n\n' +
+                ('The placeholder character that was received is: ' +
+                  JSON.stringify(t) +
+                  '\n\n') +
+                ('The mask that was received is: ' + JSON.stringify(e)),
+            );
+          return e
+            .map(function(e) {
+              return e instanceof RegExp ? t : e;
+            })
+            .join('');
+        }
+        function o(e) {
+          return (Array.isArray && Array.isArray(e)) || e instanceof Array;
+        }
+        function i(e) {
+          return 'string' == typeof e || e instanceof String;
+        }
+        function a(e) {
+          return 'number' == typeof e && void 0 === e.length && !isNaN(e);
+        }
+        function u(e) {
+          for (var t = [], r = void 0; (r = e.indexOf(f)), r !== -1; )
+            t.push(r), e.splice(r, 1);
+          return { maskWithoutCaretTraps: e, indexes: t };
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 }),
+          (t.convertMaskToPlaceholder = n),
+          (t.isArray = o),
+          (t.isString = i),
+          (t.isNumber = a),
+          (t.processCaretTraps = u);
+        var l = r(1),
+          s = [],
+          f = '[]';
+      },
+      function(e, t) {
+        function r(e) {
+          var t = e.previousConformedValue,
+            r = void 0 === t ? o : t,
+            i = e.previousPlaceholder,
+            a = void 0 === i ? o : i,
+            u = e.currentCaretPosition,
+            l = void 0 === u ? 0 : u,
+            s = e.conformedValue,
+            f = e.rawValue,
+            c = e.placeholderChar,
+            p = e.placeholder,
+            d = e.indexesOfPipedChars,
+            h = void 0 === d ? n : d,
+            v = e.caretTrapIndexes,
+            y = void 0 === v ? n : v;
+          if (0 === l || !f.length) return 0;
+          var m = f.length,
+            b = r.length,
+            g = p.length,
+            k = s.length,
+            C = m - b,
+            O = C > 0,
+            T = 0 === b,
+            P = C > 1 && !O && !T;
+          if (P) return l;
+          var x = O && (r === s || s === p),
+            w = 0,
+            _ = void 0,
+            M = void 0;
+          if (x) w = l - C;
+          else {
+            var S = s.toLowerCase(),
+              j = f.toLowerCase(),
+              E = j.substr(0, l).split(o),
+              R = E.filter(function(e) {
+                return S.indexOf(e) !== -1;
+              });
+            M = R[R.length - 1];
+            var V = a
+                .substr(0, R.length)
+                .split(o)
+                .filter(function(e) {
+                  return e !== c;
+                }).length,
+              A = p
+                .substr(0, R.length)
+                .split(o)
+                .filter(function(e) {
+                  return e !== c;
+                }).length,
+              N = A !== V,
+              B =
+                void 0 !== a[R.length - 1] &&
+                void 0 !== p[R.length - 2] &&
+                a[R.length - 1] !== c &&
+                a[R.length - 1] !== p[R.length - 1] &&
+                a[R.length - 1] === p[R.length - 2];
+            !O &&
+              (N || B) &&
+              V > 0 &&
+              p.indexOf(M) > -1 &&
+              void 0 !== f[l] &&
+              ((_ = !0), (M = f[l]));
+            for (
+              var I = h.map(function(e) {
+                  return S[e];
+                }),
+                F = I.filter(function(e) {
+                  return e === M;
+                }).length,
+                q = R.filter(function(e) {
+                  return e === M;
+                }).length,
+                D = p
+                  .substr(0, p.indexOf(c))
+                  .split(o)
+                  .filter(function(e, t) {
+                    return e === M && f[t] !== e;
+                  }).length,
+                L = D + q + F + (_ ? 1 : 0),
+                W = 0,
+                J = 0;
+              J < k;
+              J++
+            ) {
+              var U = S[J];
+              if (((w = J + 1), U === M && W++, W >= L)) break;
+            }
+          }
+          if (O) {
+            for (var H = w, Y = w; Y <= g; Y++)
+              if (
+                (p[Y] === c && (H = Y),
+                p[Y] === c || y.indexOf(Y) !== -1 || Y === g)
+              )
+                return H;
+          } else if (_) {
+            for (var z = w - 1; z >= 0; z--)
+              if (s[z] === M || y.indexOf(z) !== -1 || 0 === z) return z;
+          } else
+            for (var G = w; G >= 0; G--)
+              if (p[G - 1] === c || y.indexOf(G) !== -1 || 0 === G) return G;
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 }), (t.default = r);
+        var n = [],
+          o = '';
+      },
+      function(e, t, r) {
+        function n(e) {
+          return e && e.__esModule ? e : { default: e };
+        }
+        function o(e) {
+          var t = {
+            previousConformedValue: void 0,
+            previousPlaceholder: void 0,
+          };
+          return {
+            state: t,
+            update: function(r) {
+              var n =
+                  arguments.length > 1 && void 0 !== arguments[1]
+                    ? arguments[1]
+                    : e,
+                o = n.inputElement,
+                s = n.mask,
+                c = n.guide,
+                y = n.pipe,
+                b = n.placeholderChar,
+                g = void 0 === b ? h.placeholderChar : b,
+                k = n.keepCharPositions,
+                C = void 0 !== k && k,
+                O = n.showMask,
+                T = void 0 !== O && O;
+              if (
+                ('undefined' == typeof r && (r = o.value),
+                r !== t.previousConformedValue)
+              ) {
+                ('undefined' == typeof s ? 'undefined' : l(s)) === m &&
+                  void 0 !== s.pipe &&
+                  void 0 !== s.mask &&
+                  ((y = s.pipe), (s = s.mask));
+                var P = void 0,
+                  x = void 0;
+                if (
+                  (s instanceof Array &&
+                    (P = (0, d.convertMaskToPlaceholder)(s, g)),
+                  s !== !1)
+                ) {
+                  var w = a(r),
+                    _ = o.selectionEnd,
+                    M = t.previousConformedValue,
+                    S = t.previousPlaceholder,
+                    j = void 0;
+                  if (
+                    ('undefined' == typeof s ? 'undefined' : l(s)) ===
+                    h.strFunction
+                  ) {
+                    if (
+                      ((x = s(w, {
+                        currentCaretPosition: _,
+                        previousConformedValue: M,
+                        placeholderChar: g,
+                      })),
+                      x === !1)
+                    )
+                      return;
+                    var E = (0, d.processCaretTraps)(x),
+                      R = E.maskWithoutCaretTraps,
+                      V = E.indexes;
+                    (x = R),
+                      (j = V),
+                      (P = (0, d.convertMaskToPlaceholder)(x, g));
+                  } else x = s;
+                  var A = {
+                      previousConformedValue: M,
+                      guide: c,
+                      placeholderChar: g,
+                      pipe: y,
+                      placeholder: P,
+                      currentCaretPosition: _,
+                      keepCharPositions: C,
+                    },
+                    N = (0, p.default)(w, x, A),
+                    B = N.conformedValue,
+                    I =
+                      ('undefined' == typeof y ? 'undefined' : l(y)) ===
+                      h.strFunction,
+                    F = {};
+                  I &&
+                    ((F = y(B, u({ rawValue: w }, A))),
+                    F === !1
+                      ? (F = { value: M, rejected: !0 })
+                      : (0, d.isString)(F) && (F = { value: F }));
+                  var q = I ? F.value : B,
+                    D = (0, f.default)({
+                      previousConformedValue: M,
+                      previousPlaceholder: S,
+                      conformedValue: q,
+                      placeholder: P,
+                      rawValue: w,
+                      currentCaretPosition: _,
+                      placeholderChar: g,
+                      indexesOfPipedChars: F.indexesOfPipedChars,
+                      caretTrapIndexes: j,
+                    }),
+                    L = q === P && 0 === D,
+                    W = T ? P : v,
+                    J = L ? W : q;
+                  (t.previousConformedValue = J),
+                    (t.previousPlaceholder = P),
+                    o.value !== J && ((o.value = J), i(o, D));
+                }
+              }
+            },
+          };
+        }
+        function i(e, t) {
+          document.activeElement === e &&
+            (b
+              ? g(function() {
+                  return e.setSelectionRange(t, t, y);
+                }, 0)
+              : e.setSelectionRange(t, t, y));
+        }
+        function a(e) {
+          if ((0, d.isString)(e)) return e;
+          if ((0, d.isNumber)(e)) return String(e);
+          if (void 0 === e || null === e) return v;
+          throw new Error(
+            "The 'value' provided to Text Mask needs to be a string or a number. The value received was:\n\n " +
+              JSON.stringify(e),
+          );
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 });
+        var u =
+            Object.assign ||
+            function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var r = arguments[t];
+                for (var n in r)
+                  Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n]);
+              }
+              return e;
+            },
+          l =
+            'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+              ? function(e) {
+                  return typeof e;
+                }
+              : function(e) {
+                  return e &&
+                    'function' == typeof Symbol &&
+                    e.constructor === Symbol &&
+                    e !== Symbol.prototype
+                    ? 'symbol'
+                    : typeof e;
+                };
+        t.default = o;
+        var s = r(4),
+          f = n(s),
+          c = r(2),
+          p = n(c),
+          d = r(3),
+          h = r(1),
+          v = '',
+          y = 'none',
+          m = 'object',
+          b =
+            'undefined' != typeof navigator &&
+            /Android/i.test(navigator.userAgent),
+          g =
+            'undefined' != typeof requestAnimationFrame
+              ? requestAnimationFrame
+              : setTimeout;
+      },
+      function(e, t) {
+        function r(e) {
+          return function() {
+            return e;
+          };
+        }
+        var n = function() {};
+        (n.thatReturns = r),
+          (n.thatReturnsFalse = r(!1)),
+          (n.thatReturnsTrue = r(!0)),
+          (n.thatReturnsNull = r(null)),
+          (n.thatReturnsThis = function() {
+            return this;
+          }),
+          (n.thatReturnsArgument = function(e) {
+            return e;
+          }),
+          (e.exports = n);
+      },
+      function(e, t, r) {
+        function n(e, t, r, n, i, a, u, l) {
+          if (!e) {
+            var s;
+            if (void 0 === t)
+              s = new Error(
+                'Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.',
+              );
+            else {
+              var f = [r, n, i, a, u, l],
+                c = 0;
+              (s = new Error(
+                t.replace(/%s/g, function() {
+                  return f[c++];
+                }),
+              )),
+                (s.name = 'Invariant Violation');
+            }
+            throw ((s.framesToPop = 1), s);
+          }
+        }
+        e.exports = n;
+      },
+      function(e, t, r) {
+        var n = r(6),
+          o = r(7),
+          i = r(10);
+        e.exports = function() {
+          function e(e, t, r, n, a, u) {
+            u !== i &&
+              o(
+                !1,
+                'Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types',
+              );
+          }
+          function t() {
+            return e;
+          }
+          e.isRequired = e;
+          var r = {
+            array: e,
+            bool: e,
+            func: e,
+            number: e,
+            object: e,
+            string: e,
+            symbol: e,
+            any: e,
+            arrayOf: t,
+            element: e,
+            instanceOf: t,
+            node: e,
+            objectOf: t,
+            oneOf: t,
+            oneOfType: t,
+            shape: t,
+            exact: t,
+          };
+          return (r.checkPropTypes = n), (r.PropTypes = r), r;
+        };
+      },
+      function(e, t, r) {
+        e.exports = r(8)();
+      },
+      function(e, t) {
+        var r = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+        e.exports = r;
+      },
+      function(t, r) {
+        t.exports = e;
+      },
+    ]);
+  });
+});
+
+var MaskedInput = unwrapExports(reactTextMask);
+var reactTextMask_1 = reactTextMask.reactTextMask;
+
+var InputMask = function InputMask(_ref) {
+  var guide = _ref.guide,
+    mask = _ref.mask,
+    placeholder = _ref.placeholder,
+    id = _ref.id,
+    value = _ref.value,
+    onChange = _ref.onChange,
+    onBlur = _ref.onBlur;
+  return React__default.createElement(MaskedInput, {
+    mask: mask,
+    guide: guide,
+    placeholder: placeholder,
+    value: value,
+    id: id,
+    onChange: onChange,
+    onBlur: onBlur,
+    render: function render(ref, props) {
+      return React__default.createElement(
+        Input,
+        _extends({ inputRef: ref }, props),
+      );
+    },
+  });
+};
+
+InputMask.propTypes = {
+  /** Mask can be Array or Func. Check `react-text-mask` for more info about it */
+  mask: PropTypes.oneOfType([PropTypes.array, PropTypes.func]).isRequired,
+  /** input id */
+  id: PropTypes.string.isRequired,
+  /** onChange callback, if you are using redux-form it's going likely to be `input.change` */
+  onChange: PropTypes.func.isRequired,
+  /** input value */
+  value: PropTypes.any,
+  /** onBlur callback */
+  onBlur: PropTypes.func,
+  /** input placeholder */
+  placeholder: PropTypes.string,
+  /** Set if mask will guide the user or not. */
+  guide: PropTypes.bool,
+};
+
+var createNumberMask = createCommonjsModule$1(function(module, exports) {
+  !(function(e, t) {
+    module.exports = t();
+  })(commonjsGlobal, function() {
+    return (function(e) {
+      function t(n) {
+        if (o[n]) return o[n].exports;
+        var i = (o[n] = { exports: {}, id: n, loaded: !1 });
+        return (
+          e[n].call(i.exports, i, i.exports, t), (i.loaded = !0), i.exports
+        );
+      }
+      var o = {};
+      return (t.m = e), (t.c = o), (t.p = ''), t(0);
+    })([
+      function(e, t, o) {
+        e.exports = o(2);
+      },
+      ,
+      function(e, t) {
+        function o() {
+          function e() {
+            var e =
+                arguments.length > 0 && void 0 !== arguments[0]
+                  ? arguments[0]
+                  : l,
+              t = e.length;
+            if (e === l || (e[0] === y[0] && 1 === t))
+              return y
+                .split(l)
+                .concat([v])
+                .concat(g.split(l));
+            if (e === k && M)
+              return y
+                .split(l)
+                .concat(['0', k, v])
+                .concat(g.split(l));
+            var o = e[0] === s && q;
+            o && (e = e.toString().substr(1));
+            var c = e.lastIndexOf(k),
+              u = c !== -1,
+              a = void 0,
+              b = void 0,
+              h = void 0;
+            if (
+              (e.slice(T * -1) === g && (e = e.slice(0, T * -1)),
+              u && (M || $)
+                ? ((a = e.slice(e.slice(0, R) === y ? R : 0, c)),
+                  (b = e.slice(c + 1, t)),
+                  (b = n(b.replace(f, l))))
+                : (a = e.slice(0, R) === y ? e.slice(R) : e),
+              P && ('undefined' == typeof P ? 'undefined' : r(P)) === p)
+            ) {
+              var S = '.' === j ? '[.]' : '' + j,
+                w = (a.match(new RegExp(S, 'g')) || []).length;
+              a = a.slice(0, P + w * Z);
+            }
+            return (
+              (a = a.replace(f, l)),
+              E || (a = a.replace(/^0+(0$|[^0])/, '$1')),
+              (a = x ? i(a, j) : a),
+              (h = n(a)),
+              ((u && M) || $ === !0) &&
+                (e[c - 1] !== k && h.push(m),
+                h.push(k, m),
+                b &&
+                  (('undefined' == typeof L ? 'undefined' : r(L)) === p &&
+                    (b = b.slice(0, L)),
+                  (h = h.concat(b))),
+                $ === !0 && e[c - 1] === k && h.push(v)),
+              R > 0 && (h = y.split(l).concat(h)),
+              o && (h.length === R && h.push(v), (h = [d].concat(h))),
+              g.length > 0 && (h = h.concat(g.split(l))),
+              h
+            );
+          }
+          var t =
+              arguments.length > 0 && void 0 !== arguments[0]
+                ? arguments[0]
+                : {},
+            o = t.prefix,
+            y = void 0 === o ? c : o,
+            b = t.suffix,
+            g = void 0 === b ? l : b,
+            h = t.includeThousandsSeparator,
+            x = void 0 === h || h,
+            S = t.thousandsSeparatorSymbol,
+            j = void 0 === S ? u : S,
+            w = t.allowDecimal,
+            M = void 0 !== w && w,
+            N = t.decimalSymbol,
+            k = void 0 === N ? a : N,
+            D = t.decimalLimit,
+            L = void 0 === D ? 2 : D,
+            O = t.requireDecimal,
+            $ = void 0 !== O && O,
+            _ = t.allowNegative,
+            q = void 0 !== _ && _,
+            B = t.allowLeadingZeroes,
+            E = void 0 !== B && B,
+            I = t.integerLimit,
+            P = void 0 === I ? null : I,
+            R = (y && y.length) || 0,
+            T = (g && g.length) || 0,
+            Z = (j && j.length) || 0;
+          return (e.instanceOf = 'createNumberMask'), e;
+        }
+        function n(e) {
+          return e.split(l).map(function(e) {
+            return v.test(e) ? v : e;
+          });
+        }
+        function i(e, t) {
+          return e.replace(/\B(?=(\d{3})+(?!\d))/g, t);
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 });
+        var r =
+          'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+            ? function(e) {
+                return typeof e;
+              }
+            : function(e) {
+                return e &&
+                  'function' == typeof Symbol &&
+                  e.constructor === Symbol &&
+                  e !== Symbol.prototype
+                  ? 'symbol'
+                  : typeof e;
+              };
+        t.default = o;
+        var c = '$',
+          l = '',
+          u = ',',
+          a = '.',
+          s = '-',
+          d = /-/,
+          f = /\D+/g,
+          p = 'number',
+          v = /\d/,
+          m = '[]';
+      },
+    ]);
+  });
+});
+
+var createNumberMask$1 = unwrapExports(createNumberMask);
+var createNumberMask_1 = createNumberMask.createNumberMask;
+
+var emailMask = createCommonjsModule$1(function(module, exports) {
+  !(function(e, t) {
+    module.exports = t();
+  })(commonjsGlobal, function() {
+    return (function(e) {
+      function t(r) {
+        if (n[r]) return n[r].exports;
+        var u = (n[r] = { exports: {}, id: r, loaded: !1 });
+        return (
+          e[r].call(u.exports, u, u.exports, t), (u.loaded = !0), u.exports
+        );
+      }
+      var n = {};
+      return (t.m = e), (t.c = n), (t.p = ''), t(0);
+    })([
+      function(e, t, n) {
+        e.exports = n(3);
+      },
+      ,
+      ,
+      function(e, t, n) {
+        function r(e) {
+          return e && e.__esModule ? e : { default: e };
+        }
+        function u(e, t) {
+          e = e.replace(y, h);
+          var n = t.placeholderChar,
+            r = t.currentCaretPosition,
+            u = e.indexOf(x),
+            s = e.lastIndexOf(d),
+            f = s < u ? -1 : s,
+            p = o(e, u + 1, x),
+            g = o(e, f - 1, d),
+            v = c(e, u, n),
+            m = i(e, u, f, n),
+            O = a(e, f, n, r);
+          (v = l(v)), (m = l(m)), (O = l(O, !0));
+          var b = v
+            .concat(p)
+            .concat(m)
+            .concat(g)
+            .concat(O);
+          return b;
+        }
+        function o(e, t, n) {
+          var r = [];
+          return e[t] === n ? r.push(n) : r.push(g, n), r.push(g), r;
+        }
+        function c(e, t) {
+          return t === -1 ? e : e.slice(0, t);
+        }
+        function i(e, t, n, r) {
+          var u = h;
+          return (
+            t !== -1 &&
+              (u = n === -1 ? e.slice(t + 1, e.length) : e.slice(t + 1, n)),
+            (u = u.replace(new RegExp('[\\s' + r + ']', m), h)),
+            u === x
+              ? p
+              : u.length < 1
+                ? v
+                : u[u.length - 1] === d
+                  ? u.slice(0, u.length - 1)
+                  : u
+          );
+        }
+        function a(e, t, n, r) {
+          var u = h;
+          return (
+            t !== -1 && (u = e.slice(t + 1, e.length)),
+            (u = u.replace(new RegExp('[\\s' + n + '.]', m), h)),
+            0 === u.length ? (e[t - 1] === d && r !== e.length ? p : h) : u
+          );
+        }
+        function l(e, t) {
+          return e.split(h).map(function(e) {
+            return e === v ? e : t ? b : O;
+          });
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 });
+        var s = n(4),
+          f = r(s),
+          p = '*',
+          d = '.',
+          h = '',
+          x = '@',
+          g = '[]',
+          v = ' ',
+          m = 'g',
+          O = /[^\s]/,
+          b = /[^.\s]/,
+          y = /\s/g;
+        t.default = { mask: u, pipe: f.default };
+      },
+      function(e, t) {
+        function n(e, t) {
+          var n = t.currentCaretPosition,
+            o = t.rawValue,
+            p = t.previousConformedValue,
+            d = t.placeholderChar,
+            h = e;
+          h = r(h);
+          var x = h.indexOf(i),
+            g = null === o.match(new RegExp('[^@\\s.' + d + ']'));
+          if (g) return c;
+          if (
+            h.indexOf(l) !== -1 ||
+            (x !== -1 && n !== x + 1) ||
+            (o.indexOf(u) === -1 && p !== c && o.indexOf(a) !== -1)
+          )
+            return !1;
+          var v = h.indexOf(u),
+            m = h.slice(v + 1, h.length);
+          return (
+            (m.match(f) || s).length > 1 &&
+              h.substr(-1) === a &&
+              n !== o.length &&
+              (h = h.slice(0, h.length - 1)),
+            h
+          );
+        }
+        function r(e) {
+          var t = 0;
+          return e.replace(o, function() {
+            return t++, 1 === t ? u : c;
+          });
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 }), (t.default = n);
+        var u = '@',
+          o = /@/g,
+          c = '',
+          i = '@.',
+          a = '.',
+          l = '..',
+          s = [],
+          f = /\./g;
+      },
+    ]);
+  });
+});
+
+var emailMask$1 = unwrapExports(emailMask);
+var emailMask_1 = emailMask.emailMask;
+
+// DD.MM.YYYY
+var BIRTHDAY_MASK = [/\d/, /\d/, '.', /\d/, /\d/, '.', /\d/, /\d/, /\d/, /\d/];
+
+// 10 %
+var PERGENTAGE_MASK = createNumberMask$1({
+  prefix: '',
+  includeThousandsSeparator: false,
+  suffix: ' %',
+});
+
+// $ 10
+var MONEY_MASK = createNumberMask$1();
+
+// rick@c137.com
+var EMAIL_MASK = emailMask$1;
+
+var MASKS = Object.freeze({
+  BIRTHDAY_MASK: BIRTHDAY_MASK,
+  PERGENTAGE_MASK: PERGENTAGE_MASK,
+  MONEY_MASK: MONEY_MASK,
+  EMAIL_MASK: EMAIL_MASK,
+});
+
 var white = '#fff';
 var black = '#000';
 
@@ -4089,6 +5318,7 @@ var greys = {
   grey200: '#3f454d',
   grey300: '#343a42',
   grey400: '#292d33',
+  grey500: '#40464f',
 };
 
 var greens = {
@@ -4104,7 +5334,7 @@ var reds = {
   red300: '#ffaf9f',
   red500: '#ff7559',
   red700: '#d55a41',
-  red900: '#a73d28',
+  red900: '#a94442',
 };
 
 var yellows = {
@@ -4119,7 +5349,7 @@ var misc = {
   bodyBackground: greys.grey400,
   mainBackground: '343941',
   textColor: white,
-  danger: reds.red500,
+  danger: reds.red900,
   success: greens.green700,
   warning: yellows.yellow700,
 };
@@ -4170,8 +5400,8 @@ var fontFamily = {
 };
 
 var fontWeight = {
-  regular: '400',
-  bold: '700',
+  regular: 400,
+  bold: 700,
 };
 
 var rooster = {
@@ -4301,6 +5531,9 @@ var index$1$1 = _extends(
     Themes: Themes,
     Indicator: Indicator,
     Text: Text,
+    Input: Input,
+    MaskedInput: InputMask,
+    MASKS: MASKS,
   },
   Grid$2,
 );

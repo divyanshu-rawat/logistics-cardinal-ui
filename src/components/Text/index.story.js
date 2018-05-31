@@ -24,7 +24,7 @@ storiesOf(`${TYPOGRAPHY}Text`, module)
             Theme.fontFamily.default,
             'Times New Roman',
           ])}
-          weight={number('FontWeight', Theme.fontWeight.regular)}
+          weight={number('FontWeight', Theme.fontWeight.regular, 300)}
           align={select('Text Align', ['left', 'right', 'center'], 'left')}
           truncate={boolean('Truncate', false)}
           uppercase={boolean('Uppercase', false)}

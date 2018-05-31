@@ -24,12 +24,12 @@ describe('<SingleSelect />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should init component with given `value` prop', () => {
+  it('SingleSelect: should init component with given `value` prop', () => {
     const tree = toJson(renderedComponent('09:00:00'));
     expect(tree).toMatchSnapshot();
   });
 
-  it('should call `onChangeFn` when value is changed', () => {
+  it('SingleSelect: should call `onChangeFn` when value is changed', () => {
     renderedComponent()
       .find('Select')
       .simulate('change', { target: { value: '10:30:00' } });

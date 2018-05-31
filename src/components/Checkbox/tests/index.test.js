@@ -28,7 +28,7 @@ describe('<Checkbox />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should call `onChangeFn` when value is changed', () => {
+  it('Checkbox: should call `onChangeFn` when value is changed', () => {
     renderedComponent()
       .find('input')
       .simulate('change', { persist: jest.fn(), target: { checked: true } });

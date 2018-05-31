@@ -30,7 +30,7 @@ describe('<MultipleSelect />', () => {
     expect(onChangeFn.mock.calls.length).toBe(1);
   });
 
-  it('should call `onChangeFn` when value is changed', () => {
+  it('MultipleSelect: should call `onChangeFn` when value is changed', () => {
     onChangeFn.mockClear();
     renderedComponent()
       .find('Select')

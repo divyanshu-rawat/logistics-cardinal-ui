@@ -8,6 +8,9 @@ import ComposedTabs from './components/Tabs';
 import Text from './components/Text';
 import Indicator from './components/Checkbox/Indicator';
 import Prediction from './components/Forecast/Prediction';
+import Input from './components/Input';
+import MaskedInput from './components/MaskedInput';
+import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
 export default {
@@ -21,5 +24,8 @@ export default {
   Themes,
   Indicator,
   Text,
+  Input,
+  MaskedInput,
+  MASKS,
   ...Grid,
 };
