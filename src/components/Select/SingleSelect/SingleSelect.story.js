@@ -3,10 +3,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
+import { select } from '@storybook/addon-knobs';
 
 import { SingleSelectMock } from '../../../utils/mocks';
 import withTests from '../../../utils/withTests';
-
 import { FORM } from '../../../../.storybook/sections';
 
 import SingleSelect from '.';
@@ -21,6 +21,12 @@ storiesOf(`${FORM}Select/SingleSelect`, module)
       <SingleSelect
         options={SingleSelectMock}
         onChange={action((item) => console.log(item))}
+        validationState={select('Validation State', [
+          '',
+          'error',
+          'success',
+          'warning',
+        ])}
         name="start_at"
         placeholder="Start At"
       />

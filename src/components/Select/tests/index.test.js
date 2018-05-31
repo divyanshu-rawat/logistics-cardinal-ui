@@ -6,17 +6,34 @@ import Theme from '../../../themes/rooster';
 
 import Select from '..';
 
-const renderedComponent = (size = '') =>
-  shallow(<Select theme={Theme} size={size} />);
+const renderedComponent = ({ size = '', validationState = null }) =>
+  shallow(
+    <Select theme={Theme} size={size} validationState={validationState} />,
+  );
 
 describe('<Select />', () => {
   it('should render the component with `default size`', () => {
-    const tree = toJson(renderedComponent());
+    const tree = toJson(renderedComponent({}));
     expect(tree).toMatchSnapshot();
   });
 
   it('should render the component with `small size`', () => {
-    const tree = toJson(renderedComponent('small'));
+    const tree = toJson(renderedComponent({ size: 'small' }));
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component with `error validation state`', () => {
+    const tree = toJson(renderedComponent({ validationState: 'error' }));
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component with `warning validation state`', () => {
+    const tree = toJson(renderedComponent({ validationState: 'warning' }));
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component with `success validation state`', () => {
+    const tree = toJson(renderedComponent({ validationState: 'success' }));
     expect(tree).toMatchSnapshot();
   });
 });

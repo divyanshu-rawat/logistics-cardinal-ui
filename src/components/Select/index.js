@@ -6,6 +6,12 @@ const sizes = {
   block: '100%',
 };
 
+const validationStateColor = {
+  error: 'danger',
+  success: 'success',
+  warning: 'warning',
+};
+
 export default styled('div')`
   display: inline-block;
   margin-right: 5px;
@@ -13,10 +19,14 @@ export default styled('div')`
   .Select {
     width: ${(props) => sizes[props.size]};
     &-control {
-      min-height: 40px;
-      background-color: ${(props) => props.theme.colors.grey400};
-      border: 1px solid #40464f;
+      background-color: ${({ theme }) => theme.colors.grey400};
+      border: 1px solid
+        ${({ validationState, theme }) =>
+          validationState
+            ? theme.colors[validationStateColor[validationState]]
+            : theme.colors.grey500};
       display: flex;
+      min-height: 40px;
       align-items: center;
       height: auto;
     }
@@ -34,8 +44,12 @@ export default styled('div')`
     &.is-focused,
     &.is-open {
       .Select-control {
-        background-color: ${(props) => props.theme.colors.grey400};
-        border: 1px solid #40464f;
+        background-color: ${({ theme }) => theme.colors.grey400};
+        border: 1px solid
+          ${({ validationState, theme }) =>
+            validationState
+              ? theme.colors[validationStateColor[validationState]]
+              : theme.colors.grey500};
         box-shadow: none;
       }
     }
@@ -47,32 +61,32 @@ export default styled('div')`
     }
     &-menu-outer {
       box-shadow: 0;
-      background-color: ${(props) => props.theme.colors.grey400};
-      border: 1px solid #40464f;
+      background-color: ${({ theme }) => theme.colors.grey400};
+      border: 1px solid ${({ theme }) => theme.colors.grey500};
       .Select-menu .Select-option {
-        background-color: ${(props) => props.theme.colors.grey400};
-        color: #ffffff;
+        background-color: ${({ theme }) => theme.colors.grey400};
+        color: ${({ theme }) => theme.colors.white};
         &.is-selected {
-          background-color: ${(props) => props.theme.colors.grey400};
-          border-bottom: 1px solid #40464f;
+          background-color: ${({ theme }) => theme.colors.grey400};
+          border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
         }
         &.is-focused {
-          background-color: ${(props) => props.theme.colors.grey400};
+          background-color: ${({ theme }) => theme.colors.grey400};
           border: 0;
         }
         &:hover {
-          background-color: ${(props) => props.theme.colors.grey300};
+          background-color: ${({ theme }) => theme.colors.grey300};
           border: 0;
         }
         &.is-selected:hover {
-          background-color: ${(props) => props.theme.colors.grey300};
-          border-bottom: 1px solid #40464f;
+          background-color: ${({ theme }) => theme.colors.grey300};
+          border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
         }
         &.is-disabled {
-          color: ${(props) => props.theme.colors.grey100};
+          color: ${({ theme }) => theme.colors.grey100};
           &:hover {
-            background-color: ${(props) => props.theme.colors.grey400};
-            color: ${(props) => props.theme.colors.grey100};
+            background-color: ${({ theme }) => theme.colors.grey400};
+            color: ${({ theme }) => theme.colors.grey100};
           }
         }
       }
@@ -86,8 +100,8 @@ export default styled('div')`
     &--multi {
       .Select-value {
         display: inline-flex;
-        background-color: ${(props) => props.theme.colors.primary100};
-        color: #fff;
+        background-color: ${({ theme }) => theme.colors.primary100};
+        color: ${({ theme }) => theme.colors.white};
         flex-flow: row-reverse;
         align-items: center;
         &-label {

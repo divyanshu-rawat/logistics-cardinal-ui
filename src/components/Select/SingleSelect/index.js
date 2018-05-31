@@ -10,6 +10,7 @@ class SingleSelect extends PureComponent {
     onChange: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
+    validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
     isSearchable: PropTypes.bool,
     isFirst: PropTypes.bool,
     size: PropTypes.string,
@@ -35,12 +36,13 @@ class SingleSelect extends PureComponent {
       placeholder,
       isSearchable = false,
       isFirst,
+      validationState,
     } = this.props;
 
     const { selectedValue } = this.state;
 
     return (
-      <Select size={size} isFirst={isFirst}>
+      <Select size={size} validationState={validationState} isFirst={isFirst}>
         <SelectPlus
           joinValues
           clearable={false}

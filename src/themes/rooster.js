@@ -14,6 +14,7 @@ const greys = {
   grey200: '#3f454d',
   grey300: '#343a42',
   grey400: '#292d33',
+  grey500: '#40464f',
 };
 
 const greens = {
@@ -29,7 +30,7 @@ const reds = {
   red300: '#ffaf9f',
   red500: '#ff7559',
   red700: '#d55a41',
-  red900: '#a73d28',
+  red900: '#a94442',
 };
 
 const yellows = {
@@ -44,7 +45,7 @@ const misc = {
   bodyBackground: greys.grey400,
   mainBackground: '343941',
   textColor: white,
-  danger: reds.red500,
+  danger: reds.red900,
   success: greens.green700,
   warning: yellows.yellow700,
 };

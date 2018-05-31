@@ -8,6 +8,7 @@ class MultipleSelect extends PureComponent {
   static propTypes = {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
+    validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
     placeholder: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     initialValue: PropTypes.array,
@@ -32,11 +33,11 @@ class MultipleSelect extends PureComponent {
   };
 
   render() {
-    const { options, name, placeholder } = this.props;
+    const { options, name, placeholder, validationState } = this.props;
     const { selectedValue } = this.state;
 
     return (
-      <Select>
+      <Select validationState={validationState}>
         <SelectPlus
           clearable={false}
           searchable={false}
