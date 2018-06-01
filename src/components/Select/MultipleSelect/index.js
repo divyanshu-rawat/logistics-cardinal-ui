@@ -9,8 +9,8 @@ class MultipleSelect extends PureComponent {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
-    placeholder: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
+    placeholder: PropTypes.string,
     initialValue: PropTypes.array,
   };
 

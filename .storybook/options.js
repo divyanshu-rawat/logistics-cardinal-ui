@@ -3,7 +3,7 @@ const storybookOptions = {
    * name to display in the top left corner
    * @type {String}
    */
-  name: 'Logistics Cardinal UI',
+  name: '🐦 Logistics Cardinal UI',
   /**
    * URL for name in top left corner to link to
    * @type {String}

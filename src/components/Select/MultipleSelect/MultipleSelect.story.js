@@ -26,6 +26,7 @@ storiesOf(`${FORM}Select/MultipleSelect`, module)
           'success',
           'warning',
         ])}
+        placeholder="🐦  Select something..."
         onChange={action((item) => console.log(item))}
         options={MultipleSelectMock}
       />

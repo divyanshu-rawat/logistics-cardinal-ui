@@ -38,7 +38,7 @@ storiesOf(`${FORM}Select/SingleSelect`, module)
       <SingleSelect
         options={SingleSelectMock}
         onChange={action((item) => console.log(item))}
-        initialValue={{ label: '09:00', value: '09:00:00' }}
+        initialValue="09:00:00"
         name="start_at"
         placeholder="Start At"
       />
