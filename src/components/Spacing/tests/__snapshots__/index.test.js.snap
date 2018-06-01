@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spacing /> should render the component with all properties as true 1`] = `
+<styled.div
+  bottom={true}
+  inline={true}
+  left={true}
+  right={true}
+  top={true}
+  type="margin"
+>
+  <Button
+    actionType="default"
+    active={false}
+    disabled={false}
+    elementType="button"
+    href=""
+    size=""
+    stretch={false}
+  >
+    Awesome Button
+  </Button>
+</styled.div>
+`;
+
+exports[`<Spacing /> should render the component with padding instead of margin 1`] = `
+<styled.div
+  type="padding"
+>
+  <Button
+    actionType="default"
+    active={false}
+    disabled={false}
+    elementType="button"
+    href=""
+    size=""
+    stretch={false}
+  >
+    Awesome Button
+  </Button>
+</styled.div>
+`;
+
+exports[`<Spacing /> should render the component with the default props 1`] = `
+<styled.div
+  type="margin"
+>
+  <Button
+    actionType="default"
+    active={false}
+    disabled={false}
+    elementType="button"
+    href=""
+    size=""
+    stretch={false}
+  >
+    Awesome Button
+  </Button>
+</styled.div>
+`;

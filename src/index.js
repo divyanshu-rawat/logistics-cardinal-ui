@@ -10,6 +10,7 @@ import Indicator from './components/Checkbox/Indicator';
 import Prediction from './components/Forecast/Prediction';
 import Input from './components/Input';
 import MaskedInput from './components/MaskedInput';
+import Spacing from './components/Spacing';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -26,6 +27,7 @@ export default {
   Text,
   Input,
   MaskedInput,
+  Spacing,
   MASKS,
   ...Grid,
 };

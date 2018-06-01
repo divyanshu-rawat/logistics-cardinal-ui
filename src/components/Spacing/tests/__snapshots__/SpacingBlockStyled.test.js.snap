@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SpacingBlockStyled /> should render component with \`inline = true\` 1`] = `
+<styled.div
+  inline={true}
+>
+  <div
+    className="sc-bdVaJa bSrzPW"
+  />
+</styled.div>
+`;
+
+exports[`<SpacingBlockStyled /> should render component with the default props 1`] = `
+<styled.div
+  inline={false}
+>
+  <div
+    className="sc-bdVaJa fpcbkF"
+  />
+</styled.div>
+`;
