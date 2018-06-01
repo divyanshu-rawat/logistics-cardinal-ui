@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import SelectPlus from 'react-select-plus';
@@ -471,9 +471,113 @@ MultipleSelect.propTypes = {
   name: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
   validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
-  placeholder: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
   initialValue: PropTypes.array,
+};
+
+var _templateObject$2 = taggedTemplateLiteral(
+  [
+    '\n  color: ',
+    ';\n  font-family: ',
+    ';\n  font-weight: ',
+    ';\n  text-align: ',
+    ';\n  text-transform: ',
+    ';\n  margin: ',
+    ';\n  font-size: ',
+    ';\n  display: inline-block;\n\n  ',
+    ';\n',
+  ],
+  [
+    '\n  color: ',
+    ';\n  font-family: ',
+    ';\n  font-weight: ',
+    ';\n  text-align: ',
+    ';\n  text-transform: ',
+    ';\n  margin: ',
+    ';\n  font-size: ',
+    ';\n  display: inline-block;\n\n  ',
+    ';\n',
+  ],
+);
+
+var TextStyled = styled.span(
+  _templateObject$2,
+  function(_ref) {
+    var theme = _ref.theme,
+      color = _ref.color;
+    return color || theme.fontFamily.color;
+  },
+  function(_ref2) {
+    var theme = _ref2.theme,
+      fontFamily = _ref2.fontFamily;
+    return fontFamily || theme.fontFamily.default;
+  },
+  function(_ref3) {
+    var theme = _ref3.theme,
+      weight = _ref3.weight;
+    return weight || theme.fontWeight.regular;
+  },
+  function(_ref4) {
+    var align = _ref4.align;
+    return align || 'left';
+  },
+  function(_ref5) {
+    var uppercase = _ref5.uppercase;
+    return uppercase ? 'uppercase' : 'auto';
+  },
+  function(_ref6) {
+    var margin = _ref6.margin,
+      theme = _ref6.theme;
+    return margin || theme.composedSpacings.byte;
+  },
+  function(_ref7) {
+    var fontSize = _ref7.fontSize,
+      theme = _ref7.theme;
+    return theme.fontSize[fontSize] || theme.fontSize.byte;
+  },
+  function(_ref8) {
+    var truncate = _ref8.truncate;
+
+    if (truncate) {
+      return '\n        display: block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n      ';
+    }
+
+    return '';
+  },
+);
+
+var Text = function Text(_ref) {
+  var children = _ref.children,
+    props = objectWithoutProperties(_ref, ['children']);
+
+  var RenderAsProp = TextStyled.withComponent(props.as);
+  return React.createElement(RenderAsProp, props, children);
+};
+
+Text.propTypes = {
+  children: PropTypes.any.isRequired,
+  /** Final Element HTML to be rendered */
+  as: PropTypes.string.isRequired,
+  /** Text Color */
+  color: PropTypes.string,
+  /** Font Family, default is the theme one */
+  fontFamily: PropTypes.string,
+  /** Font Weight, default is the theme one */
+  weight: PropTypes.number,
+  /** Text Align, default is left */
+  align: PropTypes.string,
+  /** Truncate... */
+  truncate: PropTypes.bool,
+  /** Text Transform, UPPERCASE */
+  uppercase: PropTypes.bool,
+  fontSize: PropTypes.string,
+  margin: PropTypes.string,
+};
+
+Text.defaultProps = {
+  children: '',
+  as: 'span',
 };
 
 var TimeSpanDisplay = function TimeSpanDisplay(_ref) {
@@ -488,16 +592,22 @@ var TimeSpanDisplay = function TimeSpanDisplay(_ref) {
 
 TimeSpanDisplay.propTypes = {
   date: PropTypes.string.isRequired,
-  withSeconds: PropTypes.bool.isRequired,
+  withSeconds: PropTypes.bool,
 };
 
 var TimeSpanDisplay$1 = function TimeSpanDisplay$$1(_ref) {
-  var startAt = _ref.startAt,
+  var fontSize = _ref.fontSize,
+    startAt = _ref.startAt,
+    theme = _ref.theme,
     endAt = _ref.endAt,
     withSeconds = _ref.withSeconds;
   return React.createElement(
-    Fragment,
-    null,
+    Text,
+    {
+      fontSize: fontSize,
+      margin: '0 0 ' + theme.spacings.giga + ' 0',
+      color: theme.colors.grey100,
+    },
     React.createElement(TimeSpanDisplay, {
       date: startAt,
       withSeconds: withSeconds,
@@ -514,8 +624,12 @@ var TimeSpanDisplay$1 = function TimeSpanDisplay$$1(_ref) {
 TimeSpanDisplay$1.propTypes = {
   startAt: PropTypes.string.isRequired,
   endAt: PropTypes.string.isRequired,
+  theme: PropTypes.object.isRequired,
+  fontSize: PropTypes.oneOf(['bit', 'byte', 'kilo', 'mega', 'giga']),
   withSeconds: PropTypes.bool,
 };
+
+var TimeSpanDisplay$2 = withTheme(TimeSpanDisplay$1);
 
 var Button$1 = function Button$$1(_ref) {
   var active = _ref.active,
@@ -1384,12 +1498,12 @@ Grid.propTypes = {
   alignContent: index.string,
 };
 
-var _templateObject$2 = taggedTemplateLiteral(
+var _templateObject$3 = taggedTemplateLiteral(
   ['\n  padding: ', ';\n'],
   ['\n  padding: ', ';\n'],
 );
 
-var OuterGutter = styled.section(_templateObject$2, function(_ref) {
+var OuterGutter = styled.section(_templateObject$3, function(_ref) {
   var theme = _ref.theme,
     withPad = _ref.withPad;
   return withPad ? theme.grid.outerGutter : '0px';
@@ -2087,7 +2201,7 @@ _abbrTitle)),
 }),
 _unopinionatedRules);
 
-var _templateObject$3 = /*#__PURE__*/ taggedTemplateLiteralLoose$1(
+var _templateObject$4 = /*#__PURE__*/ taggedTemplateLiteralLoose$1(
   ['radial-gradient(', '', '', '', ')'],
   ['radial-gradient(', '', '', '', ')'],
 );
@@ -3528,7 +3642,7 @@ function borderRadius(side, radius) {
   );
 }
 
-var _templateObject$4 = taggedTemplateLiteral(
+var _templateObject$5 = taggedTemplateLiteral(
   [
     '\n  ',
     ';\n  color: ',
@@ -3550,7 +3664,7 @@ var _templateObject$4 = taggedTemplateLiteral(
 );
 
 var TabButton = styled('a')(
-  _templateObject$4,
+  _templateObject$5,
   function(_ref) {
     var theme = _ref.theme;
     return borderRadius('top', theme.borderRadius.mega);
@@ -3605,13 +3719,13 @@ TabButtonList.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-var _templateObject$5 = taggedTemplateLiteral(
+var _templateObject$6 = taggedTemplateLiteral(
   ['\n  width: 100%;\n  padding: ', ';\n  background-color: ', ';\n'],
   ['\n  width: 100%;\n  padding: ', ';\n  background-color: ', ';\n'],
 );
 
 var TabContainer = styled.div(
-  _templateObject$5,
+  _templateObject$6,
   function(_ref) {
     var theme = _ref.theme;
     return theme.composedSpacings.byte;
@@ -3722,102 +3836,6 @@ var ComposedTabs = (function(_PureComponent) {
 ComposedTabs.propTypes = {
   /** Tab Component Options */
   options: PropTypes.object.isRequired,
-};
-
-var _templateObject$6 = taggedTemplateLiteral(
-  [
-    '\n  color: ',
-    ';\n  font-family: ',
-    ';\n  font-weight: ',
-    ';\n  text-align: ',
-    ';\n  text-transform: ',
-    ';\n  margin: ',
-    ';\n\n  display: inline-block;\n\n  ',
-    ';\n',
-  ],
-  [
-    '\n  color: ',
-    ';\n  font-family: ',
-    ';\n  font-weight: ',
-    ';\n  text-align: ',
-    ';\n  text-transform: ',
-    ';\n  margin: ',
-    ';\n\n  display: inline-block;\n\n  ',
-    ';\n',
-  ],
-);
-
-var TextStyled = styled.span(
-  _templateObject$6,
-  function(_ref) {
-    var theme = _ref.theme,
-      color = _ref.color;
-    return color || theme.fontFamily.color;
-  },
-  function(_ref2) {
-    var theme = _ref2.theme,
-      fontFamily = _ref2.fontFamily;
-    return fontFamily || theme.fontFamily.default;
-  },
-  function(_ref3) {
-    var theme = _ref3.theme,
-      weight = _ref3.weight;
-    return weight || theme.fontWeight.regular;
-  },
-  function(_ref4) {
-    var align = _ref4.align;
-    return align || 'left';
-  },
-  function(_ref5) {
-    var uppercase = _ref5.uppercase;
-    return uppercase ? 'uppercase' : 'auto';
-  },
-  function(_ref6) {
-    var margin = _ref6.margin,
-      theme = _ref6.theme;
-    return margin || theme.composedSpacings.byte;
-  },
-  function(_ref7) {
-    var truncate = _ref7.truncate;
-
-    if (truncate) {
-      return '\n        display: block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n      ';
-    }
-
-    return '';
-  },
-);
-
-var Text = function Text(_ref) {
-  var children = _ref.children,
-    props = objectWithoutProperties(_ref, ['children']);
-
-  var RenderAsProp = TextStyled.withComponent(props.as);
-  return React.createElement(RenderAsProp, props, children);
-};
-
-Text.propTypes = {
-  children: PropTypes.any.isRequired,
-  /** Final Element HTML to be rendered */
-  as: PropTypes.string.isRequired,
-  /** Text Color */
-  color: PropTypes.string,
-  /** Font Family, default is the theme one */
-  fontFamily: PropTypes.string,
-  /** Font Weight, default is the theme one */
-  weight: PropTypes.number,
-  /** Text Align, default is left */
-  align: PropTypes.string,
-  /** Truncate... */
-  truncate: PropTypes.bool,
-  /** Text Transform, UPPERCASE */
-  uppercase: PropTypes.bool,
-  margin: PropTypes.string,
-};
-
-Text.defaultProps = {
-  children: '',
-  as: 'span',
 };
 
 var _templateObject$7 = taggedTemplateLiteral(
@@ -4974,6 +4992,74 @@ InputMask.propTypes = {
   guide: PropTypes.bool,
 };
 
+var _templateObject$12 = taggedTemplateLiteral(
+  ['\n  display: ', ';\n'],
+  ['\n  display: ', ';\n'],
+);
+
+var SpacingBlockStyled = styled('div')(_templateObject$12, function(_ref) {
+  var inline = _ref.inline;
+  return inline ? 'inline-block' : 'block';
+});
+
+var _templateObject$13 = taggedTemplateLiteral(
+  ['\n  ', ';\n'],
+  ['\n  ', ';\n'],
+);
+
+var SpacingStyled = SpacingBlockStyled.extend(_templateObject$13, function(
+  _ref,
+) {
+  var type = _ref.type,
+    top = _ref.top,
+    right = _ref.right,
+    bottom = _ref.bottom,
+    left = _ref.left,
+    theme = _ref.theme;
+  return (
+    '\n    ' +
+    type +
+    '-top: ' +
+    (top ? theme.spacings.kilo : 'auto') +
+    ';\n    ' +
+    type +
+    '-bottom: ' +
+    (bottom ? theme.spacings.kilo : 'auto') +
+    ';\n    ' +
+    type +
+    '-left: ' +
+    (left ? theme.spacings.kilo : 'auto') +
+    ';\n    ' +
+    type +
+    '-right: ' +
+    (right ? theme.spacings.kilo : 'auto') +
+    ';\n  '
+  );
+});
+
+var MARGIN = 'margin';
+var PADDING = 'padding';
+
+var Spacing = function Spacing(_ref) {
+  var children = _ref.children,
+    props = objectWithoutProperties(_ref, ['children']);
+  return React.createElement(SpacingStyled, props, children);
+};
+
+Spacing.propTypes = {
+  type: PropTypes.oneOf([MARGIN, PADDING]).isRequired,
+  children: PropTypes.element.isRequired,
+  inline: PropTypes.bool,
+  top: PropTypes.bool,
+  bottom: PropTypes.bool,
+  left: PropTypes.bool,
+  right: PropTypes.bool,
+};
+
+Spacing.defaultProps = {
+  type: MARGIN,
+};
+
 var createNumberMask = createCommonjsModule$1(function(module, exports) {
   !(function(e, t) {
     module.exports = t();
@@ -5386,6 +5472,15 @@ var fontFamily = {
   color: colors.white,
 };
 
+// TBC with the new design-system
+var fontSize = {
+  bit: '11px',
+  byte: '12px',
+  kilo: '16px',
+  mega: '18px',
+  giga: '20px',
+};
+
 var fontWeight = {
   regular: 400,
   bold: 700,
@@ -5400,6 +5495,7 @@ var rooster = {
   borderWidth: borderWidth$1,
   fontFamily: fontFamily,
   fontWeight: fontWeight,
+  fontSize: fontSize,
 };
 
 var white$1 = '#fff';
@@ -5511,7 +5607,7 @@ var index$1$1 = _extends(
     SingleSelect: SingleSelect,
     MultipleSelect: MultipleSelect,
     ComposedTabs: ComposedTabs,
-    TimeSpanDisplay: TimeSpanDisplay$1,
+    TimeSpanDisplay: TimeSpanDisplay$2,
     Prediction: Prediction,
     Button: Button$1,
     Global: Global,
@@ -5520,6 +5616,7 @@ var index$1$1 = _extends(
     Text: Text,
     Input: Input,
     MaskedInput: InputMask,
+    Spacing: Spacing,
     MASKS: MASKS,
   },
   Grid$2,
