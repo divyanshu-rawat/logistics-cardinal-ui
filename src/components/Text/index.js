@@ -23,6 +23,7 @@ Text.propTypes = {
   truncate: PropTypes.bool,
   /** Text Transform, UPPERCASE */
   uppercase: PropTypes.bool,
+  fontSize: PropTypes.string,
   margin: PropTypes.string,
 };
 

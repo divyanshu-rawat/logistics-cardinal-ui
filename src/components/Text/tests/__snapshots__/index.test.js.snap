@@ -60,6 +60,13 @@ exports[`<Text /> should render the component with different props 1`] = `
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
       },
+      "fontSize": Object {
+        "bit": "11px",
+        "byte": "12px",
+        "giga": "20px",
+        "kilo": "16px",
+        "mega": "18px",
+      },
       "fontWeight": Object {
         "bold": 700,
         "regular": 400,
@@ -143,6 +150,13 @@ exports[`<Text /> should render the component with the default props 1`] = `
       "fontFamily": Object {
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
+      },
+      "fontSize": Object {
+        "bit": "11px",
+        "byte": "12px",
+        "giga": "20px",
+        "kilo": "16px",
+        "mega": "18px",
       },
       "fontWeight": Object {
         "bold": 700,

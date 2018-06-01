@@ -93,6 +93,15 @@ const fontFamily = {
   color: colors.white,
 };
 
+// TBC with the new design-system
+const fontSize = {
+  bit: '11px',
+  byte: '12px',
+  kilo: '16px',
+  mega: '18px',
+  giga: '20px',
+};
+
 const fontWeight = {
   regular: 400,
   bold: 700,
@@ -107,4 +116,5 @@ export default {
   borderWidth,
   fontFamily,
   fontWeight,
+  fontSize,
 };

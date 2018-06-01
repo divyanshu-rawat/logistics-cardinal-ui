@@ -10,7 +10,7 @@ const TimeSpanDisplay = ({ date, withSeconds }) => (
 
 TimeSpanDisplay.propTypes = {
   date: PropTypes.string.isRequired,
-  withSeconds: PropTypes.bool.isRequired,
+  withSeconds: PropTypes.bool,
 };
 
 export default TimeSpanDisplay;

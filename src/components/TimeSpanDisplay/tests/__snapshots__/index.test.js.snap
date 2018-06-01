@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
-<React.Fragment>
+exports[`<TimeSpanDisplay /> should ... 1`] = `
+<Text
+  as="span"
+  color="#96a2b0"
+  fontSize="mega"
+  margin="0 0 20px 0"
+>
   <TimeSpanDisplay
     date="2017-12-01T10:00:00Z"
     withSeconds={true}
@@ -12,20 +17,175 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
     date="2017-12-01T12:00:00Z"
     withSeconds={true}
   />
-</React.Fragment>
+</Text>
+`;
+
+exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
+<TimeSpanDisplay
+  endAt="2017-12-01T12:00:00Z"
+  fontSize="mega"
+  startAt="2017-12-01T10:00:00Z"
+  theme={
+    Object {
+      "borderRadius": Object {
+        "giga": "5px",
+        "kilo": "1px",
+        "mega": "4px",
+      },
+      "borderWidth": Object {
+        "kilo": "1px",
+        "mega": "2px",
+      },
+      "colors": Object {
+        "black": "#000",
+        "bodyBackground": "#292d33",
+        "danger": "#a94442",
+        "green100": "#c6e5cb",
+        "green300": "#97e2a3",
+        "green500": "#62de76",
+        "green700": "#49b85b",
+        "green900": "#2f903e",
+        "grey100": "#96a2b0",
+        "grey200": "#3f454d",
+        "grey300": "#343a42",
+        "grey400": "#292d33",
+        "grey500": "#40464f",
+        "mainBackground": "343941",
+        "primary100": "#3f9bfd",
+        "primary200": "#375f8a",
+        "primary300": "#324e70",
+        "primary400": "#96a2b0",
+        "primary500": "#484e58",
+        "red100": "#ffe6e1",
+        "red300": "#ffaf9f",
+        "red500": "#ff7559",
+        "red700": "#d55a41",
+        "red900": "#a94442",
+        "success": "#49b85b",
+        "textColor": "#fff",
+        "warning": "#d4a546",
+        "white": "#fff",
+        "yellow100": "#f2e5cb",
+        "yellow300": "#f7da9f",
+        "yellow500": "#ffc859",
+        "yellow700": "#d4a546",
+        "yellow900": "#ab8433",
+      },
+      "composedSpacings": Object {
+        "byte": "10px 15px",
+      },
+      "fontFamily": Object {
+        "color": "#fff",
+        "default": "\\"Open Sans\\", sans-serif",
+      },
+      "fontSize": Object {
+        "bit": "11px",
+        "byte": "12px",
+        "giga": "20px",
+        "kilo": "16px",
+        "mega": "18px",
+      },
+      "fontWeight": Object {
+        "bold": 700,
+        "regular": 400,
+      },
+      "grid": Object {
+        "outerGutter": "8px",
+      },
+      "spacings": Object {
+        "bit": "1px",
+        "byte": "5px",
+        "giga": "20px",
+        "kilo": "10px",
+        "mega": "15px",
+      },
+    }
+  }
+  withSeconds={true}
+/>
 `;
 
 exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
-<React.Fragment>
-  <TimeSpanDisplay
-    date="2017-12-01T10:00:00Z"
-    withSeconds={false}
-  />
-   —
-   
-  <TimeSpanDisplay
-    date="2017-12-01T12:00:00Z"
-    withSeconds={false}
-  />
-</React.Fragment>
+<TimeSpanDisplay
+  endAt="2017-12-01T12:00:00Z"
+  fontSize="mega"
+  startAt="2017-12-01T10:00:00Z"
+  theme={
+    Object {
+      "borderRadius": Object {
+        "giga": "5px",
+        "kilo": "1px",
+        "mega": "4px",
+      },
+      "borderWidth": Object {
+        "kilo": "1px",
+        "mega": "2px",
+      },
+      "colors": Object {
+        "black": "#000",
+        "bodyBackground": "#292d33",
+        "danger": "#a94442",
+        "green100": "#c6e5cb",
+        "green300": "#97e2a3",
+        "green500": "#62de76",
+        "green700": "#49b85b",
+        "green900": "#2f903e",
+        "grey100": "#96a2b0",
+        "grey200": "#3f454d",
+        "grey300": "#343a42",
+        "grey400": "#292d33",
+        "grey500": "#40464f",
+        "mainBackground": "343941",
+        "primary100": "#3f9bfd",
+        "primary200": "#375f8a",
+        "primary300": "#324e70",
+        "primary400": "#96a2b0",
+        "primary500": "#484e58",
+        "red100": "#ffe6e1",
+        "red300": "#ffaf9f",
+        "red500": "#ff7559",
+        "red700": "#d55a41",
+        "red900": "#a94442",
+        "success": "#49b85b",
+        "textColor": "#fff",
+        "warning": "#d4a546",
+        "white": "#fff",
+        "yellow100": "#f2e5cb",
+        "yellow300": "#f7da9f",
+        "yellow500": "#ffc859",
+        "yellow700": "#d4a546",
+        "yellow900": "#ab8433",
+      },
+      "composedSpacings": Object {
+        "byte": "10px 15px",
+      },
+      "fontFamily": Object {
+        "color": "#fff",
+        "default": "\\"Open Sans\\", sans-serif",
+      },
+      "fontSize": Object {
+        "bit": "11px",
+        "byte": "12px",
+        "giga": "20px",
+        "kilo": "16px",
+        "mega": "18px",
+      },
+      "fontWeight": Object {
+        "bold": 700,
+        "regular": 400,
+      },
+      "grid": Object {
+        "outerGutter": "8px",
+      },
+      "spacings": Object {
+        "bit": "1px",
+        "byte": "5px",
+        "giga": "20px",
+        "kilo": "10px",
+        "mega": "15px",
+      },
+    }
+  }
+  withSeconds={false}
+/>
 `;

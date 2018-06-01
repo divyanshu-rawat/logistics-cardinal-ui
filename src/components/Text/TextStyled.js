@@ -8,7 +8,8 @@ const TextStyled = styled.span`
   text-align: ${({ align }) => align || 'left'};
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'auto')};
   margin: ${({ margin, theme }) => margin || theme.composedSpacings.byte};
-
+  font-size: ${({ fontSize, theme }) =>
+    theme.fontSize[fontSize] || theme.fontSize.byte};
   display: inline-block;
 
   ${({ truncate }) => {

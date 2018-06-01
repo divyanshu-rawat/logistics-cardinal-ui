@@ -12,6 +12,7 @@ const renderedComponent = ({
   align,
   truncate,
   uppercase,
+  fontSize,
   margin,
 }) =>
   shallow(
@@ -23,6 +24,7 @@ const renderedComponent = ({
       align={align}
       truncate={truncate}
       uppercase={uppercase}
+      fontSize={fontSize}
       margin={margin}
     >
       Corinthians!
@@ -44,6 +46,7 @@ describe('<TextStyled />', () => {
         align: 'right',
         truncate: true,
         uppercase: true,
+        fontSize: 'mega',
         margin: '20px',
       }),
     );
