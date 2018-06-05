@@ -11,7 +11,7 @@ const Spacing = ({ children, ...props }) => (
 
 Spacing.propTypes = {
   type: PropTypes.oneOf([MARGIN, PADDING]).isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   inline: PropTypes.bool,
   top: PropTypes.bool,
   bottom: PropTypes.bool,
