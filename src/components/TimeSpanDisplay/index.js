@@ -6,11 +6,7 @@ import Text from '../Text';
 import Time from './Time';
 
 const TimeSpanDisplay = ({ fontSize, startAt, theme, endAt, withSeconds }) => (
-  <Text
-    fontSize={fontSize}
-    margin={`0 0 ${theme.spacings.giga} 0`}
-    color={theme.colors.grey100}
-  >
+  <Text fontSize={fontSize} color={theme.colors.grey100}>
     <Time date={startAt} withSeconds={withSeconds} /> —{' '}
     <Time date={endAt} withSeconds={withSeconds} />
   </Text>

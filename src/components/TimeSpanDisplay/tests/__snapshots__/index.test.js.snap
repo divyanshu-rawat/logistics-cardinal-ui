@@ -5,7 +5,6 @@ exports[`<TimeSpanDisplay /> should ... 1`] = `
   as="span"
   color="#96a2b0"
   fontSize="mega"
-  margin="0 0 20px 0"
 >
   <TimeSpanDisplay
     date="2017-12-01T10:00:00Z"
