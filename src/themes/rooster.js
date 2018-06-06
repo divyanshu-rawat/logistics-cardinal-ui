@@ -74,7 +74,7 @@ const composedSpacings = {
 };
 
 const grid = {
-  outerGutter: '8px',
+  outerGutter: '10px',
 };
 
 const borderRadius = {
@@ -84,8 +84,8 @@ const borderRadius = {
 };
 
 const borderWidth = {
-  kilo: '1px',
-  mega: '2px',
+  bit: '1px',
+  byte: '2px',
 };
 
 const fontFamily = {
@@ -93,17 +93,23 @@ const fontFamily = {
   color: colors.white,
 };
 
-// TBC with the new design-system
 const fontSize = {
   bit: '11px',
-  byte: '12px',
-  kilo: '16px',
+  byte: '13px',
+  kilo: '15px',
   mega: '18px',
-  giga: '20px',
+  giga: '24px',
+};
+
+const lineHeight = {
+  bit: 1.153,
+  byte: 1.333,
+  kilo: 1.5,
 };
 
 const fontWeight = {
   regular: 400,
+  semiBold: 600,
   bold: 700,
 };
 
@@ -117,4 +123,5 @@ export default {
   fontFamily,
   fontWeight,
   fontSize,
+  lineHeight,
 };

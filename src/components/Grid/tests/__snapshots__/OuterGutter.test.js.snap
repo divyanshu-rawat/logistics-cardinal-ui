@@ -2,7 +2,7 @@
 
 exports[`<OuterGutter /> should render component with \`withPad\` prop as true 1`] = `
 <section
-  className="sc-bdVaJa cHxkvh"
+  className="sc-bdVaJa haicEa"
 />
 `;
 

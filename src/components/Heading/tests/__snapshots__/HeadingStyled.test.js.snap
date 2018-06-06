@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeadingStyled /> should render the component with different props 1`] = `
+<h3
+  as="h4"
+  className="sc-bdVaJa dcLdYj"
+>
+  Almighty Corinthians!
+</h3>
+`;
+
+exports[`<HeadingStyled /> should render the component with the default props 1`] = `
+<h3
+  as="h3"
+  className="sc-bdVaJa kvBkri"
+>
+  Almighty Corinthians!
+</h3>
+`;
+
+exports[`<HeadingStyled /> should still rendering the component even if the element doesnt match the list 1`] = `
+<h3
+  as="span"
+  className="sc-bdVaJa ftJEaA"
+>
+  Almighty Corinthians!
+</h3>
+`;

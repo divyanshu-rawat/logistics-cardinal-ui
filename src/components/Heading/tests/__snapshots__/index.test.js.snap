@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render the component with different props 1`] = `
+<styled.h1
+  as="h1"
+  bold={false}
+  noMargin={true}
+>
+  Almighty Corinthians!
+</styled.h1>
+`;
+
+exports[`<Heading /> should render the component with the default props 1`] = `
+<styled.h3
+  as="h3"
+  bold={false}
+  noMargin={false}
+>
+  Almighty Corinthians!
+</styled.h3>
+`;

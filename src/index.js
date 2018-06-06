@@ -11,6 +11,7 @@ import Prediction from './components/Forecast/Prediction';
 import Input from './components/Input';
 import MaskedInput from './components/MaskedInput';
 import Spacing from './components/Spacing';
+import Heading from './components/Heading';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -28,6 +29,7 @@ export default {
   Input,
   MaskedInput,
   Spacing,
+  Heading,
   MASKS,
   ...Grid,
 };

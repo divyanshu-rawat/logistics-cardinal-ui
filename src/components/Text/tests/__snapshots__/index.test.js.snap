@@ -15,8 +15,8 @@ exports[`<Text /> should render the component with different props 1`] = `
         "mega": "4px",
       },
       "borderWidth": Object {
-        "kilo": "1px",
-        "mega": "2px",
+        "bit": "1px",
+        "byte": "2px",
       },
       "colors": Object {
         "black": "#000",
@@ -62,17 +62,23 @@ exports[`<Text /> should render the component with different props 1`] = `
       },
       "fontSize": Object {
         "bit": "11px",
-        "byte": "12px",
-        "giga": "20px",
-        "kilo": "16px",
+        "byte": "13px",
+        "giga": "24px",
+        "kilo": "15px",
         "mega": "18px",
       },
       "fontWeight": Object {
         "bold": 700,
         "regular": 400,
+        "semiBold": 600,
       },
       "grid": Object {
-        "outerGutter": "8px",
+        "outerGutter": "10px",
+      },
+      "lineHeight": Object {
+        "bit": 1.153,
+        "byte": 1.333,
+        "kilo": 1.5,
       },
       "spacings": Object {
         "bit": "1px",
@@ -106,8 +112,8 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "mega": "4px",
       },
       "borderWidth": Object {
-        "kilo": "1px",
-        "mega": "2px",
+        "bit": "1px",
+        "byte": "2px",
       },
       "colors": Object {
         "black": "#000",
@@ -153,17 +159,23 @@ exports[`<Text /> should render the component with the default props 1`] = `
       },
       "fontSize": Object {
         "bit": "11px",
-        "byte": "12px",
-        "giga": "20px",
-        "kilo": "16px",
+        "byte": "13px",
+        "giga": "24px",
+        "kilo": "15px",
         "mega": "18px",
       },
       "fontWeight": Object {
         "bold": 700,
         "regular": 400,
+        "semiBold": 600,
       },
       "grid": Object {
-        "outerGutter": "8px",
+        "outerGutter": "10px",
+      },
+      "lineHeight": Object {
+        "bit": 1.153,
+        "byte": 1.333,
+        "kilo": 1.5,
       },
       "spacings": Object {
         "bit": "1px",
