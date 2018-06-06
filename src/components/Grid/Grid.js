@@ -11,10 +11,12 @@ const ComposedGrid = (props) => (
 );
 
 ComposedGrid.propTypes = {
+  gap: PropTypes.string.isRequired,
   withPad: PropTypes.bool,
 };
 
 ComposedGrid.defaultProps = {
+  gap: '10px',
   withPad: false,
 };
 

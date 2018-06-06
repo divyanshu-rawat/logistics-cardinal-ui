@@ -6,6 +6,7 @@ exports[`<Grid /> should render the component with \`withPad\` prop as true 1`] 
 >
   <Grid__Grid
     columns={12}
+    gap="10px"
     theme={
       Object {
         "borderRadius": Object {
@@ -105,6 +106,7 @@ exports[`<Grid /> should render the component with the default props 1`] = `
 >
   <Grid__Grid
     columns={12}
+    gap="10px"
     theme={
       Object {
         "borderRadius": Object {
