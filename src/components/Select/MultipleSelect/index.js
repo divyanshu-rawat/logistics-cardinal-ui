@@ -1,10 +1,11 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import isEqual from 'lodash/isEqual';
 import SelectPlus from 'react-select-plus';
 
 import Select from '../../Select';
 
-class MultipleSelect extends PureComponent {
+class MultipleSelect extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
@@ -14,14 +15,26 @@ class MultipleSelect extends PureComponent {
     initialValue: PropTypes.array,
   };
 
+  static defaultProps = {
+    initialValue: [],
+  };
+
   state = {
-    selectedValue: this.props.initialValue,
+    selectedValue: [],
   };
 
   componentDidMount() {
     const { initialValue } = this.props;
 
-    if (initialValue) {
+    if (initialValue.length) {
+      this.onChange(initialValue);
+    }
+  }
+
+  componentDidUpdate(nextProps) {
+    const { initialValue } = this.props;
+
+    if (!isEqual(nextProps.initialValue, initialValue)) {
       this.onChange(initialValue);
     }
   }

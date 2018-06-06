@@ -142,6 +142,7 @@ exports[`<MultipleSelect /> should render the component 1`] = `
     simpleValue={false}
     tabSelectsValue={true}
     trimFilter={true}
+    value={Array []}
     valueComponent={[Function]}
     valueKey="value"
   />
