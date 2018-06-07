@@ -12,6 +12,7 @@ import Input from './components/Input';
 import MaskedInput from './components/MaskedInput';
 import Spacing from './components/Spacing';
 import Heading from './components/Heading';
+import Spinner from './components/Spinner';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -28,6 +29,7 @@ export default {
   Text,
   Input,
   MaskedInput,
+  Spinner,
   Spacing,
   Heading,
   MASKS,

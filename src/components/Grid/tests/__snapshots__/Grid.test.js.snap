@@ -87,6 +87,11 @@ exports[`<Grid /> should render the component with \`withPad\` prop as true 1`] 
           "kilo": "10px",
           "mega": "15px",
         },
+        "zIndex": Object {
+          "select": 1090,
+          "spinner": 2010,
+          "spinnerOverlay": 2000,
+        },
       }
     }
     withPad={true}
@@ -186,6 +191,11 @@ exports[`<Grid /> should render the component with the default props 1`] = `
           "giga": "20px",
           "kilo": "10px",
           "mega": "15px",
+        },
+        "zIndex": Object {
+          "select": 1090,
+          "spinner": 2010,
+          "spinnerOverlay": 2000,
         },
       }
     }

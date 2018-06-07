@@ -113,6 +113,12 @@ const fontWeight = {
   bold: 700,
 };
 
+const zIndex = {
+  select: 1090,
+  spinnerOverlay: 2000,
+  spinner: 2010,
+};
+
 export default {
   colors,
   grid,
@@ -124,4 +130,5 @@ export default {
   fontWeight,
   fontSize,
   lineHeight,
+  zIndex,
 };

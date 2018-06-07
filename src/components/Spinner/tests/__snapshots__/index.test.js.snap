@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should render the component 1`] = `
+<styled.div>
+  <span>
+    some children
+  </span>
+</styled.div>
+`;
+
+exports[`<Spinner /> should render the component with different props 1`] = `
+<styled.div>
+  <React.Fragment>
+    <styled.div />
+    <styled.div>
+      <MDSpinner
+        color1="rgb(66, 165, 245)"
+        color2="rgb(239, 83, 80)"
+        color3="rgb(253, 216, 53)"
+        color4="rgb(76, 175, 80)"
+        duration={1333}
+        singleColor="#3f9bfd"
+        size={100}
+      />
+    </styled.div>
+  </React.Fragment>
+  <span>
+    some children
+  </span>
+</styled.div>
+`;

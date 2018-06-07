@@ -104,6 +104,11 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
         "kilo": "10px",
         "mega": "15px",
       },
+      "zIndex": Object {
+        "select": 1090,
+        "spinner": 2010,
+        "spinnerOverlay": 2000,
+      },
     }
   }
   withSeconds={true}
@@ -194,6 +199,11 @@ exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
         "giga": "20px",
         "kilo": "10px",
         "mega": "15px",
+      },
+      "zIndex": Object {
+        "select": 1090,
+        "spinner": 2010,
+        "spinnerOverlay": 2000,
       },
     }
   }

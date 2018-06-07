@@ -16,6 +16,8 @@ export default styled('div')`
   display: inline-block;
   margin-right: 5px;
   width: 100%;
+  position: relative;
+  z-index: ${({ theme }) => theme.zIndex.select};
   .Select {
     width: ${(props) => sizes[props.size]};
     &-control {
