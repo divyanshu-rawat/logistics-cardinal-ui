@@ -89747,16 +89747,19 @@
                         delete n.onBlur,
                         delete n.onChange,
                         delete n.showMask;
-                      return e(function(e) {
-                        return (t.inputElement = e);
-                      }, l(
-                        {
-                          onBlur: this.onBlur,
-                          onChange: this.onChange,
-                          defaultValue: this.props.value,
+                      return e(
+                        function(e) {
+                          return (t.inputElement = e);
                         },
-                        n,
-                      ));
+                        l(
+                          {
+                            onBlur: this.onBlur,
+                            onChange: this.onChange,
+                            defaultValue: this.props.value,
+                          },
+                          n,
+                        ),
+                      );
                     },
                   },
                   {

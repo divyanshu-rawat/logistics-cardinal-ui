@@ -24,7 +24,7 @@ export default {
       globals: { 'styled-components': 'styled' },
     },
   ],
-  external: ['styled-components'],
+  external: ['styled-components', 'recharts'],
   plugins: [
     external(),
     json(),

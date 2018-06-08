@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComposedChart /> should render the component 1`] = `
+<ComposedChart
+  barCategoryGap="10%"
+  barGap={4}
+  data={Array []}
+  height={300}
+  layout="horizontal"
+  margin={
+    Object {
+      "bottom": 30,
+      "left": 30,
+      "right": 30,
+      "top": 30,
+    }
+  }
+  reverseStackOrder={false}
+  stackOffset="none"
+  width={1000}
+>
+  Awesome chart
+</ComposedChart>
+`;

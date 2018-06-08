@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Line /> should render the component 1`] = `
+<Line
+  activeDot={true}
+  animationBegin={0}
+  animationDuration={1500}
+  animationEasing="ease"
+  connectNulls={false}
+  dataKey="shifts"
+  dot={false}
+  fill="#fff"
+  hide={false}
+  isAnimationActive={true}
+  legendType="line"
+  onAnimationEnd={[Function]}
+  onAnimationStart={[Function]}
+  points={Array []}
+  stroke="chocolate"
+  strokeDasharray="3 3"
+  strokeWidth={1}
+  xAxisId={0}
+  yAxisId={0}
+/>
+`;

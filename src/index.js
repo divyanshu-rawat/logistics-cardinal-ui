@@ -11,6 +11,8 @@ import Prediction from './components/Forecast/Prediction';
 import Input from './components/Input';
 import MaskedInput from './components/MaskedInput';
 import Spacing from './components/Spacing';
+import ComposedChart from './components/Graph/ComposedChart';
+import Line from './components/Graph/Line';
 import Heading from './components/Heading';
 import Spinner from './components/Spinner';
 import * as MASKS from './components/MaskedInput/constants';
@@ -33,5 +35,7 @@ export default {
   Spacing,
   Heading,
   MASKS,
+  ComposedChart,
+  Line,
   ...Grid,
 };
