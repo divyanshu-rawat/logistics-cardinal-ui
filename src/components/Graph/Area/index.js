@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Line as RCLine } from 'recharts';
+import { Area as RCArea } from 'recharts';
 
 import { getStrokeWidth } from '../utils';
 import { SIZES } from '../../utils/constants';
 
-class Line extends RCLine {
+class Area extends RCArea {
   static propTypes = {
-    ...RCLine.propTypes,
+    ...RCArea.propTypes,
     /**
      * Stroke color, which would be a name of a color or an rgb()
      */
     color: PropTypes.string,
     /**
-     * Stroke dashed style,
+     * Filled color, which would be a name of a color or an rgb()
      */
-    dash: PropTypes.bool,
+    bgColor: PropTypes.string,
     /**
      * Size of the line
      */
@@ -23,28 +23,27 @@ class Line extends RCLine {
   };
 
   static defaultProps = {
-    ...RCLine.defaultProps,
-    dot: false,
+    ...RCArea.defaultProps,
   };
 
   render() {
-    const { color, dash, size, ...props } = this.props;
+    const { color, bgColor, size, ...props } = this.props;
     const additionalProps = {};
-
-    if (dash) {
-      additionalProps.strokeDasharray = '3 3';
-    }
 
     if (color) {
       additionalProps.stroke = color;
+    }
+
+    if (bgColor) {
+      additionalProps.fill = bgColor;
     }
 
     if (size) {
       additionalProps.strokeWidth = getStrokeWidth(size);
     }
 
-    return <RCLine {...props} {...additionalProps} />;
+    return <RCArea {...props} {...additionalProps} />;
   }
 }
 
-export default Line;
+export default Area;

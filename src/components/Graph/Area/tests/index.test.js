@@ -2,12 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Line from '..';
+import Area from '..';
 
 const renderedComponent = () =>
-  shallow(<Line dataKey="shifts" color="chocolate" size="xs" dash />);
+  shallow(
+    <Area dataKey="shifts" color="chocolate" bgColor="papayawhip" size="xs" />,
+  );
 
-describe('<Line />', () => {
+describe('<Area />', () => {
   it('should render the component', () => {
     const wrapper = renderedComponent();
     const tree = toJson(wrapper);
