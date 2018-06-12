@@ -14,11 +14,13 @@ const renderedComponent = ({
   size = 'sm',
   labelText,
   colors,
+  disabled = false,
 }) =>
   shallow(
     <Switch
       id={id}
       theme={Themes.rooster}
+      disabled={disabled}
       initialValue={initialValue}
       size={size}
       labelText={labelText}
@@ -39,6 +41,7 @@ describe('<Switch />', () => {
       initialValue: true,
       size: 'md',
       labelText: () => <Text>Some Text</Text>,
+      disabled: true,
       colors: {
         on: '#f00',
         off: '#d5d5d5',

@@ -3,6 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
+import { boolean } from '@storybook/addon-knobs';
 
 import withTests from '../../utils/withTests';
 
@@ -48,6 +49,17 @@ storiesOf(`${FORM}Switch`, module)
       <Switch
         theme={Themes.rooster}
         initialValue
+        onChangeStatus={action((item) => console.log(item))}
+      />
+    )),
+  )
+  .add(
+    'Disabled',
+    withInfo()(() => (
+      <Switch
+        theme={Themes.rooster}
+        initialValue
+        disabled={boolean('disabled', true)}
         onChangeStatus={action((item) => console.log(item))}
       />
     )),

@@ -19,7 +19,7 @@ exports[`<Switch /> Switch: should render component with given props 1`] = `
     checked={true}
     checkedIcon={false}
     className="react-switch"
-    disabled={false}
+    disabled={true}
     height={42}
     id="someId"
     offColor="#d5d5d5"
@@ -36,6 +36,7 @@ exports[`<Switch /> Switch: should render component with given props 1`] = `
 exports[`<Switch /> should render the component 1`] = `
 <Switch
   colors={Object {}}
+  disabled={false}
   initialValue={false}
   onChangeStatus={[Function]}
   size="sm"

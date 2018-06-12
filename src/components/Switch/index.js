@@ -32,6 +32,8 @@ class Switch extends Component {
     onChangeStatus: PropTypes.func.isRequired,
     /** Dimensions */
     size: PropTypes.oneOf(Object.keys(SIZES)),
+    /** disable switch */
+    disabled: PropTypes.bool,
     /** HTML id */
     id: PropTypes.string,
     /** Receives (active) param (active) => active ? 'on' : 'off' */
@@ -59,7 +61,7 @@ class Switch extends Component {
   };
 
   render() {
-    const { theme, size, colors, labelText, id } = this.props;
+    const { theme, size, colors, labelText, id, disabled } = this.props;
     const { active } = this.state;
     const onColor = colors.on || theme.colors.primary100;
     const offColor = colors.off || theme.colors.grey400;
@@ -76,6 +78,7 @@ class Switch extends Component {
           offColor={offColor}
           onChange={this.onChangeSwitch}
           checked={active}
+          disabled={disabled}
           activeBoxShadow={theme.boxShadow.switchHandler}
           className="react-switch"
           uncheckedIcon={false}
