@@ -119,6 +119,10 @@ const zIndex = {
   spinner: 2010,
 };
 
+const boxShadow = {
+  switchHandler: '0px 0px 1px 5px rgba(255, 255, 255, 0.2)',
+};
+
 export default {
   colors,
   grid,
@@ -131,4 +135,5 @@ export default {
   fontSize,
   lineHeight,
   zIndex,
+  boxShadow,
 };

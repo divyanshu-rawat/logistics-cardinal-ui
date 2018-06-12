@@ -35,6 +35,9 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
         "bit": "1px",
         "byte": "2px",
       },
+      "boxShadow": Object {
+        "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
+      },
       "colors": Object {
         "black": "#000",
         "bodyBackground": "#292d33",
@@ -130,6 +133,9 @@ exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
       "borderWidth": Object {
         "bit": "1px",
         "byte": "2px",
+      },
+      "boxShadow": Object {
+        "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
       },
       "colors": Object {
         "black": "#000",

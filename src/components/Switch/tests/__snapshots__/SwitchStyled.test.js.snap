@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SwitchStyled /> should render the component 1`] = `
+<div
+  className="sc-bdVaJa jatKZq"
+/>
+`;
+
+exports[`<SwitchStyled /> should render the component with \`active state\` 1`] = `
+<div
+  className="sc-bdVaJa iEKfuB"
+/>
+`;

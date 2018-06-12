@@ -16,6 +16,9 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
         "bit": "1px",
         "byte": "2px",
       },
+      "boxShadow": Object {
+        "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
+      },
       "colors": Object {
         "black": "#000",
         "bodyBackground": "#292d33",
@@ -118,6 +121,9 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
         "bit": "1px",
         "byte": "2px",
       },
+      "boxShadow": Object {
+        "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
+      },
       "colors": Object {
         "black": "#000",
         "bodyBackground": "#292d33",
@@ -216,6 +222,9 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
       "borderWidth": Object {
         "bit": "1px",
         "byte": "2px",
+      },
+      "boxShadow": Object {
+        "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
       },
       "colors": Object {
         "black": "#000",

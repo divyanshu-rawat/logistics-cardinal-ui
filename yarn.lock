@@ -9105,6 +9105,12 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
+react-switch@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-3.0.2.tgz#ddf6b93cf185f5d412df60954c2678ef489e66df"
+  dependencies:
+    prop-types "^15.6.1"
+
 react-test-renderer@^16.0.0-0:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.3.2.tgz#3d1ed74fda8db42521fdf03328e933312214749a"
