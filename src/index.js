@@ -14,6 +14,7 @@ import Spacing from './components/Spacing';
 import ComposedChart from './components/Graph/ComposedChart';
 import Line from './components/Graph/Line';
 import Area from './components/Graph/Area';
+import LinearGradient from './components/Graph/LinearGradient';
 import Heading from './components/Heading';
 import Spinner from './components/Spinner';
 import * as MASKS from './components/MaskedInput/constants';
@@ -39,5 +40,6 @@ export default {
   ComposedChart,
   Line,
   Area,
+  LinearGradient,
   ...Grid,
 };
