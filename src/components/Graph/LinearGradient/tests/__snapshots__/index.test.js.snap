@@ -1,28 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LinearGradient /> should render the component 1`] = `
-<svg>
-  <defs>
-    <linearGradient
-      id="gradient"
-      x1="0"
-      x2="0"
-      y1="0"
-      y2="1"
-    >
-      <stop
-        key="1"
-        offset="5%"
-        stopColor="#daa357"
-        stopOpacity={0.8}
-      />
-      <stop
-        key="2"
-        offset="95%"
-        stopColor="rgb(219,112,147)"
-        stopOpacity={0}
-      />
-    </linearGradient>
-  </defs>
-</svg>
+<LinearGradient
+  className="sc-bdVaJa dBYkw"
+  id="gradient"
+  stops={
+    Array [
+      Object {
+        "offset": "5%",
+        "stopColor": "#daa357",
+        "stopOpacity": 0.8,
+      },
+      Object {
+        "offset": "95%",
+        "stopColor": "rgb(219,112,147)",
+        "stopOpacity": 0,
+      },
+    ]
+  }
+/>
 `;
