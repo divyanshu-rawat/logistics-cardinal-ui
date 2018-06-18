@@ -1,24 +1,20 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import keyIndex from 'react-key-index';
 
 import TabContainer from './TabContainer';
 
-const TabContainerList = ({ options, activeTab }) => {
-  const optionsWithKey = keyIndex([...Array(options.length)], 1);
-  return (
-    <Fragment>
-      {options.map(
+const TabContainerList = ({ options, activeTab }) => (
+  <Fragment>
+    {options.map(
         (item, key) =>
           activeTab === key && (
-            <TabContainer key={`ComposedTabContainer-${optionsWithKey[key]}`}>
+            <TabContainer key={`ComposedTabContainer-${item}`}>
               {item}
             </TabContainer>
           ),
       )}
-    </Fragment>
+  </Fragment>
   );
-};
 
 TabContainerList.propTypes = {
   options: PropTypes.array.isRequired,

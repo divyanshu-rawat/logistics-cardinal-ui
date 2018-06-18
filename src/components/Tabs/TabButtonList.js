@@ -1,18 +1,17 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import keyIndex from 'react-key-index';
 
 import TabButton from './TabButton';
 
 const TabButtonList = ({ options, activeTab, onClick }) => (
   <Fragment>
-    {keyIndex(options, 1).map((item, key) => (
+    {options.map((item, key) => (
       <TabButton
-        key={`ComposedTabButton-${item.id}`}
+        key={`ComposedTabButton-${item}`}
         isActive={activeTab === key}
         onClick={onClick(key)}
       >
-        {item.value}
+        {item}
       </TabButton>
     ))}
   </Fragment>

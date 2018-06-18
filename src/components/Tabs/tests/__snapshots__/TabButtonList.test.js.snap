@@ -4,14 +4,14 @@ exports[`<TabButtonList /> should render the component with activeTab set as 1 1
 <React.Fragment>
   <styled.a
     isActive={false}
-    key="ComposedTabButton-GYHqHKfX"
+    key="ComposedTabButton-forecast"
     onClick={[Function]}
   >
     forecast
   </styled.a>
   <styled.a
     isActive={true}
-    key="ComposedTabButton-JYHyHVf4cL"
+    key="ComposedTabButton-history"
     onClick={[Function]}
   >
     history
@@ -23,14 +23,14 @@ exports[`<TabButtonList /> should render the component with the default props 1`
 <React.Fragment>
   <styled.a
     isActive={true}
-    key="ComposedTabButton-GYHqHKfX"
+    key="ComposedTabButton-forecast"
     onClick={[Function]}
   >
     forecast
   </styled.a>
   <styled.a
     isActive={false}
-    key="ComposedTabButton-JYHyHVf4cL"
+    key="ComposedTabButton-history"
     onClick={[Function]}
   >
     history

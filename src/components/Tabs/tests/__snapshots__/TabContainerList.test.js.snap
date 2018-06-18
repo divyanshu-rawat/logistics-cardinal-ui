@@ -3,7 +3,7 @@
 exports[`<TabContainerList /> should render the component with activeTab set as 1 1`] = `
 <React.Fragment>
   <styled.div
-    key="ComposedTabContainer-[object Object]"
+    key="ComposedTabContainer-history"
   >
     history
   </styled.div>
@@ -13,7 +13,7 @@ exports[`<TabContainerList /> should render the component with activeTab set as 
 exports[`<TabContainerList /> should render the component with the default props 1`] = `
 <React.Fragment>
   <styled.div
-    key="ComposedTabContainer-[object Object]"
+    key="ComposedTabContainer-forecast"
   >
     forecast
   </styled.div>
