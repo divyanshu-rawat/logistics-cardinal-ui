@@ -30,9 +30,20 @@ function ComposedChart({
   data,
   height,
   width,
+  gap,
+  style,
   ...props
 }) {
   const margin = getMarginPixels(marginSize);
+  const additionalProps = {};
+
+  if (!gap) {
+    additionalProps.style = {
+      // Remove the starting gap
+      marginLeft: -12,
+      ...style,
+    };
+  }
 
   return (
     <RCComposedChart
@@ -40,6 +51,7 @@ function ComposedChart({
       data={data}
       height={height}
       width={width}
+      {...additionalProps}
       {...props}
     >
       {children}
@@ -68,12 +80,22 @@ ComposedChart.propTypes = {
    * Width of the component
    */
   width: PropTypes.number.isRequired,
+  /**
+   * Gap on the left of the chart. ComposedChart normally put the left gap by default
+   */
+  gap: PropTypes.bool.isRequired,
+  /**
+   * Styles
+   */
+  style: PropTypes.object,
 };
 
 ComposedChart.defaultProps = {
   marginSize: SIZES.xs,
   height: 300,
   width: 1000,
+  gap: true,
+  style: {},
 };
 
 export default ComposedChart;
