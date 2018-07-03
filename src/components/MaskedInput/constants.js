@@ -15,11 +15,12 @@ export const BIRTHDAY_MASK = [
   /\d/,
 ];
 
-// 10 %
+// 10 % || - 10 %
 export const PERGENTAGE_MASK = createNumberMask({
   prefix: '',
   includeThousandsSeparator: false,
   suffix: ' %',
+  allowNegative: true,
 });
 
 // $ 10
