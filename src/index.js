@@ -18,6 +18,7 @@ import LinearGradient from './components/Graph/LinearGradient';
 import Heading from './components/Heading';
 import Spinner from './components/Spinner';
 import Switch from './components/Switch';
+import Tooltip from './components/Tooltip';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -42,6 +43,7 @@ export default {
   Line,
   Area,
   LinearGradient,
+  Tooltip,
   Switch,
   ...Grid,
 };
