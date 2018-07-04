@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> should render component with normal props 1`] = `
+<styled.div
+  content="Tooltip Text"
+  position="top"
+>
+  <span>
+    Hover me
+  </span>
+</styled.div>
+`;
+
+exports[`<Tooltip /> should render component with position bottom 1`] = `
+<styled.div
+  content="Tooltip Text"
+  position="bottom"
+>
+  <span>
+    Hover me
+  </span>
+</styled.div>
+`;
+
+exports[`<Tooltip /> should render component with position left 1`] = `
+<styled.div
+  content="Tooltip Text"
+  position="left"
+>
+  <span>
+    Hover me
+  </span>
+</styled.div>
+`;
+
+exports[`<Tooltip /> should render component with position right 1`] = `
+<styled.div
+  content="Tooltip Text"
+  position="right"
+>
+  <span>
+    Hover me
+  </span>
+</styled.div>
+`;

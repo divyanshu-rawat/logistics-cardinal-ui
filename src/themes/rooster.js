@@ -115,6 +115,7 @@ const fontWeight = {
 
 const zIndex = {
   select: 1090,
+  tooltip: 1080,
   spinnerOverlay: 2000,
   spinner: 2010,
 };
