@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const TooltipStyled = styled('div')`
   position: relative;
+  display: inline-block;
   &:hover {
     &:after {
       opacity: 0.9;
@@ -14,6 +15,7 @@ const TooltipStyled = styled('div')`
     border: 1px solid ${({ theme }) => theme.colors.grey500};
     color: ${({ theme }) => theme.colors.white};
     font-size: ${({ theme }) => theme.fontSize.bit};
+    z-index: ${({ theme }) => theme.zIndex.tooltip};
     padding: 4px 8px;
     position: absolute;
     left: 50%;

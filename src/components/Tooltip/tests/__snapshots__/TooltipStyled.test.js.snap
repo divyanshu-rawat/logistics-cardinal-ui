@@ -2,7 +2,7 @@
 
 exports[`<TooltipStyled /> should render the component with position bottom 1`] = `
 <div
-  className="sc-bdVaJa fXQtry"
+  className="sc-bdVaJa cIxpns"
   content="The world Champion!"
 >
   Corinthians!
@@ -11,7 +11,7 @@ exports[`<TooltipStyled /> should render the component with position bottom 1`] 
 
 exports[`<TooltipStyled /> should render the component with position left 1`] = `
 <div
-  className="sc-bdVaJa iaBNpn"
+  className="sc-bdVaJa iFekpn"
   content="The world Champion!"
 >
   Corinthians!
@@ -20,7 +20,7 @@ exports[`<TooltipStyled /> should render the component with position left 1`] = 
 
 exports[`<TooltipStyled /> should render the component with position right 1`] = `
 <div
-  className="sc-bdVaJa huOeHd"
+  className="sc-bdVaJa fbeGPT"
   content="The world Champion!"
 >
   Corinthians!
@@ -29,7 +29,7 @@ exports[`<TooltipStyled /> should render the component with position right 1`] =
 
 exports[`<TooltipStyled /> should render the component with the default props 1`] = `
 <div
-  className="sc-bdVaJa YuHUl"
+  className="sc-bdVaJa dhSxpd"
   content="The world Champion!"
 >
   Corinthians!

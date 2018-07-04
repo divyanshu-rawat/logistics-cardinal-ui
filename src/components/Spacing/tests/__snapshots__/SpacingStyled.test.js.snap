@@ -92,7 +92,7 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
-        "tooltip": 1080,
+        "tooltip": 2020,
       },
     }
   }
@@ -198,7 +198,7 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
-        "tooltip": 1080,
+        "tooltip": 2020,
       },
     }
   }
@@ -301,7 +301,7 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
-        "tooltip": 1080,
+        "tooltip": 2020,
       },
     }
   }

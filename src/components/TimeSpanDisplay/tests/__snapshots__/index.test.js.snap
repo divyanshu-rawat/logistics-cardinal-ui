@@ -111,7 +111,7 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
-        "tooltip": 1080,
+        "tooltip": 2020,
       },
     }
   }
@@ -211,7 +211,7 @@ exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
-        "tooltip": 1080,
+        "tooltip": 2020,
       },
     }
   }
