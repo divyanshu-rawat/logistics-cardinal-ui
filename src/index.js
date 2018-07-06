@@ -19,6 +19,7 @@ import Heading from './components/Heading';
 import Spinner from './components/Spinner';
 import Switch from './components/Switch';
 import Tooltip from './components/Tooltip';
+import Responsive from './components/Responsive';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -45,5 +46,6 @@ export default {
   LinearGradient,
   Tooltip,
   Switch,
+  Responsive,
   ...Grid,
 };

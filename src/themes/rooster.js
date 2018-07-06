@@ -124,6 +124,27 @@ const boxShadow = {
   switchHandler: '0px 0px 1px 5px rgba(255, 255, 255, 0.2)',
 };
 
+const breakpoints = {
+  default: {
+    minWidth: 768,
+  },
+  largeDesktop: {
+    minWidth: 1200,
+  },
+  desktop: {
+    minWidth: 992,
+    maxWidth: 1200,
+  },
+  mobile: {
+    minWidth: 0,
+    maxWidth: 768,
+  },
+  tablet: {
+    minWidth: 768,
+    maxWidth: 992,
+  },
+};
+
 export default {
   colors,
   grid,
@@ -135,6 +156,7 @@ export default {
   fontWeight,
   fontSize,
   lineHeight,
+  breakpoints,
   zIndex,
   boxShadow,
 };

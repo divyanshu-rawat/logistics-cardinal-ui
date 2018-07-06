@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Mobile /> should render the component 1`] = `
+<MediaQuery
+  maxWidth={768}
+  minWidth={0}
+  someOtherProp={true}
+  values={Object {}}
+>
+  Test...
+</MediaQuery>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tablet /> should render the component 1`] = `
+<MediaQuery
+  maxWidth={992}
+  minWidth={768}
+  someOtherProp={true}
+  values={Object {}}
+>
+  Test...
+</MediaQuery>
+`;

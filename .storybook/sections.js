@@ -12,6 +12,7 @@ function withSeparator(name, separator = '->') {
 export const COMPONENTS = withSeparator('Components');
 export const FORM = withSeparator('Form');
 export const GRID = withSeparator('Grid');
+export const LAYOUT = withSeparator('Layout');
 export const TYPOGRAPHY = withSeparator('Typography');
 export const ICONS = withSeparator('Icons');
 export const COMPOSITION = withSeparator('Composition');

@@ -54,6 +54,26 @@ exports[`<Switch /> should render the component 1`] = `
       "boxShadow": Object {
         "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
       },
+      "breakpoints": Object {
+        "default": Object {
+          "minWidth": 768,
+        },
+        "desktop": Object {
+          "maxWidth": 1200,
+          "minWidth": 992,
+        },
+        "largeDesktop": Object {
+          "minWidth": 1200,
+        },
+        "mobile": Object {
+          "maxWidth": 768,
+          "minWidth": 0,
+        },
+        "tablet": Object {
+          "maxWidth": 992,
+          "minWidth": 768,
+        },
+      },
       "colors": Object {
         "black": "#000",
         "bodyBackground": "#292d33",
