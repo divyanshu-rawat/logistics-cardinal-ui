@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { select } from '@storybook/addon-knobs';
 
@@ -11,13 +10,14 @@ import { FORM } from '../../../.storybook/sections';
 
 import MaskedInput from '.';
 import {
+  TIME_MASK,
   BIRTHDAY_MASK,
   PERGENTAGE_MASK,
   MONEY_MASK,
   EMAIL_MASK,
 } from './constants';
 
-const maskOptions = ['birthday', 'percentage', 'currency', 'email'];
+const maskOptions = ['birthday', 'percentage', 'currency', 'email', 'time'];
 const masks = {
   birthday: {
     id: 'birthday',
@@ -30,6 +30,12 @@ const masks = {
     mask: PERGENTAGE_MASK,
     placeholder: '%',
     guide: false,
+  },
+  time: {
+    id: 'time',
+    mask: TIME_MASK,
+    placeholder: 'HH:MM',
+    guide: true,
   },
   currency: {
     id: 'currency',

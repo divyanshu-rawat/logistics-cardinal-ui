@@ -15,6 +15,9 @@ export const BIRTHDAY_MASK = [
   /\d/,
 ];
 
+// HH:mm
+export const TIME_MASK = [/[0-9]/, /[0-9]/, ':', /[0-9]/, /[0-9]/];
+
 // 10 % || - 10 %
 export const PERGENTAGE_MASK = createNumberMask({
   prefix: '',
