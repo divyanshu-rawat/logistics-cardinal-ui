@@ -15,9 +15,17 @@ import {
   PERGENTAGE_MASK,
   MONEY_MASK,
   EMAIL_MASK,
+  DECIMAL_MASK,
 } from './constants';
 
-const maskOptions = ['birthday', 'percentage', 'currency', 'email', 'time'];
+const maskOptions = [
+  'birthday',
+  'percentage',
+  'currency',
+  'email',
+  'time',
+  'decimal',
+];
 const masks = {
   birthday: {
     id: 'birthday',
@@ -47,6 +55,12 @@ const masks = {
     id: 'email',
     mask: EMAIL_MASK,
     placeholder: 'rick@c137.com',
+    guide: true,
+  },
+  decimal: {
+    id: 'decimal',
+    mask: DECIMAL_MASK,
+    placeholder: '10.20',
     guide: true,
   },
 };

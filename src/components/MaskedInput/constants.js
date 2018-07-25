@@ -31,3 +31,10 @@ export const MONEY_MASK = createNumberMask();
 
 // rick@c137.com
 export const EMAIL_MASK = emailMask;
+
+// 10.29
+export const DECIMAL_MASK = createNumberMask({
+  prefix: '',
+  allowDecimal: true,
+  requireDecimal: true,
+});
