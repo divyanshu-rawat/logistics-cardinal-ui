@@ -118,6 +118,7 @@ const zIndex = {
   tooltip: 2020,
   spinnerOverlay: 2000,
   spinner: 2010,
+  navbar: 2030,
 };
 
 const boxShadow = {

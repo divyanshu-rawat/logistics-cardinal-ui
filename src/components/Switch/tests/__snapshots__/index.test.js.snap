@@ -144,6 +144,7 @@ exports[`<Switch /> should render the component 1`] = `
         "mega": "15px",
       },
       "zIndex": Object {
+        "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,

@@ -109,6 +109,7 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
         "mega": "15px",
       },
       "zIndex": Object {
+        "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
@@ -235,6 +236,7 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
         "mega": "15px",
       },
       "zIndex": Object {
+        "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
@@ -358,6 +360,7 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
         "mega": "15px",
       },
       "zIndex": Object {
+        "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
         "spinnerOverlay": 2000,
