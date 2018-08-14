@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TabButtonList /> should render the component with activeTab set as 1 1`] = `
-<React.Fragment>
+<Fragment>
   <styled.a
     isActive={false}
     key="ComposedTabButton-forecast"
@@ -16,11 +16,11 @@ exports[`<TabButtonList /> should render the component with activeTab set as 1 1
   >
     history
   </styled.a>
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<TabButtonList /> should render the component with the default props 1`] = `
-<React.Fragment>
+<Fragment>
   <styled.a
     isActive={true}
     key="ComposedTabButton-forecast"
@@ -35,5 +35,5 @@ exports[`<TabButtonList /> should render the component with the default props 1`
   >
     history
   </styled.a>
-</React.Fragment>
+</Fragment>
 `;

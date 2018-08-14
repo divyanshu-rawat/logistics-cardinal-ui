@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> should render the component 1`] = `
-<React.Fragment>
+<Fragment>
   <input
     checked={false}
     id="myId"
@@ -14,11 +14,11 @@ exports[`<Checkbox /> should render the component 1`] = `
   >
     My Checkbox
   </label>
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<Checkbox /> should render the component with \`initial value\` 1`] = `
-<React.Fragment>
+<Fragment>
   <input
     checked={true}
     id="myId"
@@ -31,5 +31,5 @@ exports[`<Checkbox /> should render the component with \`initial value\` 1`] = `
   >
     My Checkbox
   </label>
-</React.Fragment>
+</Fragment>
 `;

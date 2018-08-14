@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Total /> should render the component as actual type 1`] = `
-<React.Fragment>
+<Fragment>
   <TotalNumber
     type="actual"
     width={14}
@@ -9,11 +9,11 @@ exports[`<Total /> should render the component as actual type 1`] = `
   <TotalNumber
     total={300}
   />
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<Total /> should render the component as forecast type 1`] = `
-<React.Fragment>
+<Fragment>
   <TotalNumber
     type="forecast"
     width={70}
@@ -21,5 +21,5 @@ exports[`<Total /> should render the component as forecast type 1`] = `
   <TotalNumber
     total={1500}
   />
-</React.Fragment>
+</Fragment>
 `;

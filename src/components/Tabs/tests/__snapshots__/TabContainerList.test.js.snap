@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TabContainerList /> should render the component with activeTab set as 1 1`] = `
-<React.Fragment>
+<Fragment>
   <styled.div
     key="ComposedTabContainer-history"
   >
     history
   </styled.div>
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<TabContainerList /> should render the component with the default props 1`] = `
-<React.Fragment>
+<Fragment>
   <styled.div
     key="ComposedTabContainer-forecast"
   >
     forecast
   </styled.div>
-</React.Fragment>
+</Fragment>
 `;
