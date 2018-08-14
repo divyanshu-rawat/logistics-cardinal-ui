@@ -63,9 +63,9 @@
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.16",
     "prop-types": "^15.5.4",
-    "react": "16.2.0",
+    "react": "16.4.2",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "16.2.0",
+    "react-dom": "16.4.2",
     "react-select-plus": "1.1.0",
     "styled-components": "2.2.3"
   },
