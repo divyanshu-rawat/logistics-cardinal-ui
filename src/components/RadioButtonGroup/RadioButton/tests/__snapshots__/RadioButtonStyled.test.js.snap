@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonStyled should render the component 1`] = `
+<label
+  className="sc-bdVaJa jWWOQ"
+/>
+`;
+
+exports[`RadioButtonStyled should render the component passing inline property as true 1`] = `
+<label
+  className="sc-bdVaJa hWwDld"
+/>
+`;

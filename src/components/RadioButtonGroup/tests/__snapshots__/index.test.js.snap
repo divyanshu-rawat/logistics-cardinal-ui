@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonGroup should render the component 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "inline": undefined,
+      "name": "foo",
+      "onChange": [Function],
+      "selectedValue": "single",
+    }
+  }
+>
+  <RadioButtonConsumer
+    id="single"
+    label="Single"
+    value="single"
+  />
+  <RadioButtonConsumer
+    id="married"
+    label="Married"
+    value="married"
+  />
+</ContextProvider>
+`;

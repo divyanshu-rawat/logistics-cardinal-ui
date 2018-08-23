@@ -15,6 +15,7 @@ const greys = {
   grey300: '#343a42',
   grey400: '#292d33',
   grey500: '#40464f',
+  grey600: '#8C9BA5',
 };
 
 const greens = {

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton should render the component 1`] = `
+<styled.label
+  className="is-selected"
+  htmlFor="foo"
+  inline={true}
+>
+  <Input
+    checked={true}
+    name="foo"
+    onChange={[Function]}
+    type="radio"
+    value="foo"
+  />
+  foo
+</styled.label>
+`;
