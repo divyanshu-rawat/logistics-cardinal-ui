@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvatarStyled should render the component with default size 1`] = `
+<div
+  className="sc-bdVaJa bimRDW"
+  size="md"
+/>
+`;
+
+exports[`AvatarStyled should render the component with large size 1`] = `
+<div
+  className="sc-bdVaJa cCfLOb"
+  size="lg"
+/>
+`;
+
+exports[`AvatarStyled should render the component with small size 1`] = `
+<div
+  className="sc-bdVaJa swbjV"
+  size="sm"
+/>
+`;

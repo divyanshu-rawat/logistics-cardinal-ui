@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render the component 1`] = `
+<Avatar
+  size="lg"
+  src=""
+>
+  <styled.div
+    size="lg"
+    src=""
+  >
+    <div
+      className="sc-bdVaJa cCfLOb"
+      size="lg"
+      src=""
+    />
+  </styled.div>
+</Avatar>
+`;

@@ -37,7 +37,14 @@ class RadioButtonGroupStory extends Component {
 }
 
 storiesOf(`${FORM}RadioButtonGroup`, module)
-  // .addDecorator(withTests('Input/tests/index'))
+  .addDecorator(
+    withTests(
+      'RadioButtonGroup/tests/index',
+      'RadioButton/tests/index',
+      'RadioButton/tests/RadioButton',
+      'RadioButton/tests/RadioButtonStyled',
+    ),
+  )
   .add(
     'Simple',
     withInfo({

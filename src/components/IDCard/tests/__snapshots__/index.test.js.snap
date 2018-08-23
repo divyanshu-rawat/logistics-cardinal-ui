@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDCard should render the component with default size 1`] = `
+<styled.div>
+  <Spacing
+    right={true}
+    type="margin"
+  >
+    <Avatar
+      size="md"
+      src="image.png"
+    />
+  </Spacing>
+  <Spacing
+    type="margin"
+  >
+    <Heading
+      as="h1"
+      bold={false}
+      noMargin={false}
+      style={
+        Object {
+          "fontWeight": undefined,
+          "lineHeight": 1,
+          "marginBottom": 0,
+        }
+      }
+    >
+      Terry Mitchell
+    </Heading>
+    <Text
+      as="span"
+      margin="0"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": undefined,
+          "fontWeight": undefined,
+          "opacity": 0.6,
+        }
+      }
+    >
+      Captain
+    </Text>
+  </Spacing>
+</styled.div>
+`;

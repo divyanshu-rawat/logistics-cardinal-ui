@@ -93,6 +93,7 @@ exports[`<Text /> should render the component with different props 1`] = `
       },
       "fontWeight": Object {
         "bold": 700,
+        "light": 300,
         "regular": 400,
         "semiBold": 600,
       },
@@ -221,6 +222,7 @@ exports[`<Text /> should render the component with the default props 1`] = `
       },
       "fontWeight": Object {
         "bold": 700,
+        "light": 300,
         "regular": 400,
         "semiBold": 600,
       },
