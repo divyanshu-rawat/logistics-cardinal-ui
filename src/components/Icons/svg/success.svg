@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>2F21D3DC-C0B2-4686-9E12-ECA2C27A5E59</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="User-Setup-and-Edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StyleGuide" transform="translate(-150.000000, -779.000000)">
+            <g id="Elements/Notification-Success" transform="translate(134.000000, 763.000000)">
+                <g id="Alert">
+                    <g id="Icon/UI/error" transform="translate(16.000000, 16.000000)">
+                        <rect id="Background" x="0" y="0" width="16" height="16"></rect>
+                        <g id="Icon/UI/error--glyph" fill="#6DB324" fill-rule="nonzero">
+                            <g id="Layer_1">
+                                <path d="M8,0 C3.6,0 0,3.6 0,8 C0,12.4 3.6,16 8,16 C12.4,16 16,12.4 16,8 C16,3.6 12.4,0 8,0 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                        <g id="Group" transform="translate(3.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M9.51439921,0 L8.77159881,0.700579957 C7.11215126,2.2691043 5.59706741,3.80708665 4.00347567,5.34193371 L2.13008937,3.92531158 L1.31082423,3.3071495 L0,4.85254976 L0.819265144,5.47070855 L3.4409136,7.44881666 L4.17279047,8 L4.83912612,7.37155505 C6.72497049,5.58908183 8.4144796,3.83834076 10.2571996,2.09659679 L11,1.39601683 L9.51439921,0 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

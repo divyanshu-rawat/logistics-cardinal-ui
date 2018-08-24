@@ -20,6 +20,9 @@ import Spinner from './components/Spinner';
 import Switch from './components/Switch';
 import Tooltip from './components/Tooltip';
 import Responsive from './components/Responsive';
+import Icons from './components/Icons';
+import RadioButtonGroup from './components/RadioButtonGroup';
+import RadioButton from './components/RadioButtonGroup/RadioButton';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -47,5 +50,8 @@ export default {
   Tooltip,
   Switch,
   Responsive,
+  RadioButtonGroup,
+  RadioButton,
+  Icons,
   ...Grid,
 };

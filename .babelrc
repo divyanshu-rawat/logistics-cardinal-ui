@@ -9,7 +9,7 @@
     "react",
     "stage-0"
   ],
-  "plugins": ["transform-object-rest-spread"],
+  "plugins": ["transform-object-rest-spread", "inline-react-svg"],
   "env": {
     "test": {
       "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]

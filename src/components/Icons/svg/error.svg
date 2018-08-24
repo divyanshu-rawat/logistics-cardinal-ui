@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>39D5B569-E72A-4BCB-9EF2-7118266A0C25</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="User-Setup-and-Edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StyleGuide" transform="translate(-150.000000, -597.000000)">
+            <g id="Elements/Notification-Error" transform="translate(134.000000, 581.000000)">
+                <g id="Alert">
+                    <g id="Icon/UI/error" transform="translate(16.000000, 16.000000)">
+                        <g id="Icon/UI/error--glyph">
+                            <g id="Layer_1">
+                                <path d="M8,0 C3.6,0 0,3.6 0,8 C0,12.4 3.6,16 8,16 C12.4,16 16,12.4 16,8 C16,3.6 12.4,0 8,0 Z" id="Shape" fill="#E71D32" fill-rule="nonzero"></path>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="7" width="12" height="2"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

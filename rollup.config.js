@@ -5,6 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
 import json from 'rollup-plugin-json';
 import url from 'rollup-plugin-url';
+import reactSvg from 'rollup-plugin-react-svg';
 
 import pkg from './package.json';
 
@@ -36,6 +37,7 @@ export default {
       exclude: 'node_modules/**',
       plugins: ['external-helpers'],
     }),
+    reactSvg(),
     resolve(),
     commonjs(),
   ],
