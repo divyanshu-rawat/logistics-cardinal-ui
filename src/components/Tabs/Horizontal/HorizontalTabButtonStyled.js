@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { borderRadius } from 'polished';
 
-const TabButton = styled('a')`
+const HorizontalTabButton = styled('a')`
   ${({ theme }) => borderRadius('top', theme.borderRadius.mega)};
   color: ${({ theme, isActive }) =>
     isActive ? theme.colors.white : theme.colors.grey100};
@@ -23,4 +23,4 @@ const TabButton = styled('a')`
   }
 `;
 
-export default TabButton;
+export default HorizontalTabButton;

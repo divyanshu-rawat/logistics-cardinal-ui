@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import TabContainer from '../TabContainer';
-import theme from '../../../themes/rooster';
+import TabContainer from '../HorizontalTabContainerStyled';
+import theme from '../../../../themes/rooster';
 
 const renderedComponent = ({ theme }) =>
   shallow(<TabContainer theme={theme} />);

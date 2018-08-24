@@ -1,26 +1,26 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import TabButton from './TabButton';
+import HorizontalTabButtonStyled from './HorizontalTabButtonStyled';
 
-const TabButtonList = ({ options, activeTab, onClick }) => (
+const HorizontalTabButtonList = ({ options, activeTab, onClick }) => (
   <Fragment>
     {options.map((item, key) => (
-      <TabButton
-        key={`ComposedTabButton-${item}`}
+      <HorizontalTabButtonStyled
+        key={`ComposedHorizontalTabButton-${item}`}
         isActive={activeTab === key}
         onClick={onClick(key)}
       >
         {item}
-      </TabButton>
+      </HorizontalTabButtonStyled>
     ))}
   </Fragment>
 );
 
-TabButtonList.propTypes = {
+HorizontalTabButtonList.propTypes = {
   options: PropTypes.array.isRequired,
   activeTab: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
-export default TabButtonList;
+export default HorizontalTabButtonList;

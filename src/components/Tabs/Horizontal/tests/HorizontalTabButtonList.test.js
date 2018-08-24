@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import TabButtonList from '../TabButtonList';
-import Text from '../../Text';
-import theme from '../../../themes/rooster';
+import TabButtonList from '../HorizontalTabButtonList';
+import Text from '../../../Text';
+import theme from '../../../../themes/rooster';
 
 const mockAugmented = jest.fn();
 const onClickFn = () => mockAugmented;

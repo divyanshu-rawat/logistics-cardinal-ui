@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalTabButtonList /> should render the component 1`] = `
+<VerticalTabButtonList
+  activeTab={0}
+  onClick={[Function]}
+  options={
+    Array [
+      "Forecast",
+      "History",
+    ]
+  }
+  theme={
+    Object {
+      "colors": Object {
+        "primary100": "",
+      },
+    }
+  }
+/>
+`;

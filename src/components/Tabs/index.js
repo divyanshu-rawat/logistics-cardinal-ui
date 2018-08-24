@@ -1,13 +1,17 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import TabButtonList from './TabButtonList';
-import TabContainerList from './TabContainerList';
-
+import HorizontalTabs from './Horizontal';
+import VerticalTabs from './Vertical';
 class ComposedTabs extends PureComponent {
   static propTypes = {
     /** Tab Component Options */
     options: PropTypes.object.isRequired,
+    mode: PropTypes.oneOf(['vertical', 'horizontal']),
+  };
+
+  static defaultProps = {
+    mode: 'horizontal',
   };
 
   state = {
@@ -19,19 +23,27 @@ class ComposedTabs extends PureComponent {
   };
 
   render() {
-    const { options } = this.props;
+    const { options, mode } = this.props;
     const { active } = this.state;
 
-    return (
-      <div>
-        <TabButtonList
-          activeTab={active}
-          options={Object.keys(options)}
-          onClick={this.onClick}
-        />
-        <TabContainerList activeTab={active} options={Object.values(options)} />
-      </div>
-    );
+    switch (mode) {
+      case 'vertical':
+        return (
+          <VerticalTabs
+            options={options}
+            active={active}
+            onClick={this.onClick}
+          />
+        );
+      default:
+        return (
+          <HorizontalTabs
+            options={options}
+            active={active}
+            onClick={this.onClick}
+          />
+        );
+    }
   }
 }
 

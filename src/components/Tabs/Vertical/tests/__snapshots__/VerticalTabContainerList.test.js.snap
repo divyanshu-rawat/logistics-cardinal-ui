@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalTabContainerList /> should render the component 1`] = `
+<Fragment>
+  <styled.div
+    key="ComposedVerticalTabContainer-Forecast"
+  >
+    Forecast
+  </styled.div>
+</Fragment>
+`;
