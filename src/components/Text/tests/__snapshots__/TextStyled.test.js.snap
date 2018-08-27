@@ -2,7 +2,7 @@
 
 exports[`<TextStyled /> should render the component with different props 1`] = `
 <span
-  className="sc-bdVaJa cwmPyd"
+  className="TextStyled-bFnujI fyHlqy"
   color="#000"
   fontFamily="Times New Roman"
   fontSize="mega"
@@ -13,7 +13,7 @@ exports[`<TextStyled /> should render the component with different props 1`] = `
 
 exports[`<TextStyled /> should render the component with the default props 1`] = `
 <span
-  className="sc-bdVaJa kIlwOR"
+  className="TextStyled-bFnujI cnlzTh"
 >
   Corinthians!
 </span>

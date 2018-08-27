@@ -12,7 +12,7 @@ const validationStateColor = {
   warning: 'warning',
 };
 
-export default styled('div')`
+const SelectStyled = styled('div')`
   display: inline-block;
   margin-right: 5px;
   width: 100%;
@@ -120,3 +120,5 @@ export default styled('div')`
     }
   }
 `;
+
+export default SelectStyled;

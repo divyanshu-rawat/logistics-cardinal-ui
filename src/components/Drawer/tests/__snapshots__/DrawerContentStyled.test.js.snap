@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DrawerContentStyled /> should render the component 1`] = `
+<div
+  className="DrawerContentStyled-ddUfpq kllcea"
+/>
+`;

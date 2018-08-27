@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DrawerCloseButtonStyled /> should render the component 1`] = `
+<a
+  className="DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE djhkNu"
+/>
+`;

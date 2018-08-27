@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Text /> should render the component with different props 1`] = `
-<styled.strong
+<TextStyled
   align="right"
   as="strong"
   color="#000"
@@ -19,6 +19,7 @@ exports[`<Text /> should render the component with different props 1`] = `
         "byte": "2px",
       },
       "boxShadow": Object {
+        "drawer": "0 2px 34px 0 rgba(0, 0, 0, 0.3)",
         "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
       },
       "breakpoints": Object {
@@ -60,6 +61,7 @@ exports[`<Text /> should render the component with different props 1`] = `
         "grey800": "#23262C",
         "grey900": "#292D33",
         "mainBackground": "343941",
+        "overlayColor": "rgba(25, 29, 35, 0.82)",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -115,7 +117,12 @@ exports[`<Text /> should render the component with different props 1`] = `
         "kilo": "10px",
         "mega": "15px",
       },
+      "transitions": Object {
+        "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
+      },
       "zIndex": Object {
+        "drawerContent": 2001,
+        "drawerOverlay": 2000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
@@ -129,11 +136,11 @@ exports[`<Text /> should render the component with different props 1`] = `
   weight={500}
 >
   Corinthians!
-</styled.strong>
+</TextStyled>
 `;
 
 exports[`<Text /> should render the component with the default props 1`] = `
-<styled.p
+<TextStyled
   align="center"
   as="p"
   color="#f00"
@@ -151,6 +158,7 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "byte": "2px",
       },
       "boxShadow": Object {
+        "drawer": "0 2px 34px 0 rgba(0, 0, 0, 0.3)",
         "switchHandler": "0px 0px 1px 5px rgba(255, 255, 255, 0.2)",
       },
       "breakpoints": Object {
@@ -192,6 +200,7 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "grey800": "#23262C",
         "grey900": "#292D33",
         "mainBackground": "343941",
+        "overlayColor": "rgba(25, 29, 35, 0.82)",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -247,7 +256,12 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "kilo": "10px",
         "mega": "15px",
       },
+      "transitions": Object {
+        "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
+      },
       "zIndex": Object {
+        "drawerContent": 2001,
+        "drawerOverlay": 2000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
@@ -261,5 +275,5 @@ exports[`<Text /> should render the component with the default props 1`] = `
   weight={300}
 >
   Corinthians!
-</styled.p>
+</TextStyled>
 `;

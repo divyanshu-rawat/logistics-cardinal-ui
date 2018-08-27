@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Spinner /> should render the component 1`] = `
-<styled.div>
+<Wrapper__SpinnerWrapper>
   <span>
     some children
   </span>
-</styled.div>
+</Wrapper__SpinnerWrapper>
 `;
 
 exports[`<Spinner /> should render the component with different props 1`] = `
-<styled.div>
-  <styled.div />
-  <styled.div>
+<Wrapper__SpinnerWrapper>
+  <Overlay__SpinnerOverlay />
+  <Holder__SpinnerWrapper>
     <MDSpinner
       color1="rgb(66, 165, 245)"
       color2="rgb(239, 83, 80)"
@@ -21,9 +21,9 @@ exports[`<Spinner /> should render the component with different props 1`] = `
       singleColor="#3f9bfd"
       size={100}
     />
-  </styled.div>
+  </Holder__SpinnerWrapper>
   <span>
     some children
   </span>
-</styled.div>
+</Wrapper__SpinnerWrapper>
 `;

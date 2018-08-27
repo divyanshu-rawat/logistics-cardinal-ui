@@ -1,21 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<VerticalTabButtonList /> should render the component 1`] = `
-<VerticalTabButtonList
-  activeTab={0}
-  onClick={[Function]}
-  options={
-    Array [
-      "Forecast",
-      "History",
-    ]
-  }
-  theme={
-    Object {
-      "colors": Object {
-        "primary100": "",
-      },
-    }
-  }
-/>
+<Fragment>
+  <VerticalButtonStyled__VerticalTabButtonStyled
+    isActive={true}
+    key="ComposedVerticalTabButton-Forecast"
+  >
+    <Text
+      as="span"
+      color=""
+      margin="0"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+      truncate={true}
+    >
+      Forecast
+    </Text>
+    <span>
+      <ArrowRight
+        height="6"
+        viewBox="0 0 13 6"
+        width="13"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </span>
+  </VerticalButtonStyled__VerticalTabButtonStyled>
+  <VerticalButtonStyled__VerticalTabButtonStyled
+    isActive={false}
+    key="ComposedVerticalTabButton-History"
+  >
+    <Text
+      as="span"
+      margin="0"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+      truncate={true}
+    >
+      History
+    </Text>
+    <span>
+      <ArrowRight
+        height="6"
+        viewBox="0 0 13 6"
+        width="13"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </span>
+  </VerticalButtonStyled__VerticalTabButtonStyled>
+</Fragment>
 `;

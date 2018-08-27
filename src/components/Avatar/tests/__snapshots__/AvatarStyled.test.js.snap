@@ -2,21 +2,21 @@
 
 exports[`AvatarStyled should render the component with default size 1`] = `
 <div
-  className="sc-bdVaJa bimRDW"
+  className="AvatarStyled-ekKVdS gIWdTz"
   size="md"
 />
 `;
 
 exports[`AvatarStyled should render the component with large size 1`] = `
 <div
-  className="sc-bdVaJa cCfLOb"
+  className="AvatarStyled-ekKVdS dgAlzy"
   size="lg"
 />
 `;
 
 exports[`AvatarStyled should render the component with small size 1`] = `
 <div
-  className="sc-bdVaJa swbjV"
+  className="AvatarStyled-ekKVdS xdyLw"
   size="sm"
 />
 `;

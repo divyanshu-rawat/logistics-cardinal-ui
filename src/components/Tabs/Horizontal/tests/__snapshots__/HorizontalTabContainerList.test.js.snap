@@ -2,20 +2,20 @@
 
 exports[`<TabContainerList /> should render the component with activeTab set as 1 1`] = `
 <Fragment>
-  <styled.div
+  <HorizontalTabContainerStyled
     key="ComposedHorizontalTabContainer-history"
   >
     history
-  </styled.div>
+  </HorizontalTabContainerStyled>
 </Fragment>
 `;
 
 exports[`<TabContainerList /> should render the component with the default props 1`] = `
 <Fragment>
-  <styled.div
+  <HorizontalTabContainerStyled
     key="ComposedHorizontalTabContainer-forecast"
   >
     forecast
-  </styled.div>
+  </HorizontalTabContainerStyled>
 </Fragment>
 `;

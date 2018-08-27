@@ -2,12 +2,12 @@
 
 exports[`<SwitchStyled /> should render the component 1`] = `
 <div
-  className="sc-bdVaJa jatKZq"
+  className="SwitchStyled-rZBzA dCzpVq"
 />
 `;
 
 exports[`<SwitchStyled /> should render the component with \`active state\` 1`] = `
 <div
-  className="sc-bdVaJa iEKfuB"
+  className="SwitchStyled-rZBzA gUxXwm"
 />
 `;

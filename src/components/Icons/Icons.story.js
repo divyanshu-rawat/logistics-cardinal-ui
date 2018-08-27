@@ -26,4 +26,5 @@ storiesOf(`${TYPOGRAPHY}Icons`, module)
   .add(
     'ChevronDown',
     withInfo()(() => <Icons.ChevronDown width={SIZE} height={SIZE} />),
-  );
+  )
+  .add('Close', withInfo()(() => <Icons.Close width={SIZE} height={SIZE} />));

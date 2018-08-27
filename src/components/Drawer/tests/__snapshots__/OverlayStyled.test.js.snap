@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OverlayStyled /> should render the component as closed 1`] = `
+<div
+  className="OverlayStyled-fKaoQt bPRvsL"
+  open={false}
+/>
+`;
+
+exports[`<OverlayStyled /> should render the component with the property open set as true 1`] = `
+<div
+  className="OverlayStyled-fKaoQt ehUeaX"
+  open={true}
+/>
+`;

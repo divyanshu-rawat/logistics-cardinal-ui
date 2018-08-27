@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioButton should render the component 1`] = `
-<styled.label
+<RadioButtonStyled__RadioButtonLabelStyled
   className="is-selected"
   htmlFor="foo"
   inline={true}
@@ -14,5 +14,5 @@ exports[`RadioButton should render the component 1`] = `
     value="foo"
   />
   foo
-</styled.label>
+</RadioButtonStyled__RadioButtonLabelStyled>
 `;

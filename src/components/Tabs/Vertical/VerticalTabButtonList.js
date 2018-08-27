@@ -6,7 +6,12 @@ import VerticalTabButtonStyled from './VerticalButtonStyled';
 import Icon from '../../Icons';
 import Text from '../../Text';
 
-const VerticalTabButtonList = ({ options, activeTab, onClick, theme }) => (
+export const VerticalTabButtonList = ({
+  options,
+  activeTab,
+  onClick,
+  theme,
+}) => (
   <Fragment>
     {options.map((item, key) => (
       <VerticalTabButtonStyled

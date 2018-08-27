@@ -3,7 +3,7 @@
 exports[`<HeadingStyled /> should render the component with different props 1`] = `
 <h3
   as="h4"
-  className="sc-bdVaJa dcLdYj"
+  className="HeadingStyled-eAwnvT jVlCPy"
 >
   Almighty Corinthians!
 </h3>
@@ -12,7 +12,7 @@ exports[`<HeadingStyled /> should render the component with different props 1`] 
 exports[`<HeadingStyled /> should render the component with the default props 1`] = `
 <h3
   as="h3"
-  className="sc-bdVaJa kvBkri"
+  className="HeadingStyled-eAwnvT ibXRHv"
 >
   Almighty Corinthians!
 </h3>
@@ -21,7 +21,7 @@ exports[`<HeadingStyled /> should render the component with the default props 1`
 exports[`<HeadingStyled /> should still rendering the component even if the element doesnt match the list 1`] = `
 <h3
   as="span"
-  className="sc-bdVaJa ftJEaA"
+  className="HeadingStyled-eAwnvT iXHZJF"
 >
   Almighty Corinthians!
 </h3>

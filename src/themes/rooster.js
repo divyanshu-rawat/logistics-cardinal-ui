@@ -52,6 +52,7 @@ const misc = {
   danger: reds.red900,
   success: greens.green700,
   warning: yellows.yellow700,
+  overlayColor: 'rgba(25, 29, 35, 0.82)',
 };
 
 const colors = {
@@ -122,12 +123,15 @@ const zIndex = {
   select: 1090,
   tooltip: 2020,
   spinnerOverlay: 2000,
+  drawerOverlay: 2000,
+  drawerContent: 2001,
   spinner: 2010,
   navbar: 2030,
 };
 
 const boxShadow = {
   switchHandler: '0px 0px 1px 5px rgba(255, 255, 255, 0.2)',
+  drawer: '0 2px 34px 0 rgba(0, 0, 0, 0.3)',
 };
 
 const breakpoints = {
@@ -151,6 +155,10 @@ const breakpoints = {
   },
 };
 
+const transitions = {
+  overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
+};
+
 export default {
   colors,
   grid,
@@ -165,4 +173,5 @@ export default {
   breakpoints,
   zIndex,
   boxShadow,
+  transitions,
 };

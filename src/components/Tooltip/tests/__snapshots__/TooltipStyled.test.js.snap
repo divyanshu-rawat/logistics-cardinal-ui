@@ -1,8 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<TooltipStyled /> should render the component with an unknown position 1`] = `
+<div
+  className="TooltipStyled-fwSOCa cITGZP"
+  content="The world Champion!"
+>
+  Corinthians!
+</div>
+`;
+
 exports[`<TooltipStyled /> should render the component with position bottom 1`] = `
 <div
-  className="sc-bdVaJa cIxpns"
+  className="TooltipStyled-fwSOCa gtjErN"
   content="The world Champion!"
 >
   Corinthians!
@@ -11,7 +20,7 @@ exports[`<TooltipStyled /> should render the component with position bottom 1`] 
 
 exports[`<TooltipStyled /> should render the component with position left 1`] = `
 <div
-  className="sc-bdVaJa iFekpn"
+  className="TooltipStyled-fwSOCa bdNGfu"
   content="The world Champion!"
 >
   Corinthians!
@@ -20,7 +29,7 @@ exports[`<TooltipStyled /> should render the component with position left 1`] = 
 
 exports[`<TooltipStyled /> should render the component with position right 1`] = `
 <div
-  className="sc-bdVaJa fbeGPT"
+  className="TooltipStyled-fwSOCa ePfseS"
   content="The world Champion!"
 >
   Corinthians!
@@ -29,7 +38,7 @@ exports[`<TooltipStyled /> should render the component with position right 1`] =
 
 exports[`<TooltipStyled /> should render the component with the default props 1`] = `
 <div
-  className="sc-bdVaJa dhSxpd"
+  className="TooltipStyled-fwSOCa hjeyxv"
   content="The world Champion!"
 >
   Corinthians!

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SingleSelect /> SingleSelect: should init component with given \`value\` prop 1`] = `
-<styled.div
+<Select__SelectStyled
   size="block"
 >
   <Select
@@ -253,11 +253,11 @@ exports[`<SingleSelect /> SingleSelect: should init component with given \`value
     valueComponent={[Function]}
     valueKey="value"
   />
-</styled.div>
+</Select__SelectStyled>
 `;
 
 exports[`<SingleSelect /> should render the component 1`] = `
-<styled.div
+<Select__SelectStyled
   size="block"
 >
   <Select
@@ -509,5 +509,5 @@ exports[`<SingleSelect /> should render the component 1`] = `
     valueComponent={[Function]}
     valueKey="value"
   />
-</styled.div>
+</Select__SelectStyled>
 `;

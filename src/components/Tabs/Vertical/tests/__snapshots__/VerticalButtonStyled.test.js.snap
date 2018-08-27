@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalButtonStyled /> should render the component 1`] = `
+<a
+  className="VerticalButtonStyled__VerticalTabButtonStyled-xiMYt kbtOHE"
+/>
+`;
+
+exports[`<VerticalButtonStyled /> should render the component with \`isActive\` prop as true 1`] = `
+<a
+  className="VerticalButtonStyled__VerticalTabButtonStyled-xiMYt dDzKcR"
+/>
+`;

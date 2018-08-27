@@ -2,6 +2,6 @@
 
 exports[`<Overlay /> should render the component 1`] = `
 <div
-  className="sc-bdVaJa gtVEEf"
+  className="Overlay__SpinnerOverlay-heVGca kmtBPJ"
 />
 `;

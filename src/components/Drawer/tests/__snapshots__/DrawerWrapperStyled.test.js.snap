@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DrawerWrapperStyled /> should render the component with default position 1`] = `
+<div
+  className="DrawerWrapperStyled__DrawerStyled-jiHDjs dIoasD"
+/>
+`;
+
+exports[`<DrawerWrapperStyled /> should render the component with the property right 1`] = `
+<div
+  className="DrawerWrapperStyled__DrawerStyled-jiHDjs jiRQHB"
+/>
+`;

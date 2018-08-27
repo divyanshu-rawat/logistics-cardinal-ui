@@ -47,4 +47,13 @@ describe('<TooltipStyled />', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+
+  it('should render the component with an unknown position', () => {
+    const tree = toJson(
+      renderedComponent({
+        position: 'null',
+      }),
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });

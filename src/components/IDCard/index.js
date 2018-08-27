@@ -8,12 +8,16 @@ import Heading from '../Heading';
 import Spacing from '../Spacing';
 import Text from '../Text';
 
+const resetMarginLeft = {
+  marginLeft: 0,
+};
+
 export const IDCard = ({ imageSrc, name, info, theme }) => (
   <IDCardStyled>
-    <Spacing right>
+    <Spacing style={{ ...resetMarginLeft }} right>
       <Avatar src={imageSrc} />
     </Spacing>
-    <Spacing>
+    <Spacing style={{ ...resetMarginLeft }}>
       <Heading
         as="h1"
         style={{

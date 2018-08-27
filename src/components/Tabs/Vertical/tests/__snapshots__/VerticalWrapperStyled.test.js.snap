@@ -2,6 +2,6 @@
 
 exports[`<VerticalWrapperStyled /> should render the component 1`] = `
 <div
-  className="sc-bdVaJa glblWe"
+  className="VerticalWrapperStyled-kxGeHZ izLCGm"
 />
 `;

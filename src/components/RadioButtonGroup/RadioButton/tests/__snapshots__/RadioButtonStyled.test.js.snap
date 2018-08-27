@@ -2,12 +2,12 @@
 
 exports[`RadioButtonStyled should render the component 1`] = `
 <label
-  className="sc-bdVaJa jWWOQ"
+  className="RadioButtonStyled__RadioButtonLabelStyled-gImHPA gCmVio"
 />
 `;
 
 exports[`RadioButtonStyled should render the component passing inline property as true 1`] = `
 <label
-  className="sc-bdVaJa hWwDld"
+  className="RadioButtonStyled__RadioButtonLabelStyled-gImHPA kabmbV"
 />
 `;

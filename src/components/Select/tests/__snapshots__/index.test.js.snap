@@ -2,35 +2,35 @@
 
 exports[`<Select /> should render the component with \`default size\` 1`] = `
 <div
-  className="sc-bdVaJa beMqVY"
+  className="Select__SelectStyled-fwaYyW hdPSrf"
   size=""
 />
 `;
 
 exports[`<Select /> should render the component with \`error validation state\` 1`] = `
 <div
-  className="sc-bdVaJa iZRFgm"
+  className="Select__SelectStyled-fwaYyW jlizpU"
   size=""
 />
 `;
 
 exports[`<Select /> should render the component with \`small size\` 1`] = `
 <div
-  className="sc-bdVaJa fzpDkV"
+  className="Select__SelectStyled-fwaYyW jderAh"
   size="small"
 />
 `;
 
 exports[`<Select /> should render the component with \`success validation state\` 1`] = `
 <div
-  className="sc-bdVaJa lkBrXh"
+  className="Select__SelectStyled-fwaYyW eNBUCn"
   size=""
 />
 `;
 
 exports[`<Select /> should render the component with \`warning validation state\` 1`] = `
 <div
-  className="sc-bdVaJa jBkosu"
+  className="Select__SelectStyled-fwaYyW QThIA"
   size=""
 />
 `;

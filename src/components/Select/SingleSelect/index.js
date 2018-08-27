@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import SelectPlus from 'react-select-plus';
 
-import Select from '../../Select';
+import SelectStyled from '../../Select';
 
 class SingleSelect extends PureComponent {
   static propTypes = {
@@ -42,7 +42,11 @@ class SingleSelect extends PureComponent {
     const { selectedValue } = this.state;
 
     return (
-      <Select size={size} validationState={validationState} isFirst={isFirst}>
+      <SelectStyled
+        size={size}
+        validationState={validationState}
+        isFirst={isFirst}
+      >
         <SelectPlus
           joinValues
           clearable={false}
@@ -53,7 +57,7 @@ class SingleSelect extends PureComponent {
           options={options}
           onChange={this.onChangeTime}
         />
-      </Select>
+      </SelectStyled>
     );
   }
 }

@@ -2,7 +2,7 @@
 
 exports[`<LinearGradient /> should render the component 1`] = `
 <LinearGradient
-  className="sc-bdVaJa dBYkw"
+  className="LinearGradient-dktdSo jITXaF"
   id="gradient"
   stops={
     Array [

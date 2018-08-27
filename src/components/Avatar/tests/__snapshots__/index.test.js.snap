@@ -5,15 +5,15 @@ exports[`Avatar should render the component 1`] = `
   size="lg"
   src=""
 >
-  <styled.div
+  <AvatarStyled
     size="lg"
     src=""
   >
     <div
-      className="sc-bdVaJa cCfLOb"
+      className="AvatarStyled-ekKVdS dgAlzy"
       size="lg"
       src=""
     />
-  </styled.div>
+  </AvatarStyled>
 </Avatar>
 `;

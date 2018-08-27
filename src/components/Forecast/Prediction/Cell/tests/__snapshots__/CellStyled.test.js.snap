@@ -2,14 +2,14 @@
 
 exports[`<CellStyled /> should render the styled component as \`actual\` 1`] = `
 <div
-  className="sc-bdVaJa fXRwoh"
+  className="CellStyled-fcPQZo jIToEO"
   type="actual"
 />
 `;
 
 exports[`<CellStyled /> should render the styled component as \`forecast\` 1`] = `
 <div
-  className="sc-bdVaJa iithew"
+  className="CellStyled-fcPQZo hbBdcl"
   type="forecast"
 />
 `;

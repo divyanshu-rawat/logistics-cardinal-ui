@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import VerticalTabButtonList from '../VerticalTabButtonList';
+import { VerticalTabButtonList } from '../VerticalTabButtonList';
 
 const renderComponent = () => (
   <VerticalTabButtonList

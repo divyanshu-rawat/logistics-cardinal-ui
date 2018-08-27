@@ -2,6 +2,6 @@
 
 exports[`<TabContainer /> should render the component with the default props 1`] = `
 <div
-  className="sc-bdVaJa jprScw"
+  className="HorizontalTabContainerStyled-fANHHi fsttWl"
 />
 `;

@@ -2,10 +2,10 @@
 
 exports[`<VerticalTabContainerList /> should render the component 1`] = `
 <Fragment>
-  <styled.div
+  <VerticalTabContainerStyled
     key="ComposedVerticalTabContainer-Forecast"
   >
     Forecast
-  </styled.div>
+  </VerticalTabContainerStyled>
 </Fragment>
 `;

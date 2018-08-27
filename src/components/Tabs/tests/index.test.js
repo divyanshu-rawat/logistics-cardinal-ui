@@ -5,9 +5,10 @@ import toJson from 'enzyme-to-json';
 import Text from '../../Text';
 import ComposedTabs from '..';
 
-const renderedComponent = () =>
+const renderedComponent = ({ mode = 'horizontal' }) =>
   shallow(
     <ComposedTabs
+      mode={mode}
       options={{
         forecast: (
           <Text as="p">
@@ -28,12 +29,17 @@ const renderedComponent = () =>
 
 describe('<ComposedTabs />', () => {
   it('should render the component', () => {
-    const tree = toJson(renderedComponent());
+    const tree = toJson(renderedComponent({}));
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component in vertical mode', () => {
+    const tree = toJson(renderedComponent({ mode: 'vertical' }));
     expect(tree).toMatchSnapshot();
   });
 
   it('`onClick` should update `state.active`', () => {
-    const component = renderedComponent();
+    const component = renderedComponent({});
     component.instance().onClick(1)();
 
     expect(component.state('active')).toBe(1);

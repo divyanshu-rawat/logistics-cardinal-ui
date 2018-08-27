@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual';
 import SelectPlus from 'react-select-plus';
 
-import Select from '../../Select';
+import SelectStyled from '../../Select';
 
 class MultipleSelect extends Component {
   static propTypes = {
@@ -50,7 +50,7 @@ class MultipleSelect extends Component {
     const { selectedValue } = this.state;
 
     return (
-      <Select validationState={validationState}>
+      <SelectStyled validationState={validationState}>
         <SelectPlus
           clearable={false}
           searchable={false}
@@ -62,7 +62,7 @@ class MultipleSelect extends Component {
           options={options}
           onChange={this.onChange}
         />
-      </Select>
+      </SelectStyled>
     );
   }
 }

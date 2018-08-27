@@ -2,38 +2,38 @@
 
 exports[`<TabButtonList /> should render the component with activeTab set as 1 1`] = `
 <Fragment>
-  <styled.a
+  <HorizontalTabButtonStyled__HorizontalTabButton
     isActive={false}
     key="ComposedHorizontalTabButton-forecast"
     onClick={[Function]}
   >
     forecast
-  </styled.a>
-  <styled.a
+  </HorizontalTabButtonStyled__HorizontalTabButton>
+  <HorizontalTabButtonStyled__HorizontalTabButton
     isActive={true}
     key="ComposedHorizontalTabButton-history"
     onClick={[Function]}
   >
     history
-  </styled.a>
+  </HorizontalTabButtonStyled__HorizontalTabButton>
 </Fragment>
 `;
 
 exports[`<TabButtonList /> should render the component with the default props 1`] = `
 <Fragment>
-  <styled.a
+  <HorizontalTabButtonStyled__HorizontalTabButton
     isActive={true}
     key="ComposedHorizontalTabButton-forecast"
     onClick={[Function]}
   >
     forecast
-  </styled.a>
-  <styled.a
+  </HorizontalTabButtonStyled__HorizontalTabButton>
+  <HorizontalTabButtonStyled__HorizontalTabButton
     isActive={false}
     key="ComposedHorizontalTabButton-history"
     onClick={[Function]}
   >
     history
-  </styled.a>
+  </HorizontalTabButtonStyled__HorizontalTabButton>
 </Fragment>
 `;

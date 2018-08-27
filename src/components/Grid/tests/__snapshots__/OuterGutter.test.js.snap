@@ -2,12 +2,12 @@
 
 exports[`<OuterGutter /> should render component with \`withPad\` prop as true 1`] = `
 <section
-  className="sc-bdVaJa haicEa"
+  className="OuterGutter-cxvKlT gAfDmL"
 />
 `;
 
 exports[`<OuterGutter /> should render the component with the default props 1`] = `
 <section
-  className="sc-bdVaJa cZXGFx"
+  className="OuterGutter-cxvKlT jdEhQV"
 />
 `;

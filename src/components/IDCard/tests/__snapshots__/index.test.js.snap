@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IDCard should render the component with default size 1`] = `
-<styled.div>
+<IDCardStyled>
   <Spacing
     right={true}
+    style={
+      Object {
+        "marginLeft": 0,
+      }
+    }
     type="margin"
   >
     <Avatar
@@ -12,6 +17,11 @@ exports[`IDCard should render the component with default size 1`] = `
     />
   </Spacing>
   <Spacing
+    style={
+      Object {
+        "marginLeft": 0,
+      }
+    }
     type="margin"
   >
     <Heading
@@ -43,5 +53,5 @@ exports[`IDCard should render the component with default size 1`] = `
       Captain
     </Text>
   </Spacing>
-</styled.div>
+</IDCardStyled>
 `;

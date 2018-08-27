@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<VerticalTab /> should render the component 1`] = `
-<styled.div>
-  <styled.div>
+<VerticalWrapperStyled>
+  <VerticalSidebarStyled>
     <WithTheme(VerticalTabButtonList)
       activeTab={0}
       onClick={[Function]}
@@ -13,7 +13,7 @@ exports[`<VerticalTab /> should render the component 1`] = `
         ]
       }
     />
-  </styled.div>
+  </VerticalSidebarStyled>
   <VerticalTabContainerList
     activeTab={0}
     options={
@@ -31,5 +31,5 @@ exports[`<VerticalTab /> should render the component 1`] = `
       ]
     }
   />
-</styled.div>
+</VerticalWrapperStyled>
 `;

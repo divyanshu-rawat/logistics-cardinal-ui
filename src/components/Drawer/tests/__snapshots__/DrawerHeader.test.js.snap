@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DrawerHeader /> should render the component 1`] = `
+<DrawerHeaderStyled>
+  <DrawerHeader__DrawerHeaderElement>
+    <p>
+      Test
+    </p>
+  </DrawerHeader__DrawerHeaderElement>
+  <DrawerHeader__DrawerHeaderButtonStyled>
+    <DrawerCloseButton
+      onClose={[Function]}
+    />
+  </DrawerHeader__DrawerHeaderButtonStyled>
+</DrawerHeaderStyled>
+`;

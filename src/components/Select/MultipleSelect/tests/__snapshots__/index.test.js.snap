@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MultipleSelect /> should init component with given \`initialValue\` prop 1`] = `
-<styled.div>
+<Select__SelectStyled>
   <Select
     arrowRenderer={[Function]}
     autosize={true}
@@ -75,11 +75,11 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
     valueComponent={[Function]}
     valueKey="value"
   />
-</styled.div>
+</Select__SelectStyled>
 `;
 
 exports[`<MultipleSelect /> should render the component 1`] = `
-<styled.div>
+<Select__SelectStyled>
   <Select
     arrowRenderer={[Function]}
     autosize={true}
@@ -146,5 +146,5 @@ exports[`<MultipleSelect /> should render the component 1`] = `
     valueComponent={[Function]}
     valueKey="value"
   />
-</styled.div>
+</Select__SelectStyled>
 `;

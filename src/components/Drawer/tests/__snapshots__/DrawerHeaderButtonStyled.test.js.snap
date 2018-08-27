@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DrawerHeaderButtonStyled /> should render the component 1`] = `
+<div
+  className="DrawerHeader__DrawerHeaderButtonStyled-ejqbRL bjvizd"
+/>
+`;
