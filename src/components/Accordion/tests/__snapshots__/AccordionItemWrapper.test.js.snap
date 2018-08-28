@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionItemWrapper should render the component 1`] = `
+<AccordionItemWrapper__AccordionItemDividerStyled>
+  <AccordionItemHeader
+    action={[Function]}
+    open={false}
+  >
+    <h1>
+      Some Title...
+    </h1>
+  </AccordionItemHeader>
+  <Fade
+    collapse={true}
+    delay={400}
+    duration={700}
+    when={false}
+  >
+    <AccordionItemContent>
+      <p>
+        Some content...
+      </p>
+    </AccordionItemContent>
+  </Fade>
+</AccordionItemWrapper__AccordionItemDividerStyled>
+`;

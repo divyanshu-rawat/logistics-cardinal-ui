@@ -24,6 +24,8 @@ import Icons from './components/Icons';
 import RadioButtonGroup from './components/RadioButtonGroup';
 import RadioButton from './components/RadioButtonGroup/RadioButton';
 import Drawer from './components/Drawer';
+import Accordion from './components/Accordion';
+import AccordionItem from './components/Accordion/AccordionItem';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
@@ -55,5 +57,7 @@ export default {
   RadioButtonGroup,
   RadioButton,
   Icons,
+  Accordion,
+  AccordionItem,
   ...Grid,
 };

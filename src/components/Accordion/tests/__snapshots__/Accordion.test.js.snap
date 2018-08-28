@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion should render the component 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "items": Object {},
+      "registerComponent": [Function],
+      "toggleItem": [Function],
+    }
+  }
+>
+  <AccordionItem
+    expandOnInit={false}
+    title="Some Title"
+  >
+    <p>
+      Some Content...
+    </p>
+  </AccordionItem>
+</ContextProvider>
+`;
