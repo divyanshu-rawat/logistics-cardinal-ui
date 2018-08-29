@@ -10,6 +10,7 @@ const renderedComponent = ({
   right = false,
   width = 500,
   header = <header>Header Test</header>,
+  withRenderProps = false,
 }) =>
   shallow(
     <Drawer
@@ -19,9 +20,11 @@ const renderedComponent = ({
       width={width}
       header={header}
     >
-      {({ isOpen }, toggleState) => (
-        <button onClick={toggleState}>{isOpen}</button>
-      )}
+      {withRenderProps // eslint-disable-next-line
+        ? ({ isOpen }, toggleState) => (
+          <button onClick={toggleState}>{isOpen}</button>
+          )
+        : null}
     </Drawer>,
   );
 
@@ -34,6 +37,18 @@ describe('<Drawer />', () => {
   it('should render the component width different props', () => {
     const tree = toJson(
       renderedComponent({ open: true, right: true, width: 100 }),
+    );
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render the component with render props', () => {
+    const tree = toJson(
+      renderedComponent({
+        open: true,
+        right: true,
+        width: 100,
+        withRenderProps: true,
+      }),
     );
     expect(tree).toMatchSnapshot();
   });

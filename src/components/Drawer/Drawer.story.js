@@ -59,7 +59,20 @@ const HorizontalTab = (
 storiesOf(`${COMPONENTS}Drawer`, module)
   .addDecorator(withTests('Drawer/tests/Drawer'))
   .add(
-    'Simple',
+    'Simple Controlled by State',
+    withInfo()(() => (
+      <div style={{ width: '100%', height: '100%' }}>
+        <Drawer
+          header={Header}
+          open={boolean('Open?', false)}
+          right={boolean('Right?', true)}
+          content={HorizontalTab}
+        />
+      </div>
+    )),
+  )
+  .add(
+    'With Render Props',
     withInfo()(() => (
       <div style={{ width: '100%', height: '100%' }}>
         <Drawer

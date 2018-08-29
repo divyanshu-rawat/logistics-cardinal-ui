@@ -41,13 +41,54 @@ exports[`<Drawer /> should render the component 1`] = `
     onClick={[Function]}
     open={false}
   />
-  <button
-    onClick={[Function]}
-  />
 </Fragment>
 `;
 
 exports[`<Drawer /> should render the component width different props 1`] = `
+<Fragment>
+  <DrawerWrapperStyled__DrawerStyled
+    right={true}
+  >
+    <Fade
+      delay={100}
+      duration={500}
+      mountOnEnter={true}
+      right={true}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      unmountOnExit={true}
+      when={true}
+    >
+      <DrawerStyled
+        width={100}
+      >
+        <DrawerHeader
+          header={
+            <header>
+              Header Test
+            </header>
+          }
+          onClose={[Function]}
+        />
+        <DrawerContentStyled>
+          <p>
+            Test!
+          </p>
+        </DrawerContentStyled>
+      </DrawerStyled>
+    </Fade>
+  </DrawerWrapperStyled__DrawerStyled>
+  <OverlayStyled
+    onClick={[Function]}
+    open={true}
+  />
+</Fragment>
+`;
+
+exports[`<Drawer /> should render the component with render props 1`] = `
 <Fragment>
   <DrawerWrapperStyled__DrawerStyled
     right={true}

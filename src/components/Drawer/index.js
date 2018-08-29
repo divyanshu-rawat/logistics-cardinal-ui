@@ -12,9 +12,9 @@ class Drawer extends Component {
   static propTypes = {
     open: PropTypes.bool.isRequired,
     content: PropTypes.node.isRequired,
-    children: PropTypes.func.isRequired,
     right: PropTypes.bool.isRequired,
     width: PropTypes.number.isRequired,
+    children: PropTypes.func,
     header: PropTypes.node,
   };
 
@@ -98,7 +98,7 @@ class Drawer extends Component {
           </Fade>
         </DrawerWrapperStyled>
         <OverlayStyled open={isOpen} onClick={this.onOverlayClick} />
-        {children(this.state, this.toggleState)}
+        {children && children(this.state, this.toggleState)}
       </Fragment>
     );
   }
