@@ -26,10 +26,14 @@ import RadioButton from './components/RadioButtonGroup/RadioButton';
 import Drawer from './components/Drawer';
 import Accordion from './components/Accordion';
 import AccordionItem from './components/Accordion/AccordionItem';
+import Avatar from './components/Avatar';
+import IDCard from './components/IDCard';
 import * as MASKS from './components/MaskedInput/constants';
 import Themes from './themes';
 
 export default {
+  Avatar,
+  IDCard,
   Drawer,
   SingleSelect,
   MultipleSelect,

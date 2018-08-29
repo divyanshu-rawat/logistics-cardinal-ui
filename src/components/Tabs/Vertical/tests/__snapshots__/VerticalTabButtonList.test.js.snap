@@ -13,20 +13,27 @@ exports[`<VerticalTabButtonList /> should render the component 1`] = `
       style={
         Object {
           "flex": 1,
+          "textDecoration": "none",
         }
       }
       truncate={true}
     >
       Forecast
     </Text>
-    <span>
-      <ArrowRight
-        height="6"
-        viewBox="0 0 13 6"
-        width="13"
-        xmlns="http://www.w3.org/2000/svg"
-      />
-    </span>
+    <Fade
+      duration={300}
+      left={true}
+      when={true}
+    >
+      <span>
+        <ArrowRight
+          height="6"
+          viewBox="0 0 13 6"
+          width="13"
+          xmlns="http://www.w3.org/2000/svg"
+        />
+      </span>
+    </Fade>
   </VerticalButtonStyled__VerticalTabButtonStyled>
   <VerticalButtonStyled__VerticalTabButtonStyled
     isActive={false}
@@ -38,20 +45,27 @@ exports[`<VerticalTabButtonList /> should render the component 1`] = `
       style={
         Object {
           "flex": 1,
+          "textDecoration": "none",
         }
       }
       truncate={true}
     >
       History
     </Text>
-    <span>
-      <ArrowRight
-        height="6"
-        viewBox="0 0 13 6"
-        width="13"
-        xmlns="http://www.w3.org/2000/svg"
-      />
-    </span>
+    <Fade
+      duration={300}
+      left={true}
+      when={false}
+    >
+      <span>
+        <ArrowRight
+          height="6"
+          viewBox="0 0 13 6"
+          width="13"
+          xmlns="http://www.w3.org/2000/svg"
+        />
+      </span>
+    </Fade>
   </VerticalButtonStyled__VerticalTabButtonStyled>
 </Fragment>
 `;

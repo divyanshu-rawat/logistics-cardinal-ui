@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withTheme } from 'styled-components';
+import { Fade } from 'react-reveal';
 
 import VerticalTabButtonStyled from './VerticalButtonStyled';
 import Icon from '../../Icons';
@@ -21,7 +22,7 @@ export const VerticalTabButtonList = ({
       >
         <Text
           margin="0"
-          style={{ flex: 1 }}
+          style={{ flex: 1, textDecoration: 'none' }}
           truncate
           color={
             activeTab === key ? theme.colors.primary100 : theme.colors.white
@@ -29,9 +30,11 @@ export const VerticalTabButtonList = ({
         >
           {item}
         </Text>
-        <span>
-          <Icon.ArrowRight />
-        </span>
+        <Fade left duration={300} when={activeTab === key}>
+          <span>
+            <Icon.ArrowRight />
+          </span>
+        </Fade>
       </VerticalTabButtonStyled>
     ))}
   </Fragment>

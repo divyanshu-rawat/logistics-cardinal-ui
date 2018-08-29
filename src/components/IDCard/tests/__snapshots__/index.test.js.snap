@@ -39,7 +39,7 @@ exports[`IDCard should render the component with default size 1`] = `
       Terry Mitchell
     </Heading>
     <Text
-      as="span"
+      as="div"
       margin="0"
       style={
         Object {

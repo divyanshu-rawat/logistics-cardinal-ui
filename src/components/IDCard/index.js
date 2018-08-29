@@ -30,6 +30,7 @@ export const IDCard = ({ imageSrc, name, info, theme }) => (
       </Heading>
       <Text
         margin="0"
+        as="div"
         style={{
           color: 'white',
           opacity: 0.6,

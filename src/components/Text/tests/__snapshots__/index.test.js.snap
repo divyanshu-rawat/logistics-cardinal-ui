@@ -121,12 +121,12 @@ exports[`<Text /> should render the component with different props 1`] = `
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
       "zIndex": Object {
-        "drawerContent": 2001,
-        "drawerOverlay": 2000,
+        "drawerContent": 2041,
+        "drawerOverlay": 2040,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
-        "spinnerOverlay": 2000,
+        "spinnerOverlay": 2040,
         "tooltip": 2020,
       },
     }
@@ -260,12 +260,12 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
       "zIndex": Object {
-        "drawerContent": 2001,
-        "drawerOverlay": 2000,
+        "drawerContent": 2041,
+        "drawerOverlay": 2040,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
-        "spinnerOverlay": 2000,
+        "spinnerOverlay": 2040,
         "tooltip": 2020,
       },
     }

@@ -2,14 +2,14 @@
 
 exports[`<OverlayStyled /> should render the component as closed 1`] = `
 <div
-  className="OverlayStyled-fKaoQt bPRvsL"
+  className="OverlayStyled-fKaoQt kZcBxb"
   open={false}
 />
 `;
 
 exports[`<OverlayStyled /> should render the component with the property open set as true 1`] = `
 <div
-  className="OverlayStyled-fKaoQt ehUeaX"
+  className="OverlayStyled-fKaoQt doUsSI"
   open={true}
 />
 `;

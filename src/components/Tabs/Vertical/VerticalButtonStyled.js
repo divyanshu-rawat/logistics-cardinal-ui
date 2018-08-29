@@ -10,7 +10,8 @@ const VerticalTabButtonStyled = styled('a')`
   margin-right: ${({ theme }) => theme.spacings.bit};
   padding: ${({ theme }) => theme.composedSpacings.byte};
   outline-width: 0;
-  text-decoration: none;
+  // it's necessary due to react-bootstrap-table specifity collison
+  text-decoration: none !important;
   cursor: pointer;
   text-transform: capitalize;
   &:not(:first-child) {
@@ -29,11 +30,11 @@ const VerticalTabButtonStyled = styled('a')`
     position: absolute;
     left: 0;
     top: 0;
-    display: block;
     height: 100%;
     width: 4px;
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
     background-color: ${({ theme }) => theme.colors.primary100};
+    transition: opacity 0.3s;
   }
 `;
 
