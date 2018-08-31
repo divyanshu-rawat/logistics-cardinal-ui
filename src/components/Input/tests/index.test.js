@@ -3,9 +3,10 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Input from '..';
+import theme from '../../../themes/rooster';
 
 const renderedComponent = ({ ref, props }) =>
-  mount(<Input inputRef={ref} {...props} />);
+  mount(<Input inputRef={ref} {...props} theme={theme} />);
 
 describe('<Input />', () => {
   it('should render the component', () => {

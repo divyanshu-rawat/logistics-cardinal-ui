@@ -9,6 +9,9 @@ import Text from './components/Text';
 import Indicator from './components/Checkbox/Indicator';
 import Prediction from './components/Forecast/Prediction';
 import Input from './components/Input';
+import InputFeedback from './components/InputFeedback';
+import InputGroup from './components/InputGroup';
+import Label from './components/Label';
 import MaskedInput from './components/MaskedInput';
 import Spacing from './components/Spacing';
 import ComposedChart from './components/Graph/ComposedChart';
@@ -46,6 +49,9 @@ export default {
   Indicator,
   Text,
   Input,
+  InputGroup,
+  InputFeedback,
+  Label,
   MaskedInput,
   Spinner,
   Spacing,

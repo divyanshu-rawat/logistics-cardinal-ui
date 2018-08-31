@@ -27,4 +27,8 @@ storiesOf(`${TYPOGRAPHY}Icons`, module)
     'ChevronDown',
     withInfo()(() => <Icons.ChevronDown width={SIZE} height={SIZE} />),
   )
+  .add(
+    'Calendar',
+    withInfo()(() => <Icons.Calendar width={SIZE} height={SIZE} />),
+  )
   .add('Close', withInfo()(() => <Icons.Close width={SIZE} height={SIZE} />));

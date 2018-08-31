@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SelectPlus from 'react-select-plus';
 
 import SelectStyled from '../../Select';
-
+import Icons from '../../Icons';
 class SingleSelect extends PureComponent {
   static propTypes = {
     options: PropTypes.array.isRequired,
@@ -55,6 +55,13 @@ class SingleSelect extends PureComponent {
           value={selectedValue}
           placeholder={placeholder}
           options={options}
+          arrowRenderer={({ isOpen }) =>
+            isOpen ? (
+              <Icons.ChevronUp className="Custom-Select-arrow" />
+            ) : (
+              <Icons.ChevronDown className="Custom-Select-arrow" />
+            )
+          }
           onChange={this.onChangeTime}
         />
       </SelectStyled>

@@ -19,7 +19,6 @@ exports[`AccordionItemHeader should render the component 1`] = `
   >
     <ChevronDown
       height="8"
-      viewBox="0 0 14 8"
       width="14"
       xmlns="http://www.w3.org/2000/svg"
     />

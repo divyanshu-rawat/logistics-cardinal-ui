@@ -19,6 +19,8 @@ const greys = {
   grey700: '#24282E',
   grey800: '#23262C',
   grey900: '#292D33',
+  grey1000: '#6d7785',
+  grey1100: '#b2b8c0',
 };
 
 const greens = {
@@ -30,8 +32,8 @@ const greens = {
 };
 
 const reds = {
-  red100: '#ffe6e1',
-  red300: '#ffaf9f',
+  red100: '#cb3548',
+  red300: '#9b5a62',
   red500: '#ff7559',
   red700: '#d55a41',
   red900: '#a94442',

@@ -61,6 +61,9 @@ const SelectStyled = styled('div')`
       opacity: 1;
       z-index: -1;
     }
+    &-arrow {
+      background-color: ${({ theme }) => theme.colors.primary100};
+    }
     &-menu-outer {
       box-shadow: 0;
       background-color: ${({ theme }) => theme.colors.grey400};
@@ -114,7 +117,7 @@ const SelectStyled = styled('div')`
     &.has-value {
       &.Select--single {
         > .Select-control .Select-value .Select-value-label {
-          color: #b2b8c0;
+          color: ${({ theme }) => theme.colors.white};
         }
       }
     }

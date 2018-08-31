@@ -1,8 +1,11 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { ThemeProvider } from 'styled-components';
 
 import MaskedInput from '..';
+
+import Theme from '../../../themes/rooster';
 
 import {
   BIRTHDAY_MASK,
@@ -43,14 +46,16 @@ const onBlurFn = jest.fn();
 
 const renderedComponent = ({ mask, id, placeholder, guide }) =>
   mount(
-    <MaskedInput
-      mask={mask}
-      guide={guide}
-      placeholder={placeholder}
-      id={id}
-      onChange={onChangeFn}
-      onBlur={onBlurFn}
-    />,
+    <ThemeProvider theme={Theme}>
+      <MaskedInput
+        mask={mask}
+        guide={guide}
+        placeholder={placeholder}
+        id={id}
+        onChange={onChangeFn}
+        onBlur={onBlurFn}
+      />
+    </ThemeProvider>,
   );
 
 describe('<MaskedInput />', () => {

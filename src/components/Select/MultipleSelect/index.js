@@ -4,7 +4,7 @@ import isEqual from 'lodash/isEqual';
 import SelectPlus from 'react-select-plus';
 
 import SelectStyled from '../../Select';
-
+import Icons from '../../Icons';
 class MultipleSelect extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
@@ -60,6 +60,13 @@ class MultipleSelect extends Component {
           value={selectedValue}
           placeholder={placeholder}
           options={options}
+          arrowRenderer={({ isOpen }) =>
+            isOpen ? (
+              <Icons.ChevronUp className="Custom-Select-arrow" />
+            ) : (
+              <Icons.ChevronDown className="Custom-Select-arrow" />
+            )
+          }
           onChange={this.onChange}
         />
       </SelectStyled>

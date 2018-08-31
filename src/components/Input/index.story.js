@@ -13,4 +13,18 @@ import Input from '.';
 
 storiesOf(`${FORM}Input`, module)
   .addDecorator(withTests('Input/tests/index'))
-  .add('Simple', withInfo()(() => <Input placeholder="Awesome Placeholder" />));
+  .add('Simple', withInfo()(() => <Input placeholder="Awesome Placeholder" />))
+  .add(
+    'With Error',
+    withInfo()(() => <Input placeholder="Awesome Placeholder" hasError />),
+  )
+  .add(
+    'Disabled',
+    withInfo()(() => (
+      <Input
+        placeholder="Awesome Placeholder"
+        value="Disabled Field"
+        disabled
+      />
+    )),
+  );

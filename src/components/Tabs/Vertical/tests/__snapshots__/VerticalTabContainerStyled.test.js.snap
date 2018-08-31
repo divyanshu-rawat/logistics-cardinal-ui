@@ -2,6 +2,6 @@
 
 exports[`<VerticalTabContainerStyled /> should render the component 1`] = `
 <div
-  className="VerticalTabContainerStyled-lUdqP cdvmdJ"
+  className="VerticalTabContainerStyled-lUdqP hKPIHP"
 />
 `;
