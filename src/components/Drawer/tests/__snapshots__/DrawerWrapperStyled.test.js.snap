@@ -2,12 +2,12 @@
 
 exports[`<DrawerWrapperStyled /> should render the component with default position 1`] = `
 <div
-  className="DrawerWrapperStyled__DrawerStyled-jiHDjs iIZLGK"
+  className="DrawerWrapperStyled__DrawerStyled-jiHDjs bjfxRn"
 />
 `;
 
 exports[`<DrawerWrapperStyled /> should render the component with the property right 1`] = `
 <div
-  className="DrawerWrapperStyled__DrawerStyled-jiHDjs fInfXc"
+  className="DrawerWrapperStyled__DrawerStyled-jiHDjs bveLKc"
 />
 `;

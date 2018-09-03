@@ -13,7 +13,7 @@ const DrawerStyled = styled('div')`
     }
     return `left: 0;`;
   }};
-  .react-reveal {
+  > .react-reveal {
     position: relative;
     height: 100%;
   }
