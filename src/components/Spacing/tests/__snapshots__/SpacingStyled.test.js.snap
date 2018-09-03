@@ -123,6 +123,7 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
@@ -264,6 +265,7 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
@@ -402,6 +404,7 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,

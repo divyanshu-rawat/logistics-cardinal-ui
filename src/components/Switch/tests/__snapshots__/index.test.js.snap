@@ -158,6 +158,7 @@ exports[`<Switch /> should render the component 1`] = `
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,

@@ -129,6 +129,7 @@ const zIndex = {
   drawerContent: 2041,
   spinner: 2010,
   navbar: 2030,
+  loadingBar: 3000,
 };
 
 const boxShadow = {

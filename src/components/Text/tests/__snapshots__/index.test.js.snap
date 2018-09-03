@@ -125,6 +125,7 @@ exports[`<Text /> should render the component with different props 1`] = `
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
@@ -266,6 +267,7 @@ exports[`<Text /> should render the component with the default props 1`] = `
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
+        "loadingBar": 3000,
         "navbar": 2030,
         "select": 1090,
         "spinner": 2010,
