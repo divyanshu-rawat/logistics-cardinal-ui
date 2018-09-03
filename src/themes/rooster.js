@@ -127,7 +127,7 @@ const zIndex = {
   spinnerOverlay: 2040,
   drawerOverlay: 2040,
   drawerContent: 2041,
-  spinner: 2010,
+  spinner: 2041,
   navbar: 2030,
   loadingBar: 3000,
 };

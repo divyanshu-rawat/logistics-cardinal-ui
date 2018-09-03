@@ -2,6 +2,6 @@
 
 exports[`<Holder /> should render the component 1`] = `
 <div
-  className="Holder__SpinnerWrapper-fxSXFC kWoRuU"
+  className="Holder__SpinnerWrapper-fxSXFC byyBmN"
 />
 `;
