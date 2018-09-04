@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const DrawerContentStyled = styled('div')`
-  height: 100%;
+  flex: 1;
 `;
 
 export default DrawerContentStyled;

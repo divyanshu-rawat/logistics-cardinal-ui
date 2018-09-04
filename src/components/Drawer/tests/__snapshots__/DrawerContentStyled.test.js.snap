@@ -2,6 +2,6 @@
 
 exports[`<DrawerContentStyled /> should render the component 1`] = `
 <div
-  className="DrawerContentStyled-ddUfpq kllcea"
+  className="DrawerContentStyled-ddUfpq dgbNle"
 />
 `;
