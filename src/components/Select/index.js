@@ -17,10 +17,12 @@ const SelectStyled = styled('div')`
   margin-right: 5px;
   width: 100%;
   position: relative;
-  z-index: ${({ theme }) => theme.zIndex.select};
+  z-index: ${({ theme, isOpen }) =>
+    isOpen ? theme.zIndex.select + 1 : theme.zIndex.select};
   .Select {
-    width: ${(props) => sizes[props.size]};
+    width: ${({ size }) => sizes[size]};
     &-control {
+      width: ${({ size }) => sizes[size]};
       background-color: ${({ theme }) => theme.colors.grey400};
       border: 1px solid
         ${({ validationState, theme }) =>
@@ -31,6 +33,10 @@ const SelectStyled = styled('div')`
       min-height: 40px;
       align-items: center;
       height: auto;
+      &:hover {
+        cursor: pointer;
+        border-color: ${({ theme }) => theme.colors.grey1000};
+      }
     }
     &-multi {
       &-value-wrapper {
@@ -58,8 +64,10 @@ const SelectStyled = styled('div')`
     &-input {
       position: absolute;
       top: 0;
-      opacity: 1;
-      z-index: -1;
+      background: transparent;
+      &:focus {
+        background: transparent;
+      }
     }
     &-arrow {
       background-color: ${({ theme }) => theme.colors.primary100};
@@ -72,11 +80,11 @@ const SelectStyled = styled('div')`
         background-color: ${({ theme }) => theme.colors.grey400};
         color: ${({ theme }) => theme.colors.white};
         &.is-selected {
-          background-color: ${({ theme }) => theme.colors.grey400};
+          background-color: ${({ theme }) => theme.colors.grey300};
           border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
         }
         &.is-focused {
-          background-color: ${({ theme }) => theme.colors.grey400};
+          background-color: ${({ theme }) => theme.colors.grey300};
           border: 0;
         }
         &:hover {
@@ -120,6 +128,18 @@ const SelectStyled = styled('div')`
           color: ${({ theme }) => theme.colors.white};
         }
       }
+      &.is-pseudo-focused .Select-input {
+        opacity: 0;
+      }
+    }
+  }
+  &.is-searchable {
+    &.is-open > .Select-control {
+      cursor: text;
+    }
+
+    &.is-focused:not(.is-open) > .Select-control {
+      cursor: text;
     }
   }
 `;

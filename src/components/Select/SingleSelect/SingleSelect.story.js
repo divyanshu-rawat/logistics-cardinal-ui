@@ -18,18 +18,33 @@ storiesOf(`${FORM}Select/SingleSelect`, module)
   .add(
     'Single',
     withInfo()(() => (
-      <SingleSelect
-        options={SingleSelectMock}
-        onChange={action((item) => console.log(item))}
-        validationState={select('Validation State', [
-          '',
-          'error',
-          'success',
-          'warning',
-        ])}
-        name="start_at"
-        placeholder="Start At"
-      />
+      <div>
+        <SingleSelect
+          options={SingleSelectMock}
+          isSearchable
+          onChange={action((item) => console.log(item))}
+          validationState={select('Validation State', [
+            '',
+            'error',
+            'success',
+            'warning',
+          ])}
+          name="start_at"
+          placeholder="Searchable Start At"
+        />
+        <SingleSelect
+          options={SingleSelectMock}
+          onChange={action((item) => console.log(item))}
+          validationState={select('Validation State', [
+            '',
+            'error',
+            'success',
+            'warning',
+          ])}
+          name="end_at"
+          placeholder="End At"
+        />
+      </div>
     )),
   )
   .add(

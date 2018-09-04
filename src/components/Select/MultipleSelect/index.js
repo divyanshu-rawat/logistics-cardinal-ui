@@ -11,16 +11,20 @@ class MultipleSelect extends Component {
     options: PropTypes.array.isRequired,
     validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
     onChange: PropTypes.func.isRequired,
+    size: PropTypes.string,
     placeholder: PropTypes.string,
+    isSearchable: PropTypes.bool,
     initialValue: PropTypes.array,
   };
 
   static defaultProps = {
     initialValue: [],
+    size: 'block',
   };
 
   state = {
     selectedValue: [],
+    isOpen: false,
   };
 
   componentDidMount() {
@@ -45,20 +49,42 @@ class MultipleSelect extends Component {
     );
   };
 
+  onOpenSelect = () => {
+    this.setState({ isOpen: true });
+  };
+
+  onCloseSelect = () => {
+    this.setState({ isOpen: false });
+  };
+
   render() {
-    const { options, name, placeholder, validationState } = this.props;
-    const { selectedValue } = this.state;
+    const {
+      options,
+      name,
+      placeholder,
+      validationState,
+      isSearchable,
+      size,
+    } = this.props;
+
+    const { selectedValue, isOpen } = this.state;
 
     return (
-      <SelectStyled validationState={validationState}>
+      <SelectStyled
+        size={size}
+        isOpen={isOpen}
+        validationState={validationState}
+      >
         <SelectPlus
           clearable={false}
-          searchable={false}
+          searchable={isSearchable}
           joinValues
           name={name}
           multi
           value={selectedValue}
           placeholder={placeholder}
+          onOpen={this.onOpenSelect}
+          onClose={this.onCloseSelect}
           options={options}
           arrowRenderer={({ isOpen }) =>
             isOpen ? (

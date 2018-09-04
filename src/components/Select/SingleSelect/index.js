@@ -19,6 +19,7 @@ class SingleSelect extends PureComponent {
 
   state = {
     selectedValue: this.props.initialValue,
+    isOpen: false,
   };
 
   onChangeTime = (option) => {
@@ -26,6 +27,14 @@ class SingleSelect extends PureComponent {
     this.setState({ selectedValue: option }, () =>
       this.props.onChange({ name, option }),
     );
+  };
+
+  onOpenSelect = () => {
+    this.setState({ isOpen: true });
+  };
+
+  onCloseSelect = () => {
+    this.setState({ isOpen: false });
   };
 
   render() {
@@ -39,11 +48,12 @@ class SingleSelect extends PureComponent {
       validationState,
     } = this.props;
 
-    const { selectedValue } = this.state;
+    const { selectedValue, isOpen } = this.state;
 
     return (
       <SelectStyled
         size={size}
+        isOpen={isOpen}
         validationState={validationState}
         isFirst={isFirst}
       >
@@ -55,6 +65,8 @@ class SingleSelect extends PureComponent {
           value={selectedValue}
           placeholder={placeholder}
           options={options}
+          onOpen={this.onOpenSelect}
+          onClose={this.onCloseSelect}
           arrowRenderer={({ isOpen }) =>
             isOpen ? (
               <Icons.ChevronUp className="Custom-Select-arrow" />
