@@ -18,28 +18,33 @@ storiesOf(`${FORM}Select/MultipleSelect`, module)
   .add(
     'Normal',
     withInfo()(() => (
-      <MultipleSelect
-        name="zones"
-        validationState={select('Validation State', [
-          '',
-          'error',
-          'success',
-          'warning',
-        ])}
-        placeholder="🐦  Select something..."
-        onChange={action((item) => console.log(item))}
-        options={MultipleSelectMock}
-      />
+      <div style={{ width: '300px' }}>
+        <MultipleSelect
+          name="zones"
+          validationState={select('Validation State', [
+            '',
+            'error',
+            'success',
+            'warning',
+          ])}
+          isSearchable
+          placeholder="🐦  I'm searchable too..."
+          onChange={action((item) => console.log(item))}
+          options={MultipleSelectMock}
+        />
+      </div>
     )),
   )
   .add(
     'With initial Values',
     withInfo()(() => (
-      <MultipleSelect
-        name="zones"
-        initialValue={[{ value: 'stockholm$stockholm', label: 'Stockholm' }]}
-        onChange={action((item) => console.log(item))}
-        options={MultipleSelectMock}
-      />
+      <div style={{ width: '300px' }}>
+        <MultipleSelect
+          name="zones"
+          initialValue={[{ value: 'stockholm$stockholm', label: 'Stockholm' }]}
+          onChange={action((item) => console.log(item))}
+          options={MultipleSelectMock}
+        />
+      </div>
     )),
   );

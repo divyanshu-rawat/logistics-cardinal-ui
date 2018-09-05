@@ -2,6 +2,7 @@
 
 exports[`<SingleSelect /> SingleSelect: should init component with given \`value\` prop 1`] = `
 <Select__SelectStyled
+  isOpen={false}
   size="block"
 >
   <Select
@@ -35,7 +36,9 @@ exports[`<SingleSelect /> SingleSelect: should init component with given \`value
     noResultsText="No results found"
     onBlurResetsInput={true}
     onChange={[Function]}
+    onClose={[Function]}
     onCloseResetsInput={true}
+    onOpen={[Function]}
     onSelectResetsInput={true}
     openOnClick={true}
     optionComponent={[Function]}
@@ -258,6 +261,7 @@ exports[`<SingleSelect /> SingleSelect: should init component with given \`value
 
 exports[`<SingleSelect /> should render the component 1`] = `
 <Select__SelectStyled
+  isOpen={false}
   size="block"
 >
   <Select
@@ -291,7 +295,9 @@ exports[`<SingleSelect /> should render the component 1`] = `
     noResultsText="No results found"
     onBlurResetsInput={true}
     onChange={[Function]}
+    onClose={[Function]}
     onCloseResetsInput={true}
+    onOpen={[Function]}
     onSelectResetsInput={true}
     openOnClick={true}
     optionComponent={[Function]}

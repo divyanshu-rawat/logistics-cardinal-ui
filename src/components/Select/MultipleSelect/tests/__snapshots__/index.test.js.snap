@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MultipleSelect /> should init component with given \`initialValue\` prop 1`] = `
-<Select__SelectStyled>
+<Select__SelectStyled
+  isOpen={false}
+  size="block"
+>
   <Select
     arrowRenderer={[Function]}
     autosize={true}
@@ -33,7 +36,9 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
     noResultsText="No results found"
     onBlurResetsInput={true}
     onChange={[Function]}
+    onClose={[Function]}
     onCloseResetsInput={true}
+    onOpen={[Function]}
     onSelectResetsInput={true}
     openOnClick={true}
     optionComponent={[Function]}
@@ -60,7 +65,7 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
     required={false}
     rtl={false}
     scrollMenuIntoView={true}
-    searchable={false}
+    searchable={true}
     simpleValue={false}
     tabSelectsValue={true}
     trimFilter={true}
@@ -79,7 +84,10 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
 `;
 
 exports[`<MultipleSelect /> should render the component 1`] = `
-<Select__SelectStyled>
+<Select__SelectStyled
+  isOpen={false}
+  size="block"
+>
   <Select
     arrowRenderer={[Function]}
     autosize={true}
@@ -111,7 +119,9 @@ exports[`<MultipleSelect /> should render the component 1`] = `
     noResultsText="No results found"
     onBlurResetsInput={true}
     onChange={[Function]}
+    onClose={[Function]}
     onCloseResetsInput={true}
+    onOpen={[Function]}
     onSelectResetsInput={true}
     openOnClick={true}
     optionComponent={[Function]}
@@ -138,7 +148,7 @@ exports[`<MultipleSelect /> should render the component 1`] = `
     required={false}
     rtl={false}
     scrollMenuIntoView={true}
-    searchable={false}
+    searchable={true}
     simpleValue={false}
     tabSelectsValue={true}
     trimFilter={true}
