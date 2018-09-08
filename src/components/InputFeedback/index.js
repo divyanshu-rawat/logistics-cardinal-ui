@@ -12,6 +12,8 @@ const VALIDATION_STATE = {
 export const InputFeedbackStyled = styled('p')`
   display: block;
   padding: 0 3px;
+  margin-bottom: 0;
+  height: 18px;
   margin-top: ${({ theme }) => theme.spacings.byte};
   font-weight: ${({ theme }) => theme.fontWeight.semiBold};
   font-size: ${({ theme }) => theme.fontSize.byte};

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 export const InputGroupStyled = styled('fieldset')`
   display: block;
-  margin-bottom: ${({ theme }) => theme.spacings.mega};
 `;
 
 const InputGroup = ({ children, name, disabled }) => (
