@@ -23,6 +23,8 @@ Text.propTypes = {
   truncate: PropTypes.bool,
   /** Text Transform, UPPERCASE */
   uppercase: PropTypes.bool,
+  /** Renders element as a block element, default is inline-block */
+  block: PropTypes.bool,
   fontSize: PropTypes.string,
   margin: PropTypes.string,
 };

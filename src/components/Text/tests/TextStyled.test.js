@@ -14,6 +14,7 @@ const renderedComponent = ({
   uppercase,
   fontSize,
   margin,
+  block,
 }) =>
   shallow(
     <TextStyled
@@ -26,6 +27,7 @@ const renderedComponent = ({
       uppercase={uppercase}
       fontSize={fontSize}
       margin={margin}
+      block={block}
     >
       Corinthians!
     </TextStyled>,
@@ -48,6 +50,7 @@ describe('<TextStyled />', () => {
         uppercase: true,
         fontSize: 'mega',
         margin: '20px',
+        block: true,
       }),
     );
     expect(tree).toMatchSnapshot();

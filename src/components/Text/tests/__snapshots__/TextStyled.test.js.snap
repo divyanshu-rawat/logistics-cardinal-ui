@@ -2,7 +2,7 @@
 
 exports[`<TextStyled /> should render the component with different props 1`] = `
 <span
-  className="TextStyled-bFnujI fyHlqy"
+  className="TextStyled-bFnujI cNvGrO"
   color="#000"
   fontFamily="Times New Roman"
   fontSize="mega"

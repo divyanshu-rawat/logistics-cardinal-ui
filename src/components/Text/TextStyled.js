@@ -10,7 +10,7 @@ const TextStyled = styled.span`
   margin: ${({ margin, theme }) => margin || theme.composedSpacings.byte};
   font-size: ${({ fontSize, theme }) =>
     theme.fontSize[fontSize] || theme.fontSize.byte};
-  display: inline-block;
+  display: ${({ block }) => (block ? 'block' : 'inline-block')};
 
   ${({ truncate }) => {
     if (truncate) {

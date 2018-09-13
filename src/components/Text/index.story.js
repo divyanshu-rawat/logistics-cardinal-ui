@@ -28,6 +28,7 @@ storiesOf(`${TYPOGRAPHY}Text`, module)
           align={select('Text Align', ['left', 'right', 'center'], 'left')}
           truncate={boolean('Truncate', false)}
           uppercase={boolean('Uppercase', false)}
+          block={boolean('Block', false)}
         >
           Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem
           dormir, sentado sem cochilar e fazendo pose. Praesent malesuada urna
