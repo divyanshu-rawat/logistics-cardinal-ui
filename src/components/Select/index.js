@@ -45,7 +45,7 @@ const SelectStyled = styled('div')`
       }
     }
     &-placeholder {
-      // position: relative;
+      line-height: 40px;
     }
     &-value {
       margin: 0 0 0 5px;
