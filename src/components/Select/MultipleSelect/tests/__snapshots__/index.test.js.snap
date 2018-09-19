@@ -57,6 +57,14 @@ exports[`<MultipleSelect /> should init component with given \`initialValue\` pr
           "label": "Validation_zone",
           "value": "stockholm$validation_zone",
         },
+        Object {
+          "label": "Validation_zone2",
+          "value": "stockholm$validation_zone2",
+        },
+        Object {
+          "label": "Validation_zone3",
+          "value": "stockholm$validation_zone3",
+        },
       ]
     }
     pageSize={5}
@@ -139,6 +147,14 @@ exports[`<MultipleSelect /> should render the component 1`] = `
         Object {
           "label": "Validation_zone",
           "value": "stockholm$validation_zone",
+        },
+        Object {
+          "label": "Validation_zone2",
+          "value": "stockholm$validation_zone2",
+        },
+        Object {
+          "label": "Validation_zone3",
+          "value": "stockholm$validation_zone3",
         },
       ]
     }

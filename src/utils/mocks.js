@@ -54,6 +54,8 @@ export const MultipleSelectMock = [
   { value: 'stockholm$stockholm', label: 'Stockholm' },
   { value: 'stockholm$solna', label: 'Solna' },
   { value: 'stockholm$validation_zone', label: 'Validation_zone' },
+  { value: 'stockholm$validation_zone2', label: 'Validation_zone2' },
+  { value: 'stockholm$validation_zone3', label: 'Validation_zone3' },
 ];
 
 export const PredictionMock = [

@@ -17,6 +17,7 @@ const SelectStyled = styled('div')`
   margin-right: 5px;
   width: 100%;
   position: relative;
+  min-width: ${sizes.small};
   z-index: ${({ theme, isOpen }) =>
     isOpen ? theme.zIndex.select + 1 : theme.zIndex.select};
   .Select {
@@ -44,10 +45,10 @@ const SelectStyled = styled('div')`
       }
     }
     &-placeholder {
-      position: relative;
+      // position: relative;
     }
     &-value {
-      margin: 5px 0 5px 5px;
+      margin: 0 0 0 5px;
     }
     &.is-focused,
     &.is-open {
@@ -119,6 +120,12 @@ const SelectStyled = styled('div')`
         align-items: center;
         &-label {
           flex: 1;
+        }
+      }
+      .Select-multi-value-wrapper {
+        padding: 5px 0 0;
+        .Select-value {
+          margin-bottom: 5px;
         }
       }
     }
