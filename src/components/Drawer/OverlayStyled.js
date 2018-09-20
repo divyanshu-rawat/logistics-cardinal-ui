@@ -8,7 +8,7 @@ const OverlayStyled = styled('div')`
   bottom: 0;
   z-index: ${({ theme }) => theme.zIndex.drawerOverlay};
   transition: ${({ theme }) => theme.transitions.overlayTransition};
-  background-color: ${({ theme }) => theme.colors.overlayColor};
+  background-color: ${({ theme }) => theme.overlayColor};
   opacity: ${({ open }) => (open ? 1 : 0)};
   visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
 `;

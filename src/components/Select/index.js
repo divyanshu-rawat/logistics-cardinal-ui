@@ -7,9 +7,9 @@ const sizes = {
 };
 
 const validationStateColor = {
-  error: 'danger',
-  success: 'success',
-  warning: 'warning',
+  error: 'dangerColor',
+  success: 'successColor',
+  warning: 'warningColor',
 };
 
 const SelectStyled = styled('div')`
@@ -24,28 +24,28 @@ const SelectStyled = styled('div')`
     width: ${({ size }) => sizes[size]};
     &.is-disabled {
       > .Select-control {
-        background-color: ${({ theme }) => theme.colors.grey300};
+        background-color: ${({ theme }) => theme.inputDisabledBackgroundColor};
         &:hover {
           cursor: default;
-          border: 1px solid ${({ theme }) => theme.colors.grey500};
+          border: 1px solid ${({ theme }) => theme.inputBorderColor};
         }
       }
     }
     &-control {
       width: ${({ size }) => sizes[size]};
-      background-color: ${({ theme }) => theme.colors.grey400};
+      background-color: ${({ theme }) => theme.inputBackgroundColor};
       border: 1px solid
         ${({ validationState, theme }) =>
           validationState
             ? theme.colors[validationStateColor[validationState]]
-            : theme.colors.grey500};
+            : theme.inputBorderColor};
       display: flex;
-      min-height: 40px;
+      min-height: ${({ theme }) => theme.inputDefaultHeight};
       align-items: center;
       height: auto;
       &:hover {
         cursor: pointer;
-        border-color: ${({ theme }) => theme.colors.grey1000};
+        border-color: ${({ theme }) => theme.inputBorderColorHover};
       }
     }
     &-multi {
@@ -54,7 +54,7 @@ const SelectStyled = styled('div')`
       }
     }
     &-placeholder {
-      line-height: 40px;
+      line-height: ${({ theme }) => theme.inputDefaultHeight};
       color: ${({ theme }) => theme.colors.placeholder};
     }
     &-value {
@@ -63,12 +63,12 @@ const SelectStyled = styled('div')`
     &.is-focused,
     &.is-open {
       .Select-control {
-        background-color: ${({ theme }) => theme.colors.grey400};
+        background-color: ${({ theme }) => theme.inputBackgroundColor};
         border: 1px solid
           ${({ validationState, theme }) =>
             validationState
               ? theme.colors[validationStateColor[validationState]]
-              : theme.colors.grey500};
+              : theme.inputBorderColor};
         box-shadow: none;
       }
     }
@@ -81,36 +81,37 @@ const SelectStyled = styled('div')`
       }
     }
     &-arrow {
-      background-color: ${({ theme }) => theme.colors.primary100};
+      background-color: ${({ theme }) => theme.primaryColor};
     }
     &-menu-outer {
       box-shadow: 0;
-      background-color: ${({ theme }) => theme.colors.grey400};
-      border: 1px solid ${({ theme }) => theme.colors.grey500};
+      background-color: ${({ theme }) => theme.inputBackgroundColor};
+      border: 1px solid ${({ theme }) => theme.inputBorderColor};
       .Select-menu .Select-option {
-        background-color: ${({ theme }) => theme.colors.grey400};
-        color: ${({ theme }) => theme.colors.white};
+        background-color: ${({ theme }) => theme.inputBackgroundColor};
+        color: ${({ theme }) => theme.textColor};
         &.is-selected {
-          background-color: ${({ theme }) => theme.colors.grey300};
-          border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
+          background-color: ${({ theme }) => theme.selectItemFocus};
+          border-bottom: 1px solid ${({ theme }) => theme.inputBorderColor};
         }
         &.is-focused {
-          background-color: ${({ theme }) => theme.colors.grey300};
+          background-color: ${({ theme }) => theme.selectItemFocus};
           border: 0;
         }
         &:hover {
-          background-color: ${({ theme }) => theme.colors.grey300};
+          background-color: ${({ theme }) => theme.selectItemFocus};
           border: 0;
         }
         &.is-selected:hover {
-          background-color: ${({ theme }) => theme.colors.grey300};
-          border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
+          background-color: ${({ theme }) => theme.selectItemFocus};
+          border-bottom: 1px solid ${({ theme }) => theme.inputBorderColor};
         }
         &.is-disabled {
-          color: ${({ theme }) => theme.colors.grey100};
+          color: ${({ theme }) => theme.selectItemDisabledColor};
           &:hover {
-            background-color: ${({ theme }) => theme.colors.grey400};
-            color: ${({ theme }) => theme.colors.grey100};
+            background-color: ${({ theme }) =>
+              theme.selectItemDisabledHoverBackgroundColor};
+            color: ${({ theme }) => theme.selectItemDisabledColor};
           }
         }
       }
@@ -124,8 +125,8 @@ const SelectStyled = styled('div')`
     &--multi {
       .Select-value {
         display: inline-flex;
-        background-color: ${({ theme }) => theme.colors.primary100};
-        color: ${({ theme }) => theme.colors.white};
+        background-color: ${({ theme }) => theme.selectMultiTagBackgroundColor};
+        color: ${({ theme }) => theme.selectMultiTagTextColor};
         flex-flow: row-reverse;
         align-items: center;
         &-label {
@@ -142,7 +143,7 @@ const SelectStyled = styled('div')`
     &.has-value {
       &.Select--single {
         > .Select-control .Select-value .Select-value-label {
-          color: ${({ theme }) => theme.colors.white};
+          color: ${({ theme }) => theme.selectSingleTextColor};
         }
       }
       &.is-pseudo-focused .Select-input {

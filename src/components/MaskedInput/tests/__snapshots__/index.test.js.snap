@@ -4,6 +4,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
 <ThemeProvider
   theme={
     Object {
+      "bodyBackground": "#292d33",
       "borderRadius": Object {
         "giga": "5px",
         "kilo": "1px",
@@ -39,8 +40,6 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
       },
       "colors": Object {
         "black": "#000",
-        "bodyBackground": "#292d33",
-        "danger": "#a94442",
         "green100": "#c6e5cb",
         "green300": "#97e2a3",
         "green500": "#62de76",
@@ -58,9 +57,6 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
         "grey700": "#24282E",
         "grey800": "#23262C",
         "grey900": "#292D33",
-        "mainBackground": "343941",
-        "overlayColor": "rgba(25, 29, 35, 0.82)",
-        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -71,9 +67,6 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
         "red500": "#ff7559",
         "red700": "#d55a41",
         "red900": "#a94442",
-        "success": "#49b85b",
-        "textColor": "#fff",
-        "warning": "#d4a546",
         "white": "#fff",
         "yellow100": "#f2e5cb",
         "yellow300": "#f7da9f",
@@ -84,6 +77,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
       "composedSpacings": Object {
         "byte": "10px 15px",
       },
+      "dangerColor": "#cb3548",
       "fontFamily": Object {
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
@@ -104,11 +98,32 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
       "grid": Object {
         "outerGutter": "10px",
       },
+      "inputBackgroundColor": "#292d33",
+      "inputBorderColor": "#3f454d",
+      "inputBorderColorHover": "#6d7785",
+      "inputBorderRadius": "4px",
+      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075)",
+      "inputDefaultHeight": "40px",
+      "inputDisabledBackgroundColor": "#343a42",
+      "inputErrorBorderColor": "#9b5a62",
+      "inputFontSize": "13px",
+      "inputLineHeight": "40px",
+      "inputPlaceholderColor": "#909295",
+      "inputTextColor": "#fff",
       "lineHeight": Object {
         "bit": 1.153,
         "byte": 1.333,
         "kilo": 1.5,
       },
+      "mainBackground": "343941",
+      "overlayColor": "rgba(25, 29, 35, 0.82)",
+      "primaryColor": "#3f9bfd",
+      "selectItemDisabledColor": "#96a2b0",
+      "selectItemDisabledHoverBackgroundColor": "#292d33",
+      "selectItemFocus": "#343a42",
+      "selectMultiTagBackgroundColor": "#3f9bfd",
+      "selectMultiTagTextColor": "#fff",
+      "selectSingleTextColor": "#fff",
       "spacings": Object {
         "bit": "1px",
         "byte": "5px",
@@ -116,9 +131,12 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
         "kilo": "10px",
         "mega": "15px",
       },
+      "successColor": "#49b85b",
+      "textColor": "#fff",
       "transitions": Object {
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
+      "warningColor": "#d4a546",
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
@@ -189,7 +207,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
           placeholder="DD.MM.YYYY"
         >
           <input
-            className="Input__InputStyled-cpajrE elqJJn"
+            className="Input__InputStyled-cpajrE gnkefq"
             id="birthday"
             onBlur={[Function]}
             onChange={[Function]}
@@ -206,6 +224,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
 <ThemeProvider
   theme={
     Object {
+      "bodyBackground": "#292d33",
       "borderRadius": Object {
         "giga": "5px",
         "kilo": "1px",
@@ -241,8 +260,6 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
       },
       "colors": Object {
         "black": "#000",
-        "bodyBackground": "#292d33",
-        "danger": "#a94442",
         "green100": "#c6e5cb",
         "green300": "#97e2a3",
         "green500": "#62de76",
@@ -260,9 +277,6 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
         "grey700": "#24282E",
         "grey800": "#23262C",
         "grey900": "#292D33",
-        "mainBackground": "343941",
-        "overlayColor": "rgba(25, 29, 35, 0.82)",
-        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -273,9 +287,6 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
         "red500": "#ff7559",
         "red700": "#d55a41",
         "red900": "#a94442",
-        "success": "#49b85b",
-        "textColor": "#fff",
-        "warning": "#d4a546",
         "white": "#fff",
         "yellow100": "#f2e5cb",
         "yellow300": "#f7da9f",
@@ -286,6 +297,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
       "composedSpacings": Object {
         "byte": "10px 15px",
       },
+      "dangerColor": "#cb3548",
       "fontFamily": Object {
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
@@ -306,11 +318,32 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
       "grid": Object {
         "outerGutter": "10px",
       },
+      "inputBackgroundColor": "#292d33",
+      "inputBorderColor": "#3f454d",
+      "inputBorderColorHover": "#6d7785",
+      "inputBorderRadius": "4px",
+      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075)",
+      "inputDefaultHeight": "40px",
+      "inputDisabledBackgroundColor": "#343a42",
+      "inputErrorBorderColor": "#9b5a62",
+      "inputFontSize": "13px",
+      "inputLineHeight": "40px",
+      "inputPlaceholderColor": "#909295",
+      "inputTextColor": "#fff",
       "lineHeight": Object {
         "bit": 1.153,
         "byte": 1.333,
         "kilo": 1.5,
       },
+      "mainBackground": "343941",
+      "overlayColor": "rgba(25, 29, 35, 0.82)",
+      "primaryColor": "#3f9bfd",
+      "selectItemDisabledColor": "#96a2b0",
+      "selectItemDisabledHoverBackgroundColor": "#292d33",
+      "selectItemFocus": "#343a42",
+      "selectMultiTagBackgroundColor": "#3f9bfd",
+      "selectMultiTagTextColor": "#fff",
+      "selectSingleTextColor": "#fff",
       "spacings": Object {
         "bit": "1px",
         "byte": "5px",
@@ -318,9 +351,12 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
         "kilo": "10px",
         "mega": "15px",
       },
+      "successColor": "#49b85b",
+      "textColor": "#fff",
       "transitions": Object {
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
+      "warningColor": "#d4a546",
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
@@ -365,7 +401,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
           placeholder="$"
         >
           <input
-            className="Input__InputStyled-cpajrE elqJJn"
+            className="Input__InputStyled-cpajrE gnkefq"
             id="currency"
             onBlur={[Function]}
             onChange={[Function]}
@@ -382,6 +418,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
 <ThemeProvider
   theme={
     Object {
+      "bodyBackground": "#292d33",
       "borderRadius": Object {
         "giga": "5px",
         "kilo": "1px",
@@ -417,8 +454,6 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
       },
       "colors": Object {
         "black": "#000",
-        "bodyBackground": "#292d33",
-        "danger": "#a94442",
         "green100": "#c6e5cb",
         "green300": "#97e2a3",
         "green500": "#62de76",
@@ -436,9 +471,6 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
         "grey700": "#24282E",
         "grey800": "#23262C",
         "grey900": "#292D33",
-        "mainBackground": "343941",
-        "overlayColor": "rgba(25, 29, 35, 0.82)",
-        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -449,9 +481,6 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
         "red500": "#ff7559",
         "red700": "#d55a41",
         "red900": "#a94442",
-        "success": "#49b85b",
-        "textColor": "#fff",
-        "warning": "#d4a546",
         "white": "#fff",
         "yellow100": "#f2e5cb",
         "yellow300": "#f7da9f",
@@ -462,6 +491,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
       "composedSpacings": Object {
         "byte": "10px 15px",
       },
+      "dangerColor": "#cb3548",
       "fontFamily": Object {
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
@@ -482,11 +512,32 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
       "grid": Object {
         "outerGutter": "10px",
       },
+      "inputBackgroundColor": "#292d33",
+      "inputBorderColor": "#3f454d",
+      "inputBorderColorHover": "#6d7785",
+      "inputBorderRadius": "4px",
+      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075)",
+      "inputDefaultHeight": "40px",
+      "inputDisabledBackgroundColor": "#343a42",
+      "inputErrorBorderColor": "#9b5a62",
+      "inputFontSize": "13px",
+      "inputLineHeight": "40px",
+      "inputPlaceholderColor": "#909295",
+      "inputTextColor": "#fff",
       "lineHeight": Object {
         "bit": 1.153,
         "byte": 1.333,
         "kilo": 1.5,
       },
+      "mainBackground": "343941",
+      "overlayColor": "rgba(25, 29, 35, 0.82)",
+      "primaryColor": "#3f9bfd",
+      "selectItemDisabledColor": "#96a2b0",
+      "selectItemDisabledHoverBackgroundColor": "#292d33",
+      "selectItemFocus": "#343a42",
+      "selectMultiTagBackgroundColor": "#3f9bfd",
+      "selectMultiTagTextColor": "#fff",
+      "selectSingleTextColor": "#fff",
       "spacings": Object {
         "bit": "1px",
         "byte": "5px",
@@ -494,9 +545,12 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
         "kilo": "10px",
         "mega": "15px",
       },
+      "successColor": "#49b85b",
+      "textColor": "#fff",
       "transitions": Object {
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
+      "warningColor": "#d4a546",
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
@@ -541,7 +595,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
           placeholder="$"
         >
           <input
-            className="Input__InputStyled-cpajrE elqJJn"
+            className="Input__InputStyled-cpajrE gnkefq"
             id="currency"
             onBlur={[Function]}
             onChange={[Function]}
@@ -558,6 +612,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
 <ThemeProvider
   theme={
     Object {
+      "bodyBackground": "#292d33",
       "borderRadius": Object {
         "giga": "5px",
         "kilo": "1px",
@@ -593,8 +648,6 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
       },
       "colors": Object {
         "black": "#000",
-        "bodyBackground": "#292d33",
-        "danger": "#a94442",
         "green100": "#c6e5cb",
         "green300": "#97e2a3",
         "green500": "#62de76",
@@ -612,9 +665,6 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
         "grey700": "#24282E",
         "grey800": "#23262C",
         "grey900": "#292D33",
-        "mainBackground": "343941",
-        "overlayColor": "rgba(25, 29, 35, 0.82)",
-        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -625,9 +675,6 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
         "red500": "#ff7559",
         "red700": "#d55a41",
         "red900": "#a94442",
-        "success": "#49b85b",
-        "textColor": "#fff",
-        "warning": "#d4a546",
         "white": "#fff",
         "yellow100": "#f2e5cb",
         "yellow300": "#f7da9f",
@@ -638,6 +685,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
       "composedSpacings": Object {
         "byte": "10px 15px",
       },
+      "dangerColor": "#cb3548",
       "fontFamily": Object {
         "color": "#fff",
         "default": "\\"Open Sans\\", sans-serif",
@@ -658,11 +706,32 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
       "grid": Object {
         "outerGutter": "10px",
       },
+      "inputBackgroundColor": "#292d33",
+      "inputBorderColor": "#3f454d",
+      "inputBorderColorHover": "#6d7785",
+      "inputBorderRadius": "4px",
+      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075)",
+      "inputDefaultHeight": "40px",
+      "inputDisabledBackgroundColor": "#343a42",
+      "inputErrorBorderColor": "#9b5a62",
+      "inputFontSize": "13px",
+      "inputLineHeight": "40px",
+      "inputPlaceholderColor": "#909295",
+      "inputTextColor": "#fff",
       "lineHeight": Object {
         "bit": 1.153,
         "byte": 1.333,
         "kilo": 1.5,
       },
+      "mainBackground": "343941",
+      "overlayColor": "rgba(25, 29, 35, 0.82)",
+      "primaryColor": "#3f9bfd",
+      "selectItemDisabledColor": "#96a2b0",
+      "selectItemDisabledHoverBackgroundColor": "#292d33",
+      "selectItemFocus": "#343a42",
+      "selectMultiTagBackgroundColor": "#3f9bfd",
+      "selectMultiTagTextColor": "#fff",
+      "selectSingleTextColor": "#fff",
       "spacings": Object {
         "bit": "1px",
         "byte": "5px",
@@ -670,9 +739,12 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
         "kilo": "10px",
         "mega": "15px",
       },
+      "successColor": "#49b85b",
+      "textColor": "#fff",
       "transitions": Object {
         "overlayTransition": "opacity 0.3s ease-out, visibility 0.3s ease-out",
       },
+      "warningColor": "#d4a546",
       "zIndex": Object {
         "drawerContent": 2041,
         "drawerOverlay": 2040,
@@ -717,7 +789,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
           placeholder="%"
         >
           <input
-            className="Input__InputStyled-cpajrE elqJJn"
+            className="Input__InputStyled-cpajrE gnkefq"
             id="percentage"
             onBlur={[Function]}
             onChange={[Function]}

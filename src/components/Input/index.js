@@ -6,22 +6,22 @@ import { transitions } from 'polished';
 export const InputStyled = styled('input')`
   display: block;
   width: 100%;
-  height: 40px;
-  font-size: 12px;
-  line-height: 1.42857143;
   background-image: none;
-  border-radius: 4px;
   outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  height: ${({ theme }) => theme.inputDefaultHeight};
+  box-shadow: ${({ theme }) => theme.inputBoxShadow};
+  font-size: ${({ theme }) => theme.inputFontSize};
+  border-radius: ${({ theme }) => theme.inputBorderRadius};
+  line-height: ${({ theme }) => theme.inputFontSize};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   padding: ${({ theme }) => theme.composedSpacings.byte};
   color: ${({ theme, hasError }) =>
-    hasError ? theme.colors.red100 : theme.colors.white};
+    hasError ? theme.dangerColor : theme.inputTextColor};
   border: 1px solid
     ${({ theme, hasError }) =>
-      hasError ? theme.colors.red300 : theme.colors.grey200};
+      hasError ? theme.inputErrorBorderColor : theme.inputBorderColor};
   background-color: ${({ theme, disabled }) =>
-    disabled ? theme.colors.grey300 : theme.colors.grey400};
+    disabled ? theme.inputDisabledBackgroundColor : theme.inputBackgroundColor};
 
   ${transitions(
     'border-color ease-in-out 0.15s',
@@ -29,13 +29,13 @@ export const InputStyled = styled('input')`
   )};
 
   &::placeholder {
-    color: ${({ theme }) => theme.colors.placeholder};
+    color: ${({ theme }) => theme.inputPlaceholderColor};
   }
 
   &:focus:not(:disabled),
   &:hover:not(:disabled) {
     border-color: ${({ theme, hasError }) =>
-      hasError ? theme.colors.red300 : theme.colors.grey1000};
+      hasError ? theme.inputErrorBorderColor : theme.inputBorderColorHover};
   }
 `;
 
