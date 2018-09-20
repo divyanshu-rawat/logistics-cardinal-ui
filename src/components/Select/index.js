@@ -22,6 +22,15 @@ const SelectStyled = styled('div')`
     isOpen ? theme.zIndex.select + 1 : theme.zIndex.select};
   .Select {
     width: ${({ size }) => sizes[size]};
+    &.is-disabled {
+      > .Select-control {
+        background-color: ${({ theme }) => theme.colors.grey300};
+        &:hover {
+          cursor: default;
+          border: 1px solid ${({ theme }) => theme.colors.grey500};
+        }
+      }
+    }
     &-control {
       width: ${({ size }) => sizes[size]};
       background-color: ${({ theme }) => theme.colors.grey400};
@@ -46,6 +55,7 @@ const SelectStyled = styled('div')`
     }
     &-placeholder {
       line-height: 40px;
+      color: ${({ theme }) => theme.colors.placeholder};
     }
     &-value {
       margin: 0 0 0 5px;

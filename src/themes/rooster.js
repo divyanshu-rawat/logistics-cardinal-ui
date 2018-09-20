@@ -21,6 +21,7 @@ const greys = {
   grey900: '#292D33',
   grey1000: '#6d7785',
   grey1100: '#b2b8c0',
+  grey1200: '#909295',
 };
 
 const greens = {
@@ -47,7 +48,7 @@ const yellows = {
   yellow900: '#ab8433',
 };
 
-const misc = {
+const aliases = {
   bodyBackground: greys.grey400,
   mainBackground: '343941',
   textColor: white,
@@ -55,6 +56,7 @@ const misc = {
   success: greens.green700,
   warning: yellows.yellow700,
   overlayColor: 'rgba(25, 29, 35, 0.82)',
+  placeholder: greys.grey1200,
 };
 
 const colors = {
@@ -65,7 +67,7 @@ const colors = {
   ...greens,
   ...reds,
   ...yellows,
-  ...misc,
+  ...aliases,
 };
 
 const spacings = {

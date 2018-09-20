@@ -28,6 +28,10 @@ export const InputStyled = styled('input')`
     'box-shadow ease-in-out 0.15s',
   )};
 
+  &::placeholder {
+    color: ${({ theme }) => theme.colors.placeholder};
+  }
+
   &:focus:not(:disabled),
   &:hover:not(:disabled) {
     border-color: ${({ theme, hasError }) =>

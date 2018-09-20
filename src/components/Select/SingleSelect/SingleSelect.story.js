@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import { select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 
 import { SingleSelectMock } from '../../../utils/mocks';
 import withTests from '../../../utils/withTests';
@@ -23,6 +23,7 @@ storiesOf(`${FORM}Select/SingleSelect`, module)
           options={SingleSelectMock}
           isSearchable
           onChange={action((item) => console.log(item))}
+          disabled={boolean('disabled', false)}
           validationState={select('Validation State', [
             '',
             'error',

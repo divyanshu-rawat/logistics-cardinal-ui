@@ -50,6 +50,7 @@ exports[`<Input /> should render the component 1`] = `
         "grey100": "#96a2b0",
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
+        "grey1200": "#909295",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -60,6 +61,7 @@ exports[`<Input /> should render the component 1`] = `
         "grey900": "#292D33",
         "mainBackground": "343941",
         "overlayColor": "rgba(25, 29, 35, 0.82)",
+        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -179,6 +181,7 @@ exports[`<Input /> should render the component 1`] = `
           "grey100": "#96a2b0",
           "grey1000": "#6d7785",
           "grey1100": "#b2b8c0",
+          "grey1200": "#909295",
           "grey200": "#3f454d",
           "grey300": "#343a42",
           "grey400": "#292d33",
@@ -189,6 +192,7 @@ exports[`<Input /> should render the component 1`] = `
           "grey900": "#292D33",
           "mainBackground": "343941",
           "overlayColor": "rgba(25, 29, 35, 0.82)",
+          "placeholder": "#909295",
           "primary100": "#3f9bfd",
           "primary200": "#375f8a",
           "primary300": "#324e70",
@@ -261,7 +265,7 @@ exports[`<Input /> should render the component 1`] = `
     }
   >
     <input
-      className="Input__InputStyled-cpajrE kIedED"
+      className="Input__InputStyled-cpajrE elqJJn"
     />
   </Input__InputStyled>
 </Input>
@@ -318,6 +322,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
         "grey100": "#96a2b0",
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
+        "grey1200": "#909295",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -328,6 +333,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
         "grey900": "#292D33",
         "mainBackground": "343941",
         "overlayColor": "rgba(25, 29, 35, 0.82)",
+        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -450,6 +456,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
           "grey100": "#96a2b0",
           "grey1000": "#6d7785",
           "grey1100": "#b2b8c0",
+          "grey1200": "#909295",
           "grey200": "#3f454d",
           "grey300": "#343a42",
           "grey400": "#292d33",
@@ -460,6 +467,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
           "grey900": "#292D33",
           "mainBackground": "343941",
           "overlayColor": "rgba(25, 29, 35, 0.82)",
+          "placeholder": "#909295",
           "primary100": "#3f9bfd",
           "primary200": "#375f8a",
           "primary300": "#324e70",
@@ -534,7 +542,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
     y={2}
   >
     <input
-      className="Input__InputStyled-cpajrE kIedED"
+      className="Input__InputStyled-cpajrE elqJJn"
       placeholder="awesome placeholder"
       x={1}
       y={2}
@@ -594,6 +602,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
         "grey100": "#96a2b0",
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
+        "grey1200": "#909295",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -604,6 +613,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
         "grey900": "#292D33",
         "mainBackground": "343941",
         "overlayColor": "rgba(25, 29, 35, 0.82)",
+        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -724,6 +734,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
           "grey100": "#96a2b0",
           "grey1000": "#6d7785",
           "grey1100": "#b2b8c0",
+          "grey1200": "#909295",
           "grey200": "#3f454d",
           "grey300": "#343a42",
           "grey400": "#292d33",
@@ -734,6 +745,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
           "grey900": "#292D33",
           "mainBackground": "343941",
           "overlayColor": "rgba(25, 29, 35, 0.82)",
+          "placeholder": "#909295",
           "primary100": "#3f9bfd",
           "primary200": "#375f8a",
           "primary300": "#324e70",
@@ -806,7 +818,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
     }
   >
     <input
-      className="Input__InputStyled-cpajrE kIedED"
+      className="Input__InputStyled-cpajrE elqJJn"
       placeholder="awesome placeholder"
     />
   </Input__InputStyled>
@@ -864,6 +876,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
         "grey100": "#96a2b0",
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
+        "grey1200": "#909295",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -874,6 +887,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
         "grey900": "#292D33",
         "mainBackground": "343941",
         "overlayColor": "rgba(25, 29, 35, 0.82)",
+        "placeholder": "#909295",
         "primary100": "#3f9bfd",
         "primary200": "#375f8a",
         "primary300": "#324e70",
@@ -994,6 +1008,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
           "grey100": "#96a2b0",
           "grey1000": "#6d7785",
           "grey1100": "#b2b8c0",
+          "grey1200": "#909295",
           "grey200": "#3f454d",
           "grey300": "#343a42",
           "grey400": "#292d33",
@@ -1004,6 +1019,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
           "grey900": "#292D33",
           "mainBackground": "343941",
           "overlayColor": "rgba(25, 29, 35, 0.82)",
+          "placeholder": "#909295",
           "primary100": "#3f9bfd",
           "primary200": "#375f8a",
           "primary300": "#324e70",
@@ -1076,7 +1092,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
     }
   >
     <input
-      className="Input__InputStyled-cpajrE kIedED"
+      className="Input__InputStyled-cpajrE elqJJn"
       placeholder="Input with ref..."
     />
   </Input__InputStyled>
