@@ -21,6 +21,7 @@ const greys = {
   grey900: '#292D33',
   grey1000: '#6d7785',
   grey1100: '#b2b8c0',
+  grey1200: '#909295',
 };
 
 const greens = {
@@ -47,16 +48,6 @@ const yellows = {
   yellow900: '#ab8433',
 };
 
-const misc = {
-  bodyBackground: greys.grey400,
-  mainBackground: '343941',
-  textColor: white,
-  danger: reds.red900,
-  success: greens.green700,
-  warning: yellows.yellow700,
-  overlayColor: 'rgba(25, 29, 35, 0.82)',
-};
-
 const colors = {
   white,
   black,
@@ -65,7 +56,6 @@ const colors = {
   ...greens,
   ...reds,
   ...yellows,
-  ...misc,
 };
 
 const spacings = {
@@ -162,6 +152,38 @@ const transitions = {
   overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
 };
 
+const aliases = {
+  // Colors
+  bodyBackground: greys.grey400,
+  mainBackground: '343941',
+  textColor: white,
+  primaryColor: primary.primary100,
+  dangerColor: reds.red100,
+  successColor: greens.green700,
+  warningColor: yellows.yellow700,
+  overlayColor: 'rgba(25, 29, 35, 0.82)',
+  // Input and Select
+  inputDefaultHeight: '40px',
+  inputPlaceholderColor: greys.grey1200,
+  inputBackgroundColor: greys.grey400,
+  inputDisabledBackgroundColor: greys.grey300,
+  inputBorderColor: greys.grey200,
+  inputErrorBorderColor: reds.red300,
+  inputBorderColorHover: greys.grey1000,
+  inputBorderRadius: borderRadius.mega,
+  inputTextColor: white,
+  inputLineHeight: '40px',
+  inputFontSize: fontSize.byte,
+  inputBoxShadow: 'inset 0 1px 1px rgba(0, 0, 0, 0.075)',
+  // Select
+  selectItemFocus: greys.grey300,
+  selectItemDisabledColor: greys.grey100,
+  selectItemDisabledHoverBackgroundColor: greys.grey400,
+  selectMultiTagBackgroundColor: primary.primary100,
+  selectMultiTagTextColor: white,
+  selectSingleTextColor: white,
+};
+
 export default {
   colors,
   grid,
@@ -177,4 +199,5 @@ export default {
   zIndex,
   boxShadow,
   transitions,
+  ...aliases,
 };

@@ -12,9 +12,14 @@ class SingleSelect extends PureComponent {
     placeholder: PropTypes.string.isRequired,
     validationState: PropTypes.oneOf([null, 'success', 'warning', 'error']),
     isSearchable: PropTypes.bool,
+    disabled: PropTypes.bool,
     isFirst: PropTypes.bool,
     size: PropTypes.string,
-    initialValue: PropTypes.string,
+    initialValue: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.bool,
+    ]),
   };
 
   state = {
@@ -46,6 +51,7 @@ class SingleSelect extends PureComponent {
       isSearchable = false,
       isFirst,
       validationState,
+      disabled,
     } = this.props;
 
     const { selectedValue, isOpen } = this.state;
@@ -67,6 +73,7 @@ class SingleSelect extends PureComponent {
           options={options}
           onOpen={this.onOpenSelect}
           onClose={this.onCloseSelect}
+          disabled={disabled}
           arrowRenderer={({ isOpen }) =>
             isOpen ? (
               <Icons.ChevronUp className="Custom-Select-arrow" />
