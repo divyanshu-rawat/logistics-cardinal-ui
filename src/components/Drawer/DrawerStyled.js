@@ -5,8 +5,8 @@ const DrawerStyled = styled('div')`
   display: flex;
   flex-flow: column;
   min-width: ${({ width }) => width}px;
-  box-shadow: ${({ theme }) => theme.boxShadow.drawer};
-  background-color: ${({ theme }) => theme.colors.grey300};
+  box-shadow: ${({ theme }) => theme.drawerBoxShadow};
+  background-color: ${({ theme }) => theme.drawerBackgroundColor};
 `;
 
 export default DrawerStyled;

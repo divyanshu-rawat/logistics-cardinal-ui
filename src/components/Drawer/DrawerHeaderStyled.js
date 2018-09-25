@@ -4,7 +4,7 @@ const DrawerHeaderStyled = styled('div')`
   min-height: 100px;
   display: flex;
   align-items: center;
-  padding: ${({ theme }) => theme.composedSpacings.byte};
+  padding: ${({ theme }) => theme.drawerPadding};
 `;
 
 export default DrawerHeaderStyled;

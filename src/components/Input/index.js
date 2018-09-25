@@ -13,8 +13,8 @@ export const InputStyled = styled('input')`
   font-size: ${({ theme }) => theme.inputFontSize};
   border-radius: ${({ theme }) => theme.inputBorderRadius};
   line-height: ${({ theme }) => theme.inputFontSize};
-  font-weight: ${({ theme }) => theme.fontWeight.light};
-  padding: ${({ theme }) => theme.composedSpacings.byte};
+  font-weight: ${({ theme }) => theme.inputFontWeight};
+  padding: ${({ theme }) => theme.inputPadding};
   color: ${({ theme, hasError }) =>
     hasError ? theme.dangerColor : theme.inputTextColor};
   border: 1px solid

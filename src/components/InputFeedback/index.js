@@ -14,24 +14,24 @@ export const InputFeedbackStyled = styled('p')`
   padding: 0 3px;
   margin-bottom: 0;
   height: 18px;
-  margin-top: ${({ theme }) => theme.spacings.byte};
-  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-  font-size: ${({ theme }) => theme.fontSize.byte};
+  margin-top: ${({ theme }) => theme.inputFeedbackSpacing};
+  font-weight: ${({ theme }) => theme.inputFeedbackFontWeight};
+  font-size: ${({ theme }) => theme.inputFeedbackFontSize};
   ${({ hidden }) => hidden && hideVisually()};
 
   ${({ theme, state }) => {
     switch (state) {
       case VALIDATION_STATE.ERROR:
         return `
-          color: ${theme.colors.red100};
+          color: ${theme.dangerColor};
         `;
       case VALIDATION_STATE.SUCCESS:
         return `
-          color: ${theme.colors.green300};
+          color: ${theme.successColor};
         `;
       default:
         return `
-          color: ${theme.colors.primary400};
+          color: ${theme.textColor};
         `;
     }
   }};

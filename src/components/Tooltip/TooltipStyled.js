@@ -5,16 +5,16 @@ const TooltipStyled = styled('div')`
   display: inline-block;
   &:hover {
     &:after {
-      opacity: 0.9;
+      opacity: ${({ theme }) => theme.tooltipHoverOpacity};
     }
   }
   &:after {
     content: ${({ content }) => `'${content}'`};
-    border-radius: ${({ theme }) => theme.borderRadius.mega};
-    background: ${({ theme }) => theme.colors.grey400};
-    border: 1px solid ${({ theme }) => theme.colors.grey500};
-    color: ${({ theme }) => theme.colors.white};
-    font-size: ${({ theme }) => theme.fontSize.bit};
+    border-radius: ${({ theme }) => theme.tooltipBorderRadius};
+    background: ${({ theme }) => theme.tooltipBackgroundColor};
+    border: 1px solid ${({ theme }) => theme.tooltipBorderColor};
+    color: ${({ theme }) => theme.tooltipTextColor};
+    font-size: ${({ theme }) => theme.tooltipFontSize};
     z-index: ${({ theme }) => theme.zIndex.tooltip};
     padding: 4px 8px;
     position: absolute;

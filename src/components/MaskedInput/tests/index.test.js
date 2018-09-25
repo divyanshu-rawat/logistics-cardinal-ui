@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 import MaskedInput from '..';
 
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 import {
   BIRTHDAY_MASK,
@@ -46,7 +46,7 @@ const onBlurFn = jest.fn();
 
 const renderedComponent = ({ mask, id, placeholder, guide }) =>
   mount(
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={RoosterTheme}>
       <MaskedInput
         mask={mask}
         guide={guide}

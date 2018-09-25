@@ -25,7 +25,7 @@ const greys = {
 };
 
 const greens = {
-  green100: '#c6e5cb',
+  green100: '#00bc8c',
   green300: '#97e2a3',
   green500: '#62de76',
   green700: '#49b85b',
@@ -41,11 +41,15 @@ const reds = {
 };
 
 const yellows = {
-  yellow100: '#f2e5cb',
+  yellow100: '#d28a2e',
   yellow300: '#f7da9f',
   yellow500: '#ffc859',
   yellow700: '#d4a546',
   yellow900: '#ab8433',
+};
+
+const blues = {
+  blue100: '#2bdbdb',
 };
 
 const colors = {
@@ -68,10 +72,6 @@ const spacings = {
 
 const composedSpacings = {
   byte: `${spacings.kilo} ${spacings.mega}`,
-};
-
-const grid = {
-  outerGutter: '10px',
 };
 
 const borderRadius = {
@@ -111,58 +111,61 @@ const fontWeight = {
   bold: 700,
 };
 
-const zIndex = {
-  select: 1090,
-  tooltip: 2020,
-  spinnerOverlay: 2040,
-  drawerOverlay: 2040,
-  drawerContent: 2041,
-  spinner: 2041,
-  navbar: 2030,
-  loadingBar: 3000,
-};
-
 const boxShadow = {
   switchHandler: '0px 0px 1px 5px rgba(255, 255, 255, 0.2)',
   drawer: '0 2px 34px 0 rgba(0, 0, 0, 0.3)',
+  inputButton: 'inset 0 1px 1px rgba(0, 0, 0, 0.075)',
 };
 
-const breakpoints = {
-  default: {
-    minWidth: 768,
-  },
-  largeDesktop: {
-    minWidth: 1200,
-  },
-  desktop: {
-    minWidth: 992,
-    maxWidth: 1200,
-  },
-  mobile: {
-    minWidth: 0,
-    maxWidth: 768,
-  },
-  tablet: {
-    minWidth: 768,
-    maxWidth: 992,
-  },
-};
-
-const transitions = {
-  overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
-};
-
-const aliases = {
-  // Colors
+// Required Fields
+export const aliases = {
+  /**
+   * Text Variables
+   */
+  textColor: white,
+  textFontSize: fontSize.byte,
+  textFontWeight: fontWeight.regular,
+  textFontWeightLight: fontWeight.light,
+  textFontFamily: fontFamily.default,
+  textSpacing: composedSpacings.byte,
+  textFontSizeXSmall: fontSize.bit,
+  textFontSizeSmall: fontSize.byte,
+  textFontSizeLarge: fontSize.mega,
+  textFontSizeXLarge: fontSize.giga,
+  /**
+   * Heading Variables
+   */
+  h1FontSize: fontSize.giga,
+  h1LineHeight: lineHeight.kilo,
+  h2FontSize: fontSize.mega,
+  h2LineHeight: lineHeight.byte,
+  h3FontSize: fontSize.kilo,
+  h3LineHeight: lineHeight.byte,
+  h4FontSize: fontSize.byte,
+  h4LineHeight: lineHeight.bit,
+  h5FontSize: fontSize.bit,
+  h5LineHeight: fontSize.bit,
+  headingSpacing: spacings.kilo,
+  headingFontWeightLight: fontWeight.regular,
+  headingFontWeightBold: fontWeight.semiBold,
+  /**
+   * Color Variables
+   */
   bodyBackground: greys.grey400,
   mainBackground: '343941',
-  textColor: white,
   primaryColor: primary.primary100,
   dangerColor: reds.red100,
-  successColor: greens.green700,
+  successColor: greens.green100,
   warningColor: yellows.yellow700,
+  infoColor: blues.blue100,
   overlayColor: 'rgba(25, 29, 35, 0.82)',
-  // Input and Select
+  /**
+   * Line Height Variables
+   */
+  lineHeightBase: lineHeight.kilo,
+  /**
+   * Input and Select Variables
+   */
   inputDefaultHeight: '40px',
   inputPlaceholderColor: greys.grey1200,
   inputBackgroundColor: greys.grey400,
@@ -174,7 +177,9 @@ const aliases = {
   inputTextColor: white,
   inputLineHeight: '40px',
   inputFontSize: fontSize.byte,
-  inputBoxShadow: 'inset 0 1px 1px rgba(0, 0, 0, 0.075)',
+  inputFontWeight: fontWeight.light,
+  inputBoxShadow: boxShadow.inputButton,
+  inputPadding: composedSpacings.byte,
   // Select
   selectItemFocus: greys.grey300,
   selectItemDisabledColor: greys.grey100,
@@ -182,22 +187,160 @@ const aliases = {
   selectMultiTagBackgroundColor: primary.primary100,
   selectMultiTagTextColor: white,
   selectSingleTextColor: white,
+  /**
+   * Input Feedback Variables
+   */
+  inputFeedbackSpacing: spacings.byte,
+  inputFeedbackFontWeight: fontWeight.semiBold,
+  inputFeedbackFontSize: fontSize.byte,
+  /**
+   * Button Variables
+   */
+  buttonFontWeight: fontWeight.light,
+  buttonFontColor: white,
+  buttonBorderWidth: borderWidth.bit,
+  buttonFocusBoxShadow: boxShadow.inputButton,
+  buttonDisabledOpacity: 0.65,
+  buttonActiveBoxShadow: 'inset 0 3px 5px rgba($black, .125)',
+  buttonPaddingY: '10px',
+  buttonPaddingYXSmall: '1px',
+  buttonPaddingYLarge: '18px',
+  buttonPaddingYSmall: '6px',
+  buttonPaddingSmall: '9px',
+  buttonPaddingX: '15px',
+  buttonPaddingXSmall: '5px',
+  buttonPaddingXLarge: '27px',
+  buttonFontSize: fontSize.byte,
+  buttonFontSizeSmall: '11px',
+  buttonFontSizeLarge: '15px',
+  buttonLineHeight: lineHeight.kilo,
+  buttonLineHeightSmall: 1.5,
+  buttonLineHeightLarge: 1.333,
+  buttonBorderRadius: borderRadius.mega,
+  /**
+   * Radio Button Variables
+   */
+  radioSpacingRight: spacings.kilo,
+  radioFontWeight: fontWeight.regular,
+  radioInactiveBorderColor: greys.grey600,
+  /**
+   * Indicator Radio Button Variables
+   */
+  indicatorColor: greys.grey200,
+  indicatorSpacingRight: spacings.byte,
+  indicatorCheckedColor: greys.grey100,
+  /**
+   * Label Variables
+   */
+  labelTextColor: primary.primary400,
+  labelTextColorError: reds.red100,
+  labelFontWeight: fontWeight.regular,
+  labelFontSize: fontSize.bit,
+  labelBottomSpacing: spacings.byte,
+  /**
+   * Drawer Variables
+   */
+  drawerBackgroundColor: greys.grey300,
+  drawerBoxShadow: boxShadow.drawer,
+  drawerPadding: composedSpacings.byte,
+  /**
+   * Spacing Variables
+   */
+  spacing: spacings.kilo,
+  /**
+   * Spinner Variables
+   */
+  spinnerOverlayBackgroundColor: 'rgba(52, 58, 66, 0.8)',
+  /**
+   * Switcher Variables
+   */
+  switcherSpacingRight: spacings.kilo,
+  switcherBorderColor: greys.grey200,
+  switcherBoxShadow: boxShadow.switchHandler,
+  /**
+   * Tabs - Horizontal - Variables
+   */
+  horizontalTabButtonBorderRadius: borderRadius.mega,
+  horizontalTabButtonBackgroundColor: greys.grey300,
+  horizontalTabButtonColor: greys.grey100,
+  horizontalTabButtonColorActive: colors.white,
+  horizontalTabButtonSpacingRight: spacings.bit,
+  horizontalTabButtonPadding: composedSpacings.byte,
+  horizontalTabContainerPadding: composedSpacings.byte,
+  horizontalTabContainerBackgroundColor: greys.grey300,
+  /**
+   * Tabs - Vertical - Variables
+   */
+  verticalTabButtonBackgroundColor: greys.grey700,
+  verticalTabButtonSpacingRight: spacings.bit,
+  verticalTabButtonPadding: composedSpacings.byte,
+  verticalTabButtonActiveBackgroundColor: greys.grey800,
+  verticalTabButtonActiveTextColor: primary.primary100,
+  verticalTabButtonTextColor: white,
+  verticalTabSidebarBackgroundColor: greys.grey900,
+  verticalTabContainerPadding: composedSpacings.byte,
+  verticalTabContainerBackgroundColor: greys.grey300,
+  /**
+   * TimeSpanDisplay - Variables
+   */
+  timeSpanDisplayTextColor: greys.grey100,
+  /**
+   * Tooltip - Variables
+   */
+  tooltipBorderRadius: borderRadius.mega,
+  tooltipBackgroundColor: greys.grey400,
+  tooltipBorderColor: greys.grey500,
+  tooltipTextColor: colors.white,
+  tooltipFontSize: fontSize.bit,
+  tooltipHoverOpacity: 0.9,
+  /**
+   * Transitions
+   */
+  transitions: {
+    overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
+  },
+  /**
+   * Z-Index
+   */
+  zIndex: {
+    select: 1090,
+    tooltip: 2020,
+    spinnerOverlay: 2040,
+    drawerOverlay: 2040,
+    drawerContent: 2041,
+    spinner: 2041,
+    navbar: 2030,
+    loadingBar: 3000,
+  },
+  /**
+   * Media Query Breakpoints
+   */
+  breakpoints: {
+    default: {
+      minWidth: 768,
+    },
+    largeDesktop: {
+      minWidth: 1200,
+    },
+    desktop: {
+      minWidth: 992,
+      maxWidth: 1200,
+    },
+    mobile: {
+      minWidth: 0,
+      maxWidth: 768,
+    },
+    tablet: {
+      minWidth: 768,
+      maxWidth: 992,
+    },
+  },
+  grid: {
+    outerGutter: '10px',
+  },
+  colors,
 };
 
-export default {
-  colors,
-  grid,
-  spacings,
-  composedSpacings,
-  borderRadius,
-  borderWidth,
-  fontFamily,
-  fontWeight,
-  fontSize,
-  lineHeight,
-  breakpoints,
-  zIndex,
-  boxShadow,
-  transitions,
+export const RoosterTheme = {
   ...aliases,
 };

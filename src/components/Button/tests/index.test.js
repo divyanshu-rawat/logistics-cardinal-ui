@@ -10,7 +10,7 @@ const renderedComponent = ({
   actionType = 'default',
   active = false,
   disabled = false,
-  size = '',
+  size = 'default',
   stretch = false,
 }) =>
   shallow(

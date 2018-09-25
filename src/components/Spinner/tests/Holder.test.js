@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Holder from '../Holder';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 describe('<Holder />', () => {
   it('should render the component', () => {
-    const tree = toJson(shallow(<Holder theme={Theme} />));
+    const tree = toJson(shallow(<Holder theme={RoosterTheme} />));
     expect(tree).toMatchSnapshot();
   });
 });

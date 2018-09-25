@@ -32,7 +32,8 @@ import AccordionItem from './components/Accordion/AccordionItem';
 import Avatar from './components/Avatar';
 import IDCard from './components/IDCard';
 import * as MASKS from './components/MaskedInput/constants';
-import Themes from './themes';
+import * as Themes from './themes';
+import { CardinalThemeProvider as ThemeProvider } from './themes/Provider';
 
 export default {
   Avatar,
@@ -69,5 +70,6 @@ export default {
   Icons,
   Accordion,
   AccordionItem,
+  ThemeProvider,
   ...Grid,
 };

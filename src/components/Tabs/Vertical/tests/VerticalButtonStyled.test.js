@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import VerticalButtonStyled from '../VerticalButtonStyled';
-import Theme from '../../../../themes/rooster';
+import { RoosterTheme } from '../../../../themes/rooster';
 
 const renderComponent = (isActive = false) => (
-  <VerticalButtonStyled theme={Theme} isActive={isActive} />
+  <VerticalButtonStyled theme={RoosterTheme} isActive={isActive} />
 );
 
 describe('<VerticalButtonStyled />', () => {

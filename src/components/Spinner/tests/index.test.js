@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Spinner from '..';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 function renderComponent(size, spinWhen = false) {
   return shallow(
-    <Spinner theme={Theme} size={size} spinWhen={spinWhen}>
+    <Spinner theme={RoosterTheme} size={size} spinWhen={spinWhen}>
       <span>some children</span>
     </Spinner>,
   ).dive();

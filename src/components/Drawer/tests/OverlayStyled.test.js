@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import OverlayStyled from '../OverlayStyled';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (open = false) =>
-  shallow(<OverlayStyled open={open} theme={Theme} />);
+  shallow(<OverlayStyled open={open} theme={RoosterTheme} />);
 
 describe('<OverlayStyled />', () => {
   it('should render the component as closed', () => {

@@ -3,9 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import PercentageStyled from '../PercentageStyled';
-import Theme from '../../../../../themes/rooster';
+import { RoosterTheme } from '../../../../../themes/rooster';
 
-const renderedComponent = () => shallow(<PercentageStyled theme={Theme} />);
+const renderedComponent = () =>
+  shallow(<PercentageStyled theme={RoosterTheme} />);
 
 describe('<PercentageStyled />', () => {
   it('should render the component', () => {

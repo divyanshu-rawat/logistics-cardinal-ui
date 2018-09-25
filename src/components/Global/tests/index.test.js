@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Global from '..';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
-const renderedComponent = () => shallow(<Global theme={Theme} />);
+const renderedComponent = () => shallow(<Global theme={RoosterTheme} />);
 
 describe('<Global />', () => {
   it('should render styled component', () => {

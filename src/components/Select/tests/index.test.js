@@ -2,13 +2,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 import Select from '..';
 
 const renderedComponent = ({ size = '', validationState = null }) =>
   shallow(
-    <Select theme={Theme} size={size} validationState={validationState} />,
+    <Select
+      theme={RoosterTheme}
+      size={size}
+      validationState={validationState}
+    />,
   );
 
 describe('<Select />', () => {

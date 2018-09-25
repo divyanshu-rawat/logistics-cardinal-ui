@@ -79,7 +79,7 @@ class Switch extends Component {
           onChange={this.onChangeSwitch}
           checked={active}
           disabled={disabled}
-          activeBoxShadow={theme.boxShadow.switchHandler}
+          activeBoxShadow={theme.switcherBoxShadow}
           className="react-switch"
           uncheckedIcon={false}
           checkedIcon={false}

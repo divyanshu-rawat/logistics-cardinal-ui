@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 
 import Switch from '..';
 import Text from '../../Text';
-import Themes from '../../../themes';
+import { rooster } from '../../../themes';
 
 const onChangeFn = jest.fn();
 
@@ -19,7 +19,7 @@ const renderedComponent = ({
   shallow(
     <Switch
       id={id}
-      theme={Themes.rooster}
+      theme={rooster}
       disabled={disabled}
       initialValue={initialValue}
       size={size}

@@ -4,11 +4,11 @@ import toJson from 'enzyme-to-json';
 import { Cell } from 'styled-css-grid';
 
 import ComposedGrid from '../Grid';
-import theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (withPad) =>
   shallow(
-    <ComposedGrid theme={theme} withPad={withPad} columns={12}>
+    <ComposedGrid theme={RoosterTheme} withPad={withPad} columns={12}>
       <Cell width={12}>Corinthians!</Cell>
     </ComposedGrid>,
   );

@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Text from '..';
-import theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = ({
   as = 'p',
@@ -17,7 +17,7 @@ const renderedComponent = ({
 }) =>
   shallow(
     <Text
-      theme={theme}
+      theme={RoosterTheme}
       as={as}
       color={color}
       fontFamily={fontFamily}

@@ -5,7 +5,7 @@ const IDCardStyled = styled('div')`
   flex-flow: row;
   align-items: center;
   text-align: left;
-  font-weight: ${({ theme }) => theme.fontWeight.light};
+  font-weight: ${({ theme }) => theme.textFontWeightLight};
 `;
 
 export default IDCardStyled;

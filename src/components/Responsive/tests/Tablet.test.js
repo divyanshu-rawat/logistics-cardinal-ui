@@ -4,10 +4,10 @@ import toJson from 'enzyme-to-json';
 
 import { Tablet } from '../Tablet';
 
-import Themes from '../../../themes';
+import { rooster } from '../../../themes';
 
 const props = {
-  theme: Themes.rooster,
+  theme: rooster,
   someOtherProp: true,
 };
 

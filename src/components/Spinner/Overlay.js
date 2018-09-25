@@ -6,7 +6,7 @@ const SpinnerOverlay = styled('div')`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(52, 58, 66, 0.8);
+  background-color: ${({ theme }) => theme.spinnerOverlayBackgroundColor};
   z-index: ${({ theme }) => theme.zIndex.spinnerOverlay};
 `;
 

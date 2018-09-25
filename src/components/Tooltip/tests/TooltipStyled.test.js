@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TooltipStyled from '../TooltipStyled';
-import theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = ({
   position = 'top',
   content = 'The world Champion!',
 }) =>
   shallow(
-    <TooltipStyled theme={theme} position={position} content={content}>
+    <TooltipStyled theme={RoosterTheme} position={position} content={content}>
       Corinthians!
     </TooltipStyled>,
   );

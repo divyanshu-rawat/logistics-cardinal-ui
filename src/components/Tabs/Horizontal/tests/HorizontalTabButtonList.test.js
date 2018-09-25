@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 
 import TabButtonList from '../HorizontalTabButtonList';
 import Text from '../../../Text';
-import theme from '../../../../themes/rooster';
+import { RoosterTheme } from '../../../../themes/rooster';
 
 const mockAugmented = jest.fn();
 const onClickFn = () => mockAugmented;
@@ -19,7 +19,7 @@ const renderedComponent = ({ activeTab }) =>
     <TabButtonList
       options={Object.keys(options)}
       activeTab={activeTab}
-      theme={theme}
+      theme={RoosterTheme}
       onClick={onClickFn}
     />,
   );

@@ -9,7 +9,7 @@ import { LAYOUT } from '../../../.storybook/sections';
 
 import Responsive from '.';
 
-import Theme from '../../themes';
+import { rooster } from '../../themes';
 
 import { Desktop } from './Desktop';
 import { Mobile } from './Mobile';
@@ -30,17 +30,17 @@ storiesOf(`${LAYOUT}Responsive`, module)
   .add(
     'Desktop',
     withInfo()(() => (
-      <Desktop theme={Theme.rooster}>You are on Desktop ✨ 🐣 ✨</Desktop>
+      <Desktop theme={rooster}>You are on Desktop ✨ 🐣 ✨</Desktop>
     )),
   )
   .add(
     'Mobile',
     withInfo()(() => (
       <div>
-        <Desktop theme={Theme.rooster}>
+        <Desktop theme={rooster}>
           ⚠️ Use the Viewport action to visualize the Mobile content
         </Desktop>
-        <Mobile theme={Theme.rooster}>You are on Mobile ✨ 🐣 ✨</Mobile>
+        <Mobile theme={rooster}>You are on Mobile ✨ 🐣 ✨</Mobile>
       </div>
     )),
   )
@@ -48,10 +48,10 @@ storiesOf(`${LAYOUT}Responsive`, module)
     'Tablet',
     withInfo()(() => (
       <div>
-        <Desktop theme={Theme.rooster}>
+        <Desktop theme={rooster}>
           ⚠️ Use the Viewport action to visualize the Tablet content
         </Desktop>
-        <Tablet theme={Theme.rooster}>You are on Tablet ✨ 🐣 ✨</Tablet>
+        <Tablet theme={rooster}>You are on Tablet ✨ 🐣 ✨</Tablet>
       </div>
     )),
   )
@@ -59,7 +59,7 @@ storiesOf(`${LAYOUT}Responsive`, module)
     'Large Desktop',
     withInfo()(() => (
       <div>
-        <LargeDesktop theme={Theme.rooster}>
+        <LargeDesktop theme={rooster}>
           You are on Large Desktop ✨ 🐣 ✨
         </LargeDesktop>
       </div>

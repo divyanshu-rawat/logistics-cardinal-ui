@@ -15,7 +15,7 @@ exports[`<Spacing /> should render the component with all properties as true 1`]
     disabled={false}
     elementType="button"
     href=""
-    size=""
+    size="default"
     stretch={false}
   >
     Awesome Button
@@ -33,7 +33,7 @@ exports[`<Spacing /> should render the component with padding instead of margin 
     disabled={false}
     elementType="button"
     href=""
-    size=""
+    size="default"
     stretch={false}
   >
     Awesome Button
@@ -51,7 +51,7 @@ exports[`<Spacing /> should render the component with the default props 1`] = `
     disabled={false}
     elementType="button"
     href=""
-    size=""
+    size="default"
     stretch={false}
   >
     Awesome Button

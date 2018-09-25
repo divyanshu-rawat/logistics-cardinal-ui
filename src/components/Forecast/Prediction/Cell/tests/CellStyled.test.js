@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import CellStyled from '../CellStyled';
-import Theme from '../../../../../themes/rooster';
+import { RoosterTheme } from '../../../../../themes/rooster';
 
 const renderedComponent = (type = 'forecast') =>
-  shallow(<CellStyled theme={Theme} type={type} />);
+  shallow(<CellStyled theme={RoosterTheme} type={type} />);
 
 describe('<CellStyled />', () => {
   it('should render the styled component as `forecast`', () => {

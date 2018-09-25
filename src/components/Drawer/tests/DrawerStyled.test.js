@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import DrawerStyled from '../DrawerStyled';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
-const renderedComponent = () => shallow(<DrawerStyled theme={Theme} />);
+const renderedComponent = () => shallow(<DrawerStyled theme={RoosterTheme} />);
 
 describe('<DrawerStyled />', () => {
   it('should render the component', () => {

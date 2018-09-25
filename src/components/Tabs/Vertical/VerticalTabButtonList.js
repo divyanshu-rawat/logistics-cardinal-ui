@@ -25,7 +25,9 @@ export const VerticalTabButtonList = ({
           style={{ flex: 1, textDecoration: 'none' }}
           truncate
           color={
-            activeTab === key ? theme.colors.primary100 : theme.colors.white
+            activeTab === key
+              ? theme.verticalTabButtonActiveTextColor
+              : theme.verticalTabButtonTextColor
           }
         >
           {item}

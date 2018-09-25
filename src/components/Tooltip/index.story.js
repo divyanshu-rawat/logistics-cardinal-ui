@@ -1,5 +1,4 @@
 import React from 'react';
-import { Glyphicon } from 'react-bootstrap';
 
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
@@ -8,10 +7,11 @@ import { select } from '@storybook/addon-knobs';
 import { COMPONENTS } from '../../../.storybook/sections';
 
 import withTests from '../../utils/withTests';
-import Theme from '../../themes/rooster';
 
 import Tooltip from '.';
 import Button from '../Button';
+
+import Icons from '../Icons';
 
 storiesOf(`${COMPONENTS}Tooltip`, module)
   .addDecorator(withTests('Tooltip/tests/index', 'TooltipStyled'))
@@ -24,13 +24,13 @@ storiesOf(`${COMPONENTS}Tooltip`, module)
           position={select(
             'Position',
             ['top', 'right', 'bottom', 'left'],
-            'top',
+            'top'
           )}
         >
           <Button>
-            <Glyphicon glyph="info-sign" />
+            <Icons.Calendar />
           </Button>
         </Tooltip>
       </div>
-    )),
+    ))
   );

@@ -9,12 +9,14 @@ const RadioButtonLabelStyled = styled('label')`
   cursor: pointer;
   position: relative;
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
-  margin-right: ${({ inline, theme }) => (inline ? theme.spacings.kilo : '')};
-  font-weight: ${({ theme }) => theme.fontWeight.regular};
+  margin-right: ${({ inline, theme }) =>
+    inline ? theme.radioSpacingRight : ''};
+  font-weight: ${({ theme }) => theme.radioFontWeight};
+  margin-top: 4px;
 
   &:hover:not(.is-selected) {
     &:before {
-      border-color: ${({ theme }) => theme.colors.primary100};
+      border-color: ${({ theme }) => theme.primaryColor};
     }
   }
 
@@ -30,8 +32,8 @@ const RadioButtonLabelStyled = styled('label')`
     border-radius: 99%;
     width: ${SIZE}px;
     height: ${SIZE}px;
-    margin-right: ${({ theme }) => theme.spacings.kilo};
-    border: 2px solid ${({ theme }) => theme.colors.grey600};
+    margin-right: ${({ theme }) => theme.radioSpacingRight};
+    border: 2px solid ${({ theme }) => theme.radioInactiveBorderColor};
   }
 
   &:after {
@@ -45,7 +47,7 @@ const RadioButtonLabelStyled = styled('label')`
     top: ${HALF_SIZE}px;
     width: ${HALF_SIZE - 1}px;
     height: ${HALF_SIZE - 1}px;
-    background: ${({ theme }) => theme.colors.primary100};
+    background: ${({ theme }) => theme.primaryColor};
   }
 
   &.is-selected {

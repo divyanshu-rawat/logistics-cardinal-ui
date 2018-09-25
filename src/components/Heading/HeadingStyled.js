@@ -2,34 +2,33 @@ import styled from 'styled-components';
 
 const TYPES = {
   h1: {
-    fontSize: 'giga',
-    lineHeight: 'kilo',
+    fontSize: 'h1FontSize',
+    lineHeight: 'h1LineHeight',
   },
   h2: {
-    fontSize: 'mega',
-    lineHeight: 'byte',
+    fontSize: 'h2FontSize',
+    lineHeight: 'h2LineHeight',
   },
   h3: {
-    fontSize: 'kilo',
-    lineHeight: 'byte',
+    fontSize: 'h3FontSize',
+    lineHeight: 'h3LineHeight',
   },
   h4: {
-    fontSize: 'byte',
-    lineHeight: 'bit',
+    fontSize: 'h4FontSize',
+    lineHeight: 'h4LineHeight',
   },
   h5: {
-    fontSize: 'bit',
-    lineHeight: 'bit',
+    fontSize: 'h5FontSize',
+    lineHeight: 'h5LineHeight',
   },
 };
 
 const HeadingStyled = styled('h3')`
-  font-size: ${({ theme, as }) => theme.fontSize[(TYPES[as] || {}).fontSize]};
+  font-size: ${({ theme, as }) => theme[(TYPES[as] || {}).fontSize]};
   font-weight: ${({ theme, bold }) =>
-    theme.fontWeight[bold ? 'semiBold' : 'regular']};
-  line-height: ${({ theme, as }) =>
-    theme.lineHeight[(TYPES[as] || {}).lineHeight]};
-  margin: 0 0 ${({ theme, noMargin }) => (noMargin ? 0 : theme.spacings.kilo)};
+    theme[bold ? 'headingFontWeightBold' : 'headingFontWeightLight']};
+  line-height: ${({ theme, as }) => theme[(TYPES[as] || {}).lineHeight]};
+  margin: 0 0 ${({ theme, noMargin }) => (noMargin ? 0 : theme.headingSpacing)};
 `;
 
 export default HeadingStyled;

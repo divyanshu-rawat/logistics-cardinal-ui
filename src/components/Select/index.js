@@ -76,6 +76,7 @@ const SelectStyled = styled('div')`
       position: absolute;
       top: 0;
       background: transparent;
+      color: ${({ theme }) => theme.textColor}
       &:focus {
         background: transparent;
       }

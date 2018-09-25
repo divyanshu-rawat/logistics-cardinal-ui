@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-const IndicatorStyled = styled.div`
+const IndicatorStyled = styled('div')`
   display: inline-block;
   position: relative;
   [type='checkbox'],
@@ -14,9 +14,9 @@ const IndicatorStyled = styled.div`
       align-items: center;
       display: flex;
       &:before {
-        border: 1px solid ${({ theme }) => lighten(0.2, theme.colors.grey200)};
-        background: ${({ theme }) => theme.colors.grey200};
-        margin-right: ${({ theme }) => theme.spacings.byte};
+        border: 1px solid ${({ theme }) => lighten(0.2, theme.indicatorColor)};
+        background: ${({ theme }) => theme.indicatorColor};
+        margin-right: ${({ theme }) => theme.indicatorSpacingRight};
         width: 8px;
         height: 8px;
         border-radius: 100%;
@@ -27,8 +27,9 @@ const IndicatorStyled = styled.div`
       + label {
         &:before {
           border: 1px solid
-            ${({ theme, color }) => color || theme.colors.grey100};
-          background: ${({ theme, color }) => color || theme.colors.grey100};
+            ${({ theme, color }) => color || theme.indicatorCheckedColor};
+          background: ${({ theme, color }) =>
+            color || theme.indicatorCheckedColor};
         }
       }
     }

@@ -23,7 +23,7 @@ export const IDCard = ({ imageSrc, name, info, theme }) => (
         style={{
           marginBottom: 0,
           lineHeight: 1,
-          fontWeight: theme.fontWeight.light,
+          fontWeight: theme.textFontWeightLight,
         }}
       >
         {name}
@@ -34,8 +34,8 @@ export const IDCard = ({ imageSrc, name, info, theme }) => (
         style={{
           color: 'white',
           opacity: 0.6,
-          fontSize: theme.fontSize.bit,
-          fontWeight: theme.fontWeight.light,
+          fontSize: theme.textFontSizeXSmall,
+          fontWeight: theme.textFontWeightLight,
         }}
       >
         {info}

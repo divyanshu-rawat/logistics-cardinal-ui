@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TimeSpanDisplay from '..';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (withSeconds = false) =>
   shallow(
     <TimeSpanDisplay
-      theme={Theme}
+      theme={RoosterTheme}
       startAt="2017-12-01T10:00:00Z"
-      fontSize="mega"
+      fontSize="small"
       endAt="2017-12-01T12:00:00Z"
       withSeconds={withSeconds}
     />,

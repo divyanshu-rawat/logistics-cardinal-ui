@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import RadioButtonStyled from '../RadioButtonStyled';
-import Themes from '../../../../themes';
+import { rooster } from '../../../../themes';
 
-const renderedComponent = ({ inline = false, theme = Themes.rooster }) =>
-  shallow(<RadioButtonStyled inline={inline} theme={theme} />);
+const renderedComponent = ({ inline = false }) =>
+  shallow(<RadioButtonStyled inline={inline} theme={rooster} />);
 
 describe('RadioButtonStyled', () => {
   it('should render the component', () => {

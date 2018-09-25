@@ -8,7 +8,6 @@ exports[`<VerticalTabButtonList /> should render the component 1`] = `
   >
     <Text
       as="span"
-      color=""
       margin="0"
       style={
         Object {

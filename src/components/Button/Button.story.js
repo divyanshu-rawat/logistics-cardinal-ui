@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { boolean, select } from '@storybook/addon-knobs';
 
-import { Glyphicon } from 'react-bootstrap';
-
 import withTests from '../../utils/withTests';
 
 import { COMPONENTS } from '../../../.storybook/sections';
 
 import Button from '.';
+import { SIZES, ACTION_TYPES } from './constants';
+import Icons from '../Icons';
 
 const generateButtonWithKnobs = (actionType, icon) => {
   const stretched = boolean('stretched', false);
@@ -22,11 +22,11 @@ const generateButtonWithKnobs = (actionType, icon) => {
         active={boolean('active', false)}
         disabled={boolean('disabled', false)}
         onClick={action((event) => console.log(event))}
-        size={select('size', ['', 'large', 'small', 'xsmall'], '')}
+        size={select('size', Object.values(SIZES), SIZES.DEFAULT)}
         stretch={stretched}
       >
         <span>
-          {icon && <Glyphicon glyph="star" />}
+          {icon && <Icons.Calendar />}
           My Awesome Button
         </span>
       </Button>
@@ -36,20 +36,53 @@ const generateButtonWithKnobs = (actionType, icon) => {
 
 storiesOf(`${COMPONENTS}Button`, module)
   .addDecorator(withTests('Button/tests/index'))
-  .add('Default', withInfo()(() => generateButtonWithKnobs()))
-  .add('Primary', withInfo()(() => generateButtonWithKnobs('primary')))
-  .add('Success', withInfo()(() => generateButtonWithKnobs('success')))
-  .add('Info', withInfo()(() => generateButtonWithKnobs('info')))
-  .add('Warning', withInfo()(() => generateButtonWithKnobs('warning')))
-  .add('Danger', withInfo()(() => generateButtonWithKnobs('danger')))
-  .add('Link', withInfo()(() => generateButtonWithKnobs('link')));
+  .add(
+    'Default',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.DEFAULT))
+  )
+  .add(
+    'Primary',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.PRIMARY))
+  )
+  .add(
+    'Success',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.SUCCESS))
+  )
+  .add('Info', withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.INFO)))
+  .add(
+    'Warning',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.WARNING))
+  )
+  .add('Danger', withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.DANGER)))
+  .add('Link', withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.LINK)));
 
 storiesOf(`${COMPONENTS}Button/With Icon`, module)
   .addDecorator(withTests('index'))
-  .add('Default', withInfo()(() => generateButtonWithKnobs('default', true)))
-  .add('Primary', withInfo()(() => generateButtonWithKnobs('primary', true)))
-  .add('Success', withInfo()(() => generateButtonWithKnobs('success', true)))
-  .add('Info', withInfo()(() => generateButtonWithKnobs('info', true)))
-  .add('Warning', withInfo()(() => generateButtonWithKnobs('warning', true)))
-  .add('Danger', withInfo()(() => generateButtonWithKnobs('danger', true)))
-  .add('Link', withInfo()(() => generateButtonWithKnobs('link', true)));
+  .add(
+    'Default',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.DEFAULT, true))
+  )
+  .add(
+    'Primary',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.PRIMARY, true))
+  )
+  .add(
+    'Success',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.SUCCESS, true))
+  )
+  .add(
+    'Info',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.INFO, true))
+  )
+  .add(
+    'Warning',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.WARNING, true))
+  )
+  .add(
+    'Danger',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.DANGER, true))
+  )
+  .add(
+    'Link',
+    withInfo()(() => generateButtonWithKnobs(ACTION_TYPES.LINK, true))
+  );

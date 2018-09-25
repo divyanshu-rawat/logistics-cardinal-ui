@@ -5,7 +5,7 @@ import toJson from 'enzyme-to-json';
 import Spacing from '..';
 import Button from '../../Button';
 
-// import theme from '../../../themes/rooster';
+// import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = ({ type, top, bottom, right, left, inline }) =>
   shallow(

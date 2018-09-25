@@ -1,31 +1,37 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { addDecorator } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
 import { setDefaults } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
-
+import { CardinalThemeProvider } from '../src/themes/Provider';
 import storybookOptions from './options';
 import infoOptions from './info';
 
 import '../src/themes/global';
 import Global from '../src/components/Global';
-import themes from '../src/themes';
+import { rooster, standard, hurrier } from '../src/themes';
+import { createGlobalStyles } from '../src/themes/global-styles';
+
+const themes = {
+  rooster,
+  hurrier,
+  standard,
+};
 
 function themeDecorator(story) {
-  const content = story();
-  const selectedTheme = select('Theme', ['rooster', 'hurrier'], 'rooster');
+  const selectedTheme = select(
+    'Theme',
+    ['standard', 'rooster', 'hurrier'],
+    'rooster',
+  );
 
-  // TODO Remove the following condition when we added a bootstrap for hurrier
-  if (selectedTheme === 'rooster') {
-    require(`../src/themes/${selectedTheme}/bootstrap/css/bootstrap.css`);
-  }
+  createGlobalStyles(themes[selectedTheme]);
 
   return (
-    <ThemeProvider theme={themes[selectedTheme]}>
+    <CardinalThemeProvider theme={themes[selectedTheme]}>
       <Global>{story()}</Global>
-    </ThemeProvider>
+    </CardinalThemeProvider>
   );
 }
 

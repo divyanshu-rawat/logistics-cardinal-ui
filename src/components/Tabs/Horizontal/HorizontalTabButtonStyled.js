@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import { borderRadius } from 'polished';
 
 const HorizontalTabButton = styled('a')`
-  ${({ theme }) => borderRadius('top', theme.borderRadius.mega)};
+  ${({ theme }) => borderRadius('top', theme.horizontalTabButtonBorderRadius)};
   color: ${({ theme, isActive }) =>
-    isActive ? theme.colors.white : theme.colors.grey100};
-  background-color: ${({ theme }) => theme.colors.grey300};
-  margin-right: ${({ theme }) => theme.spacings.bit};
-  padding: ${({ theme }) => theme.composedSpacings.byte};
+    isActive
+      ? theme.horizontalTabButtonColorActive
+      : theme.horizontalTabButtonColor};
+  background-color: ${({ theme }) => theme.horizontalTabButtonBackgroundColor};
+  margin-right: ${({ theme }) => theme.horizontalTabButtonSpacingRight};
+  padding: ${({ theme }) => theme.horizontalTabButtonPadding};
   outline-width: 0;
   text-decoration: none;
   cursor: pointer;
@@ -19,7 +21,7 @@ const HorizontalTabButton = styled('a')`
   &:active,
   &:hover,
   &:focus {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.horizontalTabButtonColorActive};
   }
 `;
 

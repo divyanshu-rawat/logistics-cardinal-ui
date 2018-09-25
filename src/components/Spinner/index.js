@@ -13,7 +13,7 @@ const Spinner = ({ theme, size, children, spinWhen }) => (
       <Fragment>
         <SpinnerOverlay />
         <SpinnerHolder>
-          <Loader singleColor={theme.colors.primary100} size={size} />
+          <Loader singleColor={theme.primaryColor} size={size} />
         </SpinnerHolder>
       </Fragment>
     )}

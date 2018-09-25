@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import OuterGutter from '../OuterGutter';
-import theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (withPad) =>
-  shallow(<OuterGutter theme={theme} withPad={withPad} />);
+  shallow(<OuterGutter theme={RoosterTheme} withPad={withPad} />);
 
 describe('<OuterGutter />', () => {
   it('should render the component with the default props', () => {

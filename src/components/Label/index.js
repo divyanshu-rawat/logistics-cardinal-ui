@@ -6,11 +6,11 @@ import { hideVisually } from 'polished';
 export const LabelStyled = styled('label')`
   display: block;
   padding: 0 3px;
-  margin-bottom: ${({ theme }) => theme.spacings.byte};
-  font-weight: ${({ theme }) => theme.fontWeight.regular};
+  margin-bottom: ${({ theme }) => theme.labelBottomSpacing};
+  font-weight: ${({ theme }) => theme.labelFontWeight};
   color: ${({ theme, hasError }) =>
-    hasError ? theme.colors.red100 : theme.colors.primary400};
-  font-size: ${({ theme }) => theme.fontSize.bit};
+    hasError ? theme.labelTextColorError : theme.labelTextcolor};
+  font-size: ${({ theme }) => theme.labelFontSize};
 
   ${({ hidden }) => hidden && hideVisually()};
 `;

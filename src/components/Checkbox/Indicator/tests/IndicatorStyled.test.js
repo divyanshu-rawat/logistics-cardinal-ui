@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import IndicatorStyled from '../IndicatorStyled';
-import Theme from '../../../../themes/rooster';
+import { RoosterTheme } from '../../../../themes/rooster';
 
 const renderedComponent = (color) =>
-  shallow(<IndicatorStyled color={color} theme={Theme} />);
+  shallow(<IndicatorStyled color={color} theme={RoosterTheme} />);
 
 describe('<IndicatorStyled />', () => {
   it('should render the component with default color', () => {

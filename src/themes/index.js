@@ -1,4 +1,3 @@
-import rooster from './rooster';
-import hurrier from './hurrier';
-
-export default { rooster, hurrier };
+export { RoosterTheme as rooster } from './rooster';
+export { StandardTheme as standard } from './standard';
+export { HurrierTheme as hurrier } from './hurrier';

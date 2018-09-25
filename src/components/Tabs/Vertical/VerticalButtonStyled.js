@@ -6,9 +6,9 @@ const VerticalTabButtonStyled = styled('a')`
   flex-flow: row;
   align-items: center;
   position: relative;
-  background-color: ${({ theme }) => theme.colors.grey700};
-  margin-right: ${({ theme }) => theme.spacings.bit};
-  padding: ${({ theme }) => theme.composedSpacings.byte};
+  background-color: ${({ theme }) => theme.verticalTabButtonBackgroundColor};
+  margin-right: ${({ theme }) => theme.verticalTabButtonSpacingRight};
+  padding: ${({ theme }) => theme.verticalTabButtonPadding};
   outline-width: 0;
   // it's necessary due to react-bootstrap-table specifity collison
   text-decoration: none !important;
@@ -23,7 +23,8 @@ const VerticalTabButtonStyled = styled('a')`
   &:active,
   &:hover,
   &:focus {
-    background-color: ${({ theme }) => theme.colors.grey800};
+    background-color: ${({ theme }) =>
+      theme.verticalTabButtonActiveBackgroundColor};
   }
   &:before {
     content: '';
@@ -33,7 +34,7 @@ const VerticalTabButtonStyled = styled('a')`
     height: 100%;
     width: 4px;
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
-    background-color: ${({ theme }) => theme.colors.primary100};
+    background-color: ${({ theme }) => theme.primaryColor};
     transition: opacity 0.3s;
   }
 `;

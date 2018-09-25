@@ -1,14 +1,13 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { color, boolean, select, number } from '@storybook/addon-knobs';
 
 import { TYPOGRAPHY } from '../../../.storybook/sections';
 
 import withTests from '../../utils/withTests';
-import Theme from '../../themes/rooster';
+import { rooster } from '../../themes';
 
 import Text from '.';
 
@@ -19,12 +18,12 @@ storiesOf(`${TYPOGRAPHY}Text`, module)
     withInfo()(() => (
       <div style={{ width: '500px' }}>
         <Text
-          color={color('Color', Theme.fontFamily.color)}
+          color={color('Color', '')}
           fontFamily={select('Font Family', [
-            Theme.fontFamily.default,
+            rooster.textFontFamily,
             'Times New Roman',
           ])}
-          weight={number('FontWeight', Theme.fontWeight.regular, 300)}
+          weight={number('FontWeight', rooster.textFontWeight, 300)}
           align={select('Text Align', ['left', 'right', 'center'], 'left')}
           truncate={boolean('Truncate', false)}
           uppercase={boolean('Uppercase', false)}

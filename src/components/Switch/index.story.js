@@ -11,7 +11,7 @@ import { FORM } from '../../../.storybook/sections';
 
 import Switch from '.';
 import Text from '../Text';
-import Themes from '../../themes';
+import { rooster } from '../../themes';
 
 storiesOf(`${FORM}Switch`, module)
   .addDecorator(withTests('Switch/tests/index', 'Switch/tests/SwitchStyled'))
@@ -19,7 +19,7 @@ storiesOf(`${FORM}Switch`, module)
     'Simple',
     withInfo()(() => (
       <Switch
-        theme={Themes.rooster}
+        theme={rooster}
         initialValue={false}
         onChangeStatus={action((item) => console.log(item))}
       />
@@ -30,7 +30,7 @@ storiesOf(`${FORM}Switch`, module)
     withInfo()(() => (
       <Switch
         initialValue={false}
-        theme={Themes.rooster}
+        theme={rooster}
         id="myAwesomeSwitch"
         labelText={(active) =>
           active ? (
@@ -47,7 +47,7 @@ storiesOf(`${FORM}Switch`, module)
     'With initial value',
     withInfo()(() => (
       <Switch
-        theme={Themes.rooster}
+        theme={rooster}
         initialValue
         onChangeStatus={action((item) => console.log(item))}
       />
@@ -57,7 +57,7 @@ storiesOf(`${FORM}Switch`, module)
     'Disabled',
     withInfo()(() => (
       <Switch
-        theme={Themes.rooster}
+        theme={rooster}
         initialValue
         disabled={boolean('disabled', true)}
         onChangeStatus={action((item) => console.log(item))}
@@ -68,7 +68,7 @@ storiesOf(`${FORM}Switch`, module)
     'Size small',
     withInfo()(() => (
       <Switch
-        theme={Themes.rooster}
+        theme={rooster}
         initialValue
         size="sm"
         onChangeStatus={action((item) => console.log(item))}
@@ -79,7 +79,7 @@ storiesOf(`${FORM}Switch`, module)
     'Size medium',
     withInfo()(() => (
       <Switch
-        theme={Themes.rooster}
+        theme={rooster}
         initialValue
         size="md"
         onChangeStatus={action((item) => console.log(item))}
@@ -91,7 +91,7 @@ storiesOf(`${FORM}Switch`, module)
     withInfo()(() => (
       <Switch
         initialValue
-        theme={Themes.rooster}
+        theme={rooster}
         size="lg"
         onChangeStatus={action((item) => console.log(item))}
       />

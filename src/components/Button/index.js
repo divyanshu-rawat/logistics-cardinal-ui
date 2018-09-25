@@ -1,6 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button as RBButton } from 'react-bootstrap';
+import {
+  ButtonPrimaryStyled,
+  ButtonSuccessStyled,
+  ButtonDefaultStyled,
+  ButtonDangerStyled,
+  ButtonInfoStyled,
+  ButtonWarningStyled,
+} from './ButtonStyled';
+
+import { ACTION_TYPES, SIZES } from './constants';
+
+const resolveButtonType = (type) => {
+  switch (type) {
+    case ACTION_TYPES.PRIMARY:
+      return ButtonPrimaryStyled;
+    case ACTION_TYPES.SUCCESS:
+      return ButtonSuccessStyled;
+    case ACTION_TYPES.INFO:
+      return ButtonInfoStyled;
+    case ACTION_TYPES.WARNING:
+      return ButtonWarningStyled;
+    case ACTION_TYPES.DANGER:
+      return ButtonDangerStyled;
+    case ACTION_TYPES.LINK:
+    default:
+      return ButtonDefaultStyled;
+  }
+};
 
 const Button = ({
   active,
@@ -12,20 +39,23 @@ const Button = ({
   actionType,
   onClick,
   size,
-}) => (
-  <RBButton
-    active={active}
-    disabled={disabled}
-    href={href}
-    block={stretch}
-    type={elementType}
-    bsStyle={actionType}
-    onClick={onClick}
-    {...{ bsSize: size || null }}
-  >
-    {children}
-  </RBButton>
-);
+}) => {
+  const ButtonComponent = resolveButtonType(actionType);
+
+  return (
+    <ButtonComponent
+      active={active}
+      disabled={disabled}
+      href={href}
+      block={stretch}
+      type={elementType}
+      onClick={onClick}
+      size={size}
+    >
+      {children}
+    </ButtonComponent>
+  );
+};
 
 Button.propTypes = {
   /**
@@ -36,15 +66,7 @@ Button.propTypes = {
    * It's going to generate the action color such as
    * .btn-primary, .btn-info, .btn-default and so on...
    */
-  actionType: PropTypes.oneOf([
-    'default',
-    'primary',
-    'success',
-    'info',
-    'warning',
-    'danger',
-    'link',
-  ]).isRequired,
+  actionType: PropTypes.oneOf(Object.values(ACTION_TYPES)).isRequired,
   /**
    * Button type
    */
@@ -55,7 +77,7 @@ Button.propTypes = {
   /**
    * Size of the button
    */
-  size: PropTypes.oneOf(['large', '', 'small', 'xsmall']).isRequired,
+  size: PropTypes.oneOf(Object.values(SIZES)).isRequired,
   active: PropTypes.bool,
   /**
    * Flag to determine if the button is disabled or not
@@ -80,9 +102,9 @@ Button.defaultProps = {
   disabled: false,
   href: '',
   stretch: false,
-  actionType: 'default',
+  actionType: ACTION_TYPES.DEFAULT,
   elementType: 'button',
-  size: '',
+  size: SIZES.DEFAULT,
 };
 
 export default Button;

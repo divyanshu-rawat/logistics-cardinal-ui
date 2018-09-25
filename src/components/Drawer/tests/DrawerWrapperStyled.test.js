@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import DrawerWrapperStyled from '../DrawerWrapperStyled';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (right = false) =>
-  shallow(<DrawerWrapperStyled right={right} theme={Theme} />);
+  shallow(<DrawerWrapperStyled right={right} theme={RoosterTheme} />);
 
 describe('<DrawerWrapperStyled />', () => {
   it('should render the component with default position', () => {

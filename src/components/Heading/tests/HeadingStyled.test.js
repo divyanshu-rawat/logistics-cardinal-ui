@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import HeadingStyled from '../HeadingStyled';
-import Theme from '../../../themes/rooster';
+import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = ({ as = 'h3', bold = false, noMargin = false }) =>
   shallow(
-    <HeadingStyled theme={Theme} as={as} bold={bold} noMargin={noMargin}>
+    <HeadingStyled theme={RoosterTheme} as={as} bold={bold} noMargin={noMargin}>
       Almighty Corinthians!
     </HeadingStyled>,
   );

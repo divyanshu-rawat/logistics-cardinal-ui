@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import { PredictionMock } from '../../../../../utils/mocks';
-import Theme from '../../../../../themes/rooster';
+import { RoosterTheme } from '../../../../../themes/rooster';
 
 import TotalBarStyled from '../TotalBarStyled';
 
 const renderedComponent = (type = 0, width = 100) =>
   shallow(
     <TotalBarStyled
-      theme={Theme}
+      theme={RoosterTheme}
       type={PredictionMock[type].type}
       width={width}
     />,
