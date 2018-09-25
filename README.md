@@ -74,5 +74,4 @@ $ yarn link logistics-cardinal-ui
 After carefully testing it locally, please open a pull request and we will take care of the rest :unicorn:!
 
 ## License
-
 MIT © [Foodora](https://github.com/foodora)
