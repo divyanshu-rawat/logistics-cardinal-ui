@@ -9,7 +9,7 @@ export const LabelStyled = styled('label')`
   margin-bottom: ${({ theme }) => theme.labelBottomSpacing};
   font-weight: ${({ theme }) => theme.labelFontWeight};
   color: ${({ theme, hasError }) =>
-    hasError ? theme.labelTextColorError : theme.labelTextcolor};
+    hasError ? theme.labelTextColorError : theme.labelTextColor};
   font-size: ${({ theme }) => theme.labelFontSize};
 
   ${({ hidden }) => hidden && hideVisually()};
@@ -26,4 +26,4 @@ Label.propTypes = {
   hidden: PropTypes.bool,
 };
 
-export default styled(Label)``;
+export default Label;
