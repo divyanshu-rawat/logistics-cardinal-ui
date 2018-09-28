@@ -17,10 +17,8 @@ class AccordionItemWrapper extends PureComponent {
     title: PropTypes.node.isRequired,
     toggleItem: PropTypes.func.isRequired,
     expandOnInit: PropTypes.bool.isRequired,
+    animationDuration: PropTypes.number.isRequired,
   };
-
-  static ANIMATION_DELAY = 400;
-  static ANIMATION_DURATION = 700;
 
   componentDidMount() {
     const { registerComponent, id, expandOnInit } = this.props;
@@ -28,18 +26,21 @@ class AccordionItemWrapper extends PureComponent {
   }
 
   render() {
-    const { items, toggleItem, id, title, content } = this.props;
+    const {
+      items,
+      toggleItem,
+      id,
+      title,
+      content,
+      animationDuration,
+    } = this.props;
+
     return (
       <AccordionItemDividerStyled>
         <AccordionItemHeader action={toggleItem(id)} open={!!items[id]}>
           {title}
         </AccordionItemHeader>
-        <Fade
-          delay={AccordionItemWrapper.ANIMATION_DELAY}
-          duration={AccordionItemWrapper.ANIMATION_DURATION}
-          collapse
-          when={!!items[id]}
-        >
+        <Fade duration={animationDuration} collapse when={!!items[id]}>
           <AccordionItemContent>{content}</AccordionItemContent>
         </Fade>
       </AccordionItemDividerStyled>

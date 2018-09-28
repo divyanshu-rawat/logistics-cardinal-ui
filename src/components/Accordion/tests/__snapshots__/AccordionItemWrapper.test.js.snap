@@ -12,8 +12,7 @@ exports[`AccordionItemWrapper should render the component 1`] = `
   </AccordionItemHeader>
   <Fade
     collapse={true}
-    delay={400}
-    duration={700}
+    duration={400}
     when={false}
   >
     <AccordionItemContent>

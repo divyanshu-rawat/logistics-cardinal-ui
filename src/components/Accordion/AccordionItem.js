@@ -11,10 +11,12 @@ class AccordionItem extends PureComponent {
     title: PropTypes.node.isRequired,
     children: PropTypes.node.isRequired,
     expandOnInit: PropTypes.bool.isRequired,
+    animationDuration: PropTypes.number.isRequired,
   };
 
   static defaultProps = {
     expandOnInit: false,
+    animationDuration: 300,
   };
 
   state = {
@@ -22,7 +24,7 @@ class AccordionItem extends PureComponent {
   };
 
   render() {
-    const { title, children, expandOnInit } = this.props;
+    const { title, children, expandOnInit, animationDuration } = this.props;
     const { id } = this.state;
 
     return (
@@ -33,6 +35,7 @@ class AccordionItem extends PureComponent {
             title={title}
             content={children}
             toggleItem={toggleItem}
+            animationDuration={animationDuration}
             registerComponent={registerComponent}
             expandOnInit={expandOnInit}
             id={id}

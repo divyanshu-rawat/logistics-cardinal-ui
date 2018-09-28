@@ -15,6 +15,7 @@ const renderedComponent = ({ id = 'foo', items = {}, expandOnInit = false }) =>
       items={items}
       content={<p>Some content...</p>}
       title={<h1>Some Title...</h1>}
+      animationDuration={400}
       toggleItem={toggleItemFn}
       expandOnInit={expandOnInit}
     />,

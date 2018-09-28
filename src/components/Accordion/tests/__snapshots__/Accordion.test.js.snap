@@ -11,6 +11,7 @@ exports[`Accordion should render the component 1`] = `
   }
 >
   <AccordionItem
+    animationDuration={300}
     expandOnInit={false}
     title="Some Title"
   >
