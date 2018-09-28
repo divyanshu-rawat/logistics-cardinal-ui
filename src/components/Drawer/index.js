@@ -14,6 +14,7 @@ class Drawer extends Component {
     content: PropTypes.node.isRequired,
     right: PropTypes.bool.isRequired,
     width: PropTypes.number.isRequired,
+    unselectDrawerWhen: PropTypes.bool,
     children: PropTypes.func,
     header: PropTypes.node,
   };
@@ -21,6 +22,7 @@ class Drawer extends Component {
   static defaultProps = {
     open: false,
     right: false,
+    unselectDrawerWhen: false,
     width: 300,
   };
 
@@ -36,10 +38,14 @@ class Drawer extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { open } = this.props;
+    const { open, unselectDrawerWhen } = this.props;
 
     if (prevProps.open !== open) {
       this.toggleState();
+    }
+
+    if (open && prevProps.unselectDrawerWhen !== unselectDrawerWhen) {
+      this.handleDrawerDepth();
     }
   }
 
@@ -63,6 +69,16 @@ class Drawer extends Component {
         this.bindEscKey();
       }
     });
+  };
+
+  handleDrawerDepth = () => {
+    const { unselectDrawerWhen } = this.props;
+
+    if (unselectDrawerWhen) {
+      return this.unbindEscKey();
+    }
+
+    return this.bindEscKey();
   };
 
   bindEscKey = () => {

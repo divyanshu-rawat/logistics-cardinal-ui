@@ -23,7 +23,7 @@ function themeDecorator(story) {
   const selectedTheme = select(
     'Theme',
     ['standard', 'rooster', 'hurrier'],
-    'rooster',
+    'rooster'
   );
 
   createGlobalStyles(themes[selectedTheme]);

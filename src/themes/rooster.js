@@ -76,6 +76,7 @@ const composedSpacings = {
 
 const borderRadius = {
   kilo: '1px',
+
   mega: '4px',
   giga: '5px',
 };
@@ -115,6 +116,7 @@ const boxShadow = {
   switchHandler: '0px 0px 1px 5px rgba(255, 255, 255, 0.2)',
   drawer: '0 2px 34px 0 rgba(0, 0, 0, 0.3)',
   inputButton: 'inset 0 1px 1px rgba(0, 0, 0, 0.075)',
+  modalBoxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.5)',
 };
 
 // Required Fields
@@ -300,6 +302,19 @@ export const aliases = {
     overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
   },
   /**
+   * Modal
+   */
+  modalBackgroundColor: greys.grey400,
+  modalBorderColor: greys.grey200,
+  modalBorderStyle: 'solid',
+  modalBoxShadow: boxShadow.modalBoxShadow,
+  modalBorderRadius: borderRadius.mega,
+  modalOutline: 0,
+  modalWidth: '80%',
+  modalMaxWidth: '60rem',
+  modalMinWidth: '20rem',
+  minHeight: '10rem',
+  /**
    * Z-Index
    */
   zIndex: {
@@ -311,6 +326,8 @@ export const aliases = {
     spinner: 2041,
     navbar: 2030,
     loadingBar: 3000,
+    modalOverlay: 2050,
+    modalContent: 2060,
   },
   /**
    * Media Query Breakpoints
@@ -339,6 +356,8 @@ export const aliases = {
     outerGutter: '10px',
   },
   colors,
+  fontSize,
+  fontWeight,
 };
 
 export const RoosterTheme = {

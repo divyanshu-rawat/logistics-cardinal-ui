@@ -9516,7 +9516,7 @@ react-md-spinner@^0.2.5:
     inline-style-prefixer "^3.0.3"
     prop-types "^15.5.8"
 
-react-modal@^3.3.2:
+react-modal@^3.3.2, react-modal@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.5.1.tgz#33d38527def90ea324848f7d63e53acc4468a451"
   dependencies:

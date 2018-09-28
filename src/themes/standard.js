@@ -178,6 +178,20 @@ export const aliases = {
     overlayTransition: 'opacity 0.3s ease-out, visibility 0.3s ease-out',
   },
   /**
+   * Modal
+   */
+  modalBackgroundColor: '',
+  modalBorderColor: '',
+  modalBorderStyle: '',
+  modalBoxShadow: '',
+  modalBorderRadius: '',
+  modalOutline: 0,
+  modalWidth: '80%',
+  modalMaxWidth: '60rem',
+  modalMinWidth: '20rem',
+  minHeight: '10rem',
+  modalWidthSmall: '400px',
+  /**
    * Z-Index
    */
   zIndex: {
@@ -189,6 +203,8 @@ export const aliases = {
     spinner: 2041,
     navbar: 2030,
     loadingBar: 3000,
+    modalOverlay: 2050,
+    modalContent: 2060,
   },
   /**
    * Media Query Breakpoints
