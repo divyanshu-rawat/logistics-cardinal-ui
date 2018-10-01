@@ -13,6 +13,7 @@ const RadioButtonLabelStyled = styled('label')`
     inline ? theme.radioSpacingRight : ''};
   font-weight: ${({ theme }) => theme.radioFontWeight};
   margin-top: 4px;
+  line-height: 1rem; // inherit line-height
 
   &:hover:not(.is-selected) {
     &:before {
