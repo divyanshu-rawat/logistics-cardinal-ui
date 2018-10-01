@@ -42,6 +42,8 @@ exports[`<Switch /> should render the component 1`] = `
   size="sm"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -95,6 +97,7 @@ exports[`<Switch /> should render the component 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",

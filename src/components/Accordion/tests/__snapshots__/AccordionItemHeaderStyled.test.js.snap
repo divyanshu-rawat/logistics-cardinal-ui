@@ -2,6 +2,6 @@
 
 exports[`AccordionItemHeaderStyled should render the component 1`] = `
 <div
-  className="AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT dOOwBq"
+  className="AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT irLgbP"
 />
 `;

@@ -9,6 +9,8 @@ exports[`<Modal /> should handle modal with small size 1`] = `
   size="small"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -62,6 +64,7 @@ exports[`<Modal /> should handle modal with small size 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -243,6 +246,8 @@ exports[`<Modal /> should open the modal with showModal prop set as true 1`] = `
   size="default"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -296,6 +301,7 @@ exports[`<Modal /> should open the modal with showModal prop set as true 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -477,6 +483,8 @@ exports[`<Modal /> should render the component 1`] = `
   size="default"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -530,6 +538,7 @@ exports[`<Modal /> should render the component 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",

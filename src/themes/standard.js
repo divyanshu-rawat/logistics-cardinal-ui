@@ -192,6 +192,11 @@ export const aliases = {
   minHeight: '10rem',
   modalWidthSmall: '400px',
   /**
+   * Accordion
+   */
+  accordionHeaderHeight: '45px',
+  accordionDividerBorderColor: 'black',
+  /**
    * Z-Index
    */
   zIndex: {

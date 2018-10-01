@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 export const AccordionItemContentStyled = styled('div')`
-  padding: 0 0 20px 0;
+  padding: 10px 0 10px 0;
 `;
 
 const AccordionItemContent = ({ children }) => (

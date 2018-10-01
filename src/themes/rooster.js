@@ -22,6 +22,7 @@ const greys = {
   grey1000: '#6d7785',
   grey1100: '#b2b8c0',
   grey1200: '#909295',
+  grey1300: '#2c3037',
 };
 
 const greens = {
@@ -314,6 +315,11 @@ export const aliases = {
   modalMaxWidth: '60rem',
   modalMinWidth: '20rem',
   minHeight: '10rem',
+  /**
+   * Accordion
+   */
+  accordionHeaderHeight: '45px',
+  accordionDividerBorderColor: greys.grey1300,
   /**
    * Z-Index
    */

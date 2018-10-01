@@ -9,6 +9,8 @@ exports[`<Text /> should render the component with different props 1`] = `
   margin="20px"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -62,6 +64,7 @@ exports[`<Text /> should render the component with different props 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",
@@ -244,6 +247,8 @@ exports[`<Text /> should render the component with the default props 1`] = `
   margin="10px"
   theme={
     Object {
+      "accordionDividerBorderColor": "#2c3037",
+      "accordionHeaderHeight": "45px",
       "bodyBackground": "#292d33",
       "breakpoints": Object {
         "default": Object {
@@ -297,6 +302,7 @@ exports[`<Text /> should render the component with the default props 1`] = `
         "grey1000": "#6d7785",
         "grey1100": "#b2b8c0",
         "grey1200": "#909295",
+        "grey1300": "#2c3037",
         "grey200": "#3f454d",
         "grey300": "#343a42",
         "grey400": "#292d33",

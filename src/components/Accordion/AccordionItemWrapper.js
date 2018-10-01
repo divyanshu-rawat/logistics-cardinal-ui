@@ -6,7 +6,7 @@ import AccordionItemHeader from './AccordionItemHeader';
 import AccordionItemContent from './AccordionItemContent';
 
 export const AccordionItemDividerStyled = styled('div')`
-  border-bottom: 2px solid #2c3037;
+  border-bottom: 2px solid ${({ theme }) => theme.accordionDividerBorderColor};
 `;
 class AccordionItemWrapper extends PureComponent {
   static propTypes = {

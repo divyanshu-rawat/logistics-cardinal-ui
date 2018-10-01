@@ -8,8 +8,12 @@ import Icons from '../Icons';
 export const AccordionItemHeaderStyled = styled('div')`
   display: flex;
   align-items: center;
-  height: 50px;
   cursor: pointer;
+  height: ${({ theme }) => theme.accordionHeaderHeight};
+
+  &:hover {
+    color: ${({ theme }) => theme.primaryColor};
+  }
 
   .AccordionItemHeader {
     &__title {

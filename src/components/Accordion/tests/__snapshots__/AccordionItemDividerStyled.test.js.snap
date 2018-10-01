@@ -2,6 +2,6 @@
 
 exports[`AccordionItemDividerStyled should render the component 1`] = `
 <div
-  className="AccordionItemWrapper__AccordionItemDividerStyled-eXMyLT hJyjjt"
+  className="AccordionItemWrapper__AccordionItemDividerStyled-eXMyLT koNNyc"
 />
 `;
