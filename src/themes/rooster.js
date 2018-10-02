@@ -170,6 +170,9 @@ export const aliases = {
    * Input and Select Variables
    */
   inputDefaultHeight: '40px',
+  // Subtracts border top and bottom
+  // It's needed because of react-select-plus
+  inputInvisibleHeight: '38px',
   inputPlaceholderColor: greys.grey1200,
   inputBackgroundColor: greys.grey400,
   inputDisabledBackgroundColor: greys.grey300,

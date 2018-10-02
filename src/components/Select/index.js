@@ -39,10 +39,11 @@ const SelectStyled = styled('div')`
           validationState
             ? theme.colors[validationStateColor[validationState]]
             : theme.inputBorderColor};
-      display: flex;
-      min-height: ${({ theme }) => theme.inputDefaultHeight};
+      display: table;
+      border-spacing: 0;
+      border-collapse: separate;
       align-items: center;
-      height: auto;
+      height: ${({ theme }) => theme.inputDefaultHeight};
       &:hover {
         cursor: pointer;
         border-color: ${({ theme }) => theme.inputBorderColorHover};
@@ -73,10 +74,13 @@ const SelectStyled = styled('div')`
       }
     }
     &-input {
-      position: absolute;
-      top: 0;
       background: transparent;
-      color: ${({ theme }) => theme.textColor}
+      color: ${({ theme }) => theme.textColor};
+      height: 38px;
+      > input {
+        color: inherit;
+        padding: 13px 0 9px;
+      }
       &:focus {
         background: transparent;
       }
@@ -119,8 +123,19 @@ const SelectStyled = styled('div')`
     }
     &--single {
       > .Select-control .Select-value {
-        position: relative;
         margin: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: ${({ theme }) => theme.inputDefaultHeight};
+        white-space: nowrap;
       }
     }
     &--multi {
@@ -135,9 +150,8 @@ const SelectStyled = styled('div')`
         }
       }
       .Select-multi-value-wrapper {
-        padding: 5px 0 0;
         .Select-value {
-          margin-bottom: 5px;
+          margin-top: 9px;
         }
       }
     }
