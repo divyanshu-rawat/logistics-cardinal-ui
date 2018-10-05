@@ -279,6 +279,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
       >
         <Input__InputStyled
           id="birthday"
+          innerRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="DD.MM.YYYY"
@@ -550,6 +551,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
       >
         <Input__InputStyled
           id="currency"
+          innerRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="$"
@@ -821,6 +823,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
       >
         <Input__InputStyled
           id="currency"
+          innerRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="$"
@@ -1092,6 +1095,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
       >
         <Input__InputStyled
           id="percentage"
+          innerRef={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="%"

@@ -1625,6 +1625,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
   }
 >
   <Input__InputStyled
+    innerRef={[Function]}
     placeholder="Input with ref..."
     theme={
       Object {
