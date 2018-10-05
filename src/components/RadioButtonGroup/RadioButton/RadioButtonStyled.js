@@ -4,7 +4,7 @@ const SIZE = 18;
 const HALF_SIZE = SIZE / 2;
 
 const RadioButtonLabelStyled = styled('label')`
-  flex-align: row;
+  flex-direction: row;
   align-items: center;
   cursor: pointer;
   position: relative;
@@ -24,6 +24,8 @@ const RadioButtonLabelStyled = styled('label')`
   input {
     opacity: 0;
     position: absolute;
+    height: 100%;
+    cursor: pointer;
   }
 
   &:before {
