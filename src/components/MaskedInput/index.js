@@ -11,6 +11,8 @@ const InputMask = ({
   id,
   value,
   onChange,
+  disabled,
+  hasError,
   onBlur,
 }) => (
   <MaskedInput
@@ -19,6 +21,8 @@ const InputMask = ({
     placeholder={placeholder}
     value={value}
     id={id}
+    disabled={disabled}
+    hasError={hasError}
     onChange={onChange}
     onBlur={onBlur}
     render={(ref, props) => <Input inputRef={ref} {...props} />}
@@ -40,6 +44,10 @@ InputMask.propTypes = {
   placeholder: PropTypes.string,
   /** Set if mask will guide the user or not. */
   guide: PropTypes.bool,
+  /** Set if input is disabled or not. */
+  disabled: PropTypes.bool,
+  /** Set if input has any error. */
+  hasError: PropTypes.bool,
 };
 
 export default InputMask;

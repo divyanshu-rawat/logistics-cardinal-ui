@@ -44,7 +44,7 @@ const masks = {
 const onChangeFn = jest.fn();
 const onBlurFn = jest.fn();
 
-const renderedComponent = ({ mask, id, placeholder, guide }) =>
+const renderedComponent = ({ mask, id, placeholder, guide, disabled }) =>
   mount(
     <ThemeProvider theme={RoosterTheme}>
       <MaskedInput
@@ -52,6 +52,7 @@ const renderedComponent = ({ mask, id, placeholder, guide }) =>
         guide={guide}
         placeholder={placeholder}
         id={id}
+        disabled={disabled}
         onChange={onChangeFn}
         onBlur={onBlurFn}
       />
@@ -94,5 +95,15 @@ describe('<MaskedInput />', () => {
     component.find('input').simulate('blur');
 
     expect(onBlurFn.mock.calls.length).toBe(1);
+  });
+
+  it('MaskedInput: should render input as a disabled field', () => {
+    const component = renderedComponent({ ...masks.currency, disabled: true });
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it('MaskedInput: should render input with hasError prop as true', () => {
+    const component = renderedComponent({ ...masks.currency, hasError: true });
+    expect(toJson(component)).toMatchSnapshot();
   });
 });

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import { select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 
 import withTests from '../../utils/withTests';
 
@@ -77,6 +77,7 @@ storiesOf(`${FORM}MaskedInput`, module)
           mask={masks[selectedOption].mask}
           id={masks[selectedOption].id}
           guide={masks[selectedOption].guide}
+          disabled={boolean('disabled?', false)}
           onChange={(data) => console.log(data)}
           placeholder={masks[selectedOption].placeholder}
         />
