@@ -2,7 +2,7 @@
 
 exports[`<TooltipStyled /> should render the component with an unknown position 1`] = `
 <div
-  className="TooltipStyled-fwSOCa cITGZP"
+  className="TooltipStyled-fwSOCa kYeHP"
   content="The world Champion!"
 >
   Corinthians!
@@ -11,7 +11,7 @@ exports[`<TooltipStyled /> should render the component with an unknown position 
 
 exports[`<TooltipStyled /> should render the component with position bottom 1`] = `
 <div
-  className="TooltipStyled-fwSOCa gtjErN"
+  className="TooltipStyled-fwSOCa kERvlt"
   content="The world Champion!"
 >
   Corinthians!
@@ -20,7 +20,7 @@ exports[`<TooltipStyled /> should render the component with position bottom 1`] 
 
 exports[`<TooltipStyled /> should render the component with position left 1`] = `
 <div
-  className="TooltipStyled-fwSOCa bdNGfu"
+  className="TooltipStyled-fwSOCa imxpFv"
   content="The world Champion!"
 >
   Corinthians!
@@ -29,7 +29,7 @@ exports[`<TooltipStyled /> should render the component with position left 1`] = 
 
 exports[`<TooltipStyled /> should render the component with position right 1`] = `
 <div
-  className="TooltipStyled-fwSOCa ePfseS"
+  className="TooltipStyled-fwSOCa gIGKlJ"
   content="The world Champion!"
 >
   Corinthians!
@@ -38,7 +38,7 @@ exports[`<TooltipStyled /> should render the component with position right 1`] =
 
 exports[`<TooltipStyled /> should render the component with the default props 1`] = `
 <div
-  className="TooltipStyled-fwSOCa hjeyxv"
+  className="TooltipStyled-fwSOCa eCgHdf"
   content="The world Champion!"
 >
   Corinthians!

@@ -63,10 +63,10 @@ export const createGlobalStyles = (theme) => injectGlobal`
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 200ms ease-in-out;
-        minHeight: ${theme.modalMinHeight};
-        minWidth: ${theme.modalMinWidth};
+        min-height: ${theme.modalMinHeight};
+        min-width: ${theme.modalMinWidth};
         width: ${theme.modalWidth};
-        maxWidth: ${theme.modalMaxWidth};
+        max-width: ${theme.modalMaxWidth};
         background-color: ${theme.modalBackgroundColor};
         border: 1px ${theme.modalBorderStyle} ${theme.modalBorderColor};
         box-shadow: ${theme.modalBoxShadow};

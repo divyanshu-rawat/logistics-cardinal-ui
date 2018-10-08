@@ -2,6 +2,6 @@
 
 exports[`<PercentageStyled /> should render the component 1`] = `
 <span
-  className="PercentageStyled-dVkjGa jHabLM"
+  className="PercentageStyled-dVkjGa iyIrFI"
 />
 `;

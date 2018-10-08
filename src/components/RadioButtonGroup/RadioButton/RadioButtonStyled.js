@@ -13,14 +13,7 @@ const RadioButtonLabelStyled = styled('label')`
     inline ? theme.radioSpacingRight : ''};
   font-weight: ${({ theme }) => theme.radioFontWeight};
   margin-top: 4px;
-  line-height: 1rem; // inherit line-height
-
-  &:hover:not(.is-selected) {
-    &:before {
-      border-color: ${({ theme }) => theme.primaryColor};
-    }
-  }
-
+  line-height: 1rem; /* inherit line-height */
   input {
     opacity: 0;
     position: absolute;
@@ -37,6 +30,12 @@ const RadioButtonLabelStyled = styled('label')`
     height: ${SIZE}px;
     margin-right: ${({ theme }) => theme.radioSpacingRight};
     border: 2px solid ${({ theme }) => theme.radioInactiveBorderColor};
+  }
+
+  &:hover:not(.is-selected) {
+    &:before {
+      border-color: ${({ theme }) => theme.primaryColor};
+    }
   }
 
   &:after {

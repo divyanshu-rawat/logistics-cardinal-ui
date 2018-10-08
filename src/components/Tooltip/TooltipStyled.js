@@ -3,11 +3,6 @@ import styled from 'styled-components';
 const TooltipStyled = styled('div')`
   position: relative;
   display: inline-block;
-  &:hover {
-    &:after {
-      opacity: ${({ theme }) => theme.tooltipHoverOpacity};
-    }
-  }
   &:after {
     content: ${({ content }) => `'${content}'`};
     border-radius: ${({ theme }) => theme.tooltipBorderRadius};
@@ -29,6 +24,11 @@ const TooltipStyled = styled('div')`
     opacity: 0;
     display: block;
     transition: opacity 0.2s linear 0.2s, transform 0.2s ease-out 0.2s;
+  }
+  &:hover {
+    &:after {
+      opacity: ${({ theme }) => theme.tooltipHoverOpacity};
+    }
   }
   ${({ position }) => {
     switch (position) {

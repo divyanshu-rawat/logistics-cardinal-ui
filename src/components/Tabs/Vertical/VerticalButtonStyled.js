@@ -10,7 +10,7 @@ const VerticalTabButtonStyled = styled('a')`
   margin-right: ${({ theme }) => theme.verticalTabButtonSpacingRight};
   padding: ${({ theme }) => theme.verticalTabButtonPadding};
   outline-width: 0;
-  // it's necessary due to react-bootstrap-table specifity collison
+  /* it's necessary due to react-bootstrap-table specifity collison */
   text-decoration: none !important;
   cursor: pointer;
   text-transform: capitalize;

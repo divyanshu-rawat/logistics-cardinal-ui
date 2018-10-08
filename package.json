@@ -35,6 +35,7 @@
     "*.js": [
       "prettier --write --single-quote --trailing-comma all --arrow-parens always",
       "eslint src --fix",
+      "stylelint",
       "git add",
       "jest --bail --findRelatedTests"
     ]
@@ -157,6 +158,10 @@
     "rollup-plugin-react-svg": "^2.1.0",
     "rollup-plugin-url": "^1.3.0",
     "semantic-release": "^15.5.2",
+    "stylelint": "^9.6.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0",
     "travis-deploy-once": "^5.0.0"
   },
   "files": [

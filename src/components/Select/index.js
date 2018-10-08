@@ -22,15 +22,6 @@ const SelectStyled = styled('div')`
     isOpen ? theme.zIndex.select + 1 : theme.zIndex.select};
   .Select {
     width: ${({ size }) => sizes[size]};
-    &.is-disabled {
-      > .Select-control {
-        background-color: ${({ theme }) => theme.inputDisabledBackgroundColor};
-        &:hover {
-          cursor: default;
-          border: 1px solid ${({ theme }) => theme.inputBorderColor};
-        }
-      }
-    }
     &-control {
       width: ${({ size }) => sizes[size]};
       background-color: ${({ theme }) => theme.inputBackgroundColor};
@@ -49,6 +40,36 @@ const SelectStyled = styled('div')`
         border-color: ${({ theme }) => theme.inputBorderColorHover};
       }
     }
+    &.is-focused,
+    &.is-open {
+      > .Select-control {
+        background-color: ${({ theme }) => theme.inputBackgroundColor};
+        border: 1px solid
+          ${({ validationState, theme }) =>
+            validationState
+              ? theme[validationStateColor[validationState]]
+              : theme.inputBorderColor};
+        box-shadow: none;
+      }
+    }
+    &.is-disabled {
+      > .Select-control {
+        background-color: ${({ theme }) => theme.inputDisabledBackgroundColor};
+        &:hover {
+          cursor: default;
+          border: 1px solid ${({ theme }) => theme.inputBorderColor};
+        }
+      }
+    }
+    &.is-searchable {
+      &.is-open > .Select-control {
+        cursor: text;
+      }
+
+      &.is-focused:not(.is-open) > .Select-control {
+        cursor: text;
+      }
+    }
     &-multi {
       &-value-wrapper {
         flex: 1;
@@ -60,18 +81,6 @@ const SelectStyled = styled('div')`
     }
     &-value {
       margin: 0 0 0 5px;
-    }
-    &.is-focused,
-    &.is-open {
-      .Select-control {
-        background-color: ${({ theme }) => theme.inputBackgroundColor};
-        border: 1px solid
-          ${({ validationState, theme }) =>
-            validationState
-              ? theme[validationStateColor[validationState]]
-              : theme.inputBorderColor};
-        box-shadow: none;
-      }
     }
     &-input {
       background: transparent;
@@ -121,23 +130,6 @@ const SelectStyled = styled('div')`
         }
       }
     }
-    &--single {
-      > .Select-control .Select-value {
-        margin: 0;
-        bottom: 0;
-        left: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: ${({ theme }) => theme.inputDefaultHeight};
-        white-space: nowrap;
-      }
-    }
     &--multi {
       .Select-value {
         display: inline-flex;
@@ -155,6 +147,23 @@ const SelectStyled = styled('div')`
         }
       }
     }
+    &--single {
+      > .Select-control .Select-value {
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: ${({ theme }) => theme.inputDefaultHeight};
+        white-space: nowrap;
+      }
+    }
     &.has-value {
       &.Select--single {
         > .Select-control .Select-value .Select-value-label {
@@ -164,15 +173,6 @@ const SelectStyled = styled('div')`
       &.is-pseudo-focused .Select-input {
         opacity: 0;
       }
-    }
-  }
-  &.is-searchable {
-    &.is-open > .Select-control {
-      cursor: text;
-    }
-
-    &.is-focused:not(.is-open) > .Select-control {
-      cursor: text;
     }
   }
 `;
