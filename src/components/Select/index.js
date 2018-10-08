@@ -7,7 +7,7 @@ const sizes = {
 };
 
 const validationStateColor = {
-  error: 'dangerColor',
+  error: 'inputErrorBorderColor',
   success: 'successColor',
   warning: 'warningColor',
 };
@@ -37,7 +37,7 @@ const SelectStyled = styled('div')`
       border: 1px solid
         ${({ validationState, theme }) =>
           validationState
-            ? theme.colors[validationStateColor[validationState]]
+            ? theme[validationStateColor[validationState]]
             : theme.inputBorderColor};
       display: table;
       border-spacing: 0;
@@ -56,7 +56,7 @@ const SelectStyled = styled('div')`
     }
     &-placeholder {
       line-height: ${({ theme }) => theme.inputDefaultHeight};
-      color: ${({ theme }) => theme.colors.placeholder};
+      color: ${({ theme }) => theme.inputPlaceholderColor};
     }
     &-value {
       margin: 0 0 0 5px;
@@ -68,7 +68,7 @@ const SelectStyled = styled('div')`
         border: 1px solid
           ${({ validationState, theme }) =>
             validationState
-              ? theme.colors[validationStateColor[validationState]]
+              ? theme[validationStateColor[validationState]]
               : theme.inputBorderColor};
         box-shadow: none;
       }
