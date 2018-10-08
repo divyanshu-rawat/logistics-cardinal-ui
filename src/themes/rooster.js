@@ -196,7 +196,7 @@ export const aliases = {
   /**
    * Input Feedback Variables
    */
-  inputFeedbackSpacing: spacings.byte,
+  inputFeedbackSpacing: '0px',
   inputFeedbackFontWeight: fontWeight.semiBold,
   inputFeedbackFontSize: fontSize.byte,
   /**

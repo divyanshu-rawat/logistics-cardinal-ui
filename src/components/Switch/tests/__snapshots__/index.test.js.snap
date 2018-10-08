@@ -178,7 +178,7 @@ exports[`<Switch /> should render the component 1`] = `
       "inputErrorBorderColor": "#9b5a62",
       "inputFeedbackFontSize": "13px",
       "inputFeedbackFontWeight": 600,
-      "inputFeedbackSpacing": "5px",
+      "inputFeedbackSpacing": "0px",
       "inputFontSize": "13px",
       "inputFontWeight": 300,
       "inputInvisibleHeight": "38px",
