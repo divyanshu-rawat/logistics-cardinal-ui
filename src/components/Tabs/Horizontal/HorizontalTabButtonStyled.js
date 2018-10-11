@@ -10,6 +10,11 @@ const HorizontalTabButton = styled('a')`
   background-color: ${({ theme }) => theme.horizontalTabButtonBackgroundColor};
   margin-right: ${({ theme }) => theme.horizontalTabButtonSpacingRight};
   padding: ${({ theme }) => theme.horizontalTabButtonPadding};
+  border-bottom: 1px solid
+    ${({ theme, isActive }) =>
+      isActive
+        ? theme.horizontalTabButtonBorderColorActive
+        : theme.horizontalTabButtonBorderColor};
   outline-width: 0;
   text-decoration: none;
   cursor: pointer;

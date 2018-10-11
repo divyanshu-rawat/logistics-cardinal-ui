@@ -2,12 +2,12 @@
 
 exports[`<TabButton /> should render the component with isActive set as true 1`] = `
 <a
-  className="HorizontalTabButtonStyled__HorizontalTabButton-iONPqI kXRKns"
+  className="HorizontalTabButtonStyled__HorizontalTabButton-iONPqI eTqDS"
 />
 `;
 
 exports[`<TabButton /> should render the component with the default props 1`] = `
 <a
-  className="HorizontalTabButtonStyled__HorizontalTabButton-iONPqI hWMOmC"
+  className="HorizontalTabButtonStyled__HorizontalTabButton-iONPqI ecPkaP"
 />
 `;

@@ -145,6 +145,8 @@ export const aliases = {
    */
   horizontalTabButtonBorderRadius: '',
   horizontalTabButtonBackgroundColor: '',
+  horizontalTabButtonBorderColor: '',
+  horizontalTabButtonBorderColorActive: '',
   horizontalTabButtonColor: '',
   horizontalTabButtonColorActive: '',
   horizontalTabButtonSpacingRight: '',
