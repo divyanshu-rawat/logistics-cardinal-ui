@@ -36,4 +36,14 @@ describe('<SingleSelect />', () => {
 
     expect(onChangeFn.mock.calls.length).toBe(1);
   });
+
+  it('SingleSelect: should call `onChangeFn` when value is changed', () => {
+    onChangeFn.mockClear();
+
+    renderedComponent()
+      .find('Select')
+      .simulate('change', { target: { value: '10:30:00' } });
+
+    expect(onChangeFn.mock.calls.length).toBe(1);
+  });
 });

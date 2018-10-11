@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import isEqual from 'lodash/isEqual';
 import SelectPlus from 'react-select-plus';
 
 import SelectStyled from '../../Select';
@@ -27,7 +28,15 @@ class SingleSelect extends PureComponent {
     isOpen: false,
   };
 
-  onChangeTime = (option) => {
+  componentDidUpdate(nextProps) {
+    const { initialValue } = this.props;
+
+    if (!isEqual(nextProps.initialValue, initialValue)) {
+      this.onChange(initialValue);
+    }
+  }
+
+  onChange = (option) => {
     const { name } = this.props;
     this.setState({ selectedValue: option }, () =>
       this.props.onChange({ name, option }),
@@ -81,7 +90,7 @@ class SingleSelect extends PureComponent {
               <Icons.ChevronDown className="Custom-Select-arrow" />
             )
           }
-          onChange={this.onChangeTime}
+          onChange={this.onChange}
         />
       </SelectStyled>
     );
