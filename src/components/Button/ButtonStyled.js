@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 import { SIZES } from './constants';
 
@@ -8,7 +8,7 @@ const buttonVariantSize = (
   paddingY,
   paddingX,
   lineHeight,
-  borderRadius
+  borderRadius,
 ) => `
   font-size: ${fontSize};
   padding: ${paddingY} ${paddingX};
@@ -20,12 +20,19 @@ const buttonVariantColor = (theme, key) => `
     border-color: ${theme[key]};
     background-color: ${theme[key]};
 
-    &:hover,
     &:focus,
     &:active {
-      border-color: ${darken(0.1, theme[key])};
-      background-color: ${darken(0.1, theme[key])};
-      border-color: ${darken(0.1, theme[key])};
+      &:not(:disabled) {
+        box-shadow: 0 0 0 0.2rem ${lighten(0.2, theme[key])};
+      }
+    }
+
+    &:hover {
+      &:not(:disabled) {
+        border-color: ${darken(0.1, theme[key])};
+        background-color: ${darken(0.1, theme[key])};
+        border-color: ${darken(0.1, theme[key])};
+      }
     }
   `;
 
@@ -47,7 +54,7 @@ const generateButtonSize = (
     buttonLineHeightLarge,
     buttonBorderRadius,
   },
-  size
+  size,
 ) => {
   switch (size) {
     case SIZES.XSMALL:
@@ -56,7 +63,7 @@ const generateButtonSize = (
         buttonPaddingYXsmall,
         buttonPaddingXXsmall,
         buttonLineHeightSmall,
-        buttonBorderRadius
+        buttonBorderRadius,
       );
     case SIZES.SMALL:
       return buttonVariantSize(
@@ -64,7 +71,7 @@ const generateButtonSize = (
         buttonPaddingYSmall,
         buttonPaddingXSmall,
         buttonLineHeightSmall,
-        buttonBorderRadius
+        buttonBorderRadius,
       );
     case SIZES.LARGE:
       return buttonVariantSize(
@@ -72,7 +79,7 @@ const generateButtonSize = (
         buttonPaddingYLarge,
         buttonPaddingXLarge,
         buttonLineHeightLarge,
-        buttonBorderRadius
+        buttonBorderRadius,
       );
     default:
       return buttonVariantSize(
@@ -80,7 +87,7 @@ const generateButtonSize = (
         buttonPaddingY,
         buttonPaddingX,
         buttonLineHeight,
-        buttonBorderRadius
+        buttonBorderRadius,
       );
   }
 };
@@ -105,8 +112,9 @@ export const ButtonStyled = styled('button')`
 
   &.disabled,
   &:disabled {
-    opacity: ${({ theme }) => theme.buttonDisabledOpacity};
     box-shadow: none;
+    cursor: not-allowed;
+    opacity: ${({ theme }) => theme.buttonDisabledOpacity};
   }
 
   &:not(:disabled) {
@@ -115,8 +123,9 @@ export const ButtonStyled = styled('button')`
 
   &:focus,
   &:active {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    &:not(:disabled) {
+      outline: 0;
+    }
   }
 
   &:not(:disabled):active {
@@ -132,10 +141,13 @@ export const ButtonDefaultStyled = ButtonStyled.extend`
   color: ${({ theme }) => theme.primaryColor};
   border-color: ${({ theme }) => theme.primaryColor};
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover:not(:disabled) {
     border-color: ${({ theme }) => darken(0.2, theme.primaryColor)};
+  }
+
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 0.2rem ${({ theme }) => lighten(0.1, theme.primaryColor)};
   }
 `;
 
