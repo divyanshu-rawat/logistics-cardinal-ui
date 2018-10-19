@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Drawer from '..';
+import Drawer, { BODY_OPEN_CLASSNAME } from '..';
 
 const renderedComponent = ({
   open = false,
@@ -53,11 +53,12 @@ describe('<Drawer />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should toggle state when overlay is clicked', () => {
+  it('should toggle state when overlay is clicked and `BODY_OPEN_CLASSNAME` should be false', () => {
     const component = renderedComponent({});
     component.setState({ isOpen: true });
     component.find('OverlayStyled').simulate('click');
     expect(component.state('isOpen')).toBe(false);
+    expect(document.body.classList.contains(BODY_OPEN_CLASSNAME)).toBe(false);
   });
 
   it('should keep the drawer opened if user is interacting with it', () => {
@@ -82,10 +83,11 @@ describe('<Drawer />', () => {
     expect(component.state('isOpen')).toBe(false);
   });
 
-  it('should trigger toggleState when component has been updated', () => {
+  it('should trigger toggleState when component has been updated and `BODY_OPEN_CLASSNAME` should be added to the body', () => {
     const component = renderedComponent({});
     component.setProps({ open: true });
     expect(component.state('isOpen')).toBe(true);
+    expect(document.body.classList.contains(BODY_OPEN_CLASSNAME)).toBe(true);
   });
 
   it('should trigger toggleState when component has been updated', () => {

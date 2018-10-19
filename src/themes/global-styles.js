@@ -37,6 +37,12 @@ export const createGlobalStyles = (theme) => injectGlobal`
       border: 0;
     }
 
+    .Drawer {
+      &--is-open {
+        overflow: hidden;
+      }
+    }
+
     .ReactModal {
       &__Overlay {
         position: fixed;

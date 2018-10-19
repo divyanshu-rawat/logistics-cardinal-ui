@@ -8,6 +8,7 @@ import DrawerWrapperStyled from './DrawerWrapperStyled';
 import DrawerHeader from './DrawerHeader';
 import DrawerContentStyled from './DrawerContentStyled';
 
+export const BODY_OPEN_CLASSNAME = 'Drawer--is-open';
 class Drawer extends Component {
   static propTypes = {
     open: PropTypes.bool.isRequired,
@@ -61,8 +62,20 @@ class Drawer extends Component {
     this.toggleState();
   };
 
+  handleCSSClasses = () => {
+    const { isOpen } = this.state;
+
+    if (isOpen) {
+      document.body.classList.add(BODY_OPEN_CLASSNAME);
+    } else {
+      document.body.classList.remove(BODY_OPEN_CLASSNAME);
+    }
+  };
+
   toggleState = () => {
     this.setState({ isOpen: !this.state.isOpen }, () => {
+      this.handleCSSClasses();
+
       if (!this.state.isOpen) {
         this.unbindEscKey();
       } else {
