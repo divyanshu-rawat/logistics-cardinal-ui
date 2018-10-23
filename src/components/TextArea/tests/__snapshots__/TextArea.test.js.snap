@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> should render the <TextArea /> component 1`] = `
+<TextArea__TextAreaStyled
+  hasError={false}
+  placeholder=""
+/>
+`;
+
+exports[`<TextArea /> should render the <TextAreaStyled /> 1`] = `
+<Input__InputStyled
+  className="TextArea__TextAreaStyled-fyZRmq iSAqgO"
+  theme={Object {}}
+/>
+`;

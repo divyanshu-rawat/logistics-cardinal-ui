@@ -167,7 +167,7 @@ export const aliases = {
    */
   lineHeightBase: lineHeight.kilo,
   /**
-   * Input and Select Variables
+   * Input, Textarea and Select Variables
    */
   inputDefaultHeight: '40px',
   // Subtracts border top and bottom
@@ -186,6 +186,8 @@ export const aliases = {
   inputFontWeight: fontWeight.light,
   inputBoxShadow: boxShadow.inputButton,
   inputPadding: composedSpacings.byte,
+  // Textarea
+  textAreaLineHeight: lineHeight.kilo,
   // Select
   selectItemFocus: greys.grey300,
   selectItemDisabledColor: greys.grey100,
