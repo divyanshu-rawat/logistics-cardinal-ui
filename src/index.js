@@ -32,6 +32,8 @@ import AccordionItem from './components/Accordion/AccordionItem';
 import Avatar from './components/Avatar';
 import IDCard from './components/IDCard';
 import { Modal } from './components/Modal';
+import { Hr } from './components/Hr';
+import { TextArea } from './components/TextArea';
 import * as MASKS from './components/MaskedInput/constants';
 import * as Themes from './themes';
 import { CardinalThemeProvider as ThemeProvider } from './themes/Provider';
@@ -73,5 +75,7 @@ export default {
   AccordionItem,
   ThemeProvider,
   Modal,
+  Hr,
+  TextArea,
   ...Grid,
 };

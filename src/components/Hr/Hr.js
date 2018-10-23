@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const HrStyled = styled('hr')`
+const HrStyled = styled('hr')`
   ${({ theme }) => `
     border: 1px solid ${theme.hrBorderColor};
     margin-top: ${theme.labelBottomSpacing};
@@ -11,4 +11,4 @@ export const HrStyled = styled('hr')`
 
 const Hr = () => <HrStyled />;
 
-export { Hr };
+export { Hr, HrStyled };
