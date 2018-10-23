@@ -202,6 +202,12 @@ export const aliases = {
   accordionHeaderHeight: '45px',
   accordionDividerBorderColor: 'black',
   /**
+   * Hr - Variables
+   */
+  hrBorderColor: '',
+  hrMarginTop: '10px',
+  hrMarginBottom: '10px',
+  /**
    * Z-Index
    */
   zIndex: {

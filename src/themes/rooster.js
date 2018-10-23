@@ -326,6 +326,12 @@ export const aliases = {
   accordionHeaderHeight: '45px',
   accordionDividerBorderColor: greys.grey1300,
   /**
+   * Hr - Variables
+   */
+  hrBorderColor: greys.grey1300,
+  hrMarginTop: spacings.kilo,
+  hrMarginBottom: spacings.kilo,
+  /**
    * Z-Index
    */
   zIndex: {

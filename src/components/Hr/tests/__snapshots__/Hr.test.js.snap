@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hr /> should render the <Hr /> component 1`] = `<Hr__HrStyled />`;
+
+exports[`<Hr /> should render the <HrStyled /> 1`] = `
+<hr
+  className="Hr__HrStyled-iHiFmL xGqcs"
+/>
+`;
