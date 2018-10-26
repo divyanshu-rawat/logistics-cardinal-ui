@@ -17,6 +17,7 @@ class SingleSelect extends PureComponent {
     isFirst: PropTypes.bool,
     size: PropTypes.string,
     initialValue: PropTypes.oneOfType([
+      PropTypes.object,
       PropTypes.string,
       PropTypes.number,
       PropTypes.bool,
