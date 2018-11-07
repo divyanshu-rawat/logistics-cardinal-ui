@@ -7,7 +7,6 @@ import Grid from './components/Grid';
 import ComposedTabs from './components/Tabs';
 import Text from './components/Text';
 import Indicator from './components/Checkbox/Indicator';
-import Prediction from './components/Forecast/Prediction';
 import Input from './components/Input';
 import InputFeedback from './components/InputFeedback';
 import InputGroup from './components/InputGroup';
@@ -46,7 +45,6 @@ export default {
   MultipleSelect,
   ComposedTabs,
   TimeSpanDisplay,
-  Prediction,
   Button,
   Global,
   Themes,

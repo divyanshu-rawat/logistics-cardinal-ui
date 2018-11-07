@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Percentage /> should render the component and print the correct percentage 1`] = `
-<PercentageStyled>
-  70
-  %
-</PercentageStyled>
-`;
