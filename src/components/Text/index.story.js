@@ -25,6 +25,11 @@ storiesOf(`${TYPOGRAPHY}Text`, module)
           ])}
           weight={number('FontWeight', rooster.textFontWeight, 300)}
           align={select('Text Align', ['left', 'right', 'center'], 'left')}
+          fontSize={select(
+            'Font Size',
+            ['xsmall', 'small', 'large', 'xlarge'],
+            '',
+          )}
           truncate={boolean('Truncate', false)}
           uppercase={boolean('Uppercase', false)}
           block={boolean('Block', false)}

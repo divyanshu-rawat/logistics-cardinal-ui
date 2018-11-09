@@ -22,8 +22,7 @@ const TextStyled = styled('span')`
   text-align: ${({ align }) => align || 'left'};
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'auto')};
   margin: ${({ margin, theme }) => margin || theme.textSpacing};
-  font-size: ${({ fontSize, theme }) =>
-    theme[textSizeVariant(fontSize, theme)]};
+  font-size: ${({ fontSize, theme }) => textSizeVariant(fontSize, theme)};
   display: ${({ block }) => (block ? 'block' : 'inline-block')};
 
   ${({ truncate }) => {
