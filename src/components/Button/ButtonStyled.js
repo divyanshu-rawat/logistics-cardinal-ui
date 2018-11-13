@@ -137,7 +137,7 @@ export const ButtonStyled = styled('button')`
   }
 `;
 
-export const ButtonDefaultStyled = ButtonStyled.extend`
+export const ButtonDefaultStyled = styled(ButtonStyled)`
   color: ${({ theme }) => theme.primaryColor};
   border-color: ${({ theme }) => theme.primaryColor};
 
@@ -151,22 +151,22 @@ export const ButtonDefaultStyled = ButtonStyled.extend`
   }
 `;
 
-export const ButtonPrimaryStyled = ButtonStyled.extend`
+export const ButtonPrimaryStyled = styled(ButtonStyled)`
   ${({ theme }) => buttonVariantColor(theme, 'primaryColor')};
 `;
 
-export const ButtonSuccessStyled = ButtonStyled.extend`
+export const ButtonSuccessStyled = styled(ButtonStyled)`
   ${({ theme }) => buttonVariantColor(theme, 'successColor')};
 `;
 
-export const ButtonInfoStyled = ButtonStyled.extend`
+export const ButtonInfoStyled = styled(ButtonStyled)`
   ${({ theme }) => buttonVariantColor(theme, 'infoColor')};
 `;
 
-export const ButtonWarningStyled = ButtonStyled.extend`
+export const ButtonWarningStyled = styled(ButtonStyled)`
   ${({ theme }) => buttonVariantColor(theme, 'warningColor')};
 `;
 
-export const ButtonDangerStyled = ButtonStyled.extend`
+export const ButtonDangerStyled = styled(ButtonStyled)`
   ${({ theme }) => buttonVariantColor(theme, 'dangerColor')};
 `;

@@ -9,11 +9,42 @@ exports[`Avatar should render the component 1`] = `
     size="lg"
     src=""
   >
-    <div
-      className="AvatarStyled-ekKVdS dgAlzy"
+    <StyledComponent
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "AvatarStyled-ekKVdS",
+            "isStatic": false,
+            "lastClassName": "dgAlzy",
+            "rules": Array [
+              "background:url(",
+              [Function],
+              ") no-repeat center center;background-size:cover;border-radius:99%;",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "AvatarStyled",
+          "render": [Function],
+          "styledComponentId": "AvatarStyled-ekKVdS",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="lg"
       src=""
-    />
+    >
+      <div
+        className="AvatarStyled-ekKVdS dgAlzy"
+        size="lg"
+        src=""
+      />
+    </StyledComponent>
   </AvatarStyled>
 </Avatar>
 `;

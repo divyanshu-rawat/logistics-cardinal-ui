@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import SpacingBlockStyled from './SpacingBlockStyled';
 
-const SpacingStyled = SpacingBlockStyled.extend`
+const SpacingStyled = styled(SpacingBlockStyled)`
   ${({ type, top, right, bottom, left, theme }) => `
     ${type}-top: ${top ? theme.spacing : 'auto'};
     ${type}-bottom: ${bottom ? theme.spacing : 'auto'};

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Spacing /> should render the component with all properties as true 1`] = `
-<SpacingBlockStyled
+<SpacingStyled
   bottom={true}
   inline={true}
   left={true}
@@ -20,11 +20,11 @@ exports[`<Spacing /> should render the component with all properties as true 1`]
   >
     Awesome Button
   </Button>
-</SpacingBlockStyled>
+</SpacingStyled>
 `;
 
 exports[`<Spacing /> should render the component with padding instead of margin 1`] = `
-<SpacingBlockStyled
+<SpacingStyled
   type="padding"
 >
   <Button
@@ -38,11 +38,11 @@ exports[`<Spacing /> should render the component with padding instead of margin 
   >
     Awesome Button
   </Button>
-</SpacingBlockStyled>
+</SpacingStyled>
 `;
 
 exports[`<Spacing /> should render the component with the default props 1`] = `
-<SpacingBlockStyled
+<SpacingStyled
   type="margin"
 >
   <Button
@@ -56,5 +56,5 @@ exports[`<Spacing /> should render the component with the default props 1`] = `
   >
     Awesome Button
   </Button>
-</SpacingBlockStyled>
+</SpacingStyled>
 `;

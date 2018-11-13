@@ -7,7 +7,7 @@ import SpinnerOverlay from './Overlay';
 import SpinnerHolder from './Holder';
 import SpinnerWrapper from './Wrapper';
 
-const Spinner = ({ theme, size, children, spinWhen }) => (
+export const Spinner = ({ theme, size, children, spinWhen }) => (
   <SpinnerWrapper>
     {spinWhen && (
       <Fragment>

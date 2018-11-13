@@ -1,15 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Spinner /> should render the component 1`] = `
-<Wrapper__SpinnerWrapper>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Wrapper__SpinnerWrapper-fZkYbn",
+        "isStatic": true,
+        "rules": Array [
+          "position:relative;",
+        ],
+      },
+      "displayName": "Wrapper__SpinnerWrapper",
+      "render": [Function],
+      "styledComponentId": "Wrapper__SpinnerWrapper-fZkYbn",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <span>
     some children
   </span>
-</Wrapper__SpinnerWrapper>
+</StyledComponent>
 `;
 
 exports[`<Spinner /> should render the component with different props 1`] = `
-<Wrapper__SpinnerWrapper>
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Wrapper__SpinnerWrapper-fZkYbn",
+        "isStatic": true,
+        "rules": Array [
+          "position:relative;",
+        ],
+      },
+      "displayName": "Wrapper__SpinnerWrapper",
+      "render": [Function],
+      "styledComponentId": "Wrapper__SpinnerWrapper-fZkYbn",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
   <Overlay__SpinnerOverlay />
   <Holder__SpinnerWrapper>
     <MDSpinner
@@ -25,5 +69,5 @@ exports[`<Spinner /> should render the component with different props 1`] = `
   <span>
     some children
   </span>
-</Wrapper__SpinnerWrapper>
+</StyledComponent>
 `;

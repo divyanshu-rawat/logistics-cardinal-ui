@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<VerticalWrapperStyled /> should render the component 1`] = `
-<div
-  className="VerticalWrapperStyled-kxGeHZ izLCGm"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "VerticalWrapperStyled-kxGeHZ",
+        "isStatic": true,
+        "rules": Array [
+          "display:flex;height:100%;width:100%;",
+        ],
+      },
+      "displayName": "VerticalWrapperStyled",
+      "render": [Function],
+      "styledComponentId": "VerticalWrapperStyled-kxGeHZ",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

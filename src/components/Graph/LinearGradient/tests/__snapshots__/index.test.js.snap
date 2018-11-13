@@ -1,8 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LinearGradient /> should render the component 1`] = `
-<LinearGradient
-  className="LinearGradient-dktdSo jITXaF"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "LinearGradient-dktdSo",
+        "isStatic": true,
+        "rules": Array [
+          "display:block;height:0;width:0;",
+        ],
+      },
+      "displayName": "LinearGradient",
+      "render": [Function],
+      "styledComponentId": "LinearGradient-dktdSo",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
   id="gradient"
   stops={
     Array [

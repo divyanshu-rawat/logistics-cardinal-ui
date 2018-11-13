@@ -58,8 +58,8 @@
     "recharts": "1.0.0-beta.10",
     "sanitize.css": "^5.0.0",
     "shortid": "^2.2.8",
-    "styled-components": "2.2.3",
-    "styled-css-grid": "^1.1.0",
+    "styled-components": "^4.1.0",
+    "styled-css-grid": "^1.1.1",
     "text-mask-addons": "^3.7.2"
   },
   "peerDependencies": {
@@ -71,7 +71,7 @@
     "react-reveal": "^1.2.2",
     "react-select-plus": "1.1.0",
     "sanitize.css": "^5.0.0",
-    "styled-components": "2.2.3"
+    "styled-components": "^4.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -124,9 +124,9 @@
     "chalk": "^2.4.1",
     "codacy-coverage": "^3.0.0",
     "cross-env": "^5.1.4",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.5.0",
-    "enzyme-to-json": "^3.3.3",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-airbnb-base": "12.1.0",

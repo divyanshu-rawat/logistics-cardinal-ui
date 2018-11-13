@@ -1,7 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<VerticalTabContainerStyled /> should render the component 1`] = `
-<div
-  className="VerticalTabContainerStyled-lUdqP hKPIHP"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "VerticalTabContainerStyled-lUdqP",
+        "isStatic": false,
+        "rules": Array [
+          "white-space:initial !important;flex:1;padding:",
+          [Function],
+          ";background-color:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "VerticalTabContainerStyled",
+      "render": [Function],
+      "styledComponentId": "VerticalTabContainerStyled-lUdqP",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {},
+      "composedSpacings": Object {},
+    }
+  }
 />
 `;

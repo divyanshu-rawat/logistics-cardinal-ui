@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AccordionItemContentStyled should render the component 1`] = `
-<div
-  className="AccordionItemContent__AccordionItemContentStyled-yBqaQ ksbKrg"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AccordionItemContent__AccordionItemContentStyled-yBqaQ",
+        "isStatic": true,
+        "rules": Array [
+          "padding:10px 0 10px 0;",
+        ],
+      },
+      "displayName": "AccordionItemContent__AccordionItemContentStyled",
+      "render": [Function],
+      "styledComponentId": "AccordionItemContent__AccordionItemContentStyled-yBqaQ",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

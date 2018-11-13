@@ -4,9 +4,37 @@ exports[`<SpacingBlockStyled /> should render component with \`inline = true\` 1
 <SpacingBlockStyled
   inline={true}
 >
-  <div
-    className="SpacingBlockStyled-iTeUCC dAjQWc"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "SpacingBlockStyled-iTeUCC",
+          "isStatic": false,
+          "lastClassName": "dAjQWc",
+          "rules": Array [
+            "display:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "SpacingBlockStyled",
+        "render": [Function],
+        "styledComponentId": "SpacingBlockStyled-iTeUCC",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    inline={true}
+  >
+    <div
+      className="SpacingBlockStyled-iTeUCC dAjQWc"
+    />
+  </StyledComponent>
 </SpacingBlockStyled>
 `;
 
@@ -14,8 +42,36 @@ exports[`<SpacingBlockStyled /> should render component with the default props 1
 <SpacingBlockStyled
   inline={false}
 >
-  <div
-    className="SpacingBlockStyled-iTeUCC bJanmC"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "SpacingBlockStyled-iTeUCC",
+          "isStatic": false,
+          "lastClassName": "bJanmC",
+          "rules": Array [
+            "display:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "SpacingBlockStyled",
+        "render": [Function],
+        "styledComponentId": "SpacingBlockStyled-iTeUCC",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    inline={false}
+  >
+    <div
+      className="SpacingBlockStyled-iTeUCC bJanmC"
+    />
+  </StyledComponent>
 </SpacingBlockStyled>
 `;

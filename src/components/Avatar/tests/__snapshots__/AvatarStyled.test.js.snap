@@ -1,22 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AvatarStyled should render the component with default size 1`] = `
-<div
-  className="AvatarStyled-ekKVdS gIWdTz"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AvatarStyled-ekKVdS",
+        "isStatic": false,
+        "rules": Array [
+          "background:url(",
+          [Function],
+          ") no-repeat center center;background-size:cover;border-radius:99%;",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "AvatarStyled",
+      "render": [Function],
+      "styledComponentId": "AvatarStyled-ekKVdS",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   size="md"
 />
 `;
 
 exports[`AvatarStyled should render the component with large size 1`] = `
-<div
-  className="AvatarStyled-ekKVdS dgAlzy"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AvatarStyled-ekKVdS",
+        "isStatic": false,
+        "rules": Array [
+          "background:url(",
+          [Function],
+          ") no-repeat center center;background-size:cover;border-radius:99%;",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "AvatarStyled",
+      "render": [Function],
+      "styledComponentId": "AvatarStyled-ekKVdS",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   size="lg"
 />
 `;
 
 exports[`AvatarStyled should render the component with small size 1`] = `
-<div
-  className="AvatarStyled-ekKVdS xdyLw"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AvatarStyled-ekKVdS",
+        "isStatic": false,
+        "rules": Array [
+          "background:url(",
+          [Function],
+          ") no-repeat center center;background-size:cover;border-radius:99%;",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "AvatarStyled",
+      "render": [Function],
+      "styledComponentId": "AvatarStyled-ekKVdS",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   size="sm"
 />
 `;

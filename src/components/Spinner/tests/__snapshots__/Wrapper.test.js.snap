@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Wrapper /> should render the component 1`] = `
-<div
-  className="Wrapper__SpinnerWrapper-fZkYbn fvQrkC"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Wrapper__SpinnerWrapper-fZkYbn",
+        "isStatic": true,
+        "rules": Array [
+          "position:relative;",
+        ],
+      },
+      "displayName": "Wrapper__SpinnerWrapper",
+      "render": [Function],
+      "styledComponentId": "Wrapper__SpinnerWrapper-fZkYbn",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

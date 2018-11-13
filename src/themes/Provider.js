@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { standard } from '.';
-import { createGlobalStyles } from './global-styles';
+import { GlobalStyles } from './global-styles';
 
 const CardinalThemeProvider = ({ theme, children }) => {
   const mergedTheme = {
@@ -11,9 +11,14 @@ const CardinalThemeProvider = ({ theme, children }) => {
     ...theme,
   };
 
-  createGlobalStyles(mergedTheme);
-
-  return <ThemeProvider theme={mergedTheme}>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider theme={mergedTheme}>
+      <Fragment>
+        <GlobalStyles />
+        {children}
+      </Fragment>
+    </ThemeProvider>
+  );
 };
 
 CardinalThemeProvider.propTypes = {

@@ -1,7 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AccordionItemDividerStyled should render the component 1`] = `
-<div
-  className="AccordionItemWrapper__AccordionItemDividerStyled-eXMyLT koNNyc"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AccordionItemWrapper__AccordionItemDividerStyled-eXMyLT",
+        "isStatic": false,
+        "rules": Array [
+          "border-bottom:2px solid ",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "AccordionItemWrapper__AccordionItemDividerStyled",
+      "render": [Function],
+      "styledComponentId": "AccordionItemWrapper__AccordionItemDividerStyled-eXMyLT",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

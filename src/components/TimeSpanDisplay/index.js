@@ -5,7 +5,13 @@ import { withTheme } from 'styled-components';
 import Text from '../Text';
 import Time from './Time';
 
-const TimeSpanDisplay = ({ fontSize, startAt, theme, endAt, withSeconds }) => (
+export const TimeSpanDisplay = ({
+  fontSize,
+  startAt,
+  theme,
+  endAt,
+  withSeconds,
+}) => (
   <Text fontSize={fontSize} color={theme.timeSpanDisplayTextColor}>
     <Time date={startAt} withSeconds={withSeconds} /> —{' '}
     <Time date={endAt} withSeconds={withSeconds} />

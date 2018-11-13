@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import TimeSpanDisplay from '..';
+import { TimeSpanDisplay } from '..';
 import { RoosterTheme } from '../../../themes/rooster';
 
 const renderedComponent = (withSeconds = false) =>

@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DrawerContentStyled /> should render the component 1`] = `
-<div
-  className="DrawerContentStyled-ddUfpq dgbNle"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "DrawerContentStyled-ddUfpq",
+        "isStatic": true,
+        "rules": Array [
+          "flex:1;",
+        ],
+      },
+      "displayName": "DrawerContentStyled",
+      "render": [Function],
+      "styledComponentId": "DrawerContentStyled-ddUfpq",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

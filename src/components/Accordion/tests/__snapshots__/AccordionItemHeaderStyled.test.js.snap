@@ -1,7 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AccordionItemHeaderStyled should render the component 1`] = `
-<div
-  className="AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT irLgbP"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT",
+        "isStatic": false,
+        "rules": Array [
+          "display:flex;align-items:center;cursor:pointer;height:",
+          [Function],
+          ";&:hover{color:",
+          [Function],
+          ";}.AccordionItemHeader{&__title{flex:1;margin-bottom:0;padding:0 0 0 2px;}&__icon{padding:0 10px 0 0;}}",
+        ],
+      },
+      "displayName": "AccordionItemHeader__AccordionItemHeaderStyled",
+      "render": [Function],
+      "styledComponentId": "AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

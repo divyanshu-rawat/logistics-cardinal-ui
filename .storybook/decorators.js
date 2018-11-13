@@ -11,7 +11,8 @@ import infoOptions from './info';
 import '../src/themes/global';
 import Global from '../src/components/Global';
 import { rooster, standard, hurrier } from '../src/themes';
-import { createGlobalStyles } from '../src/themes/global-styles';
+import { GlobalStyles } from '../src/themes/global-styles';
+import { GlobalStorybookStyle } from '../src/themes/global';
 
 const themes = {
   rooster,
@@ -23,14 +24,16 @@ function themeDecorator(story) {
   const selectedTheme = select(
     'Theme',
     ['standard', 'rooster', 'hurrier'],
-    'rooster'
+    'rooster',
   );
-
-  createGlobalStyles(themes[selectedTheme]);
 
   return (
     <CardinalThemeProvider theme={themes[selectedTheme]}>
-      <Global>{story()}</Global>
+      <Global>
+        <GlobalStorybookStyle />
+        <GlobalStyles />
+        {story()}
+      </Global>
     </CardinalThemeProvider>
   );
 }

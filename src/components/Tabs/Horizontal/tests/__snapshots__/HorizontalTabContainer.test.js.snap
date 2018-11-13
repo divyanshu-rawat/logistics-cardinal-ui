@@ -1,7 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TabContainer /> should render the component with the default props 1`] = `
-<div
-  className="HorizontalTabContainerStyled-fANHHi hcCJrj"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "HorizontalTabContainerStyled-fANHHi",
+        "isStatic": false,
+        "rules": Array [
+          "width:100%;padding:",
+          [Function],
+          ";background-color:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "HorizontalTabContainerStyled",
+      "render": [Function],
+      "styledComponentId": "HorizontalTabContainerStyled-fANHHi",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

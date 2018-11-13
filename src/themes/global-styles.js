@@ -1,7 +1,8 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import 'normalize.css';
 
-export const createGlobalStyles = (theme) => injectGlobal`
+export const GlobalStyles = createGlobalStyle`
+  ${({ theme }) => `
     *,
     *::before,
     *::after {
@@ -87,4 +88,5 @@ export const createGlobalStyles = (theme) => injectGlobal`
         }
       }
     }
-  `;
+  `}
+`;

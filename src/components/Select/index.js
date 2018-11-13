@@ -41,7 +41,8 @@ const SelectStyled = styled('div')`
       }
     }
     &.is-focused,
-    &.is-open {
+    &.is-open,
+    &.is-focused:not(.is-open) {
       > .Select-control {
         background-color: ${({ theme }) => theme.inputBackgroundColor};
         border: 1px solid

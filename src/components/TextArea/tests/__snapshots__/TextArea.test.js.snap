@@ -8,8 +8,56 @@ exports[`<TextArea /> should render the <TextArea /> component 1`] = `
 `;
 
 exports[`<TextArea /> should render the <TextAreaStyled /> 1`] = `
-<Input__InputStyled
-  className="TextArea__TextAreaStyled-fyZRmq iSAqgO"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "TextArea__TextAreaStyled-fyZRmq",
+        "isStatic": false,
+        "rules": Array [
+          "display:block;width:100%;background-image:none;outline:0;height:",
+          [Function],
+          ";box-shadow:",
+          [Function],
+          ";font-size:",
+          [Function],
+          ";border-radius:",
+          [Function],
+          ";line-height:",
+          [Function],
+          ";font-weight:",
+          [Function],
+          ";padding:",
+          [Function],
+          ";color:",
+          [Function],
+          ";border:1px solid ",
+          [Function],
+          ";background-color:",
+          [Function],
+          ";",
+          "transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;",
+          ";&::placeholder{color:",
+          [Function],
+          ";}&:focus:not(:disabled),&:hover:not(:disabled){border-color:",
+          [Function],
+          ";}",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "TextArea__TextAreaStyled",
+      "render": [Function],
+      "styledComponentId": "TextArea__TextAreaStyled-fyZRmq",
+      "target": "textarea",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   theme={Object {}}
 />
 `;

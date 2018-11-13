@@ -3,7 +3,29 @@
 exports[`<Hr /> should render the <Hr /> component 1`] = `<Hr__HrStyled />`;
 
 exports[`<Hr /> should render the <HrStyled /> 1`] = `
-<hr
-  className="Hr__HrStyled-iHiFmL xGqcs"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Hr__HrStyled-iHiFmL",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "Hr__HrStyled",
+      "render": [Function],
+      "styledComponentId": "Hr__HrStyled-iHiFmL",
+      "target": "hr",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  theme={Object {}}
 />
 `;

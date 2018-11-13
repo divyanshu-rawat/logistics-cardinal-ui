@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Spinner from '..';
+import { Spinner } from '..';
 import { RoosterTheme } from '../../../themes/rooster';
 
 function renderComponent(size, spinWhen = false) {

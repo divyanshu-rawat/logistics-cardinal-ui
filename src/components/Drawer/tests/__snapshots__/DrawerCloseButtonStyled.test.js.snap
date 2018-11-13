@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DrawerCloseButtonStyled /> should render the component 1`] = `
-<a
-  className="DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE djhkNu"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE",
+        "isStatic": true,
+        "rules": Array [
+          "cursor:pointer;",
+        ],
+      },
+      "displayName": "DrawerCloseButton__DrawerCloseButtonStyled",
+      "render": [Function],
+      "styledComponentId": "DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE",
+      "target": "a",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

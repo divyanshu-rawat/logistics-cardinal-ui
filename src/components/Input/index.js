@@ -43,7 +43,7 @@ const Input = ({ inputRef, placeholder, ...props }) => (
   <InputStyled
     // this is necessary to cover the <MaskedInput /> case
     {...(typeof inputRef === 'function'
-      ? { innerRef: (input) => inputRef(input) }
+      ? { ref: (input) => inputRef(input) }
       : inputRef)}
     placeholder={placeholder}
     {...props}

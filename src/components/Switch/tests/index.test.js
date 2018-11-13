@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Switch from '..';
+import { Switch } from '..';
 import Text from '../../Text';
 import { rooster } from '../../../themes';
 

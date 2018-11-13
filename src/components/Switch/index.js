@@ -22,7 +22,7 @@ const DIMENSIONS = {
   },
 };
 
-class Switch extends Component {
+export class Switch extends Component {
   static propTypes = {
     /** current theme -- by context */
     theme: PropTypes.object.isRequired,

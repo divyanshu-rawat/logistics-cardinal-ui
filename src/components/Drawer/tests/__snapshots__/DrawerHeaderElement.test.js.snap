@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DrawerHeaderElement /> should render the component 1`] = `
-<div
-  className="DrawerHeader__DrawerHeaderElement-brJxYn lgbIhR"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "DrawerHeader__DrawerHeaderElement-brJxYn",
+        "isStatic": true,
+        "rules": Array [
+          "flex:1;",
+        ],
+      },
+      "displayName": "DrawerHeader__DrawerHeaderElement",
+      "render": [Function],
+      "styledComponentId": "DrawerHeader__DrawerHeaderElement-brJxYn",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

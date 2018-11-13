@@ -1,7 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IDCardStyled should render the component with default size 1`] = `
-<div
-  className="IDCardStyled-jhufwa ijmGkD"
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "IDCardStyled-jhufwa",
+        "isStatic": false,
+        "rules": Array [
+          "display:flex;flex-flow:row;align-items:center;text-align:left;font-weight:",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "IDCardStyled",
+      "render": [Function],
+      "styledComponentId": "IDCardStyled-jhufwa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  theme={
+    Object {
+      "fontSize": Object {},
+      "fontWeight": Object {},
+    }
+  }
 />
 `;
