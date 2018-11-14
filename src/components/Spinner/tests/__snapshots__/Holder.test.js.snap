@@ -7,7 +7,7 @@ exports[`<Holder /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Holder__SpinnerWrapper-fxSXFC",
+        "componentId": "Holder__SpinnerWrapper-sc-1stjl0x-0",
         "isStatic": false,
         "rules": Array [
           "position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:",
@@ -17,7 +17,7 @@ exports[`<Holder /> should render the component 1`] = `
       },
       "displayName": "Holder__SpinnerWrapper",
       "render": [Function],
-      "styledComponentId": "Holder__SpinnerWrapper-fxSXFC",
+      "styledComponentId": "Holder__SpinnerWrapper-sc-1stjl0x-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

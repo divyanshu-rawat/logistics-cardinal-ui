@@ -7,7 +7,7 @@ exports[`<VerticalButtonStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "VerticalButtonStyled__VerticalTabButtonStyled-xiMYt",
+        "componentId": "VerticalButtonStyled__VerticalTabButtonStyled-sc-8edyi5-0",
         "isStatic": false,
         "rules": Array [
           "height:44px;display:flex;flex-flow:row;align-items:center;position:relative;background-color:",
@@ -27,7 +27,7 @@ exports[`<VerticalButtonStyled /> should render the component 1`] = `
       },
       "displayName": "VerticalButtonStyled__VerticalTabButtonStyled",
       "render": [Function],
-      "styledComponentId": "VerticalButtonStyled__VerticalTabButtonStyled-xiMYt",
+      "styledComponentId": "VerticalButtonStyled__VerticalTabButtonStyled-sc-8edyi5-0",
       "target": "a",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -276,7 +276,7 @@ exports[`<VerticalButtonStyled /> should render the component with \`isActive\` 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "VerticalButtonStyled__VerticalTabButtonStyled-xiMYt",
+        "componentId": "VerticalButtonStyled__VerticalTabButtonStyled-sc-8edyi5-0",
         "isStatic": false,
         "rules": Array [
           "height:44px;display:flex;flex-flow:row;align-items:center;position:relative;background-color:",
@@ -296,7 +296,7 @@ exports[`<VerticalButtonStyled /> should render the component with \`isActive\` 
       },
       "displayName": "VerticalButtonStyled__VerticalTabButtonStyled",
       "render": [Function],
-      "styledComponentId": "VerticalButtonStyled__VerticalTabButtonStyled-xiMYt",
+      "styledComponentId": "VerticalButtonStyled__VerticalTabButtonStyled-sc-8edyi5-0",
       "target": "a",
       "toString": [Function],
       "warnTooManyClasses": [Function],

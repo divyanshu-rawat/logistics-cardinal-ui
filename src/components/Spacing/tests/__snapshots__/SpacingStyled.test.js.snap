@@ -245,9 +245,9 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SpacingStyled-ixOLfF",
+          "componentId": "SpacingStyled-sc-13ghcn-0",
           "isStatic": false,
-          "lastClassName": "gOhYEU",
+          "lastClassName": "jxkoEq",
           "rules": Array [
             "display:",
             [Function],
@@ -258,7 +258,7 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
         },
         "displayName": "SpacingStyled",
         "render": [Function],
-        "styledComponentId": "SpacingStyled-ixOLfF",
+        "styledComponentId": "SpacingStyled-sc-13ghcn-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -502,7 +502,7 @@ exports[`<SpacingStyled /> should render the component with all properties as tr
     type="margin"
   >
     <div
-      className="SpacingStyled-ixOLfF gOhYEU"
+      className="SpacingStyled-sc-13ghcn-0 jxkoEq"
       type="margin"
     />
   </StyledComponent>
@@ -754,9 +754,9 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SpacingStyled-ixOLfF",
+          "componentId": "SpacingStyled-sc-13ghcn-0",
           "isStatic": false,
-          "lastClassName": "kMvcRt",
+          "lastClassName": "dAbkpY",
           "rules": Array [
             "display:",
             [Function],
@@ -767,7 +767,7 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
         },
         "displayName": "SpacingStyled",
         "render": [Function],
-        "styledComponentId": "SpacingStyled-ixOLfF",
+        "styledComponentId": "SpacingStyled-sc-13ghcn-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1011,7 +1011,7 @@ exports[`<SpacingStyled /> should render the component with padding instead of m
     type="padding"
   >
     <div
-      className="SpacingStyled-ixOLfF kMvcRt"
+      className="SpacingStyled-sc-13ghcn-0 dAbkpY"
       type="padding"
     />
   </StyledComponent>
@@ -1258,9 +1258,9 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SpacingStyled-ixOLfF",
+          "componentId": "SpacingStyled-sc-13ghcn-0",
           "isStatic": false,
-          "lastClassName": "crXPae",
+          "lastClassName": "krUPjg",
           "rules": Array [
             "display:",
             [Function],
@@ -1271,7 +1271,7 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
         },
         "displayName": "SpacingStyled",
         "render": [Function],
-        "styledComponentId": "SpacingStyled-ixOLfF",
+        "styledComponentId": "SpacingStyled-sc-13ghcn-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1512,7 +1512,7 @@ exports[`<SpacingStyled /> should render the component with the default props 1`
     type="margin"
   >
     <div
-      className="SpacingStyled-ixOLfF crXPae"
+      className="SpacingStyled-sc-13ghcn-0 krUPjg"
       type="margin"
     />
   </StyledComponent>

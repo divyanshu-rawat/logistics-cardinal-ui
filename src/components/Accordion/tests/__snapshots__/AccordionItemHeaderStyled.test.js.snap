@@ -7,7 +7,7 @@ exports[`AccordionItemHeaderStyled should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT",
+        "componentId": "AccordionItemHeader__AccordionItemHeaderStyled-g12w4o-0",
         "isStatic": false,
         "rules": Array [
           "display:flex;align-items:center;cursor:pointer;height:",
@@ -19,7 +19,7 @@ exports[`AccordionItemHeaderStyled should render the component 1`] = `
       },
       "displayName": "AccordionItemHeader__AccordionItemHeaderStyled",
       "render": [Function],
-      "styledComponentId": "AccordionItemHeader__AccordionItemHeaderStyled-ixtDcT",
+      "styledComponentId": "AccordionItemHeader__AccordionItemHeaderStyled-g12w4o-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

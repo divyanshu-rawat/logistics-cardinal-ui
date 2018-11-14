@@ -7,7 +7,7 @@ exports[`<IndicatorStyled /> should render the component with default color 1`] 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "IndicatorStyled-fWGcOi",
+        "componentId": "IndicatorStyled-gdbqw4-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;position:relative;[type='checkbox'],[type='checkbox']{position:absolute;visibility:hidden;+ label{cursor:pointer;flex-direction:row;align-items:center;display:flex;&:before{border:1px solid ",
@@ -25,7 +25,7 @@ exports[`<IndicatorStyled /> should render the component with default color 1`] 
       },
       "displayName": "IndicatorStyled",
       "render": [Function],
-      "styledComponentId": "IndicatorStyled-fWGcOi",
+      "styledComponentId": "IndicatorStyled-gdbqw4-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -274,7 +274,7 @@ exports[`<IndicatorStyled /> should render the component with passed color 1`] =
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "IndicatorStyled-fWGcOi",
+        "componentId": "IndicatorStyled-gdbqw4-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;position:relative;[type='checkbox'],[type='checkbox']{position:absolute;visibility:hidden;+ label{cursor:pointer;flex-direction:row;align-items:center;display:flex;&:before{border:1px solid ",
@@ -292,7 +292,7 @@ exports[`<IndicatorStyled /> should render the component with passed color 1`] =
       },
       "displayName": "IndicatorStyled",
       "render": [Function],
-      "styledComponentId": "IndicatorStyled-fWGcOi",
+      "styledComponentId": "IndicatorStyled-gdbqw4-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

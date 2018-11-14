@@ -7,7 +7,7 @@ exports[`AccordionItemContentStyled should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "AccordionItemContent__AccordionItemContentStyled-yBqaQ",
+        "componentId": "AccordionItemContent__AccordionItemContentStyled-sc-3eyktt-0",
         "isStatic": true,
         "rules": Array [
           "padding:10px 0 10px 0;",
@@ -15,7 +15,7 @@ exports[`AccordionItemContentStyled should render the component 1`] = `
       },
       "displayName": "AccordionItemContent__AccordionItemContentStyled",
       "render": [Function],
-      "styledComponentId": "AccordionItemContent__AccordionItemContentStyled-yBqaQ",
+      "styledComponentId": "AccordionItemContent__AccordionItemContentStyled-sc-3eyktt-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

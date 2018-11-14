@@ -7,7 +7,7 @@ exports[`<TabContainer /> should render the component with the default props 1`]
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "HorizontalTabContainerStyled-fANHHi",
+        "componentId": "HorizontalTabContainerStyled-sc-1qmfi6u-0",
         "isStatic": false,
         "rules": Array [
           "width:100%;padding:",
@@ -19,7 +19,7 @@ exports[`<TabContainer /> should render the component with the default props 1`]
       },
       "displayName": "HorizontalTabContainerStyled",
       "render": [Function],
-      "styledComponentId": "HorizontalTabContainerStyled-fANHHi",
+      "styledComponentId": "HorizontalTabContainerStyled-sc-1qmfi6u-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

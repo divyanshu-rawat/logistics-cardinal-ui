@@ -12,7 +12,7 @@ exports[`<TextStyled /> should render the component with different props 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TextStyled-bFnujI",
+        "componentId": "TextStyled-juemha-0",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -38,7 +38,7 @@ exports[`<TextStyled /> should render the component with different props 1`] = `
       },
       "displayName": "TextStyled",
       "render": [Function],
-      "styledComponentId": "TextStyled-bFnujI",
+      "styledComponentId": "TextStyled-juemha-0",
       "target": "span",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -292,7 +292,7 @@ exports[`<TextStyled /> should render the component with the default props 1`] =
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TextStyled-bFnujI",
+        "componentId": "TextStyled-juemha-0",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -318,7 +318,7 @@ exports[`<TextStyled /> should render the component with the default props 1`] =
       },
       "displayName": "TextStyled",
       "render": [Function],
-      "styledComponentId": "TextStyled-bFnujI",
+      "styledComponentId": "TextStyled-juemha-0",
       "target": "span",
       "toString": [Function],
       "warnTooManyClasses": [Function],

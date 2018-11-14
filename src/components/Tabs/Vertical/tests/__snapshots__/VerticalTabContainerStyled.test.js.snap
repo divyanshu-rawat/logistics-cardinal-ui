@@ -7,7 +7,7 @@ exports[`<VerticalTabContainerStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "VerticalTabContainerStyled-lUdqP",
+        "componentId": "VerticalTabContainerStyled-sc-17o9pjx-0",
         "isStatic": false,
         "rules": Array [
           "white-space:initial !important;flex:1;padding:",
@@ -19,7 +19,7 @@ exports[`<VerticalTabContainerStyled /> should render the component 1`] = `
       },
       "displayName": "VerticalTabContainerStyled",
       "render": [Function],
-      "styledComponentId": "VerticalTabContainerStyled-lUdqP",
+      "styledComponentId": "VerticalTabContainerStyled-sc-17o9pjx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

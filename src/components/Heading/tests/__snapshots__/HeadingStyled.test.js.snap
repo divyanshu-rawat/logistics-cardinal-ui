@@ -9,7 +9,7 @@ exports[`<HeadingStyled /> should render the component with different props 1`] 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "HeadingStyled-eAwnvT",
+        "componentId": "HeadingStyled-sc-16xu5pm-0",
         "isStatic": false,
         "rules": Array [
           "font-size:",
@@ -25,7 +25,7 @@ exports[`<HeadingStyled /> should render the component with different props 1`] 
       },
       "displayName": "HeadingStyled",
       "render": [Function],
-      "styledComponentId": "HeadingStyled-eAwnvT",
+      "styledComponentId": "HeadingStyled-sc-16xu5pm-0",
       "target": "h3",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -278,7 +278,7 @@ exports[`<HeadingStyled /> should render the component with the default props 1`
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "HeadingStyled-eAwnvT",
+        "componentId": "HeadingStyled-sc-16xu5pm-0",
         "isStatic": false,
         "rules": Array [
           "font-size:",
@@ -294,7 +294,7 @@ exports[`<HeadingStyled /> should render the component with the default props 1`
       },
       "displayName": "HeadingStyled",
       "render": [Function],
-      "styledComponentId": "HeadingStyled-eAwnvT",
+      "styledComponentId": "HeadingStyled-sc-16xu5pm-0",
       "target": "h3",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -547,7 +547,7 @@ exports[`<HeadingStyled /> should still rendering the component even if the elem
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "HeadingStyled-eAwnvT",
+        "componentId": "HeadingStyled-sc-16xu5pm-0",
         "isStatic": false,
         "rules": Array [
           "font-size:",
@@ -563,7 +563,7 @@ exports[`<HeadingStyled /> should still rendering the component even if the elem
       },
       "displayName": "HeadingStyled",
       "render": [Function],
-      "styledComponentId": "HeadingStyled-eAwnvT",
+      "styledComponentId": "HeadingStyled-sc-16xu5pm-0",
       "target": "h3",
       "toString": [Function],
       "warnTooManyClasses": [Function],

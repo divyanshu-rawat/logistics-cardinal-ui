@@ -7,7 +7,7 @@ exports[`<LinearGradient /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "LinearGradient-dktdSo",
+        "componentId": "LinearGradient-sc-1knkr14-0",
         "isStatic": true,
         "rules": Array [
           "display:block;height:0;width:0;",
@@ -15,7 +15,7 @@ exports[`<LinearGradient /> should render the component 1`] = `
       },
       "displayName": "LinearGradient",
       "render": [Function],
-      "styledComponentId": "LinearGradient-dktdSo",
+      "styledComponentId": "LinearGradient-sc-1knkr14-0",
       "target": [Function],
       "toString": [Function],
       "warnTooManyClasses": [Function],

@@ -7,7 +7,7 @@ exports[`<DrawerCloseButtonStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE",
+        "componentId": "DrawerCloseButton__DrawerCloseButtonStyled-q1jtxn-0",
         "isStatic": true,
         "rules": Array [
           "cursor:pointer;",
@@ -15,7 +15,7 @@ exports[`<DrawerCloseButtonStyled /> should render the component 1`] = `
       },
       "displayName": "DrawerCloseButton__DrawerCloseButtonStyled",
       "render": [Function],
-      "styledComponentId": "DrawerCloseButton__DrawerCloseButtonStyled-bnFQKE",
+      "styledComponentId": "DrawerCloseButton__DrawerCloseButtonStyled-q1jtxn-0",
       "target": "a",
       "toString": [Function],
       "warnTooManyClasses": [Function],

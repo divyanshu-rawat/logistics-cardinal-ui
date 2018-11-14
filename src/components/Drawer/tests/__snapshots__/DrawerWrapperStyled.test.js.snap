@@ -7,7 +7,7 @@ exports[`<DrawerWrapperStyled /> should render the component with default positi
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerWrapperStyled__DrawerStyled-jiHDjs",
+        "componentId": "DrawerWrapperStyled__DrawerStyled-isecwv-0",
         "isStatic": false,
         "rules": Array [
           "position:fixed;top:0;width:auto;height:100%;outline:0;z-index:",
@@ -19,7 +19,7 @@ exports[`<DrawerWrapperStyled /> should render the component with default positi
       },
       "displayName": "DrawerWrapperStyled__DrawerStyled",
       "render": [Function],
-      "styledComponentId": "DrawerWrapperStyled__DrawerStyled-jiHDjs",
+      "styledComponentId": "DrawerWrapperStyled__DrawerStyled-isecwv-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -268,7 +268,7 @@ exports[`<DrawerWrapperStyled /> should render the component with the property r
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerWrapperStyled__DrawerStyled-jiHDjs",
+        "componentId": "DrawerWrapperStyled__DrawerStyled-isecwv-0",
         "isStatic": false,
         "rules": Array [
           "position:fixed;top:0;width:auto;height:100%;outline:0;z-index:",
@@ -280,7 +280,7 @@ exports[`<DrawerWrapperStyled /> should render the component with the property r
       },
       "displayName": "DrawerWrapperStyled__DrawerStyled",
       "render": [Function],
-      "styledComponentId": "DrawerWrapperStyled__DrawerStyled-jiHDjs",
+      "styledComponentId": "DrawerWrapperStyled__DrawerStyled-isecwv-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

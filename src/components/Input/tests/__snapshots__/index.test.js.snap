@@ -472,9 +472,9 @@ exports[`<Input /> should render the component 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Input__InputStyled-cpajrE",
+            "componentId": "Input__InputStyled-sc-1kg0wsn-0",
             "isStatic": false,
-            "lastClassName": "gnkefq",
+            "lastClassName": "krgFSE",
             "rules": Array [
               "display:block;width:100%;background-image:none;outline:0;height:",
               [Function],
@@ -507,7 +507,7 @@ exports[`<Input /> should render the component 1`] = `
           },
           "displayName": "Input__InputStyled",
           "render": [Function],
-          "styledComponentId": "Input__InputStyled-cpajrE",
+          "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
           "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -747,7 +747,7 @@ exports[`<Input /> should render the component 1`] = `
       }
     >
       <input
-        className="Input__InputStyled-cpajrE gnkefq"
+        className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
       />
     </StyledComponent>
   </Input__InputStyled>
@@ -1232,9 +1232,9 @@ exports[`<Input /> should render the component with extra props... 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Input__InputStyled-cpajrE",
+            "componentId": "Input__InputStyled-sc-1kg0wsn-0",
             "isStatic": false,
-            "lastClassName": "gnkefq",
+            "lastClassName": "krgFSE",
             "rules": Array [
               "display:block;width:100%;background-image:none;outline:0;height:",
               [Function],
@@ -1267,7 +1267,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
           },
           "displayName": "Input__InputStyled",
           "render": [Function],
-          "styledComponentId": "Input__InputStyled-cpajrE",
+          "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
           "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1510,7 +1510,7 @@ exports[`<Input /> should render the component with extra props... 1`] = `
       y={2}
     >
       <input
-        className="Input__InputStyled-cpajrE gnkefq"
+        className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
         placeholder="awesome placeholder"
         x={1}
         y={2}
@@ -1994,9 +1994,9 @@ exports[`<Input /> should render the component with given props... 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Input__InputStyled-cpajrE",
+            "componentId": "Input__InputStyled-sc-1kg0wsn-0",
             "isStatic": false,
-            "lastClassName": "gnkefq",
+            "lastClassName": "krgFSE",
             "rules": Array [
               "display:block;width:100%;background-image:none;outline:0;height:",
               [Function],
@@ -2029,7 +2029,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
           },
           "displayName": "Input__InputStyled",
           "render": [Function],
-          "styledComponentId": "Input__InputStyled-cpajrE",
+          "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
           "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -2270,7 +2270,7 @@ exports[`<Input /> should render the component with given props... 1`] = `
       }
     >
       <input
-        className="Input__InputStyled-cpajrE gnkefq"
+        className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
         placeholder="awesome placeholder"
       />
     </StyledComponent>
@@ -2752,9 +2752,9 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Input__InputStyled-cpajrE",
+            "componentId": "Input__InputStyled-sc-1kg0wsn-0",
             "isStatic": false,
-            "lastClassName": "gnkefq",
+            "lastClassName": "krgFSE",
             "rules": Array [
               "display:block;width:100%;background-image:none;outline:0;height:",
               [Function],
@@ -2787,7 +2787,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
           },
           "displayName": "Input__InputStyled",
           "render": [Function],
-          "styledComponentId": "Input__InputStyled-cpajrE",
+          "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
           "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -3028,7 +3028,7 @@ exports[`<Input /> should render the component with ref as function... 1`] = `
       }
     >
       <input
-        className="Input__InputStyled-cpajrE gnkefq"
+        className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
         placeholder="Input with ref..."
       />
     </StyledComponent>

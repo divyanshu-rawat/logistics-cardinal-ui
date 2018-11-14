@@ -7,7 +7,7 @@ exports[`<DrawerHeaderButtonStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerHeader__DrawerHeaderButtonStyled-ejqbRL",
+        "componentId": "DrawerHeader__DrawerHeaderButtonStyled-sc-1wqxl72-1",
         "isStatic": true,
         "rules": Array [
           "width:50px;text-align:center;",
@@ -15,7 +15,7 @@ exports[`<DrawerHeaderButtonStyled /> should render the component 1`] = `
       },
       "displayName": "DrawerHeader__DrawerHeaderButtonStyled",
       "render": [Function],
-      "styledComponentId": "DrawerHeader__DrawerHeaderButtonStyled-ejqbRL",
+      "styledComponentId": "DrawerHeader__DrawerHeaderButtonStyled-sc-1wqxl72-1",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

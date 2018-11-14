@@ -15,9 +15,9 @@ exports[`Avatar should render the component 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "AvatarStyled-ekKVdS",
+            "componentId": "AvatarStyled-sc-4yjh1x-0",
             "isStatic": false,
-            "lastClassName": "dgAlzy",
+            "lastClassName": "hUZBvA",
             "rules": Array [
               "background:url(",
               [Function],
@@ -28,7 +28,7 @@ exports[`Avatar should render the component 1`] = `
           },
           "displayName": "AvatarStyled",
           "render": [Function],
-          "styledComponentId": "AvatarStyled-ekKVdS",
+          "styledComponentId": "AvatarStyled-sc-4yjh1x-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -40,7 +40,7 @@ exports[`Avatar should render the component 1`] = `
       src=""
     >
       <div
-        className="AvatarStyled-ekKVdS dgAlzy"
+        className="AvatarStyled-sc-4yjh1x-0 hUZBvA"
         size="lg"
         src=""
       />

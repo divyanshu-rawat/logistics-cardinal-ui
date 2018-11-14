@@ -8,7 +8,7 @@ exports[`<Switch /> Switch: should render component with given props 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "SwitchStyled-rZBzA",
+        "componentId": "SwitchStyled-tpm1a0-0",
         "isStatic": false,
         "rules": Array [
           "display:flex;align-items:center;label{margin-bottom:0;margin-right:",
@@ -20,7 +20,7 @@ exports[`<Switch /> Switch: should render component with given props 1`] = `
       },
       "displayName": "SwitchStyled",
       "render": [Function],
-      "styledComponentId": "SwitchStyled-rZBzA",
+      "styledComponentId": "SwitchStyled-tpm1a0-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

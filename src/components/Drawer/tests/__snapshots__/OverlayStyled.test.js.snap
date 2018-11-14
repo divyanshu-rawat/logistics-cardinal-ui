@@ -7,7 +7,7 @@ exports[`<OverlayStyled /> should render the component as closed 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "OverlayStyled-fKaoQt",
+        "componentId": "OverlayStyled-sc-1hq9hga-0",
         "isStatic": false,
         "rules": Array [
           "position:fixed;top:0;left:0;right:0;bottom:0;z-index:",
@@ -25,7 +25,7 @@ exports[`<OverlayStyled /> should render the component as closed 1`] = `
       },
       "displayName": "OverlayStyled",
       "render": [Function],
-      "styledComponentId": "OverlayStyled-fKaoQt",
+      "styledComponentId": "OverlayStyled-sc-1hq9hga-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -274,7 +274,7 @@ exports[`<OverlayStyled /> should render the component with the property open se
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "OverlayStyled-fKaoQt",
+        "componentId": "OverlayStyled-sc-1hq9hga-0",
         "isStatic": false,
         "rules": Array [
           "position:fixed;top:0;left:0;right:0;bottom:0;z-index:",
@@ -292,7 +292,7 @@ exports[`<OverlayStyled /> should render the component with the property open se
       },
       "displayName": "OverlayStyled",
       "render": [Function],
-      "styledComponentId": "OverlayStyled-fKaoQt",
+      "styledComponentId": "OverlayStyled-sc-1hq9hga-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

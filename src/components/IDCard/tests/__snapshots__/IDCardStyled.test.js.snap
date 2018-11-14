@@ -7,7 +7,7 @@ exports[`IDCardStyled should render the component with default size 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "IDCardStyled-jhufwa",
+        "componentId": "IDCardStyled-sc-1vsxsdc-0",
         "isStatic": false,
         "rules": Array [
           "display:flex;flex-flow:row;align-items:center;text-align:left;font-weight:",
@@ -17,7 +17,7 @@ exports[`IDCardStyled should render the component with default size 1`] = `
       },
       "displayName": "IDCardStyled",
       "render": [Function],
-      "styledComponentId": "IDCardStyled-jhufwa",
+      "styledComponentId": "IDCardStyled-sc-1vsxsdc-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

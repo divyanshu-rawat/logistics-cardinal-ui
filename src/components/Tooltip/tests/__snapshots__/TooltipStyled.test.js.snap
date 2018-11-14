@@ -8,7 +8,7 @@ exports[`<TooltipStyled /> should render the component with an unknown position 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TooltipStyled-fwSOCa",
+        "componentId": "TooltipStyled-sc-1du6ldu-0",
         "isStatic": false,
         "rules": Array [
           "position:relative;display:inline-block;&:after{content:",
@@ -34,7 +34,7 @@ exports[`<TooltipStyled /> should render the component with an unknown position 
       },
       "displayName": "TooltipStyled",
       "render": [Function],
-      "styledComponentId": "TooltipStyled-fwSOCa",
+      "styledComponentId": "TooltipStyled-sc-1du6ldu-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -286,7 +286,7 @@ exports[`<TooltipStyled /> should render the component with position bottom 1`] 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TooltipStyled-fwSOCa",
+        "componentId": "TooltipStyled-sc-1du6ldu-0",
         "isStatic": false,
         "rules": Array [
           "position:relative;display:inline-block;&:after{content:",
@@ -312,7 +312,7 @@ exports[`<TooltipStyled /> should render the component with position bottom 1`] 
       },
       "displayName": "TooltipStyled",
       "render": [Function],
-      "styledComponentId": "TooltipStyled-fwSOCa",
+      "styledComponentId": "TooltipStyled-sc-1du6ldu-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -564,7 +564,7 @@ exports[`<TooltipStyled /> should render the component with position left 1`] = 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TooltipStyled-fwSOCa",
+        "componentId": "TooltipStyled-sc-1du6ldu-0",
         "isStatic": false,
         "rules": Array [
           "position:relative;display:inline-block;&:after{content:",
@@ -590,7 +590,7 @@ exports[`<TooltipStyled /> should render the component with position left 1`] = 
       },
       "displayName": "TooltipStyled",
       "render": [Function],
-      "styledComponentId": "TooltipStyled-fwSOCa",
+      "styledComponentId": "TooltipStyled-sc-1du6ldu-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -842,7 +842,7 @@ exports[`<TooltipStyled /> should render the component with position right 1`] =
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TooltipStyled-fwSOCa",
+        "componentId": "TooltipStyled-sc-1du6ldu-0",
         "isStatic": false,
         "rules": Array [
           "position:relative;display:inline-block;&:after{content:",
@@ -868,7 +868,7 @@ exports[`<TooltipStyled /> should render the component with position right 1`] =
       },
       "displayName": "TooltipStyled",
       "render": [Function],
-      "styledComponentId": "TooltipStyled-fwSOCa",
+      "styledComponentId": "TooltipStyled-sc-1du6ldu-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -1120,7 +1120,7 @@ exports[`<TooltipStyled /> should render the component with the default props 1`
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TooltipStyled-fwSOCa",
+        "componentId": "TooltipStyled-sc-1du6ldu-0",
         "isStatic": false,
         "rules": Array [
           "position:relative;display:inline-block;&:after{content:",
@@ -1146,7 +1146,7 @@ exports[`<TooltipStyled /> should render the component with the default props 1`
       },
       "displayName": "TooltipStyled",
       "render": [Function],
-      "styledComponentId": "TooltipStyled-fwSOCa",
+      "styledComponentId": "TooltipStyled-sc-1du6ldu-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

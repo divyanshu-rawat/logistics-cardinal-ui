@@ -7,7 +7,7 @@ exports[`RadioButtonStyled should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "RadioButtonStyled__RadioButtonLabelStyled-gImHPA",
+        "componentId": "RadioButtonStyled__RadioButtonLabelStyled-sc-4bkdn3-0",
         "isStatic": false,
         "rules": Array [
           "flex-direction:row;align-items:center;cursor:pointer;position:relative;display:",
@@ -41,7 +41,7 @@ exports[`RadioButtonStyled should render the component 1`] = `
       },
       "displayName": "RadioButtonStyled__RadioButtonLabelStyled",
       "render": [Function],
-      "styledComponentId": "RadioButtonStyled__RadioButtonLabelStyled-gImHPA",
+      "styledComponentId": "RadioButtonStyled__RadioButtonLabelStyled-sc-4bkdn3-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -290,7 +290,7 @@ exports[`RadioButtonStyled should render the component passing inline property a
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "RadioButtonStyled__RadioButtonLabelStyled-gImHPA",
+        "componentId": "RadioButtonStyled__RadioButtonLabelStyled-sc-4bkdn3-0",
         "isStatic": false,
         "rules": Array [
           "flex-direction:row;align-items:center;cursor:pointer;position:relative;display:",
@@ -324,7 +324,7 @@ exports[`RadioButtonStyled should render the component passing inline property a
       },
       "displayName": "RadioButtonStyled__RadioButtonLabelStyled",
       "render": [Function],
-      "styledComponentId": "RadioButtonStyled__RadioButtonLabelStyled-gImHPA",
+      "styledComponentId": "RadioButtonStyled__RadioButtonLabelStyled-sc-4bkdn3-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],

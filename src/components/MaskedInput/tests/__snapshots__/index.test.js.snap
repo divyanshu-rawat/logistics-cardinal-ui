@@ -274,9 +274,9 @@ exports[`<MaskedInput /> MaskedInput: should render input as a disabled field 1`
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "jcUKAH",
+                  "lastClassName": "cyFyDT",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -309,7 +309,7 @@ exports[`<MaskedInput /> MaskedInput: should render input as a disabled field 1`
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -323,7 +323,7 @@ exports[`<MaskedInput /> MaskedInput: should render input as a disabled field 1`
             placeholder="$"
           >
             <input
-              className="Input__InputStyled-cpajrE jcUKAH"
+              className="Input__InputStyled-sc-1kg0wsn-0 cyFyDT"
               disabled={true}
               id="currency"
               onBlur={[Function]}
@@ -607,9 +607,9 @@ exports[`<MaskedInput /> MaskedInput: should render input with hasError prop as 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "gnkefq",
+                  "lastClassName": "krgFSE",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -642,7 +642,7 @@ exports[`<MaskedInput /> MaskedInput: should render input with hasError prop as 
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -656,7 +656,7 @@ exports[`<MaskedInput /> MaskedInput: should render input with hasError prop as 
             placeholder="$"
           >
             <input
-              className="Input__InputStyled-cpajrE gnkefq"
+              className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
               id="currency"
               onBlur={[Function]}
               onChange={[Function]}
@@ -965,9 +965,9 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "gnkefq",
+                  "lastClassName": "krgFSE",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -1000,7 +1000,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1014,7 +1014,7 @@ exports[`<MaskedInput /> should render the component with \`birthday mask\` 1`] 
             placeholder="DD.MM.YYYY"
           >
             <input
-              className="Input__InputStyled-cpajrE gnkefq"
+              className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
               id="birthday"
               onBlur={[Function]}
               onChange={[Function]}
@@ -1297,9 +1297,9 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "gnkefq",
+                  "lastClassName": "krgFSE",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -1332,7 +1332,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1346,7 +1346,7 @@ exports[`<MaskedInput /> should render the component with \`currency mask\` 1`] 
             placeholder="$"
           >
             <input
-              className="Input__InputStyled-cpajrE gnkefq"
+              className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
               id="currency"
               onBlur={[Function]}
               onChange={[Function]}
@@ -1629,9 +1629,9 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "gnkefq",
+                  "lastClassName": "krgFSE",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -1664,7 +1664,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1678,7 +1678,7 @@ exports[`<MaskedInput /> should render the component with \`email mask\` 1`] = `
             placeholder="$"
           >
             <input
-              className="Input__InputStyled-cpajrE gnkefq"
+              className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
               id="currency"
               onBlur={[Function]}
               onChange={[Function]}
@@ -1961,9 +1961,9 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Input__InputStyled-cpajrE",
+                  "componentId": "Input__InputStyled-sc-1kg0wsn-0",
                   "isStatic": false,
-                  "lastClassName": "gnkefq",
+                  "lastClassName": "krgFSE",
                   "rules": Array [
                     "display:block;width:100%;background-image:none;outline:0;height:",
                     [Function],
@@ -1996,7 +1996,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
                 },
                 "displayName": "Input__InputStyled",
                 "render": [Function],
-                "styledComponentId": "Input__InputStyled-cpajrE",
+                "styledComponentId": "Input__InputStyled-sc-1kg0wsn-0",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2010,7 +2010,7 @@ exports[`<MaskedInput /> should render the component with \`percentage mask\` 1`
             placeholder="%"
           >
             <input
-              className="Input__InputStyled-cpajrE gnkefq"
+              className="Input__InputStyled-sc-1kg0wsn-0 krgFSE"
               id="percentage"
               onBlur={[Function]}
               onChange={[Function]}

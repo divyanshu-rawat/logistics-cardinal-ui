@@ -7,7 +7,7 @@ exports[`<DrawerStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerStyled-jETrtX",
+        "componentId": "DrawerStyled-sc-1fo33m4-0",
         "isStatic": false,
         "rules": Array [
           "height:100%;display:flex;flex-flow:column;min-width:",
@@ -21,7 +21,7 @@ exports[`<DrawerStyled /> should render the component 1`] = `
       },
       "displayName": "DrawerStyled",
       "render": [Function],
-      "styledComponentId": "DrawerStyled-jETrtX",
+      "styledComponentId": "DrawerStyled-sc-1fo33m4-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

@@ -10,9 +10,9 @@ exports[`<SpacingBlockStyled /> should render component with \`inline = true\` 1
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SpacingBlockStyled-iTeUCC",
+          "componentId": "SpacingBlockStyled-y599jt-0",
           "isStatic": false,
-          "lastClassName": "dAjQWc",
+          "lastClassName": "bWjvfO",
           "rules": Array [
             "display:",
             [Function],
@@ -21,7 +21,7 @@ exports[`<SpacingBlockStyled /> should render component with \`inline = true\` 1
         },
         "displayName": "SpacingBlockStyled",
         "render": [Function],
-        "styledComponentId": "SpacingBlockStyled-iTeUCC",
+        "styledComponentId": "SpacingBlockStyled-y599jt-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -32,7 +32,7 @@ exports[`<SpacingBlockStyled /> should render component with \`inline = true\` 1
     inline={true}
   >
     <div
-      className="SpacingBlockStyled-iTeUCC dAjQWc"
+      className="SpacingBlockStyled-y599jt-0 bWjvfO"
     />
   </StyledComponent>
 </SpacingBlockStyled>
@@ -48,9 +48,9 @@ exports[`<SpacingBlockStyled /> should render component with the default props 1
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "SpacingBlockStyled-iTeUCC",
+          "componentId": "SpacingBlockStyled-y599jt-0",
           "isStatic": false,
-          "lastClassName": "bJanmC",
+          "lastClassName": "bKLLoe",
           "rules": Array [
             "display:",
             [Function],
@@ -59,7 +59,7 @@ exports[`<SpacingBlockStyled /> should render component with the default props 1
         },
         "displayName": "SpacingBlockStyled",
         "render": [Function],
-        "styledComponentId": "SpacingBlockStyled-iTeUCC",
+        "styledComponentId": "SpacingBlockStyled-y599jt-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -70,7 +70,7 @@ exports[`<SpacingBlockStyled /> should render component with the default props 1
     inline={false}
   >
     <div
-      className="SpacingBlockStyled-iTeUCC bJanmC"
+      className="SpacingBlockStyled-y599jt-0 bKLLoe"
     />
   </StyledComponent>
 </SpacingBlockStyled>

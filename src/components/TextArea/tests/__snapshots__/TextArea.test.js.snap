@@ -14,7 +14,7 @@ exports[`<TextArea /> should render the <TextAreaStyled /> 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "TextArea__TextAreaStyled-fyZRmq",
+        "componentId": "TextArea__TextAreaStyled-sc-1gaupvf-0",
         "isStatic": false,
         "rules": Array [
           "display:block;width:100%;background-image:none;outline:0;height:",
@@ -50,7 +50,7 @@ exports[`<TextArea /> should render the <TextAreaStyled /> 1`] = `
       },
       "displayName": "TextArea__TextAreaStyled",
       "render": [Function],
-      "styledComponentId": "TextArea__TextAreaStyled-fyZRmq",
+      "styledComponentId": "TextArea__TextAreaStyled-sc-1gaupvf-0",
       "target": "textarea",
       "toString": [Function],
       "warnTooManyClasses": [Function],

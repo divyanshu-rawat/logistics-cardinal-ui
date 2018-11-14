@@ -7,7 +7,7 @@ exports[`<VerticalWrapperStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "VerticalWrapperStyled-kxGeHZ",
+        "componentId": "VerticalWrapperStyled-lnew4d-0",
         "isStatic": true,
         "rules": Array [
           "display:flex;height:100%;width:100%;",
@@ -15,7 +15,7 @@ exports[`<VerticalWrapperStyled /> should render the component 1`] = `
       },
       "displayName": "VerticalWrapperStyled",
       "render": [Function],
-      "styledComponentId": "VerticalWrapperStyled-kxGeHZ",
+      "styledComponentId": "VerticalWrapperStyled-lnew4d-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

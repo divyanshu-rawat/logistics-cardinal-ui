@@ -9,7 +9,7 @@ exports[`<Hr /> should render the <HrStyled /> 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Hr__HrStyled-iHiFmL",
+        "componentId": "Hr__HrStyled-f1idh1-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -18,7 +18,7 @@ exports[`<Hr /> should render the <HrStyled /> 1`] = `
       },
       "displayName": "Hr__HrStyled",
       "render": [Function],
-      "styledComponentId": "Hr__HrStyled-iHiFmL",
+      "styledComponentId": "Hr__HrStyled-f1idh1-0",
       "target": "hr",
       "toString": [Function],
       "warnTooManyClasses": [Function],

@@ -7,7 +7,7 @@ exports[`<DrawerHeaderElement /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerHeader__DrawerHeaderElement-brJxYn",
+        "componentId": "DrawerHeader__DrawerHeaderElement-sc-1wqxl72-0",
         "isStatic": true,
         "rules": Array [
           "flex:1;",
@@ -15,7 +15,7 @@ exports[`<DrawerHeaderElement /> should render the component 1`] = `
       },
       "displayName": "DrawerHeader__DrawerHeaderElement",
       "render": [Function],
-      "styledComponentId": "DrawerHeader__DrawerHeaderElement-brJxYn",
+      "styledComponentId": "DrawerHeader__DrawerHeaderElement-sc-1wqxl72-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

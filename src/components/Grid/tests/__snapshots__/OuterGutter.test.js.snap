@@ -7,7 +7,7 @@ exports[`<OuterGutter /> should render component with \`withPad\` prop as true 1
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "OuterGutter-cxvKlT",
+        "componentId": "OuterGutter-h3pcut-0",
         "isStatic": false,
         "rules": Array [
           "padding:",
@@ -17,7 +17,7 @@ exports[`<OuterGutter /> should render component with \`withPad\` prop as true 1
       },
       "displayName": "OuterGutter",
       "render": [Function],
-      "styledComponentId": "OuterGutter-cxvKlT",
+      "styledComponentId": "OuterGutter-h3pcut-0",
       "target": "section",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -266,7 +266,7 @@ exports[`<OuterGutter /> should render the component with the default props 1`] 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "OuterGutter-cxvKlT",
+        "componentId": "OuterGutter-h3pcut-0",
         "isStatic": false,
         "rules": Array [
           "padding:",
@@ -276,7 +276,7 @@ exports[`<OuterGutter /> should render the component with the default props 1`] 
       },
       "displayName": "OuterGutter",
       "render": [Function],
-      "styledComponentId": "OuterGutter-cxvKlT",
+      "styledComponentId": "OuterGutter-h3pcut-0",
       "target": "section",
       "toString": [Function],
       "warnTooManyClasses": [Function],

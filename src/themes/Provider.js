@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { standard } from '.';
 import { GlobalStyles } from './global-styles';
 
-const CardinalThemeProvider = ({ theme, children }) => {
+const CardinalThemeProvider = ({ theme, injectGlobal, children }) => {
   const mergedTheme = {
     ...standard,
     ...theme,
@@ -14,7 +14,7 @@ const CardinalThemeProvider = ({ theme, children }) => {
   return (
     <ThemeProvider theme={mergedTheme}>
       <Fragment>
-        <GlobalStyles />
+        <GlobalStyles injectGlobal={injectGlobal} />
         {children}
       </Fragment>
     </ThemeProvider>
@@ -23,6 +23,7 @@ const CardinalThemeProvider = ({ theme, children }) => {
 
 CardinalThemeProvider.propTypes = {
   children: PropTypes.node.isRequired,
+  injectGlobal: PropTypes.func,
   theme: PropTypes.object,
 };
 

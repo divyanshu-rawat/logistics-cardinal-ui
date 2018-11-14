@@ -7,7 +7,7 @@ exports[`<Overlay /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Overlay__SpinnerOverlay-heVGca",
+        "componentId": "Overlay__SpinnerOverlay-sc-1ahjnec-0",
         "isStatic": false,
         "rules": Array [
           "width:100%;height:100%;position:absolute;top:0;left:0;background-color:",
@@ -19,7 +19,7 @@ exports[`<Overlay /> should render the component 1`] = `
       },
       "displayName": "Overlay__SpinnerOverlay",
       "render": [Function],
-      "styledComponentId": "Overlay__SpinnerOverlay-heVGca",
+      "styledComponentId": "Overlay__SpinnerOverlay-sc-1ahjnec-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

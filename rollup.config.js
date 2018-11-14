@@ -25,15 +25,7 @@ export default {
       globals: { 'styled-components': 'styled' },
     },
   ],
-  external: [
-    'styled-components',
-    'recharts',
-    'shortid',
-    'moment',
-    'moment-timezone',
-    'react',
-    'react-dom',
-  ],
+  external: ['styled-components', 'recharts', 'shortid'],
   plugins: [
     external(),
     json(),

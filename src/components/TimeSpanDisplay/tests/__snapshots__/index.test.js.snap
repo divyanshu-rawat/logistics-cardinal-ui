@@ -6,13 +6,13 @@ exports[`<TimeSpanDisplay /> should ... 1`] = `
   color="#96a2b0"
   fontSize="small"
 >
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T10:00:00Z"
     withSeconds={true}
   />
    —
    
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T12:00:00Z"
     withSeconds={true}
   />
@@ -25,13 +25,13 @@ exports[`<TimeSpanDisplay /> should render the component with seconds 1`] = `
   color="#96a2b0"
   fontSize="small"
 >
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T10:00:00Z"
     withSeconds={true}
   />
    —
    
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T12:00:00Z"
     withSeconds={true}
   />
@@ -44,13 +44,13 @@ exports[`<TimeSpanDisplay /> should render the component without seconds 1`] = `
   color="#96a2b0"
   fontSize="small"
 >
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T10:00:00Z"
     withSeconds={false}
   />
    —
    
-  <TimeSpanDisplay
+  <Time
     date="2017-12-01T12:00:00Z"
     withSeconds={false}
   />

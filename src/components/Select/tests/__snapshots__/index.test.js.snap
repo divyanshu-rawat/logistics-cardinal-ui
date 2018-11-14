@@ -7,7 +7,7 @@ exports[`<Select /> should render the component with \`default size\` 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Select__SelectStyled-fwaYyW",
+        "componentId": "Select__SelectStyled-sc-1in5kkx-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin-right:5px;width:100%;position:relative;min-width:",
@@ -81,7 +81,7 @@ exports[`<Select /> should render the component with \`default size\` 1`] = `
       },
       "displayName": "Select__SelectStyled",
       "render": [Function],
-      "styledComponentId": "Select__SelectStyled-fwaYyW",
+      "styledComponentId": "Select__SelectStyled-sc-1in5kkx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -331,7 +331,7 @@ exports[`<Select /> should render the component with \`error validation state\` 
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Select__SelectStyled-fwaYyW",
+        "componentId": "Select__SelectStyled-sc-1in5kkx-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin-right:5px;width:100%;position:relative;min-width:",
@@ -405,7 +405,7 @@ exports[`<Select /> should render the component with \`error validation state\` 
       },
       "displayName": "Select__SelectStyled",
       "render": [Function],
-      "styledComponentId": "Select__SelectStyled-fwaYyW",
+      "styledComponentId": "Select__SelectStyled-sc-1in5kkx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -655,7 +655,7 @@ exports[`<Select /> should render the component with \`small size\` 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Select__SelectStyled-fwaYyW",
+        "componentId": "Select__SelectStyled-sc-1in5kkx-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin-right:5px;width:100%;position:relative;min-width:",
@@ -729,7 +729,7 @@ exports[`<Select /> should render the component with \`small size\` 1`] = `
       },
       "displayName": "Select__SelectStyled",
       "render": [Function],
-      "styledComponentId": "Select__SelectStyled-fwaYyW",
+      "styledComponentId": "Select__SelectStyled-sc-1in5kkx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -979,7 +979,7 @@ exports[`<Select /> should render the component with \`success validation state\
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Select__SelectStyled-fwaYyW",
+        "componentId": "Select__SelectStyled-sc-1in5kkx-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin-right:5px;width:100%;position:relative;min-width:",
@@ -1053,7 +1053,7 @@ exports[`<Select /> should render the component with \`success validation state\
       },
       "displayName": "Select__SelectStyled",
       "render": [Function],
-      "styledComponentId": "Select__SelectStyled-fwaYyW",
+      "styledComponentId": "Select__SelectStyled-sc-1in5kkx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -1303,7 +1303,7 @@ exports[`<Select /> should render the component with \`warning validation state\
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Select__SelectStyled-fwaYyW",
+        "componentId": "Select__SelectStyled-sc-1in5kkx-0",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin-right:5px;width:100%;position:relative;min-width:",
@@ -1377,7 +1377,7 @@ exports[`<Select /> should render the component with \`warning validation state\
       },
       "displayName": "Select__SelectStyled",
       "render": [Function],
-      "styledComponentId": "Select__SelectStyled-fwaYyW",
+      "styledComponentId": "Select__SelectStyled-sc-1in5kkx-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

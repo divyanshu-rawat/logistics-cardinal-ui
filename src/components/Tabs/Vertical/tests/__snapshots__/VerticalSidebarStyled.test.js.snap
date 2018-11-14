@@ -7,7 +7,7 @@ exports[`<VerticalSidebarStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "VerticalSidebarStyled-chWYIR",
+        "componentId": "VerticalSidebarStyled-sc-1grnras-0",
         "isStatic": false,
         "rules": Array [
           "background-color:",
@@ -17,7 +17,7 @@ exports[`<VerticalSidebarStyled /> should render the component 1`] = `
       },
       "displayName": "VerticalSidebarStyled",
       "render": [Function],
-      "styledComponentId": "VerticalSidebarStyled-chWYIR",
+      "styledComponentId": "VerticalSidebarStyled-sc-1grnras-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

@@ -7,7 +7,7 @@ exports[`<Wrapper /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper__SpinnerWrapper-fZkYbn",
+        "componentId": "Wrapper__SpinnerWrapper-sc-18sqrif-0",
         "isStatic": true,
         "rules": Array [
           "position:relative;",
@@ -15,7 +15,7 @@ exports[`<Wrapper /> should render the component 1`] = `
       },
       "displayName": "Wrapper__SpinnerWrapper",
       "render": [Function],
-      "styledComponentId": "Wrapper__SpinnerWrapper-fZkYbn",
+      "styledComponentId": "Wrapper__SpinnerWrapper-sc-18sqrif-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

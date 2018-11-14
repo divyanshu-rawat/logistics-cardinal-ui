@@ -7,7 +7,7 @@ exports[`<DrawerHeaderStyled /> should render the component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "DrawerHeaderStyled-fVieIv",
+        "componentId": "DrawerHeaderStyled-snwgiw-0",
         "isStatic": false,
         "rules": Array [
           "min-height:100px;display:flex;align-items:center;padding:",
@@ -17,7 +17,7 @@ exports[`<DrawerHeaderStyled /> should render the component 1`] = `
       },
       "displayName": "DrawerHeaderStyled",
       "render": [Function],
-      "styledComponentId": "DrawerHeaderStyled-fVieIv",
+      "styledComponentId": "DrawerHeaderStyled-snwgiw-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

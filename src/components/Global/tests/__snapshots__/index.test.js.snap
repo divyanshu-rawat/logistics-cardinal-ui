@@ -7,7 +7,7 @@ exports[`<Global /> should render styled component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Global-zjZGG",
+        "componentId": "Global-sc-1lw0bly-0",
         "isStatic": false,
         "rules": Array [
           "background-color:",
@@ -21,7 +21,7 @@ exports[`<Global /> should render styled component 1`] = `
       },
       "displayName": "Global",
       "render": [Function],
-      "styledComponentId": "Global-zjZGG",
+      "styledComponentId": "Global-sc-1lw0bly-0",
       "target": "main",
       "toString": [Function],
       "warnTooManyClasses": [Function],
