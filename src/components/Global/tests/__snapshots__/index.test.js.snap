@@ -188,7 +188,7 @@ exports[`<Global /> should render styled component 1`] = `
       "lineHeightBase": 1.5,
       "mainBackground": "343941",
       "minHeight": "10rem",
-      "modalBackgroundColor": "#292d33",
+      "modalBackgroundColor": "#343a42",
       "modalBorderColor": "#3f454d",
       "modalBorderRadius": "4px",
       "modalBorderStyle": "solid",

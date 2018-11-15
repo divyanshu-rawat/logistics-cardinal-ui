@@ -312,7 +312,7 @@ export const aliases = {
   /**
    * Modal
    */
-  modalBackgroundColor: greys.grey400,
+  modalBackgroundColor: greys.grey300,
   modalBorderColor: greys.grey200,
   modalBorderStyle: 'solid',
   modalBoxShadow: boxShadow.modalBoxShadow,

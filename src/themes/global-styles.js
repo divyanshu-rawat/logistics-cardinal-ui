@@ -45,6 +45,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .ReactModal {
+      &__Body--open {
+        overflow: hidden;
+      }
       &__Overlay {
         position: fixed;
         top: 0;
@@ -52,6 +55,8 @@ export const GlobalStyles = createGlobalStyle`
         right: 0;
         bottom: 0;
         transition: opacity 200ms ease-in-out;
+        height: auto;
+        overflow: auto;
         z-index: ${theme.zIndex.modalOverlay};
         background-color: ${theme.overlayColor};
         &--after-open {
@@ -62,12 +67,13 @@ export const GlobalStyles = createGlobalStyle`
         }
       }
       &__Content {
-        position: fixed;
-        left: 50%;
+        margin: 10em auto;
+        position: relative;
+        left: auto;
         right: auto;
-        top: 50%;
+        top: auto;
         bottom: auto;
-        transform: translate(-50%, -50%);
+        transform: none;
         opacity: 0;
         transition: opacity 200ms ease-in-out;
         min-height: ${theme.modalMinHeight};
