@@ -1,8 +1,8 @@
-import GridIndex from '..';
+import { Grid, Cell } from '..';
 
 describe('Grid index', () => {
   it('should export `Grid` and `Cell` components', () => {
-    expect(GridIndex.Grid).toBeDefined();
-    expect(GridIndex.Cell).toBeDefined();
+    expect(Grid).toBeDefined();
+    expect(Cell).toBeDefined();
   });
 });

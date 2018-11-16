@@ -1,4 +1,2 @@
-import { Cell } from 'styled-css-grid';
-import Grid from './Grid';
-
-export default { Grid, Cell };
+export { Cell } from 'styled-css-grid';
+export Grid from './Grid';

@@ -9,14 +9,7 @@ import withTests from '../../utils/withTests';
 import { FORM } from '../../../.storybook/sections';
 
 import MaskedInput from '.';
-import {
-  TIME_MASK,
-  BIRTHDAY_MASK,
-  PERGENTAGE_MASK,
-  MONEY_MASK,
-  EMAIL_MASK,
-  DECIMAL_MASK,
-} from './constants';
+import { MASKS } from '../..';
 
 const maskOptions = [
   'birthday',
@@ -29,37 +22,37 @@ const maskOptions = [
 const masks = {
   birthday: {
     id: 'birthday',
-    mask: BIRTHDAY_MASK,
+    mask: MASKS.BIRTHDAY_MASK,
     placeholder: 'DD.MM.YYYY',
     guide: true,
   },
   percentage: {
     id: 'percentage',
-    mask: PERGENTAGE_MASK,
+    mask: MASKS.PERGENTAGE_MASK,
     placeholder: '%',
     guide: false,
   },
   time: {
     id: 'time',
-    mask: TIME_MASK,
+    mask: MASKS.TIME_MASK,
     placeholder: 'HH:MM',
     guide: true,
   },
   currency: {
     id: 'currency',
-    mask: MONEY_MASK,
+    mask: MASKS.MONEY_MASK,
     placeholder: '$',
     guide: false,
   },
   email: {
     id: 'email',
-    mask: EMAIL_MASK,
+    mask: MASKS.EMAIL_MASK,
     placeholder: 'rick@c137.com',
     guide: true,
   },
   decimal: {
     id: 'decimal',
-    mask: DECIMAL_MASK,
+    mask: MASKS.DECIMAL_MASK,
     placeholder: '10.20',
     guide: true,
   },
