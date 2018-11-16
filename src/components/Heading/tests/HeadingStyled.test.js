@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import HeadingStyled from '../HeadingStyled';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = ({ as = 'h3', bold = false, noMargin = false }) =>
   shallow(

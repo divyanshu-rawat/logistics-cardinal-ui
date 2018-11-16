@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Overlay from '../Overlay';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 describe('<Overlay />', () => {
   it('should render the component', () => {

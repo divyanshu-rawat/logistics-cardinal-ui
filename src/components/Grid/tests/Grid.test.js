@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 import { Cell } from 'styled-css-grid';
 
 import ComposedGrid from '../Grid';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = (withPad) =>
   shallow(

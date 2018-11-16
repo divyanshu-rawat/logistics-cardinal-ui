@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 
 import SpacingStyled from '../SpacingStyled';
 
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = ({ type, top, bottom, right, left }) =>
   mount(

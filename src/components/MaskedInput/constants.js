@@ -38,3 +38,10 @@ export const DECIMAL_MASK = createNumberMask({
   allowDecimal: true,
   requireDecimal: true,
 });
+
+export default {
+  BIRTHDAY_MASK,
+  MONEY_MASK,
+  EMAIL_MASK,
+  DECIMAL_MASK,
+};

@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 import MaskedInput from '..';
 
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 import {
   BIRTHDAY_MASK,

@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import SwitchStyled from '../SwitchStyled';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderComponent = (active = false) => (
   <SwitchStyled theme={RoosterTheme} active={active} />

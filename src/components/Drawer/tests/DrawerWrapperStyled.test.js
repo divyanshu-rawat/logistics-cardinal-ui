@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import DrawerWrapperStyled from '../DrawerWrapperStyled';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = (right = false) =>
   shallow(<DrawerWrapperStyled right={right} theme={RoosterTheme} />);

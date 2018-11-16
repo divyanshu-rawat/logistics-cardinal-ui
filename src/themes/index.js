@@ -1,3 +1,3 @@
-export { RoosterTheme as rooster } from './rooster';
-export { StandardTheme as standard } from './standard';
-export { HurrierTheme as hurrier } from './hurrier';
+export rooster from './rooster';
+export standard from './standard';
+export hurrier from './hurrier';

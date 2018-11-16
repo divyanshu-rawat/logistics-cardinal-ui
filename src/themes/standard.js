@@ -252,6 +252,6 @@ export const aliases = {
   },
 };
 
-export const StandardTheme = {
+export default {
   ...aliases,
 };

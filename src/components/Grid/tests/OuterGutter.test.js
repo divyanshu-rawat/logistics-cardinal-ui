@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import OuterGutter from '../OuterGutter';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = (withPad) =>
   shallow(<OuterGutter theme={RoosterTheme} withPad={withPad} />);

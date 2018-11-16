@@ -337,6 +337,6 @@ export const aliases = {
   colors,
 };
 
-export const HurrierTheme = {
+export default {
   ...aliases,
 };

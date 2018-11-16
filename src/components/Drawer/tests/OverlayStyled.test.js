@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import OverlayStyled from '../OverlayStyled';
-import { RoosterTheme } from '../../../themes/rooster';
+import { rooster as RoosterTheme } from '../../../themes';
 
 const renderedComponent = (open = false) =>
   shallow(<OverlayStyled open={open} theme={RoosterTheme} />);

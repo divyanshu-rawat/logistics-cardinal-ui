@@ -379,6 +379,6 @@ export const aliases = {
   fontWeight,
 };
 
-export const RoosterTheme = {
+export default {
   ...aliases,
 };
