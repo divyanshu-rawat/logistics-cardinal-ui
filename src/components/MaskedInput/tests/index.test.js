@@ -9,7 +9,7 @@ import { rooster as RoosterTheme } from '../../../themes';
 
 import {
   BIRTHDAY_MASK,
-  PERGENTAGE_MASK,
+  PERCENTAGE_MASK,
   MONEY_MASK,
   EMAIL_MASK,
 } from '../constants';
@@ -23,7 +23,7 @@ const masks = {
   },
   percentage: {
     id: 'percentage',
-    mask: PERGENTAGE_MASK,
+    mask: PERCENTAGE_MASK,
     placeholder: '%',
     guide: false,
   },

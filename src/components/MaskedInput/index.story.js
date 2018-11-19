@@ -28,7 +28,7 @@ const masks = {
   },
   percentage: {
     id: 'percentage',
-    mask: MASKS.PERGENTAGE_MASK,
+    mask: MASKS.PERCENTAGE_MASK,
     placeholder: '%',
     guide: false,
   },

@@ -19,7 +19,7 @@ export const BIRTHDAY_MASK = [
 export const TIME_MASK = [/[0-9]/, /[0-9]/, ':', /[0-9]/, /[0-9]/];
 
 // 10 % || - 10 %
-export const PERGENTAGE_MASK = createNumberMask({
+export const PERCENTAGE_MASK = createNumberMask({
   prefix: '',
   includeThousandsSeparator: false,
   suffix: ' %',
@@ -44,4 +44,5 @@ export default {
   MONEY_MASK,
   EMAIL_MASK,
   DECIMAL_MASK,
+  PERCENTAGE_MASK,
 };
