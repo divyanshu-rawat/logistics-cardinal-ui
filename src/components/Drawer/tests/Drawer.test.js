@@ -11,6 +11,7 @@ const renderedComponent = ({
   width = 500,
   header = <header>Header Test</header>,
   withRenderProps = false,
+  onToggle = () => {},
 }) =>
   shallow(
     <Drawer
@@ -19,6 +20,7 @@ const renderedComponent = ({
       right={right}
       width={width}
       header={header}
+      onToggle={onToggle}
     >
       {withRenderProps // eslint-disable-next-line
         ? ({ isOpen }, toggleState) => (
@@ -97,5 +99,21 @@ describe('<Drawer />', () => {
     component.instance().unbindEscKey = unbindEscKeyFn;
     component.unmount();
     expect(unbindEscKeyFn.mock.calls.length).toBe(1);
+  });
+
+  it('should call onToggle with a true param when the drawer is visible', () => {
+    const onToggle = jest.fn();
+    const component = renderedComponent({ onToggle });
+
+    component.setProps({ open: true });
+    expect(onToggle).toBeCalledWith(true);
+  });
+
+  it('should call onToggle with a false param when the drawer is hidden', () => {
+    const onToggle = jest.fn();
+    const component = renderedComponent({ onToggle, open: true });
+
+    component.setProps({ open: false });
+    expect(onToggle).toBeCalledWith(false);
   });
 });

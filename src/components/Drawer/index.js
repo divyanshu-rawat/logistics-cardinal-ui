@@ -9,6 +9,20 @@ import DrawerHeader from './DrawerHeader';
 import DrawerContentStyled from './DrawerContentStyled';
 
 export const BODY_OPEN_CLASSNAME = 'Drawer--is-open';
+
+/**
+ * @typedef {Object} Props
+ * @property {boolean} open
+ * @property {React.ReactNode} content
+ * @property {boolean} right
+ * @property {number} width
+ * @property {boolean} [unselectDrawerWhen]
+ * @property {function} [onToggle]
+ * @property {function} [children]
+ * @property {React.ReactNode} [header]
+ *
+ * @extends {Component<Props>}
+ */
 class Drawer extends Component {
   static propTypes = {
     open: PropTypes.bool.isRequired,
@@ -16,6 +30,7 @@ class Drawer extends Component {
     right: PropTypes.bool.isRequired,
     width: PropTypes.number.isRequired,
     unselectDrawerWhen: PropTypes.bool,
+    onToggle: PropTypes.func,
     children: PropTypes.func,
     header: PropTypes.node,
   };
@@ -73,6 +88,7 @@ class Drawer extends Component {
   };
 
   toggleState = () => {
+    const { onToggle } = this.props;
     this.setState({ isOpen: !this.state.isOpen }, () => {
       this.handleCSSClasses();
 
@@ -80,6 +96,10 @@ class Drawer extends Component {
         this.unbindEscKey();
       } else {
         this.bindEscKey();
+      }
+
+      if (onToggle) {
+        onToggle(this.state.isOpen);
       }
     });
   };
