@@ -56,7 +56,7 @@ class Drawer extends Component {
   componentDidUpdate(prevProps) {
     const { open, unselectDrawerWhen } = this.props;
 
-    if (prevProps.open !== open) {
+    if (prevProps.open !== open && open !== this.state.isOpen) {
       this.toggleState();
     }
 

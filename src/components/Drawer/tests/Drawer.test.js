@@ -31,6 +31,11 @@ const renderedComponent = ({
   );
 
 describe('<Drawer />', () => {
+  beforeEach(() => {
+    // Remove the body class to ensure that every test case is run in isolation
+    document.body.classList.remove(BODY_OPEN_CLASSNAME);
+  });
+
   it('should render the component', () => {
     const tree = toJson(renderedComponent({}));
     expect(tree).toMatchSnapshot();
@@ -90,6 +95,12 @@ describe('<Drawer />', () => {
     component.setProps({ open: true });
     expect(component.state('isOpen')).toBe(true);
     expect(document.body.classList.contains(BODY_OPEN_CLASSNAME)).toBe(true);
+  });
+
+  it('should not trigger toggleState when updated open prop matches state value', () => {
+    const component = renderedComponent({ open: false });
+    component.setState({ isOpen: true }).setProps({ open: true });
+    expect(document.body.classList.contains(BODY_OPEN_CLASSNAME)).toBe(false);
   });
 
   it('should trigger toggleState when component has been updated', () => {

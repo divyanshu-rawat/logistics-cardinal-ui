@@ -16,6 +16,43 @@ import Drawer from '.';
 
 const Header = <IDCard name="Teri Mitchell" info="Rider Captain" />;
 
+class DrawerContainer extends React.Component {
+  state = {
+    isDrawerOpen: false,
+  };
+
+  render() {
+    return (
+      <div style={{ width: '100%', height: '100%' }}>
+        <Drawer
+          header={Header}
+          open={this.state.isDrawerOpen}
+          right={boolean('Right?', true)}
+          content={
+            <Button
+              onClick={() => {
+                this.setState({ isDrawerOpen: false });
+              }}
+            >
+              Close
+            </Button>
+          }
+          onToggle={(open) => {
+            this.setState({ isDrawerOpen: open });
+          }}
+        />
+        <Button
+          onClick={() => {
+            this.setState({ isDrawerOpen: true });
+          }}
+        >
+          Open
+        </Button>
+      </div>
+    );
+  }
+}
+
 const HorizontalTab = (
   <div style={{ position: 'relative', width: '700px', height: '100%' }}>
     <ComposedTabs
@@ -57,19 +94,7 @@ const HorizontalTab = (
 
 storiesOf(`${COMPONENTS}Drawer`, module)
   .addDecorator(withTests('Drawer/tests/Drawer'))
-  .add(
-    'Simple Controlled by State',
-    withInfo()(() => (
-      <div style={{ width: '100%', height: '100%' }}>
-        <Drawer
-          header={Header}
-          open={boolean('Open?', false)}
-          right={boolean('Right?', true)}
-          content={HorizontalTab}
-        />
-      </div>
-    )),
-  )
+  .add('Simple Controlled by State', withInfo()(() => <DrawerContainer />))
   .add(
     'With Render Props',
     withInfo()(() => (
