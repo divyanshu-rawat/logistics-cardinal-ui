@@ -6,6 +6,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import json from 'rollup-plugin-json';
 import url from 'rollup-plugin-url';
 import reactSvg from 'rollup-plugin-react-svg';
+import visualizer from 'rollup-plugin-visualizer';
 
 import pkg from './package.json';
 
@@ -40,5 +41,9 @@ export default {
     reactSvg(),
     resolve(),
     commonjs(),
+    visualizer({
+      filename: './statistics.html',
+      title: 'Cardinal UI',
+    }),
   ],
 };
